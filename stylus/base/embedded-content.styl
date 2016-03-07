@@ -22,7 +22,7 @@ video
   width: 100%
 
   &:focus
-    outline: 1px dotted @color-black
+    outline: 1px dotted $color.black
 
 // Fluid-width media elements that maintain their aspect ratios.
 
@@ -51,10 +51,10 @@ figure > img
 // Give <figcaption> elements some default styles.
 
 figcaption
-  margin-top: $figcaption-margin-top
-  font-size: $font-size-mmm
+  margin-top: $default-spacing-third
+  font-size: $font.size.mmm
   font-style: italic
-  color: $figcaption-text-color
+  color: $default-color-gray-dark
 
 
 // 1: If images do not load, the `alt` text will be visually offset and more

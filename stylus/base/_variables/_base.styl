@@ -3,61 +3,44 @@
 // =============================================
 // #1 != https://benfrain.com/just-use-pixels/
 
-$font-size = 1rem
-$font-size-unit = 16 // != easier way?
-$line-height = 24
-$line-height-ratio = ($line-height / $font-size-unit)
+$grid = {
+  max: {
+    width: 1024px
+  }
+}
 
-
-// Grid ========================================
-// - Override Jeet defaults: https://bitly.com
-
-$grid-max-width = 1024px
-jeet.max-width = $grid-max-width
-// jeet.gutter = 3
-
-$screen-xs = 480px
-$screen-sm = 600px
-$screen-md = 768px
-$screen-lg = 960px
-$screen-xl = 1140px
-$screen-xxl = 1380px
-
-$screen-xs-min = $screen-xs
-$screen-sm-min = $screen-sm
-$screen-md-min = $screen-md
-$screen-lg-min = $screen-lg
-$screen-xl-min = $screen-xl
-$screen-xxl-min = $screen-xxl
-
+$screen = {
+  xs: 480px,
+  sm: 600px,
+  md: 768px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1380px
+}
 
 // Spacing, margins and padding =================
 
-$spacing-base   = unit($line-height-ratio, 'rem')
-$spacing-double = ($spacing-base * 2)
-$spacing-triple = ($spacing-base * 3)
-$spacing-half   = ($spacing-base / 2)
-$spacing-third  = ($spacing-base / 3)
-$spacing-fourth = ($spacing-base / 4)
-$spacing-fifth  = ($spacing-base / 5)
-$spacing-sixth  = ($spacing-base / 6)
-$spacing-micro = 2px
-$spacing-none = 0
-
-// Buttons
-$btn-padding = $font-size $spacing-fourth;
-$btn-border-radius = $border-radius-base;
-$btn-xs-padding = $spacing-sixth $spacing-third;
-$btn-sm-padding = $spacing-fourth 10;
-$btn-lg-padding = $spacing-third $spacing-base;
-$btn-group-margin = $spacing-none $spacing-micro;
-$btn-lg-group-margin = $spacing-none $spacing-sixth;
-
-// Lists
-$list-item-margin-left = $spacing-base
-
-// Embedded content
-$figcaption-text-color = $color-gray-dark
+$spacing = {
+  base: $default-spacing-base,
+  double: $default-spacing-double,
+  triple: $default-spacing-triple,
+  half: $default-spacing-half,
+  third: $default-spacing-third,
+  fourth: $default-spacing-fourth,
+  fifth: $default-spacing-fifth,
+  sixth: $default-spacing-sixth,
+  micro: $default-spacing-micro,
+  none: 0
+}
 
 // Borders
-$border-radius-base = 5px
+$border = {
+  radius: {
+    base: $default-border-radius-base
+  }
+}
+
+// Lists
+$list-item-margin-left = $default-spacing-base
+$definition-lists-font-weight = 700
+$definition-lists-text-color = $default-color-gray-darkest

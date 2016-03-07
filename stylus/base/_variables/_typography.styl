@@ -8,26 +8,35 @@ $arial = 'Arial', sans-serif
 $times = 'Times New Roman', serif
 $monaco = unquote('Monaco', 'Consolas', 'Liberation Mono', Courier, monospace)
 
-// Stylus is a little different to Less,
-// using hashes for global settings: http://stylus-lang.com/docs/hashes.html
-// - Access values: `$font.family.serif`
-// - Change values: `$font.family.serif = 'Arial'`
-//   - You may need to escape `\` or use `unquote()`
-
 $font = {
   family: {
-    serif: $arial,
-    sans: $times,
+    serif: $times,
+    sans: $arial,
     mono: $monaco
-  }
+  },
   size: {
-    pppp: 8rem,
-    ppp: 3.6rem,
-    pp: 2rem,
-    p: 1.4rem,
-    m: 0.875rem,
-    mm: 0.75rem,
-    mmm: 0.625rem
+    base: $default-font-size,
+
+    pppp: $default-font-size-pppp,
+    ppp: $default-font-size-ppp,
+    pp: $default-font-size-pp,
+    p: $default-font-size-p,
+    m: $default-font-size-m,
+    mm: $default-font-size-mm,
+    mmm: $default-font-size-mmm,
+
+    h1: $default-font-size-h1,
+    h2: $default-font-size-h2,
+    h3: $default-font-size-h3,
+    h4: $default-font-size-h4,
+    h5: $default-font-size-h5,
+    h6: $default-font-size-h6
+  }
+}
+
+$line = {
+  height: {
+    base: $default-line-height
   }
 }
 
@@ -37,8 +46,10 @@ $text = {
   del: {
     font: {
       style: italic,
+      color: $default-color-gray-dark
+    },
+    text: {
       decoration: line-through,
-      color: $color.gray.dark
     }
   },
   dt: {
@@ -46,70 +57,98 @@ $text = {
       weight: 700,
     },
     text: {
-      color: $color.gray.darkest
+      color: $default-color-gray-darkest
     }
-  }
+  },
   highlights: {
     bg: {
       color: #ff9
     },
     text: {
-      color: $color.gray.darkest
+      color: $default-color-gray-darkest
     }
   }
 }
 
 // Headings ====================================
+// - Basic font sizes set above in $font
 
-$font-size-h1 = 3.6rem
-$font-size-h2 = 3rem
-$font-size-h3 = 2.4rem
-$font-size-h4 = 2rem
-$font-size-h5 = 1.6rem
-$font-size-h6 = 1.4rem
-
-$heading-font-family = $font-family-sans-serif
-$heading-font-weight = 700
-$heading-text-color = #000
-$blockquote-font-family = $font-family-serif
+$heading = {
+  font: {
+    family: Arial,
+    weight: 700,
+  },
+  text: {
+    color: $default-color-black,
+  }
+}
 
 // Blockquotes =================================
 
-$blockquote-font-family = $font-family-serif;
-$blockquote-font-style = italic;
-$blockquote-font-size = 1rem
-$blockquote-text-color = $color-gray-dark;
-$blockquote-margin-left = $spacing-base;
-$blockquote-padding-left = $spacing-base;
-$blockquote-border-width = $spacing-fourth;
-$blockquote-border-style = solid;
-$blockquote-border-color = $color-gray-light;
-$blockquote-cite-font-family = $font-family-sans-serif;
-$blockquote-cite-font-style = normal;
-$blockquote-cite-font-size = 1rem
-$blockquote-cite-text-color = $color-gray-dark;
-$blockquote-cite-anchor-color = $color-gray-dark;
+$blockquote = {
+  font: {
+    family: $default-font-family-serif,
+    style: italic,
+    size: $font-size
+  },
+  text: {
+    color: $default-color-gray-dark,
+  },
+  margin: {
+    left: $default-spacing-base
+  },
+  padding: {
+    left: $default-spacing-base
+  },
+  border: {
+    width: $default-spacing-fourth,
+    style: solid,
+    color: $default-color-gray-light
+  },
+
+  cite: {
+    font: {
+      family: $default-font-family-sans-serif,
+      style: normal,
+      size: $default-font-size
+    }
+    text: {
+      color: $default-color-gray-dark
+    },
+    anchor: {
+      color: $default-color-gray-dark
+    }
+  }
+}
 
 // Code =======================================
 
-$code-font-size = 1rem
-$code-font-style = normal
-$code-text-color = $color-gray-darkest
-$code-background-color = $color-gray-lightest
-$code-border-width = 1px
-$code-border-style = solid
-$code-border-color = $color-gray-light
-$code-border-radius = $border-radius-base
-$code-padding = $spacing-micro $spacing-fourth
-$code-pre-padding = $spacing-base
-$code-pre-text-color = $color-gray-darker
-$code-pre-background-color = $color-gray-lightest
+$code = {
+  font: {
+    size: 1rem,
+    style: normal
+  },
+  text: {
+    color: $default-color-gray-darkest
+  },
+  background: {
+    color: $default-color-gray-lightest,
+  },
+  border: {
+    width: 1px,
+    style: solid,
+    color: $default-color-gray-light
+    radius: $default-border-radius-base
+  },
+  padding: $default-spacing-micro $default-spacing-fourth,
 
-// Buttons ====================================
-
-$btn-font-family = $font-family-sans-serif;
-$btn-font-weight = 700;
-$btn-line-height = $line-height-ratio;
-$btn-xs-font-size = $font-size-mmm;
-$btn-sm-font-size = $font-size-mm;
-$btn-lg-font-size = $font-size-pp;
+  pre: {
+    padding: $default-spacing-base,
+    text: {
+      color: $default-color-gray-darker
+    },
+    background: {
+      color: $default-color-gray-lightest
+    }
+  }
+}

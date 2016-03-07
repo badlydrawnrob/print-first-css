@@ -4,10 +4,10 @@
 
 $root = {
   background: {
-    color: #fff
+    color: $default-color-white
   }
   text: {
-    color: #000
+    color: $default-color-black
   }
 }
 
@@ -19,49 +19,38 @@ $anchor = {
 
 $print = {
   text: {
-    color: $color.black
+    color: $default-color-black
   }
 }
 
 // Default colours =============================
 
-$color-black         = #000000;
-$color-gray-darkest  = lighten($color-black, 13.5%);  // #222222
-$color-gray-darker   = lighten($color-black, 26.5%);  // #444444
-$color-gray-dark     = lighten($color-black, 46.7%);  // #777777
-$color-gray          = lighten($color-black, 66.5%);  // #aaaaaa
-$color-gray-light    = lighten($color-black, 87%);    // #dedede
-$color-gray-lighter  = lighten($color-black, 93.75%); // #efefef
-$color-gray-lightest = lighten($color-black, 97.25%); // #f8f8f8
-$color-white         = #ffffff;
+$color = {
+  black: $default-color-black,
+  gray: {
+    darkest: $default-color-gray-darkest,
+    darker: $default-color-gray-darker,
+    dark: $default-color-gray-dark,
+    base: $default-color-gray,
+    light: $default-color-gray-light,
+    lighter: $default-color-gray-lighter,
+    lightest: $default-color-gray-lightest
+  },
+  white: $default-color-white
+}
 
 // Brand =======================================
 
-$color-primary   = $color-green
-$color-secondary = #06A2CB
-$color-tertiary  = #000
-
-// Other =======================================
-
-$color-green = #92C96E
-
-// Embedded content ============================
-
-$figcaption-text-color = $color-gray-dark
-
-// Buttons =====================================
-
-$btn-focus-outline-width = thin
-$btn-focus-outline-style = dotted
-$btn-focus-outline-color = $color-gray-darkest
-
-$btn-text-color = $color-gray-darker
-$btn-background-color = $color-gray-light
-$btn-primary-text-color = $color-white
-$btn-primary-bg-color = $color-secondary
+$color[primary]   = #92C96E
+$color[secondary] = #06A2CB
+$color[tertiary]  = #000
 
 // Horizontal rules ============================
 
-$hr-border-width = 2px
-$hr-border-style = dotted
-$hr-border-color = $color-gray
+$hr = {
+  border: {
+    width: 2px,
+    style: dotted,
+    color: $default-color-gray
+  }
+}

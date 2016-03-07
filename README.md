@@ -20,3 +20,11 @@ Theres a few changes out of necessity, such as:
 3. `rem` is the default, no `px` fallback.
 4. [Jeet](http://jeet.gs/) for grids.
 5. Everything else as-is, minus a few components/utilities
+
+### Hashes
+
+Stylus is a little different to Less: it's not pretty, but we have to use [hashes](http://stylus-lang.com/docs/hashes.html) for global settings:
+
+- Access values: `$font.family.serif`
+- Change values: `$font.family.serif = 'Arial'`
+- You may need to escape `\` or use `unquote()` for some values
