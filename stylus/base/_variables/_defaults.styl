@@ -1,0 +1,61 @@
+// =============================================
+// Base: Defaults
+// =============================================
+// Hashes don't play nicely inside other hashes,
+// so we have to set up a bunch of defaults here.
+// - Override the hashes, not the defaults.
+// - https://github.com/stylus/stylus/issues/1553#issuecomment-44485835
+
+
+// Fonts ====================================
+
+$default-font-size = 1rem
+$default-font-size-unit = 16
+$default-line-height = 24
+$default-line-height-ratio = ($default-line-height / $default-font-size-unit)
+
+$default-font-family-sans-serif = $arial // Set in _typography
+$default-font-family-serif = $times      // Set in _typography
+
+$default-font-size-pppp = 8rem
+$default-font-size-ppp = 3.6rem
+$default-font-size-pp = 2rem
+$default-font-size-p = 1.4rem
+$default-font-size-m = 0.875rem
+$default-font-size-mm = 0.75rem
+$default-font-size-mmm = 0.625rem
+
+$default-font-size-h1 = 3.6rem
+$default-font-size-h2 = 3rem
+$default-font-size-h3 = 2.4rem
+$default-font-size-h4 = 2rem
+$default-font-size-h5 = 1.6rem
+$default-font-size-h6 = 1.4rem
+
+// Spacing ====================================
+
+$default-spacing-base   = unit($default-line-height-ratio, 'rem')
+$default-spacing-double = ($default-spacing-base * 2)
+$default-spacing-triple = ($default-spacing-base * 3)
+$default-spacing-half   = ($default-spacing-base / 2)
+$default-spacing-third  = ($default-spacing-base / 3)
+$default-spacing-fourth = ($default-spacing-base / 4)
+$default-spacing-fifth  = ($default-spacing-base / 5)
+$default-spacing-sixth  = ($default-spacing-base / 6)
+$default-spacing-micro  = 2px
+
+// Borders ====================================
+
+$default-border-radius-base = 5px
+
+// Colours ====================================
+
+$default-color-black = #000
+$default-color-gray-darkest = #222
+$default-color-gray-darker = #444
+$default-color-gray-dark = #777
+$default-color-gray = #aaa
+$default-color-gray-light = #dedede
+$default-color-gray-lighter = #efefef
+$default-color-gray-lightest = #f8f8f8
+$default-color-white = #fff

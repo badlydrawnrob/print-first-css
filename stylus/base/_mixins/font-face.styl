@@ -1,0 +1,12 @@
+// =============================================
+// Mixins: @font-face
+// =============================================
+// - Slimmed down version of Cardinal's @font-face
+
+font-face($ff-name, $ff-file, $ff-weight = normal, $ff-style = normal)
+  @font-face
+    font-family: '{$ff-name}'
+    src:  url($ff-file + '.woff2') format('woff2'),
+          url($ff-file + '.woff') format('woff')
+    font-weight: $ff-weight
+    font-style: $ff-style
