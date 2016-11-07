@@ -1,0 +1,154 @@
+// =============================================
+// Base: Typography
+// =============================================
+// $font-size in _base.styl
+// - Rem calculator: http://bit.ly/1NenGWL
+
+$arial = 'Arial', sans-serif
+$times = 'Times New Roman', serif
+$monaco = unquote('Monaco', 'Consolas', 'Liberation Mono', Courier, monospace)
+
+$font = {
+  family: {
+    serif: $times,
+    sans: $arial,
+    mono: $monaco
+  },
+  size: {
+    base: $default-font-size,
+
+    pppp: $default-font-size-pppp,
+    ppp: $default-font-size-ppp,
+    pp: $default-font-size-pp,
+    p: $default-font-size-p,
+    m: $default-font-size-m,
+    mm: $default-font-size-mm,
+    mmm: $default-font-size-mmm,
+
+    h1: $default-font-size-h1,
+    h2: $default-font-size-h2,
+    h3: $default-font-size-h3,
+    h4: $default-font-size-h4,
+    h5: $default-font-size-h5,
+    h6: $default-font-size-h6
+  }
+}
+
+$line = {
+  height: {
+    base: $default-line-height
+  }
+}
+
+// Text elements ===============================
+
+$text = {
+  del: {
+    font: {
+      style: italic,
+      color: $default-color-gray-dark
+    },
+    text: {
+      decoration: line-through,
+    }
+  },
+  dt: {
+    font: {
+      weight: 700,
+    },
+    text: {
+      color: $default-color-gray-darkest
+    }
+  },
+  highlights: {
+    bg: {
+      color: #ff9
+    },
+    text: {
+      color: $default-color-gray-darkest
+    }
+  }
+}
+
+// Headings ====================================
+// - Basic font sizes set above in $font
+
+$heading = {
+  font: {
+    family: $default-font-family-sans-serif,
+    weight: 700,
+  },
+  text: {
+    color: $default-color-black,
+  }
+}
+
+// Blockquotes =================================
+
+$blockquote = {
+  font: {
+    family: $default-font-family-serif,
+    style: italic,
+    size: $font-size
+  },
+  text: {
+    color: $default-color-gray-dark,
+  },
+  margin: {
+    left: $default-spacing-base
+  },
+  padding: {
+    left: $default-spacing-base
+  },
+  border: {
+    width: $default-spacing-fourth,
+    style: solid,
+    color: $default-color-gray-light
+  },
+
+  cite: {
+    font: {
+      family: $default-font-family-sans-serif,
+      style: normal,
+      size: $default-font-size
+    }
+    text: {
+      color: $default-color-gray-dark
+    },
+    anchor: {
+      color: $default-color-gray-dark
+    }
+  }
+}
+
+// Code =======================================
+
+$code = {
+  font: {
+    size: 1rem,
+    style: normal
+  },
+  text: {
+    color: $default-color-gray-darkest
+  },
+  background: {
+    color: $default-color-gray-lightest,
+  },
+  border: {
+    width: 1px,
+    style: solid,
+    color: $default-color-gray-light
+    radius: $default-border-radius-base
+  },
+  padding: $default-spacing-micro $default-spacing-fourth,
+
+  pre: {
+    padding: $default-spacing-base,
+    text: {
+      color: $default-color-gray-darker
+    },
+    background: {
+      color: $default-color-gray-lightest
+    }
+  }
+}
