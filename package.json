@@ -1,0 +1,19 @@
+{
+  "name": "cardinal-stylus",
+  "version": "1.0.0-beta-2",
+  "description": "Stylus implementation of Cardinal framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://badlydrawnrob@github.com/badlydrawnrob/cardinal-stylus.git"
+  },
+  "author": "Rob McDonald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/badlydrawnrob/cardinal-stylus/issues"
+  },
+  "homepage": "https://github.com/badlydrawnrob/cardinal-stylus#readme"
+}
