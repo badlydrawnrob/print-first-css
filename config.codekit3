@@ -11,15 +11,15 @@
 "files": {
 	"\/.editorconfig": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/tests\/.editorconfig",
-		"oF": 0
+		"oF": 1
 		},
 	"\/.gitignore": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/tests\/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"\/package.json": {
 		"ft": 524288,
@@ -37,9 +37,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/tests\/README.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -1330,6 +1330,12 @@
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
+		},
+	"\/tests": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/tests\/tests",
+		"oF": 0
 		}
 	},
 "hooks": [

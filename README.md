@@ -41,6 +41,6 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 3. After these are imported, you can reset the variables
   - Mirror the `_variables` folder with any `$hash` overrides you like
   - [`@import` order matters](https://github.com/stylus/stylus/issues/2136)
-  - Add any new hashes you might need, `$color[primary]   = #92C96E`
+  - Add any new hashes you might need, `$color[primary] = #92C96E`
 4. `@import` the remaining files, as in `cardinal.styl`
 5. Integrate your project files
