@@ -32,3 +32,15 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 - You can't use hashes within hashes, so we set some sensible `$default-`s
   - Override the hashes, **not** the defaults
 - Be [careful of hashes order](https://github.com/stylus/stylus/issues/2136)
+
+
+## Instructions
+
+1. Create a `main.styl` file
+2. `@import './base/_mixins/*'` and `'./base/_variables/*'`
+3. After these are imported, you can reset the variables
+  - Mirror the `_variables` folder with any `$hash` overrides you like
+  - [`@import` order matters](https://github.com/stylus/stylus/issues/2136)
+  - Add any new hashes you might need, `$color[primary]   = #92C96E`
+4. `@import` the remaining files, as in `cardinal.styl`
+5. Integrate your project files
