@@ -4,21 +4,79 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "B53A8E8F-921A-4860-B1FD-747859990A58"
+		"uuidString": "CA5AE827-9BE9-4E16-AB2D-5CEFB6B808BB"
 		}
 	],
 "creatorBuild": "25444",
 "files": {
-	"\/less\/base\/anchors.less": {
+	"\/.editorconfig": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/tests\/.editorconfig",
+		"oF": 1
+		},
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/tests\/.gitignore",
+		"oF": 1
+		},
+	"\/package.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/tests\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/tests\/README.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/less\/.csscomb.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/tests\/less\/.csscomb.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/source\/less\/.gitattributes": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/tests\/less\/.gitattributes",
+		"oF": 0
+		},
+	"\/source\/less\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/tests\/less\/.gitignore",
+		"oF": 0
+		},
+	"\/source\/less\/base\/anchors.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/anchors.css",
+		"oAP": "\/tests\/less\/base\/anchors.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -26,16 +84,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/blockquotes.less": {
+	"\/source\/less\/base\/blockquotes.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/blockquotes.css",
+		"oAP": "\/tests\/less\/base\/blockquotes.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -43,16 +101,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/code.less": {
+	"\/source\/less\/base\/code.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/code.css",
+		"oAP": "\/tests\/less\/base\/code.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -60,16 +118,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/debug.less": {
+	"\/source\/less\/base\/debug.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/less\/css\/debug.css",
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/tests\/less\/base\/debug.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -77,16 +135,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/embedded-content.less": {
+	"\/source\/less\/base\/embedded-content.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/embedded-content.css",
+		"oAP": "\/tests\/less\/base\/embedded-content.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -94,16 +152,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/form-elements.less": {
+	"\/source\/less\/base\/form-elements.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/form-elements.css",
+		"oAP": "\/tests\/less\/base\/form-elements.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -111,16 +169,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/headings.less": {
+	"\/source\/less\/base\/headings.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/headings.css",
+		"oAP": "\/tests\/less\/base\/headings.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -128,16 +186,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/horizontal-rules.less": {
+	"\/source\/less\/base\/horizontal-rules.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/horizontal-rules.css",
+		"oAP": "\/tests\/less\/base\/horizontal-rules.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -145,16 +203,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/lists.less": {
+	"\/source\/less\/base\/lists.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/lists.css",
+		"oAP": "\/tests\/less\/base\/lists.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -162,16 +220,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/mixins\/antialiasing.less": {
+	"\/source\/less\/base\/mixins\/antialiasing.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/base\/css\/antialiasing.css",
+		"oAP": "\/tests\/less\/base\/mixins\/antialiasing.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -179,16 +237,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/mixins\/clearing.less": {
+	"\/source\/less\/base\/mixins\/clearing.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/base\/css\/clearing.css",
+		"oAP": "\/tests\/less\/base\/mixins\/clearing.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -196,16 +254,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/mixins\/font-face.less": {
+	"\/source\/less\/base\/mixins\/font-face.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/base\/css\/font-face.css",
+		"oAP": "\/tests\/less\/base\/mixins\/font-face.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -213,16 +271,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/mixins\/media-queries.less": {
+	"\/source\/less\/base\/mixins\/media-queries.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/base\/css\/media-queries.css",
+		"oAP": "\/tests\/less\/base\/mixins\/media-queries.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -230,16 +288,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/mixins\/momentum-scrolling.less": {
+	"\/source\/less\/base\/mixins\/momentum-scrolling.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/base\/css\/momentum-scrolling.css",
+		"oAP": "\/tests\/less\/base\/mixins\/momentum-scrolling.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -247,16 +305,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/mixins\/text-truncate.less": {
+	"\/source\/less\/base\/mixins\/text-truncate.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/base\/css\/text-truncate.css",
+		"oAP": "\/tests\/less\/base\/mixins\/text-truncate.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -264,16 +322,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/mixins\/to-rem.less": {
+	"\/source\/less\/base\/mixins\/to-rem.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/base\/css\/to-rem.css",
+		"oAP": "\/tests\/less\/base\/mixins\/to-rem.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -281,16 +339,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/mixins\/vertically-centered.less": {
+	"\/source\/less\/base\/mixins\/vertically-centered.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/base\/css\/vertically-centered.css",
+		"oAP": "\/tests\/less\/base\/mixins\/vertically-centered.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -298,16 +356,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/normalize.less": {
+	"\/source\/less\/base\/normalize.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/normalize.css",
+		"oAP": "\/tests\/less\/base\/normalize.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -315,16 +373,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/print.less": {
+	"\/source\/less\/base\/print.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/print.css",
+		"oAP": "\/tests\/less\/base\/print.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -332,16 +390,34 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/reset.less": {
+	"\/source\/less\/base\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/tests\/less\/base\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/less\/base\/reset.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/reset.css",
+		"oAP": "\/tests\/less\/base\/reset.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -349,16 +425,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/root.less": {
+	"\/source\/less\/base\/root.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/root.css",
+		"oAP": "\/tests\/less\/base\/root.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -366,16 +442,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/tables.less": {
+	"\/source\/less\/base\/tables.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/tables.css",
+		"oAP": "\/tests\/less\/base\/tables.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -383,16 +459,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/text-elements.less": {
+	"\/source\/less\/base\/text-elements.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/text-elements.css",
+		"oAP": "\/tests\/less\/base\/text-elements.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -400,16 +476,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/base\/variables.less": {
+	"\/source\/less\/base\/variables.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/variables.css",
+		"oAP": "\/tests\/less\/base\/variables.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -417,26 +493,34 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/cardinal.css": {
+	"\/source\/less\/bower.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/tests\/less\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/source\/less\/cardinal.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "\/less\/cardinal-min.css",
+		"oA": 2,
+		"oAP": "\/tests\/less\/cardinal.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/less\/cardinal.less": {
+	"\/source\/less\/cardinal.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/cardinal.css",
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/tests\/less\/cardinal.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -444,26 +528,44 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/cardinal.min.css": {
+	"\/source\/less\/cardinal.min.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "\/less\/cardinal.min-min.css",
+		"oA": 2,
+		"oAP": "\/tests\/less\/cardinal.min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/less\/components\/boxes.less": {
+	"\/source\/less\/CHANGELOG.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/tests\/less\/CHANGELOG.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/less\/components\/boxes.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/boxes.css",
+		"oAP": "\/tests\/less\/components\/boxes.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -471,16 +573,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/components\/buttons.less": {
+	"\/source\/less\/components\/buttons.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/buttons.css",
+		"oAP": "\/tests\/less\/components\/buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -488,16 +590,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/components\/forms.less": {
+	"\/source\/less\/components\/forms.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/forms.css",
+		"oAP": "\/tests\/less\/components\/forms.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -505,16 +607,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/components\/lists.less": {
+	"\/source\/less\/components\/lists.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/lists.css",
+		"oAP": "\/tests\/less\/components\/lists.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -522,16 +624,34 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/components\/tables.less": {
+	"\/source\/less\/components\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/tests\/less\/components\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/less\/components\/tables.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/tables.css",
+		"oAP": "\/tests\/less\/components\/tables.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -539,25 +659,49 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/gulpfile.js": {
+	"\/source\/less\/CONTRIBUTING.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/tests\/less\/CONTRIBUTING.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/less\/gulpfile.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "\/less\/min\/gulpfile-min.js",
+		"oA": 0,
+		"oAP": "\/tests\/less\/gulpfile.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/less\/layout\/grids.less": {
+	"\/source\/less\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/tests\/less\/index.html",
+		"oF": 0
+		},
+	"\/source\/less\/layout\/grids.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/grids.css",
+		"oAP": "\/tests\/less\/layout\/grids.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -565,16 +709,34 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/layout\/wrappers.less": {
+	"\/source\/less\/layout\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/tests\/less\/layout\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/less\/layout\/wrappers.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/wrappers.css",
+		"oAP": "\/tests\/less\/layout\/wrappers.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -582,16 +744,60 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/display.less": {
+	"\/source\/less\/LICENSE.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/tests\/less\/LICENSE.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/less\/package.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/tests\/less\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/source\/less\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/tests\/less\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/less\/utilities\/display.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/display.css",
+		"oAP": "\/tests\/less\/utilities\/display.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -599,16 +805,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/floats.less": {
+	"\/source\/less\/utilities\/floats.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/floats.css",
+		"oAP": "\/tests\/less\/utilities\/floats.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -616,16 +822,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/font-sizes.less": {
+	"\/source\/less\/utilities\/font-sizes.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/font-sizes.css",
+		"oAP": "\/tests\/less\/utilities\/font-sizes.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -633,16 +839,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/margins.less": {
+	"\/source\/less\/utilities\/margins.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/margins.css",
+		"oAP": "\/tests\/less\/utilities\/margins.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -650,16 +856,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/paddings.less": {
+	"\/source\/less\/utilities\/paddings.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/paddings.css",
+		"oAP": "\/tests\/less\/utilities\/paddings.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -667,16 +873,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/positions.less": {
+	"\/source\/less\/utilities\/positions.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/positions.css",
+		"oAP": "\/tests\/less\/utilities\/positions.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -684,16 +890,34 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/text-alignment.less": {
+	"\/source\/less\/utilities\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/tests\/less\/utilities\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/less\/utilities\/text-alignment.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/text-alignment.css",
+		"oAP": "\/tests\/less\/utilities\/text-alignment.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -701,16 +925,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/vertical-alignment.less": {
+	"\/source\/less\/utilities\/vertical-alignment.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/vertical-alignment.css",
+		"oAP": "\/tests\/less\/utilities\/vertical-alignment.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -718,16 +942,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/visually-hidden.less": {
+	"\/source\/less\/utilities\/visually-hidden.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/visually-hidden.css",
+		"oAP": "\/tests\/less\/utilities\/visually-hidden.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -735,16 +959,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/widths.less": {
+	"\/source\/less\/utilities\/widths.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "\/less\/css\/widths.css",
+		"oAP": "\/tests\/less\/utilities\/widths.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -752,16 +976,16 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/less\/utilities\/z-index.less": {
+	"\/source\/less\/utilities\/z-index.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
 		"ft": 1,
 		"ie": 1,
 		"iI": 0,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/less\/css\/z-index.css",
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/tests\/less\/utilities\/z-index.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -769,7 +993,7 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/stylus\/base\/_mixins\/antialising.styl": {
+	"\/source\/stylus\/base\/_mixins\/antialising.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -777,12 +1001,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/base\/css\/antialising.css",
+		"oAP": "\/tests\/stylus\/base\/_mixins\/antialising.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/_mixins\/font-face.styl": {
+	"\/source\/stylus\/base\/_mixins\/font-face.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -790,12 +1014,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/base\/css\/font-face.css",
+		"oAP": "\/tests\/stylus\/base\/_mixins\/font-face.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/_normalize.styl": {
+	"\/source\/stylus\/base\/_normalize.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -803,12 +1027,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/_normalize.css",
+		"oAP": "\/tests\/stylus\/base\/_normalize.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/_reset.styl": {
+	"\/source\/stylus\/base\/_reset.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -816,12 +1040,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/_reset.css",
+		"oAP": "\/tests\/stylus\/base\/_reset.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/_variables\/_base.styl": {
+	"\/source\/stylus\/base\/_variables\/_base.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -829,12 +1053,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/base\/css\/_base.css",
+		"oAP": "\/tests\/stylus\/base\/_variables\/_base.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/_variables\/_buttons.styl": {
+	"\/source\/stylus\/base\/_variables\/_buttons.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -842,12 +1066,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/base\/css\/_buttons.css",
+		"oAP": "\/tests\/stylus\/base\/_variables\/_buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/_variables\/_colors.styl": {
+	"\/source\/stylus\/base\/_variables\/_colors.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -855,12 +1079,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/base\/css\/_colors.css",
+		"oAP": "\/tests\/stylus\/base\/_variables\/_colors.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/_variables\/_defaults.styl": {
+	"\/source\/stylus\/base\/_variables\/_defaults.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -868,12 +1092,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/base\/css\/_defaults.css",
+		"oAP": "\/tests\/stylus\/base\/_variables\/_defaults.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/_variables\/_typography.styl": {
+	"\/source\/stylus\/base\/_variables\/_typography.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -881,12 +1105,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/base\/css\/_typography.css",
+		"oAP": "\/tests\/stylus\/base\/_variables\/_typography.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/anchors.styl": {
+	"\/source\/stylus\/base\/anchors.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -894,12 +1118,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/anchors.css",
+		"oAP": "\/tests\/stylus\/base\/anchors.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/blockquotes.styl": {
+	"\/source\/stylus\/base\/blockquotes.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -907,12 +1131,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/blockquotes.css",
+		"oAP": "\/tests\/stylus\/base\/blockquotes.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/code.styl": {
+	"\/source\/stylus\/base\/code.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -920,12 +1144,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/code.css",
+		"oAP": "\/tests\/stylus\/base\/code.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/embedded-content.styl": {
+	"\/source\/stylus\/base\/embedded-content.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -933,12 +1157,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/embedded-content.css",
+		"oAP": "\/tests\/stylus\/base\/embedded-content.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/font-face.styl": {
+	"\/source\/stylus\/base\/font-face.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -946,12 +1170,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/font-face.css",
+		"oAP": "\/tests\/stylus\/base\/font-face.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/form-elements.styl": {
+	"\/source\/stylus\/base\/form-elements.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -959,12 +1183,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/form-elements.css",
+		"oAP": "\/tests\/stylus\/base\/form-elements.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/headings.styl": {
+	"\/source\/stylus\/base\/headings.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -972,12 +1196,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/headings.css",
+		"oAP": "\/tests\/stylus\/base\/headings.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/horizontal-rules.styl": {
+	"\/source\/stylus\/base\/horizontal-rules.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -985,12 +1209,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/horizontal-rules.css",
+		"oAP": "\/tests\/stylus\/base\/horizontal-rules.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/lists.styl": {
+	"\/source\/stylus\/base\/lists.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -998,12 +1222,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/lists.css",
+		"oAP": "\/tests\/stylus\/base\/lists.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/print.styl": {
+	"\/source\/stylus\/base\/print.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -1011,12 +1235,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/print.css",
+		"oAP": "\/tests\/stylus\/base\/print.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/root.styl": {
+	"\/source\/stylus\/base\/root.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -1024,12 +1248,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/root.css",
+		"oAP": "\/tests\/stylus\/base\/root.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/tables.styl": {
+	"\/source\/stylus\/base\/tables.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -1037,12 +1261,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/tables.css",
+		"oAP": "\/tests\/stylus\/base\/tables.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/base\/text-elements.styl": {
+	"\/source\/stylus\/base\/text-elements.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -1050,25 +1274,25 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/text-elements.css",
+		"oAP": "\/tests\/stylus\/base\/text-elements.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/cardinal.styl": {
+	"\/source\/stylus\/cardinal.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
 		"ft": 8,
 		"iC": 0,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/cardinal.css",
+		"oA": 0,
+		"oAP": "\/tests\/stylus\/cardinal.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/components\/buttons.styl": {
+	"\/source\/stylus\/components\/buttons.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -1076,12 +1300,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/buttons.css",
+		"oAP": "\/tests\/stylus\/components\/buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/components\/images.styl": {
+	"\/source\/stylus\/components\/images.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -1089,12 +1313,12 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/images.css",
+		"oAP": "\/tests\/stylus\/components\/images.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/stylus\/utilities\/visually-hidden.styl": {
+	"\/source\/stylus\/utilities\/visually-hidden.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -1102,10 +1326,16 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/stylus\/css\/visually-hidden.css",
+		"oAP": "\/tests\/stylus\/utilities\/visually-hidden.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
+		},
+	"\/tests": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/tests\/tests",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -1113,10 +1343,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 500244172,
+	"creationDate": 502831850,
 	"displayValue": "cardinal",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-angryPicard"
+	"iconImageName": "meme-ive"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1371,8 +1601,8 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"buildFolderActive": 0,
-	"buildFolderName": "build",
+	"buildFolderActive": 1,
+	"buildFolderName": "tests",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -2792,7 +3022,7 @@
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 2,
-		"autoOutputPathFilenamePattern": "*-min.css",
+		"autoOutputPathFilenamePattern": "*.css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
@@ -2835,19 +3065,19 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 1,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
-		"autoOutputAction": 1,
-		"autoOutputPathFilenamePattern": "*-min.json",
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.json",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
@@ -2867,8 +3097,8 @@
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "",
-		"autoOutputPathReplace2": "",
+		"autoOutputPathReplace1": "kit",
+		"autoOutputPathReplace2": "html",
 		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsLESS": {
@@ -2878,8 +3108,8 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "less",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 2,
-		"createSourceMap": 0,
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 1,
 		"disableJavascript": 0,
 		"ieCompatibility": 1,
 		"outputStyle": 0,
@@ -2942,7 +3172,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
@@ -2970,7 +3200,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "stylus",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"importCSS": 0,
@@ -2980,7 +3210,7 @@
 		"shouldRunBless": 0
 		},
 	"languageDefaultsSVG": {
-		"autoOutputAction": 2,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.svg",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -2994,13 +3224,13 @@
 		"autoOutputPathRelativePath": "\/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createDeclarationFile": 0,
 		"createSourceMap": 0,
 		"jsxMode": 0,
 		"minifyOutput": 0,
 		"moduleResolutionType": 0,
-		"moduleType": 0,
+		"moduleType": 2,
 		"noImplicitAny": 0,
 		"preserveConstEnums": 0,
 		"removeComments": 0,
@@ -3176,7 +3406,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": ""
+	"websiteRelativeRoot": "\/tests"
 	},
 "settingsFileVersion": "3"
 }
