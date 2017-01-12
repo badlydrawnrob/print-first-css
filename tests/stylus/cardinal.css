@@ -375,11 +375,6 @@ canvas,
 video {
   width: 100%;
 }
-audio:focus,
-canvas:focus,
-video:focus {
-  outline: 1px dotted #000;
-}
 embed,
 img,
 object,
