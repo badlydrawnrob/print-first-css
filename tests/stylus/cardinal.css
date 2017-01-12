@@ -408,24 +408,6 @@ img {
   font-style: italic;
   -ms-interpolation-mode: bicubic;
 }
-@font-face {
-  font-family: 'metallophile';
-  src: url("./fonts/metallophilesp8-medium-webfont.woff2") format('woff2'), url("./fonts/metallophilesp8-medium-webfont.woff") format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'metallophile';
-  src: url("./fonts/metallophilesp8-light-webfont.woff2") format('woff2'), url("./fonts/metallophilesp8-light-webfont.woff") format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'metallophile';
-  src: url("./fonts/metallophilesp8-lightitalic-webfont.woff2") format('woff2'), url("./fonts/metallophilesp8-lightitalic-webfont.woff") format('woff');
-  font-weight: 400;
-  font-style: italic;
-}
 button,
 html input[type="button"],
 input[type="checkbox"],

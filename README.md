@@ -2,9 +2,7 @@
 
 ## Quick intro
 
-A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework,
- which also imports [Jeet](http://jeet.gs/), removes most utility
- classes, most components, following [ECSS principles](https://benfrain.com/my-fourth-book-enduring-css/).
+A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, which also imports [Jeet](http://jeet.gs/), removes most utility classes, most components, following [ECSS principles](https://benfrain.com/my-fourth-book-enduring-css/).
 
 Only the essentials here, folks.
 
