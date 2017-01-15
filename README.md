@@ -12,9 +12,9 @@ Theres a few changes out of necessity, such as:
 
 1. `_underscore` filenames for [globbing](http://stylus-lang.com/docs/import.html#file-globbing) hierarchy
 2.  Reordering and renaming of some variables, making them easier to find
-    - `_base.styl` holds globals, margins and padding
-    - `_colors.styl` holds, you guessed it, colors.
-    - `_typography.styl` well, you get the idea.
+    - `base/variables/grid.styl` holds globals, margins and padding
+    - `base/variables/colors.styl` holds, you guessed it, colors.
+    - `base/variables/typography.styl` ... well, you get the idea.
 3. `rem` is the default, no `px` fallback.
 4. Barebones components and utilities
 5. [Jeet](http://jeet.gs/) for grids.
