@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/badlydrawnrob/cardinal-stylus/issues"
   },
-  "homepage": "https://github.com/badlydrawnrob/cardinal-stylus#readme"
+  "homepage": "https://github.com/badlydrawnrob/cardinal-stylus#readme",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
 }
