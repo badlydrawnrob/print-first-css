@@ -1,6 +1,6 @@
 {
   "name": "cardinal-stylus",
-  "version": "1.0.0-beta-7",
+  "version": "1.0.0-beta-8",
   "description": "Stylus implementation of Cardinal framework",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/badlydrawnrob/cardinal-stylus/issues"
   },
-  "homepage": "https://github.com/badlydrawnrob/cardinal-stylus#readme"
+  "homepage": "https://github.com/badlydrawnrob/cardinal-stylus#readme",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
 }

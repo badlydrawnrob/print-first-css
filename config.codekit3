@@ -33,14 +33,6 @@
 		"oAP": "\/build\/node_modules",
 		"oF": 0
 		},
-	"\/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/build\/package.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
 	"\/project.cson": {
 		"ft": 8192,
 		"oA": 2,
