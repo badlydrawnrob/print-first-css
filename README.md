@@ -42,3 +42,9 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
   - Add any new hashes you might need, `$color[primary] = #92C96E`
 4. `@import` the remaining files, as in `cardinal.styl`
 5. Integrate your project files
+
+
+## Issues
+
+- Careful with Hashes, they fail silently if they've been used but not declared.
+  - `$line.height.ratio` was used but not set up, no errors were given
