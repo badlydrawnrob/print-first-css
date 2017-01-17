@@ -12,22 +12,34 @@
 	"\/.editorconfig": {
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "\/tests\/.editorconfig",
+		"oAP": "\/build\/.editorconfig",
 		"oF": 1
 		},
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "\/tests\/.gitignore",
+		"oAP": "\/build\/.gitignore",
 		"oF": 1
+		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
 		},
 	"\/package.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/tests\/package.json",
+		"oAP": "\/build\/package.json",
 		"oF": 1,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/project.cson": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/project.cson",
+		"oF": 0
 		},
 	"\/README.md": {
 		"cS": 0,
@@ -38,7 +50,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 1,
-		"oAP": "\/tests\/README.html",
+		"oAP": "\/build\/README.html",
 		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
@@ -50,7 +62,7 @@
 	"\/source\/less": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "\/tests\/less",
+		"oAP": "\/build\/less",
 		"oF": 0
 		},
 	"\/source\/stylus\/base\/anchors.styl": {
@@ -61,7 +73,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/anchors.css",
+		"oAP": "\/build\/stylus\/base\/anchors.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -74,7 +86,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/blockquotes.css",
+		"oAP": "\/build\/stylus\/base\/blockquotes.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -87,7 +99,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/code.css",
+		"oAP": "\/build\/stylus\/base\/code.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -100,7 +112,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/embedded-content.css",
+		"oAP": "\/build\/stylus\/base\/embedded-content.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -113,7 +125,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/form-elements.css",
+		"oAP": "\/build\/stylus\/base\/form-elements.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -126,7 +138,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/headings.css",
+		"oAP": "\/build\/stylus\/base\/headings.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -139,7 +151,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/horizontal-rules.css",
+		"oAP": "\/build\/stylus\/base\/horizontal-rules.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -152,7 +164,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/lists.css",
+		"oAP": "\/build\/stylus\/base\/lists.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -165,7 +177,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/mixins\/antialising.css",
+		"oAP": "\/build\/stylus\/base\/mixins\/antialising.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -178,7 +190,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/mixins\/font-face.css",
+		"oAP": "\/build\/stylus\/base\/mixins\/font-face.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -191,7 +203,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/normalize.css",
+		"oAP": "\/build\/stylus\/base\/normalize.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -204,7 +216,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/print.css",
+		"oAP": "\/build\/stylus\/base\/print.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -217,7 +229,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/reset.css",
+		"oAP": "\/build\/stylus\/base\/reset.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -230,7 +242,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/root.css",
+		"oAP": "\/build\/stylus\/base\/root.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -243,7 +255,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/tables.css",
+		"oAP": "\/build\/stylus\/base\/tables.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -256,7 +268,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/text-elements.css",
+		"oAP": "\/build\/stylus\/base\/text-elements.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -269,7 +281,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/variables\/buttons.css",
+		"oAP": "\/build\/stylus\/base\/variables\/buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -282,7 +294,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/variables\/colors.css",
+		"oAP": "\/build\/stylus\/base\/variables\/colors.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -295,7 +307,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/variables\/defaults.css",
+		"oAP": "\/build\/stylus\/base\/variables\/defaults.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -308,7 +320,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/variables\/grid.css",
+		"oAP": "\/build\/stylus\/base\/variables\/grid.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -321,7 +333,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/base\/variables\/typography.css",
+		"oAP": "\/build\/stylus\/base\/variables\/typography.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -334,7 +346,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/tests\/stylus\/cardinal.css",
+		"oAP": "\/build\/stylus\/cardinal.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -347,7 +359,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/components\/buttons.css",
+		"oAP": "\/build\/stylus\/components\/buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -360,7 +372,7 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/components\/images.css",
+		"oAP": "\/build\/stylus\/components\/images.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -373,16 +385,10 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/tests\/stylus\/utilities\/visually-hidden.css",
+		"oAP": "\/build\/stylus\/utilities\/visually-hidden.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
-		},
-	"\/tests": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/tests\/tests",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -649,7 +655,7 @@
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"buildFolderActive": 1,
-	"buildFolderName": "tests",
+	"buildFolderName": "build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -2303,7 +2309,7 @@
 	"languageDefaultsUserDefined": [
 		],
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/source\/less",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/source\/less, package.cson",
 	"sourceFolderName": "source",
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
@@ -2473,7 +2479,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "\/tests"
+	"websiteRelativeRoot": "\/build"
 	},
 "settingsFileVersion": "3"
 }
