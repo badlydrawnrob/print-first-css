@@ -1,3 +1,8 @@
+/*
+ * == Cardinal Stylus 1.0.0-beta-7 ==============================
+ * MIT License | https://github.com/badlydrawnrob/cardinal-stylus
+ * == Ported from Cardinal CSS: http://bit.ly/2iDzOZi ==========
+ */
 .antialiasing() {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
