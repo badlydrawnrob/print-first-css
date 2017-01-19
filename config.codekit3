@@ -175,19 +175,6 @@
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/source\/stylus\/base\/mixins\/antialising.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/base\/mixins\/antialising.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
 	"\/source\/stylus\/base\/print.styl": {
 		"aP": 0,
 		"bl": 0,

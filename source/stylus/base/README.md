@@ -8,8 +8,6 @@ Without `base/`, this framework **will not work correctly.** It is the only requ
 
 - [Overview](#overview)
 - [Variables](#variables)
-- [Mixins](#mixins)
-    - ...
 - [normalize.css](#normalize-css)
 - [Reset](#reset)
 - [Debug](#debug)
@@ -31,7 +29,7 @@ Without `base/`, this framework **will not work correctly.** It is the only requ
 
 Cardinal Base provides a solid foundation for the framework, including things like:
 
-- Useful STYLUS [variables](https://github.com/cbracco/cardinal/blob/master/base/variables.styl) and [mixins](https://github.com/cbracco/cardinal/tree/master/base/mixins)
+- Useful STYLUS [variables](https://github.com/cbracco/cardinal/blob/master/base/variables.styl)
 - [normalize.css](https://github.com/necolas/normalize.css)
 - a [thin reset layer](https://github.com/cbracco/cardinal/blob/master/base/reset.styl) on top of normalization
 - Sensible default styles for common HTML elements
@@ -60,14 +58,6 @@ Instead, you should create your own `variables.styl` file in your project’s ST
 @import url("variables.styl");
 ```
 
-# Mixins
-
-A handful of useful STYLUS mixins are included with Cardinal, several of which are **required** for this framework to function properly. The required mixins are outlined below:
-
-
-```stylus
-.antialiasing()
-```
 
 # normalize.css
 
@@ -233,8 +223,8 @@ If you want to include webfonts, use Google fonts or [`@font-face` code](https:/
 ```stylus
 @font-face
   font-family: 'metallophile'
+  font-style: normal
+  font-weight: 700
   src:  url('./fonts/metallophilesp8-medium-webfont.woff2') format('woff2'),
         url('./fonts/metallophilesp8-medium-webfont.woff') format('woff')
-  font-weight: 700
-  font-style: normal
 ```

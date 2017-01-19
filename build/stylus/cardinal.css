@@ -465,10 +465,6 @@ template {
   display: none;
 }
 
-.antialiasing() {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 a {
   text-decoration: underline;
   color: #00f;
