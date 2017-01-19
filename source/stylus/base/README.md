@@ -25,6 +25,7 @@ Without `base/`, this framework **will not work correctly.** It is the only requ
     - [Form Elements](#form-elements)
     - [Tables](#tables)
     - [Print](#print)
+- [Optional extras](#optional-extras)
 
 # Overview
 
@@ -63,6 +64,10 @@ Instead, you should create your own `variables.styl` file in your project’s ST
 
 A handful of useful STYLUS mixins are included with Cardinal, several of which are **required** for this framework to function properly. The required mixins are outlined below:
 
+
+```stylus
+.antialiasing()
+```
 
 # normalize.css
 
@@ -219,3 +224,17 @@ Similarly to forms, tables can be difficult to style correctly. This file correc
 A default `@print` stylesheet is also included in Cardinal, which is an almost-exact copy of the [HTML5 Boilerplate print styles](http://cbrac.co/1PgyYR2).
 
 These styles are inlined to avoid an extra HTTP request.
+
+
+# Optional extras
+
+If you want to include webfonts, use Google fonts or [`@font-face` code](https://css-tricks.com/snippets/css/using-font-face/):
+
+```stylus
+@font-face
+  font-family: 'metallophile'
+  src:  url('./fonts/metallophilesp8-medium-webfont.woff2') format('woff2'),
+        url('./fonts/metallophilesp8-medium-webfont.woff') format('woff')
+  font-weight: 700
+  font-style: normal
+```
