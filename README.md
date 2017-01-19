@@ -2,7 +2,7 @@
 
 ## Quick intro
 
-A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, which also imports [Jeet](http://jeet.gs/), removes most utility classes, most components, following [ECSS principles](https://benfrain.com/my-fourth-book-enduring-css/).
+A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, which also imports [Jeet](http://jeet.gs/), removes most utility classes, all mixins, most components, following [ECSS principles](https://benfrain.com/my-fourth-book-enduring-css/).
 
 Only the essentials here, folks.
 
@@ -35,7 +35,7 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 ## Instructions
 
 1. Create a `main.styl` file
-2. `@import './base/_mixins/*'` and `'./base/_variables/*'`
+2. `@import `./base/_variables/*`
 3. After these are imported, you can reset the variables
   - Mirror the `_variables` folder with any `$hash` overrides you like
   - [`@import` order matters](https://github.com/stylus/stylus/issues/2136)

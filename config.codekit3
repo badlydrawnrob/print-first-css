@@ -7,7 +7,7 @@
 		"uuidString": "CA5AE827-9BE9-4E16-AB2D-5CEFB6B808BB"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/.editorconfig": {
 		"ft": 8192,
@@ -171,32 +171,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/base\/lists.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/base\/mixins\/antialising.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/base\/mixins\/antialising.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/base\/mixins\/font-face.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/base\/mixins\/font-face.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -1094,6 +1068,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -1633,6 +1611,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,
