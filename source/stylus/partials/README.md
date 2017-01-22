@@ -4,6 +4,8 @@ The `base/` directory houses all of the essential styles that build the foundati
 
 Without `base/`, this framework **will not work correctly.** It is the only required part of Cardinal.
 
+
+
 # Table of Contents
 
 - [Overview](#overview)
@@ -25,6 +27,8 @@ Without `base/`, this framework **will not work correctly.** It is the only requ
     - [Print](#print)
 - [Optional extras](#optional-extras)
 
+
+
 # Overview
 
 Cardinal Base provides a solid foundation for the framework, including things like:
@@ -34,34 +38,19 @@ Cardinal Base provides a solid foundation for the framework, including things li
 - a [thin reset layer](https://github.com/cbracco/cardinal/blob/master/base/reset.styl) on top of normalization
 - Sensible default styles for common HTML elements
 
+
+
 # Variables
 
-Cardinal stores all of its STYLUS variables in a single file aptly named `variables.styl`. These variables provide some good default settings for any project, but you can easily customize them to suit your needs.
+Cardinal stores all of its STYLUS variables in a folder aptly named `variables`. These variables provide some good default settings for any project, but you can easily customize them to suit your needs.
 
-The recommended way to include Cardinal in your project is by using the [Bower package manager](http://bower.io/). In doing so, you will never have to modify Cardinal directly (which makes updating the project as simple as `bower update --save cardinal`).
-
-Instead, you should create your own `variables.styl` file in your project’s STYLUS directory which includes the variables you would like to modify, and include it in your main STYLUS stylesheet **after** you include Cardinal, like so:
-
-```css
-// your-project.styl
-
-//
-// Vendor
-//
-
-@import url("../../path/to/bower_components/cardinal/cardinal.styl");
-
-//
-// Project
-//
-
-@import url("variables.styl");
-```
 
 
 # normalize.css
 
 Cardinal includes the 3rd-party library [normalize.css](https://github.com/necolas/normalize.css), which makes browsers render all elements more consistently and in line with modern web standards.
+
+
 
 # Reset
 
@@ -72,32 +61,13 @@ On top of [normalize.css](https://github.com/necolas/normalize.css), Cardinal in
 - Remove default border for `<iframe>` elements ([more info](http://cbrac.co/1CVyNTj)).
 - Remove `:focus` outline on links that cannoy be accessed via keyboard ([more info](http://cbrac.co/1Evazku)).
 
-# Debug
 
-**This stylesheet is for development use only.** Do not include it in your production code/build. It can help you visually detect any nesting issues, invalid markup, or inaccessible code in your project. It is commented out by default, so you will have to explicitly include it in your project’s main STYLUS file, like so:
-
-```
-// your-project.styl
-
-//
-// Vendor
-//
-
-@import url("../../path/to/bower_components/cardinal/cardinal.styl");
-@import url("../../path/to/bower_components/cardinal/less/base/debug.styl");
-
-//
-// Project
-//
-
-...
-```
-
-([more info](http://cbrac.co/1C01g8C))
 
 # Default Styles
 
 After [normalize.css](https://github.com/necolas/normalize.css) and a light reset, Cardinal sets some more default styles for common HTML elements.
+
+
 
 ## Root
 
@@ -105,11 +75,15 @@ Root defines core styles for the `<html>` element, such as default font family, 
 
 It also ensures the `<body>` element is at least the viewport height, sets a consistent margin for common elements to maintain a vertical rhythm, adds word-wrapping and basic hyphenation to common elements, and sets default `:focus` styles for the framework.
 
+
+
 ## Anchors
 
 [View Demo](http://codepen.io/cbracco/pen/BNKNBo)
 
 Default anchor link styles for this framework reside here.
+
+
 
 ## Text Elements
 
@@ -117,17 +91,23 @@ Default anchor link styles for this framework reside here.
 
 This file adds some opinionated default styles for inline text elements, such as adding the appropriate `cursor` styles to `<abbr>` elements, and adding `text-decoration: line-through` styles to `<del>` elements.
 
+
+
 ## Headings
 
 [View Demo](http://codepen.io/cbracco/pen/PqNqzP)
 
 Headings help break up blocks of text and visual content into consumable chunks, and Cardinal includes some default headings styles to facilitate better readability from the get-go.
 
+
+
 ## Lists
 
 [View Demo](http://codepen.io/cbracco/pen/vOGOXB)
 
 List elements like `<dl>`, `<ul>`, and `<ol>` also get their own default styles to provide a more consistent experience across browsers.
+
+
 
 ## Horizontal Rules
 
@@ -143,6 +123,8 @@ hr {
   .to-rem(border-top, @hr-border-width, @hr-border-style @hr-border-color);
 }
 ```
+
+
 
 ## Blockquotes
 
@@ -164,6 +146,8 @@ The styles are set up for the preferred use case for the `<blockquote>` element,
 </blockquote>
 ```
 
+
+
 ## Code
 
 [View Demo](http://codepen.io/cbracco/pen/gprpLa)
@@ -171,6 +155,8 @@ The styles are set up for the preferred use case for the `<blockquote>` element,
 Again, depending on your project, you may never have a use for basic code styles, but they are included just in case.
 
 Cardinal provides some simple styling to common HTML elements that are used to display programming language code, such as `<kbd>`, `<code>`, and `<pre>`.
+
+
 
 ## Embedded Content
 
@@ -197,11 +183,15 @@ object {
 
 Some basic styles are also given to `<figure>` and `<figcaption>` elements, just in case you need it.
 
+
+
 ## Form Elements
 
 [View Demo](http://codepen.io/cbracco/pen/xGVGqm)
 
 Forms are notoriously finicky, so this base file aims to remove and normalize the form experience before any major aesthetic design decisions are made.
+
+
 
 ## Tables
 
@@ -209,11 +199,14 @@ Forms are notoriously finicky, so this base file aims to remove and normalize th
 
 Similarly to forms, tables can be difficult to style correctly. This file corrects some table oddities to make the basic table element behave more consistently across browsers.
 
+
+
 ## Print
 
 A default `@print` stylesheet is also included in Cardinal, which is an almost-exact copy of the [HTML5 Boilerplate print styles](http://cbrac.co/1PgyYR2).
 
 These styles are inlined to avoid an extra HTTP request.
+
 
 
 # Optional extras

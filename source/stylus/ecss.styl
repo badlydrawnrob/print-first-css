@@ -1,0 +1,50 @@
+/*!
+ * == ECSS 101 =================================================================
+ * Isolated, predictable and maintainable styles http://ecss.io/
+ * `.nsp`       - A micro namespace can provide context
+ * `-Component` - The name or the file or logic/file that creates this item
+ * `_ChildNode` - Any child nodes are delineated with an underscore
+ * `-variant`   - variant, modifier or state
+ * =============================================================================
+ */
+
+@import './vendor/*'
+@import './modules/variables/*'
+
+// Change/Add hashes =========================================================
+
+$green = #6bfda8
+$green-dark = #07562c
+$color['primary'] = {
+  base: $green,
+  dark: $green-dark
+}
+
+$btn.background.color = $color.primary.base
+$btn.primary.background.color = $color.primary.dark
+
+// Include other Cardinal Stylus files =========================================
+
+@import './modules/mixins/*'
+@import './partials/*'
+
+// Reinstate button classes ====================================================
+
+.btn
+  button()
+
+.btn-primary
+  button-primary()
+
+// Figure ======================================================================
+
+.fg
+  padding: $spacing.half
+  background-color: $color.gray.base
+
+.fg-Image
+  border-radius: 50%
+
+.fg-Caption
+  margin: -($spacing.half)
+  background-color: #fff
