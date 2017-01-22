@@ -27,9 +27,8 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 - Access values: `$font.family.serif`
 - Change values: `$font.family.serif = 'Arial'`
 - You may need to escape `\` or use `unquote()` for some values
-- You can't use hashes within hashes, so we set some sensible `$default-`s
-  - Override the hashes, **not** the defaults
-- Be [careful of hashes order](https://github.com/stylus/stylus/issues/2136)
+- With hashes, [source order matters](https://github.com/stylus/stylus/issues/2136), so we set some sensible `$default-` values to make them easier to override.
+  - Override the hashes, **not** the `$default-`s!
 
 
 ## Instructions

@@ -4,7 +4,7 @@
 
 $arial = 'Arial', sans-serif
 $times = 'Times New Roman', serif
-$monaco = unquote('Monaco', 'Consolas', 'Liberation Mono', Courier, monospace)
+$monaco = 'Monaco', 'Consolas', 'Liberation Mono', Courier, monospace
 
 $font = {
   family: {
@@ -88,7 +88,7 @@ $blockquote = {
   font: {
     family: $default-font-family-serif,
     style: italic,
-    size: $font-size
+    size: $default-font-size
   },
   text: {
     color: $default-color-gray-dark,
@@ -124,7 +124,8 @@ $blockquote = {
 
 $code = {
   font: {
-    size: 1rem,
+    family: $default-font-family-mono
+    size: $default-font-size,
     style: normal
   },
   text: {
@@ -137,7 +138,7 @@ $code = {
     width: 1px,
     style: solid,
     color: $default-color-gray-light
-    radius: $default-border-radius-base
+    radius: $default-border-radius
   },
   padding: $default-spacing-micro $default-spacing-fourth,
 
