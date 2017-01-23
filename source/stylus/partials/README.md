@@ -50,6 +50,8 @@ Cardinal stores all of its STYLUS variables in a folder aptly named `variables`.
 
 Cardinal includes the 3rd-party library [normalize.css](https://github.com/necolas/normalize.css), which makes browsers render all elements more consistently and in line with modern web standards.
 
+It's included as a dependency, so you'll have to `@import` it in your project.
+
 
 
 # Reset

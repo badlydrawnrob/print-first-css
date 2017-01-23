@@ -1,4 +1,30 @@
 /*!
+ * == Cardinal Stylus ==========================================================
+ * MIT License | https://github.com/badlydrawnrob/cardinal-stylus
+ * == Ported from Cardinal CSS: http://bit.ly/2iDzOZi ==========================
+ */
+
+
+@import 'modules/variables/*'
+
+
+$green = #6bfda8
+$green-dark = #07562c
+$color['brand'] = {
+  primary: $green,
+  secondary: $green-dark
+}
+
+$btn.background.color = $color.brand.primary
+$btn.primary.background.color = darken($color.brand.primary, 60%)
+
+
+@import 'modules/mixins/*'
+@import '../../node_modules/normalize.css/normalize.css'
+@import 'partials/*'
+
+
+/*!
  * == ECSS 101 =================================================================
  * Isolated, predictable and maintainable styles http://ecss.io/
  * `.nsp`       - A micro namespace can provide context
@@ -8,35 +34,12 @@
  * =============================================================================
  */
 
-@import './vendor/*'
-@import './modules/variables/*'
-
-// Change/Add hashes =========================================================
-
-$green = #6bfda8
-$green-dark = #07562c
-$color['primary'] = {
-  base: $green,
-  dark: $green-dark
-}
-
-$btn.background.color = $color.primary.base
-$btn.primary.background.color = $color.primary.dark
-
-// Include other Cardinal Stylus files =========================================
-
-@import './modules/mixins/*'
-@import './partials/*'
-
-// Reinstate button classes ====================================================
 
 .btn
   button()
 
 .btn-primary
   button-primary()
-
-// Figure ======================================================================
 
 .fg
   padding: $spacing.half
