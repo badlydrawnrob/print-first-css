@@ -20,6 +20,7 @@ Theres a few changes out of necessity, such as:
 2. `rem` is the default, no `px` fallback.
 3. Barebones components and utilities
 4. [Jeet](http://jeet.gs/) for grids.
+5. [Normalize]() as an `npm` dependency
 5. Everything else as-is
 
 ### Hashes
@@ -28,6 +29,7 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 
 - Access values: `$font.family.serif`
 - Change values: `$font.family.serif = 'Arial'`
+- Add values: `$color['brand'] = {primary: 'green', secondary: 'red'}`
 - You may need to escape `\` or use `unquote()` for some values
 - With hashes, [source order matters](https://github.com/stylus/stylus/issues/2136), so we set some sensible `$default-` values to make them easier to override.
   - Override the hashes, **not** the `$default-`s!
@@ -46,10 +48,10 @@ npm install git+https://github.com/badlydrawnrob/cardinal-stylus.git#master --sa
 
 1. Create a `main.styl` file
 2. `@import modules/variables/*`
-3. After these are imported, you can reset the variables:
-  - Mirror the `variables` folder with any `$hash` overrides you like
+3. You can now reset the variables:
+  - Mirror the `variables/*` folder with any `$hash` overrides you like
   - [`@import` order matters](https://github.com/stylus/stylus/issues/2136)
-  - Add any new hashes you might need, `$color.primary = #92C96E`
+  - Add any new hashes you might need
 4. `@import` the remaining files, as in `cardinal.styl`
 5. Integrate your project files
 
