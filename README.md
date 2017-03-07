@@ -19,9 +19,10 @@ Theres a few changes out of necessity, such as:
     - `vendor/*` for 3rd party utilities, like [normalize.css](https://necolas.github.io/normalize.css/)
 2. `rem` is the default, no `px` fallback.
 3. Barebones components and utilities
-4. [Jeet](http://jeet.gs/) for grids.
-5. [Normalize]() as an `npm` dependency
-5. Everything else as-is
+5. Typography defaults from [Material Design](https://material.io/guidelines/style/typography.html)
+6. [Jeet](http://jeet.gs/) for grids.
+7. [Normalize]() as an `npm` dependency
+8. Everything else as-is
 
 ### Hashes
 
@@ -142,4 +143,4 @@ Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo
 ## Issues
 
 - Careful with Hashes, they fail silently if they've been used but not declared.
-  - `$line.height.ratio` was used but not set up, no errors were given
+  - `$this.hash.isnt.setup` but is referenced, with no errors given

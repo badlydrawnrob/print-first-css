@@ -7,37 +7,40 @@
 
 // Fonts =======================================================================
 // - #1 Set in `typography.styl`
-// - Typographic scale 12, 14, 16, 20, and 34
+// - Material Design Typographic Scale: 12, 14, 16, 20, and 34
 //   - Link: http://bit.ly/2j67oaR
-
-$default-font-size = 1rem
-$default-font-size-unit = 16
-$default-line-height = 24
-$default-line-height-ratio = ($default-line-height / $default-font-size-unit)
+//   - Line-height: http://bit.ly/2k7ygvG
+//     - #2 Single lines only
+//   - English and English-like scripts (Latin, Greek, and Cyrillic)
 
 $default-font-family-sans-serif = $arial // #1
 $default-font-family-serif = $times      // #1
 $default-font-family-mono = $monaco      // #1
 
-$default-font-size-pppppp = 7rem      // 112px
-$default-font-size-ppppp  = 3.5rem    // 56px
-$default-font-size-pppp   = 2.813rem  // 45px
-$default-font-size-ppp    = 2.125rem  // 34px
-$default-font-size-pp     = 1.5rem    // 24px
-$default-font-size-p      = 1.25rem   // 20px
-$default-font-size-m      = 0.875rem  // 14px
-$default-font-size-mm     = 0.75rem   // 12px
+$default-font-size-pppppp = unit((112 / 16), 'rem') // (Display 4)
+$default-font-size-ppppp  = unit((56 / 16), 'rem')  // (Display 3)
+$default-font-size-pppp   = unit((45 / 16), 'rem')  // (Display 2)
+$default-font-size-ppp    = unit((34 / 16), 'rem')  // (Display 1)
+$default-font-size-pp     = unit((24 / 16), 'rem')  // (Headline)
+$default-font-size-p      = unit((20 / 16), 'rem')  // (Title)
+$default-font-size        = unit((16 / 16), 'rem')  // (Body)
+$default-font-size-m      = unit((14 / 16), 'rem')  // (Body 2, Body 1,
+$default-font-size-mm     = unit((12 / 16), 'rem')  // (Caption)
 
-$default-font-size-h1 = $default-font-size-pppp
-$default-font-size-h2 = $default-font-size-ppp
-$default-font-size-h3 = $default-font-size-ppp
-$default-font-size-h4 = $default-font-size-pp
-$default-font-size-h5 = $default-font-size-p
-$default-font-size-h6 = $default-font-size
+$default-line-height-pppppp = (24 / 16) // #2
+$default-line-height-ppppp  = (24 / 16)  // #2
+$default-line-height-pppp   = (48 / 45)
+$default-line-height-ppp    = (40 / 34)
+$default-line-height-pp     = (32 / 24)
+$default-line-height-p      = (28 / 20)
+$default-line-height        = (24 / 16)
+$default-line-height-m      = (24 / 14)
+$default-line-height-mm     = (20 / 14)
+
 
 // Spacing =====================================================================
 
-$default-spacing-base   = unit($default-line-height-ratio, 'rem')
+$default-spacing-base   = unit($default-line-height, 'rem')
 $default-spacing-double = ($default-spacing-base * 2)
 $default-spacing-triple = ($default-spacing-base * 3)
 $default-spacing-half   = ($default-spacing-base / 2)
