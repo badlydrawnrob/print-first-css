@@ -354,6 +354,19 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/source\/stylus\/partials\/root.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/root.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/source\/stylus\/partials\/tables.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -379,6 +392,18 @@
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
+		},
+	"\/source\/stylus\/tests\/headings.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/tests\/headings.html",
+		"oF": 0
+		},
+	"\/source\/stylus\/tests\/lists.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/tests\/lists.html",
+		"oF": 0
 		}
 	},
 "hooks": [
