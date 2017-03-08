@@ -23,6 +23,21 @@ $btn.primary.background.color = darken($color.brand.primary, 60%)
 @import '../../node_modules/normalize.css/normalize.css'
 @import '../stylus/partials/*'
 
+/*!
+ * == Jeet =====================================================================
+ * Set up Jeet
+ * =============================================================================
+ */
+
+@import "jeet"
+
+$jeet = {
+  gutter: 3
+  'max-width': $grid.max.width
+  'layout-direction': LTR
+  'parent-first': false
+}
+
 
 /*!
  * == ECSS 101 =================================================================
@@ -34,6 +49,27 @@ $btn.primary.background.color = darken($color.brand.primary, 60%)
  * =============================================================================
  */
 
+
+// Page setup ==================================================================
+
+.pg-Wrapper
+  center()
+  baseline-grid()
+
+// Typography ==================================================================
+
+.type-Wrapper
+  clearfix()
+
+.type-Group
+  column(1/2, $cycle: 2)
+
+.type-Group-small
+  font-size: $font.size.m
+  line-height: $line.height.m
+
+// Components ==================================================================
+// - Not strictly ECSS but does the job for now
 
 .btn
   button()

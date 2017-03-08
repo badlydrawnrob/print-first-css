@@ -1,0 +1,30 @@
+// Baseline grid 8dp
+// - Material design: http://bit.ly/2lYjdkt
+// - Based on: http://bit.ly/2mXP9ux and http://bit.ly/2miADKA
+// - Tests: http://bit.ly/2lE4pMV and http://bit.ly/2mYvL0x
+//   - #1 For now, use padding to force onto baseline
+
+baseline-grid($size = $font.size.base)
+  padding-top: ($size / 1.1) // #1
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 96%,
+    red 100%,
+    red
+  ),
+  linear-gradient(
+    to bottom,
+    transparent,
+    transparent 94%,
+    alpha(red, 30%) 95%,
+    alpha(red, 30%)
+  ),
+  linear-gradient(
+    to bottom,
+    transparent,
+    transparent 85%,
+    alpha(#000, 20%) 86%,
+    alpha(#000, 20%)
+  )
+  background-size: auto $size, auto ($size / 2), auto ($size / 4)

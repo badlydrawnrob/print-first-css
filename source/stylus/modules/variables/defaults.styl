@@ -12,6 +12,9 @@
 //   - Line-height: http://bit.ly/2k7ygvG
 //     - #2 Single lines only
 //   - English and English-like scripts (Latin, Greek, and Cyrillic)
+//   - Body is supposed to be 14sp/px for `default-font-size` ...
+//     But it's difficult to acheive with `rem`, so let's keep 16sp/px default
+//     and override where appropriate to `$default-font-size-m`
 
 $default-font-family-sans-serif = $arial // #1
 $default-font-family-serif = $times      // #1
@@ -23,12 +26,12 @@ $default-font-size-pppp   = unit((45 / 16), 'rem')  // (Display 2)
 $default-font-size-ppp    = unit((34 / 16), 'rem')  // (Display 1)
 $default-font-size-pp     = unit((24 / 16), 'rem')  // (Headline)
 $default-font-size-p      = unit((20 / 16), 'rem')  // (Title)
-$default-font-size        = unit((16 / 16), 'rem')  // (Body)
-$default-font-size-m      = unit((14 / 16), 'rem')  // (Body 2, Body 1,
+$default-font-size        = unit((16 / 16), 'rem')  // (Subheading)
+$default-font-size-m      = unit((14 / 16), 'rem')  // (Body 1, Body 2, Button)
 $default-font-size-mm     = unit((12 / 16), 'rem')  // (Caption)
 
 $default-line-height-pppppp = (24 / 16) // #2
-$default-line-height-ppppp  = (24 / 16)  // #2
+$default-line-height-ppppp  = (24 / 16) // #2
 $default-line-height-pppp   = (48 / 45)
 $default-line-height-ppp    = (40 / 34)
 $default-line-height-pp     = (32 / 24)
