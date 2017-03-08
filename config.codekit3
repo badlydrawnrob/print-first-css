@@ -204,19 +204,6 @@
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/source\/stylus\/modules\/variables\/defaults.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/modules\/variables\/defaults.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
 	"\/source\/stylus\/modules\/variables\/grid.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -226,19 +213,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/modules\/variables\/grid.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/modules\/variables\/typography.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/modules\/variables\/typography.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -304,19 +278,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/partials\/form-elements.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/partials\/headings.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/headings.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -387,19 +348,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/partials\/reset.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/partials\/root.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/root.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0

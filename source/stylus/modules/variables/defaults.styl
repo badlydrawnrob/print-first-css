@@ -12,9 +12,9 @@
 //   - Line-height: http://bit.ly/2k7ygvG
 //     - #2 Single lines only
 //   - English and English-like scripts (Latin, Greek, and Cyrillic)
-//   - Material expects 14sp/px as `default-font-size` ...
-//     but lets make it easy on ourselves and set html as 16sp/px
-//     then override for body text elements (not perfect, but easier to calculate)
+//   - Body is supposed to be 14sp/px for `default-font-size` ...
+//     But it's difficult to acheive with `rem`, so let's keep 16sp/px default
+//     and override where appropriate to `$default-font-size-m`
 
 $default-font-family-sans-serif = $arial // #1
 $default-font-family-serif = $times      // #1
