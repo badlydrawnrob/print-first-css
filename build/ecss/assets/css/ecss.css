@@ -970,9 +970,9 @@ mark {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 0.909090909090909rem;
-  background: linear-gradient(to bottom, transparent, transparent 96%, #f00 100%, #f00), linear-gradient(to bottom, transparent, transparent 94%, rgba(255,0,0,0.3) 95%, rgba(255,0,0,0.3)), linear-gradient(to bottom, transparent, transparent 85%, rgba(0,0,0,0.2) 86%, rgba(0,0,0,0.2));
-  background-size: auto 1rem, auto 0.5rem, auto 0.25rem;
+  background: linear-gradient(to bottom, #f00, #f00 1px, transparent 1px, transparent), linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 1px, transparent 1px, transparent);
+  background-size: auto 1.5rem, auto 0.25rem;
+  padding-top: 1.4375rem;
 }
 .pg-Wrapper::after {
   content: '';
