@@ -36,6 +36,12 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 - With hashes, [source order matters](https://github.com/stylus/stylus/issues/2136), so we set some sensible `$default-` values to make them easier to override.
   - Override the hashes, **not** the `$default-`s!
 
+### Typography
+
+All typography aligns to a Material Design `4sp/px` grid. Each of the headings have their own line-height. To achieve a perfect alignment to our base `24sp/px` line-height, you'll need to change the `margin-bottom` on headings, as well as any other elements you might like to align.
+
+- Use `baseline-grid()` and `$spacing.x` to align your components
+
 
 
 ## Installation

@@ -21,12 +21,12 @@ $default-font-family-serif = $times      // #1
 $default-font-family-mono = $monaco      // #1
 
 $default-font-size-pppppp = unit((112 / 16), 'rem') // (Display 4)
-$default-font-size-ppppp  = unit((56 / 16), 'rem')  // (Display 3)
-$default-font-size-pppp   = unit((45 / 16), 'rem')  // (Display 2)
-$default-font-size-ppp    = unit((34 / 16), 'rem')  // (Display 1)
-$default-font-size-pp     = unit((24 / 16), 'rem')  // (Headline)
-$default-font-size-p      = unit((20 / 16), 'rem')  // (Title)
-$default-font-size        = unit((16 / 16), 'rem')  // (Subheading)
+$default-font-size-ppppp  = unit((56 / 16), 'rem')  // (h1, Display 3)
+$default-font-size-pppp   = unit((45 / 16), 'rem')  // (h2, Display 2)
+$default-font-size-ppp    = unit((34 / 16), 'rem')  // (h3, Display 1)
+$default-font-size-pp     = unit((24 / 16), 'rem')  // (h4, Headline)
+$default-font-size-p      = unit((20 / 16), 'rem')  // (h5, Title)
+$default-font-size        = unit((16 / 16), 'rem')  // (h6, Subheading)
 $default-font-size-m      = unit((14 / 16), 'rem')  // (Body 1, Body 2, Button)
 $default-font-size-mm     = unit((12 / 16), 'rem')  // (Caption)
 
@@ -42,20 +42,23 @@ $default-line-height-mm     = (20 / 14)
 
 
 // Spacing =====================================================================
+// - to preserve vertical rhythm, nudge elements by divisors of 4
 
-$default-spacing-base   = unit($default-line-height, 'rem')
-$default-spacing-double = ($default-spacing-base * 2)
-$default-spacing-triple = ($default-spacing-base * 3)
-$default-spacing-half   = ($default-spacing-base / 2)
-$default-spacing-third  = ($default-spacing-base / 3)
-$default-spacing-fourth = ($default-spacing-base / 4)
-$default-spacing-fifth  = ($default-spacing-base / 5)
-$default-spacing-sixth  = ($default-spacing-base / 6)
-$default-spacing-micro  = 2px
+$default-spacing-pppppp = unit((112 / 16), 'rem')
+$default-spacing-ppppp  = unit((96 / 16), 'rem')
+$default-spacing-pppp   = unit((80 / 16), 'rem')
+$default-spacing-ppp    = unit((64 / 16), 'rem')
+$default-spacing-pp     = unit((48 / 16), 'rem')
+$default-spacing-p      = unit((32 / 16), 'rem')
+$default-spacing        = unit((24 / 16), 'rem')
+$default-spacing-m      = unit((16 / 16), 'rem')
+$default-spacing-mm     = unit((8 / 16), 'rem')
+$default-spacing-mmm    = unit((4 / 16), 'rem')
+$default-spacing-mmmm   = unit((2 / 16), 'rem')
 
 // Borders =====================================================================
 
-$default-border-radius = 5px
+$default-border-radius = $default-spacing-mmmm
 
 // Colours =====================================================================
 

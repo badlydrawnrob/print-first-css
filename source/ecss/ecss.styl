@@ -57,16 +57,52 @@ $jeet = {
   baseline-grid()
 
 // Typography ==================================================================
+// - Because of globbing source order in partials/* we have to reset here
+
+h1
+  margin-bottom: $spacing.p + $spacing.mmm
+
+h2
+  margin-bottom: $spacing.m + $spacing.mm
+
+h3
+  margin-bottom: $spacing.p
+
+h4
+  margin-bottom: $spacing.m
+
+h5
+  margin-bottom: $spacing.m + $spacing.mmm
+
+h6
+  margin-bottom: 0
+
 
 .type-Wrapper
   clearfix()
 
 .type-Group
   column(1/2, $cycle: 2)
+  padding: $spacing.p + $spacing.mm
 
 .type-Group-small
   font-size: $font.size.m
   line-height: $line.height.m
+
+.type-Group-box
+  background: alpha(#ccc, 50%)
+
+.type-Group-align
+  margin-top: $spacing.base - $spacing.m
+
+.type-GroupHeading
+  .type-Group-align &
+    margin-bottom: $spacing.p
+
+  .type-Group-align-two &
+    margin-bottom: $spacing.base - $spacing.mmm
+    padding-top: $spacing.mmm
+
 
 // Components ==================================================================
 // - Not strictly ECSS but does the job for now
@@ -76,14 +112,3 @@ $jeet = {
 
 .btn-primary
   button-primary()
-
-.fg
-  padding: $spacing.half
-  background-color: $color.gray.base
-
-.fg-Image
-  border-radius: 50%
-
-.fg-Caption
-  margin: -($spacing.half)
-  background-color: #fff
