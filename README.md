@@ -2,7 +2,7 @@
 
 ## Quick intro
 
-A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, which also imports [Jeet](http://jeet.gs/), removes most utility classes, all mixins, most components, following [ECSS principles](https://benfrain.com/my-fourth-book-enduring-css/).
+A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, which also utilizes [Jeet](http://jeet.gs/), removes most utility classes, all mixins, most components, following [ECSS principles](https://benfrain.com/my-fourth-book-enduring-css/).
 
 Only the essentials here, folks.
 
@@ -20,6 +20,7 @@ Theres a few changes out of necessity, such as:
 2. `rem` is the default, no `px` fallback.
 3. Barebones components and utilities
 5. Typography defaults from [Material Design](https://material.io/guidelines/style/typography.html)
+   - A `baseline-grid()` mixin for our vertical rhythm
 6. [Jeet](http://jeet.gs/) for grids.
 7. [Normalize]() as an `npm` dependency
 8. Everything else as-is
@@ -34,6 +35,12 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 - You may need to escape `\` or use `unquote()` for some values
 - With hashes, [source order matters](https://github.com/stylus/stylus/issues/2136), so we set some sensible `$default-` values to make them easier to override.
   - Override the hashes, **not** the `$default-`s!
+
+### Typography
+
+All typography aligns to a Material Design `4sp/px` grid. Each of the headings have their own line-height. To achieve a perfect alignment to our base `24sp/px` line-height, you'll need to change the `margin-bottom` on headings, as well as any other elements you might like to align.
+
+- Use `baseline-grid()` and `$spacing.x` to align your components
 
 
 

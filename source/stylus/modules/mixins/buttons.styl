@@ -1,16 +1,19 @@
 button()
+  display: inline-block
+  margin: $btn.margin
+  padding: $btn.padding
+  min-width: $spacing.ppp
+  text-transform: uppercase;
   font-family: $btn.font.family
   font-weight: $btn.font.weight
+  font-size: $btn.font.size
   line-height: $btn.line.height
-  display: inline-block
-  margin: 0
-  padding: $btn.padding
-  cursor: pointer
+  color: $btn.text.color
   text-align: center
   vertical-align: middle
   white-space: nowrap
   text-decoration: none
-  color: $btn.text.color
+  cursor: pointer
   border: 0 none
   border-radius: $btn.border.radius
   background-color: $btn.background.color
