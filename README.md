@@ -20,8 +20,10 @@ Theres a few changes out of necessity, such as:
 2. `rem` is the default, no `px` fallback.
 3. Barebones components and utilities
 5. Typography defaults from [Material Design](https://material.io/guidelines/style/typography.html)
-   - A `baseline-grid()` mixin for our vertical rhythm
+  - A `baseline-grid()` mixin for our vertical rhythm
+  - Set one global `$font.family.base` only
 6. [Jeet](http://jeet.gs/) for grids.
+  - We're using custom `$spacing.x` variables for margins/padding.
 7. [Normalize]() as an `npm` dependency
 8. Everything else as-is
 
@@ -29,8 +31,8 @@ Theres a few changes out of necessity, such as:
 
 We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global settings:
 
-- Access values: `$font.family.serif`
-- Change values: `$font.family.serif = 'Arial'`
+- Access values: `$font.family.base`
+- Change values: `$font.family.base = 'Arial'`
 - Add values: `$color['brand'] = {primary: 'green', secondary: 'red'}`
 - You may need to escape `\` or use `unquote()` for some values
 - With hashes, [source order matters](https://github.com/stylus/stylus/issues/2136), so we set some sensible `$default-` values to make them easier to override.
@@ -41,6 +43,8 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 All typography aligns to a Material Design `4sp/px` grid. Each of the headings have their own line-height. To achieve a perfect alignment to our base `24sp/px` line-height, you'll need to change the `margin-bottom` on headings, as well as any other elements you might like to align.
 
 - Use `baseline-grid()` and `$spacing.x` to align your components
+- Default `$spacing.base` is `1.5rem` (same as line-height `1.5`)
+  - There are aliases setup, i.e `$spacing.whole` to make things easier
 
 
 

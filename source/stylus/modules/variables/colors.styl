@@ -3,7 +3,7 @@ $root = {
     color: #fff
   }
   text: {
-    color: #000
+    color: $default-color-dddd
   }
 }
 
@@ -19,26 +19,27 @@ $print = {
   }
 }
 
+
 // Default colours =============================================================
 
 $color = {
-  gray: {
-    darkest: $default-color-gray-darkest,
-    darker: $default-color-gray-darker,
-    dark: $default-color-gray-dark,
-    base: $default-color-gray,
-    light: $default-color-gray-light,
-    lighter: $default-color-gray-lighter,
-    lightest: $default-color-gray-lightest
-  }
+  dddd: $default-color-dddd,
+  ddd: $default-color-ddd,
+  dd: $default-color-dd,
+  d: $default-color-d,
+
+  l: $default-color-l,
+  ll: $default-color-ll,
+  lll: $default-color-lll,
+  llll: $default-color-llll
 }
 
 // Horizontal rules ============================================================
 
 $hr = {
   border: {
-    width: 2px,
+    width: $default-spacing-mmmmm,
     style: dotted,
-    color: $default-color-gray
+    color: $default-color-d
   }
 }

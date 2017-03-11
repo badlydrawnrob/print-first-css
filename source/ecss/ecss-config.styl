@@ -1,0 +1,39 @@
+/*!
+ * == Cardinal Stylus ==========================================================
+ * MIT License | https://github.com/badlydrawnrob/cardinal-stylus
+ * == Ported from Cardinal CSS: http://bit.ly/2iDzOZi ==========================
+ */
+
+
+@import '../stylus/modules/variables/*'
+
+
+$green = #6bfda8
+$green-dark = #07562c
+$color['brand'] = {
+  primary: $green,
+  secondary: $green-dark
+}
+
+$btn.background.color = $color.brand.primary
+$btn.primary.background.color = darken($color.brand.primary, 60%)
+
+
+@import '../stylus/modules/mixins/*'
+@import '../../node_modules/normalize.css/normalize.css'
+@import '../stylus/partials/*'
+
+/*!
+ * == Jeet =====================================================================
+ * Set up Jeet
+ * =============================================================================
+ */
+
+@import "jeet"
+
+$jeet = {
+  gutter: 3
+  'max-width': $grid.max.width
+  'layout-direction': LTR
+  'parent-first': false
+}

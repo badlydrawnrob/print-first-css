@@ -16,9 +16,7 @@
 //   - Material typography: http://bit.ly/2j67oaR and http://bit.ly/2k7ygvG
 
 
-$default-font-family-sans-serif = $arial // #1
-$default-font-family-serif = $times      // #1
-$default-font-family-mono = $monaco      // #1
+$default-font-family = $arial // #1
 
 $default-font-size-pppppp = unit((112 / 16), 'rem') // (Display 4)
 $default-font-size-ppppp  = unit((56 / 16), 'rem')  // (h1, Display 3)
@@ -30,31 +28,34 @@ $default-font-size        = unit((16 / 16), 'rem')  // (h6, Subheading)
 $default-font-size-m      = unit((14 / 16), 'rem')  // (Body 1, Body 2, Button)
 $default-font-size-mm     = unit((12 / 16), 'rem')  // (Caption)
 
-$default-line-height-pppppp = (24 / 16)
-$default-line-height-ppppp  = (24 / 16)
-$default-line-height-pppp   = (48 / 45)
-$default-line-height-ppp    = (40 / 34)
-$default-line-height-pp     = (32 / 24)
-$default-line-height-p      = (28 / 20)
-$default-line-height        = (24 / 16)
-$default-line-height-m      = (24 / 14)
-$default-line-height-mm     = (20 / 14)
+$default-line-height-pppppp = (24 / 16) // (Display 4)
+$default-line-height-ppppp  = (24 / 16) // (h1, Display 3)
+$default-line-height-pppp   = (48 / 45) // (h2, Display 2)
+$default-line-height-ppp    = (40 / 34) // (h3, Display 1)
+$default-line-height-pp     = (32 / 24) // (h4, Headline)
+$default-line-height-p      = (28 / 16) // (h6, Subheading 2)
+$default-line-height        = (24 / 16) // (Subheading 1, Caption, Title)
+$default-line-height-m      = (24 / 14) // (Body 2, Button)
+$default-line-height-mm     = (20 / 14) // (Body 1)
 
 
 // Spacing =====================================================================
 // - to preserve vertical rhythm, nudge elements by divisors of 4
+//   - We also have a `-mmmmm` (2dp) which can be added to the others
 
-$default-spacing-pppppp = unit((112 / 16), 'rem')
-$default-spacing-ppppp  = unit((96 / 16), 'rem')
-$default-spacing-pppp   = unit((80 / 16), 'rem')
-$default-spacing-ppp    = unit((64 / 16), 'rem')
-$default-spacing-pp     = unit((48 / 16), 'rem')
-$default-spacing-p      = unit((32 / 16), 'rem')
-$default-spacing        = unit((24 / 16), 'rem')
-$default-spacing-m      = unit((16 / 16), 'rem')
-$default-spacing-mm     = unit((8 / 16), 'rem')
-$default-spacing-mmm    = unit((4 / 16), 'rem')
-$default-spacing-mmmm   = unit((2 / 16), 'rem')
+$default-spacing-ppppppp = unit((128 / 16), 'rem') // 8rem
+$default-spacing-pppppp  = unit((112 / 16), 'rem') // 7rem
+$default-spacing-ppppp   = unit((96 / 16), 'rem')  // 6rem
+$default-spacing-pppp    = unit((80 / 16), 'rem')  // 5rem
+$default-spacing-ppp     = unit((64 / 16), 'rem')  // 4rem
+$default-spacing-pp      = unit((48 / 16), 'rem')  // 3rem
+$default-spacing-p       = unit((32 / 16), 'rem')  // 2rem
+$default-spacing         = unit((24 / 16), 'rem')  // 1.5rem
+$default-spacing-m       = unit((16 / 16), 'rem')  // 1rem
+$default-spacing-mm      = unit((12 / 16), 'rem')  // 0.75rem
+$default-spacing-mmm     = unit((8 / 16), 'rem')   // 0.5rem
+$default-spacing-mmmm    = unit((4 / 16), 'rem')   // 0.25rem
+$default-spacing-mmmmm   = unit((2 / 16), 'rem')   // 0.125rem
 
 // Borders =====================================================================
 
@@ -62,10 +63,12 @@ $default-border-radius = $default-spacing-mmmm
 
 // Colours =====================================================================
 
-$default-color-gray-darkest = #222
-$default-color-gray-darker = #444
-$default-color-gray-dark = #777
-$default-color-gray = #aaa
-$default-color-gray-light = #dedede
-$default-color-gray-lighter = #efefef
-$default-color-gray-lightest = #f8f8f8
+$default-color-dddd = alpha(#000, 87%)
+$default-color-ddd = alpha(#000, 54%)
+$default-color-dd = alpha(#000, 38%)
+$default-color-d = alpha(#000, 12%)
+
+$default-color-l = alpha(#fff, 100%)
+$default-color-ll = alpha(#fff, 70%)
+$default-color-lll = alpha(#fff, 50%)
+$default-color-llll = alpha(#fff, 12%)

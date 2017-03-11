@@ -2,14 +2,11 @@
 // See notes on vertical rhythm in `defaults.styl`
 
 $arial = 'Arial', sans-serif
-$times = 'Times New Roman', serif
 $monaco = 'Monaco', 'Consolas', 'Liberation Mono', Courier, monospace
 
 $font = {
   family: {
-    serif: $times,
-    sans: $arial,
-    mono: $monaco
+    base: $arial
   },
   size: {
     base: $default-font-size,
@@ -37,119 +34,5 @@ $line = {
     p: $default-line-height-p,
     m: $default-line-height-m,
     mm: $default-line-height-mm,
-  }
-}
-
-// Text elements ===============================================================
-
-$text = {
-  del: {
-    font: {
-      style: italic,
-      color: $default-color-gray-dark
-    },
-    text: {
-      decoration: line-through,
-    }
-  },
-  dt: {
-    font: {
-      weight: 700,
-    },
-    text: {
-      color: $default-color-gray-darkest
-    }
-  },
-  highlights: {
-    bg: {
-      color: #ff9
-    },
-    text: {
-      color: $default-color-gray-darkest
-    }
-  }
-}
-
-// Headings ====================================================================
-// - Basic font sizes set above in $font
-
-$heading = {
-  font: {
-    family: $default-font-family-sans-serif,
-    weight: 700,
-  },
-  text: {
-    color: #000,
-  }
-}
-
-// Blockquotes =================================================================
-
-$blockquote = {
-  font: {
-    family: $default-font-family-serif,
-    style: italic,
-    size: $default-font-size
-  },
-  text: {
-    color: $default-color-gray-dark,
-  },
-  margin: {
-    left: $default-spacing
-  },
-  padding: {
-    left: $default-spacing
-  },
-  border: {
-    width: $default-spacing-mm,
-    style: solid,
-    color: $default-color-gray-light
-  },
-
-  cite: {
-    font: {
-      family: $default-font-family-sans-serif,
-      style: normal,
-      size: $default-font-size
-    }
-    text: {
-      color: $default-color-gray-dark
-    },
-    anchor: {
-      color: $default-color-gray-dark
-    }
-  }
-}
-
-// Code ========================================================================
-
-$code = {
-  font: {
-    family: $default-font-family-mono
-    size: $default-font-size,
-    style: normal
-  },
-  text: {
-    color: $default-color-gray-darkest
-  },
-  background: {
-    color: $default-color-gray-lightest,
-  },
-  border: {
-    width: 1px,
-    style: solid,
-    color: $default-color-gray-light
-    radius: $default-border-radius
-  },
-  padding: $default-spacing-mmmm $default-spacing-mm,
-
-  pre: {
-    padding: $default-spacing,
-    text: {
-      color: $default-color-gray-darker
-    },
-    background: {
-      color: $default-color-gray-lightest
-    }
   }
 }
