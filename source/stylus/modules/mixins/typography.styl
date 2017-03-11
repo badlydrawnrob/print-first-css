@@ -1,0 +1,114 @@
+// Typographic styles ==========================================================
+// - As we'll likely reuse the sizing, leading, tracking it's good to
+//   set up some named mixins, rather than adding them as hashes
+// - It assumes the font-family will be global
+
+typography-settings($font-size, $font-color = $root.text.color, $line-height = $line.height.base, $font-weight = normal, $text-transform = none, $letter-spacing = normal, $margin-bottom = $spacing.base)
+  font-size: $font-size
+  color: $font-color
+  line-height: $line-height
+  font-weight: $font-weight
+  text-transform: $text-transform
+  letter-spacing: $letter-spacing
+  margin-bottom: $margin-bottom
+
+
+display-4($font-color = $root.text.color)
+  typography-settings($font.size.pppppp, $font-color, $line.height.pppppp)
+
+
+display-3($font-color = $root.text.color)
+  typography-settings(
+    $font.size.ppppp,
+    $font-color,
+    $line.height.ppppp,
+    $margin-bottom: ($spacing.two + $spacing.quarter)
+  )
+
+
+display-2($font-color = $root.text.color)
+  typography-settings(
+    $font.size.pppp,
+    $font-color,
+    $line.height.pppp
+  )
+
+
+display-1($font-color = $root.text.color)
+  typography-settings(
+    $font.size.ppp,
+    $font-color,
+    $line.height.ppp,
+    $margin-bottom: $spacing.two
+  )
+
+
+headline($font-color = $root.text.color)
+  typography-settings(
+    $font.size.pp,
+    $font-color,
+    $line.height.pp,
+    $margin-bottom: $spacing.one
+  )
+
+
+title($font-color = $root.text.color)
+  typography-settings(
+    $font.size.p,
+    $font-color,
+    $line.height.base,
+    $font-weight: 700,
+    $margin-bottom: ($spacing.one + $spacing.micro)
+  )
+
+
+subheading-1($font-color = $root.text.color)
+  typography-settings(
+    $font.size.base,
+    $font-color,
+    $line.height.pppp,
+    $margin: 0
+  )
+
+
+subheading-2($font-color = $root.text.color)
+  typography-settings(
+    $font.size.base,
+    $font-color,
+    $line.height.base,
+    $margin: 0
+  )
+
+
+body-2($font-color = $root.text.color)
+  typography-settings(
+    $font.size.m,
+    $font-color,
+    $line.height.m,
+    700
+  )
+
+
+body-1($font-color = $root.text.color)
+  typography-settings(
+    $font.size.m,
+    $font-color,
+    $line.height.m
+  )
+
+
+body-button($font-color = $root.text.color)
+  typography-settings(
+    $font.size.m,
+    $font-color,
+    $line.height.m,
+    700
+  )
+
+
+caption($font-color = $root.text.color)
+  typography-settings(
+    $font.size.mm,
+    $font-color,
+    $line.height.base
+  )

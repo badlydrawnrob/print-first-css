@@ -19,9 +19,9 @@ acronym
 // Set some basic styles for <del> tags.
 
 del
-  font-style: $text.del.font.style
-  text-decoration: $text.del.text.decoration
-  color: $text.del.text.color
+  font-style: italic
+  text-decoration: line-through
+  color: $color.dd
 
 // Give <details> elements a pointer cursor.
 
@@ -33,8 +33,8 @@ details
 
 dl
   dt
-    font-weight: $text.dt.font.weight
-    color: $text.dt.text.color
+    font-weight: 700
+    color: $root.text.color
   dd
     margin: 0
 
@@ -50,5 +50,5 @@ cite
 ins,
 mark
   text-decoration: none
-  color: $text.highlights.text.color
-  background: $text.highlights.bg.color
+  color: $root.text.color
+  background: #ff9

@@ -4,41 +4,39 @@ code,
 kbd,
 pre,
 samp
-  font-family: $code.font.family // #1
-  font-size: $code.font.size
-  font-style: $code.font.style
-  color: $code.text.color
+  font-family: $mono // #1
+  font-size: $font.size.m
+  font-style: normal
+  color: $root.text.color
 
 code
   margin: 0
-  padding: $code.padding
+  padding: $spacing.quarter
   white-space: nowrap
-  border: $code.border.width $code.border.style $code.border.color
-  border-radius: $code.border.radius
-  background-color: $code.background.color
+  border-radius: $border.radius
+  background-color: $color.d
 
 kbd
   position: relative
   top: -1px
   margin-bottom: 1px
-  padding: $code.padding
+  padding: $spacing.quarter
   white-space: nowrap
-  border: $code.border.width $code.border.style $code.border.color
-  border-radius: $code.border.radius
-  background-color: $code.background.color
-  box-shadow: 0 1px 0 $code.border.color, inset 0 0 0 1px #fff
+  border-radius: $border.radius
+  background-color: $color.d
+  box-shadow: 0 1px 0 $color.dd, inset 0 0 0 1px #fff
 
 pre
   position: relative
   overflow: auto
-  padding: $code.pre.padding
+  padding: ($spacing.one + $spacing.micro)
   white-space: pre
   word-wrap: normal
   word-break: normal
   tab-size: 4
   hyphens: none
-  color: $code.pre.text.color
-  background: $code.pre.background.color
+  color: $root.text.color
+  background: $color.d
 
   // Reset the above <code> styles when nested inside <pre> tags.
 
