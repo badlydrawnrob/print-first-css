@@ -606,7 +606,7 @@ a:focus {
   text-decoration: none;
 }
 blockquote {
-  color: rgba(0,0,0,0.38);
+  color: rgba(0,0,0,0.54);
   font-family: 'Arial', sans-serif;
   font-style: italic;
   margin-left: 1.5rem;
@@ -777,64 +777,70 @@ textarea {
   resize: vertical;
 }
 h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 3.5rem;
   color: rgba(0,0,0,0.87);
   line-height: 1.5;
-  font-weight: normal;
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 2.25rem;
 }
 h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 2.8125rem;
   color: rgba(0,0,0,0.87);
   line-height: 1.066666666666667;
-  font-weight: normal;
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 1.5rem;
 }
 h3 {
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 2.125rem;
   color: rgba(0,0,0,0.87);
   line-height: 1.176470588235294;
-  font-weight: normal;
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 2rem;
 }
 h4 {
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 1.5rem;
   color: rgba(0,0,0,0.87);
   line-height: 1.333333333333333;
-  font-weight: normal;
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 1rem;
 }
 h5 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
   font-size: 1.25rem;
   color: rgba(0,0,0,0.87);
   line-height: 1.5;
-  font-weight: 700;
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 1.125rem;
 }
 h6 {
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
   font-size: 1rem;
   color: rgba(0,0,0,0.87);
   line-height: 1.5;
-  font-weight: normal;
   text-transform: none;
   letter-spacing: normal;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 hr {
   display: block;
   padding: 0;
   border: 0;
-  border-top: 0.125rem dotted rgba(0,0,0,0.12);
+  border-top: 0.25rem solid rgba(0,0,0,0.12);
 }
 dl dt {
   font-weight: 700;

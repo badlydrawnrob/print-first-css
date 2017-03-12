@@ -1,24 +1,42 @@
 // Typographic styles ==========================================================
 // - As we'll likely reuse the sizing, leading, tracking it's good to
 //   set up some named mixins, rather than adding them as hashes
-// - It assumes the font-family will be global
+// - The mixin assumes `font-family` is global
 
-typography-settings($font-size, $font-color = $root.text.color, $line-height = $line.height.base, $font-weight = normal, $text-transform = none, $letter-spacing = normal, $margin-bottom = $spacing.base)
+typography-settings(
+  $font-family = $font.family.base,
+  $font-weight = normal,
+  $font-size = $font.size.base,
+  $font-color = $root.text.color,
+  $line-height = $line.height.base,
+  $text-transform = none,
+  $letter-spacing = normal,
+  $margin-bottom = $spacing.base
+)
+  font-family: $font-family
+  font-weight: $font-weight
   font-size: $font-size
   color: $font-color
   line-height: $line-height
-  font-weight: $font-weight
   text-transform: $text-transform
   letter-spacing: $letter-spacing
   margin-bottom: $margin-bottom
 
 
 display-4($font-color = $root.text.color)
-  typography-settings($font.size.pppppp, $font-color, $line.height.pppppp)
+  typography-settings(
+    $font.family.base,
+    normal,
+    $font.size.pppppp,
+    $font-color,
+    $line.height.pppppp
+  )
 
 
 display-3($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    normal,
     $font.size.ppppp,
     $font-color,
     $line.height.ppppp,
@@ -28,6 +46,8 @@ display-3($font-color = $root.text.color)
 
 display-2($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    normal,
     $font.size.pppp,
     $font-color,
     $line.height.pppp
@@ -36,6 +56,8 @@ display-2($font-color = $root.text.color)
 
 display-1($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    normal,
     $font.size.ppp,
     $font-color,
     $line.height.ppp,
@@ -45,6 +67,8 @@ display-1($font-color = $root.text.color)
 
 headline($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    normal,
     $font.size.pp,
     $font-color,
     $line.height.pp,
@@ -54,43 +78,51 @@ headline($font-color = $root.text.color)
 
 title($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    700,
     $font.size.p,
     $font-color,
     $line.height.base,
-    $font-weight: 700,
     $margin-bottom: ($spacing.one + $spacing.micro)
   )
 
 
 subheading-1($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    normal,
     $font.size.base,
     $font-color,
     $line.height.pppp,
-    $margin: 0
+    $margin-bottom: 0
   )
 
 
 subheading-2($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    normal,
     $font.size.base,
     $font-color,
     $line.height.base,
-    $margin: 0
+    $margin-bottom: 0
   )
 
 
 body-2($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    700,
     $font.size.m,
     $font-color,
     $line.height.m,
-    700
   )
 
 
 body-1($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    normal,
     $font.size.m,
     $font-color,
     $line.height.m
@@ -99,15 +131,19 @@ body-1($font-color = $root.text.color)
 
 body-button($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    700,
     $font.size.m,
     $font-color,
     $line.height.m,
-    700
+    uppercase
   )
 
 
 caption($font-color = $root.text.color)
   typography-settings(
+    $font.family.base,
+    normal,
     $font.size.mm,
     $font-color,
     $line.height.base

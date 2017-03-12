@@ -14,7 +14,7 @@
 
 .pg-Wrapper
   center()
-  baseline-grid()
+  // baseline-grid()
 
 // Typography ==================================================================
 
@@ -46,8 +46,12 @@
 // Components ==================================================================
 // - Not strictly ECSS but does the job for now
 
-.btn
+.btn,
+input[type="button"].btn,
+input[type="submit"].btn
   button()
 
-.btn-primary
-  button-primary()
+.btn-flat,
+input[type="button"].btn-flat,
+input[type="submit"].btn-flat
+  button($flat: true)

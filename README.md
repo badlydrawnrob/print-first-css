@@ -2,7 +2,7 @@
 
 ## Quick intro
 
-A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, which also utilizes [Jeet](http://jeet.gs/), removes most utility classes, all mixins, most components, following [ECSS principles](https://benfrain.com/my-fourth-book-enduring-css/).
+A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, which aims to solid starting point, rather than a framework. Sets up some basics for my [Material Design](https://github.com/badlydrawnrob/cardinal-material) framework, uses [Jeet](http://jeet.gs/) as a grid system, and [ECSS](https://benfrain.com/my-fourth-book-enduring-css/) as a css styleguide.
 
 Only the essentials here, folks.
 
@@ -10,21 +10,22 @@ Only the essentials here, folks.
 
 ## Stylus
 
-Theres a few changes out of necessity, such as:
+The following changes have been made:
 
-1. Reordering and renaming of some variables, making them easier to find, `@imports` using [globbing](http://stylus-lang.com/docs/import.html#file-globbing)
-    - `modules/variables/*` sets up default variables and hashes,
-    - `modules/mixins/*` holds components mixins,
-    - `partials/*` for our default framework files,
-    - `vendor/*` for 3rd party utilities, like [normalize.css](https://necolas.github.io/normalize.css/)
+1. Simplified variables (opinionated), `@import`ed with [globbing](http://stylus-lang.com/docs/import.html#file-globbing):
+  - `modules/variables/*` sets up default variables and hashes,
+  - `modules/mixins/*` holds components mixins,
+  - `partials/*` for our default framework files,
+  - `vendor/*` for 3rd party utilities
 2. `rem` is the default, no `px` fallback.
-3. Barebones components and utilities
+3. Simplified components:
+  - Removes utilities, but adds mixins and variables
 5. Typography defaults from [Material Design](https://material.io/guidelines/style/typography.html)
   - A `baseline-grid()` mixin for our vertical rhythm
-  - Set one global `$font.family.base` only
+  - One global `$font.family.base` only (with a `$mono` font for code)
 6. [Jeet](http://jeet.gs/) for grids.
   - We're using custom `$spacing.x` variables for margins/padding.
-7. [Normalize]() as an `npm` dependency
+7. [Normalize](https://necolas.github.io/normalize.css/) as an `npm` dependency
 8. Everything else as-is
 
 ### Hashes
@@ -33,7 +34,7 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 
 - Access values: `$font.family.base`
 - Change values: `$font.family.base = 'Arial'`
-- Add values: `$color['brand'] = {primary: 'green', secondary: 'red'}`
+- Add values: `$color['theme'] = {primary: 'blue', secondary: 'yellow'}`
 - You may need to escape `\` or use `unquote()` for some values
 - With hashes, [source order matters](https://github.com/stylus/stylus/issues/2136), so we set some sensible `$default-` values to make them easier to override.
   - Override the hashes, **not** the `$default-`s!
@@ -110,43 +111,47 @@ shopping-cart-template/
 ### CSS declaration order
 > != Under construction!
 
-Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo
+Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo,
+but mixins come first.
 
-1. Positioning
-2. Box model
-3. Typographic
-4. Visual
+1. Mixins
+2. Positioning
+3. Box model
+4. Typographic
+5. Visual
 
-```css
-.declaration-order {
-  /* Positioning */
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
+```stylus
+.declaration-order
+  // Mixins
+  baseline-grid()
 
-  /* Box-model */
-  display: block;
-  float: right;
-  width: 100px;
-  height: 100px;
+  // Positioning
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 100
 
-  /* Typography */
-  font: normal 13px "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  color: #333;
-  text-align: center;
+  // Box-model
+  display: block
+  float: right
+  width: 100px
+  height: 100px
 
-  /* Visual */
-  background-color: #f5f5f5;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
+  // Typography
+  font: normal 13px "Helvetica Neue", sans-serif
+  line-height: 1.5
+  color: #333
+  text-align: center
 
-  /* Misc */
-  opacity: 1;
-}
+  // Visual
+  background-color: #f5f5f5
+  border: 1px solid #e5e5e5
+  border-radius: 3px
+
+  // Misc
+  opacity: 1
 ```
 
 
