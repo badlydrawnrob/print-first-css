@@ -18,25 +18,25 @@
 
 $default-font-family = $arial // #1
 
-$default-font-size-pppppp = unit((112 / 16), 'rem') // (Display 4)
-$default-font-size-ppppp  = unit((56 / 16), 'rem')  // (h1, Display 3)
-$default-font-size-pppp   = unit((45 / 16), 'rem')  // (h2, Display 2)
-$default-font-size-ppp    = unit((34 / 16), 'rem')  // (h3, Display 1)
-$default-font-size-pp     = unit((24 / 16), 'rem')  // (h4, Headline)
-$default-font-size-p      = unit((20 / 16), 'rem')  // (h5, Title)
-$default-font-size        = unit((16 / 16), 'rem')  // (h6, Subheading)
-$default-font-size-m      = unit((14 / 16), 'rem')  // (Body 1, Body 2, Button)
-$default-font-size-mm     = unit((12 / 16), 'rem')  // (Caption)
+$default-font-size-pppppp = unit((112 / 16), 'rem') // Display 4
+$default-font-size-ppppp  = unit((56 / 16), 'rem')  // h1, Display 3
+$default-font-size-pppp   = unit((45 / 16), 'rem')  // h2, Display 2
+$default-font-size-ppp    = unit((34 / 16), 'rem')  // h3, Display 1
+$default-font-size-pp     = unit((24 / 16), 'rem')  // h4, Headline
+$default-font-size-p      = unit((20 / 16), 'rem')  // h5, Title
+$default-font-size        = unit((16 / 16), 'rem')  // h6, Subheading
+$default-font-size-m      = unit((14 / 16), 'rem')  // Body 1, Body 2, Button
+$default-font-size-mm     = unit((12 / 16), 'rem')  // Caption
 
-$default-line-height-pppppp = (24 / 16) // (Display 4)
-$default-line-height-ppppp  = (24 / 16) // (h1, Display 3)
-$default-line-height-pppp   = (48 / 45) // (h2, Display 2)
-$default-line-height-ppp    = (40 / 34) // (h3, Display 1)
-$default-line-height-pp     = (32 / 24) // (h4, Headline)
-$default-line-height-p      = (28 / 16) // (h6, Subheading 2)
-$default-line-height        = (24 / 16) // (Subheading 1, Caption, Title)
-$default-line-height-m      = (24 / 14) // (Body 2, Button)
-$default-line-height-mm     = (20 / 14) // (Body 1)
+$default-line-height-pppppp = (24 / 16) // Display 4
+$default-line-height-ppppp  = (24 / 16) // h1, Display 3
+$default-line-height-pppp   = (48 / 45) // h2, Display 2
+$default-line-height-ppp    = (40 / 34) // h3, Display 1
+$default-line-height-pp     = (32 / 24) // h4, Headline
+$default-line-height-p      = (28 / 16) // h6, Subheading 2
+$default-line-height        = (24 / 16) // Subheading 1, Caption, Title
+$default-line-height-m      = (24 / 14) // Body 2, Button
+$default-line-height-mm     = (20 / 14) // Body 1
 
 
 // Spacing =====================================================================
@@ -62,13 +62,25 @@ $default-spacing-mmmmm   = unit((2 / 16), 'rem')   // 0.125rem
 $default-border-radius = $default-spacing-mmmm
 
 // Colours =====================================================================
+// Dark text: http://bit.ly/2kTT99J,
+// Dark theme: http://bit.ly/2mfGAHv
 
-$default-color-dddd = alpha(#000, 87%)
-$default-color-ddd = alpha(#000, 54%)
-$default-color-dd = alpha(#000, 38%)
-$default-color-d = alpha(#000, 12%)
+$default-color-bbbb = alpha(#000, 87%) // Primary text
+$default-color-bbb = alpha(#000, 54%)  // Secondary text, active icons
+$default-color-bb = alpha(#000, 38%)   // Disabled text, hint text, icons
+$default-color-b = alpha(#000, 12%)    // Dividers
 
-$default-color-l = alpha(#fff, 100%)
-$default-color-ll = alpha(#fff, 70%)
-$default-color-lll = alpha(#fff, 50%)
-$default-color-llll = alpha(#fff, 12%)
+$default-color-w = alpha(#fff, 100%)   // Primary text, active icons
+$default-color-ww = alpha(#fff, 70%)   // Secondary text
+$default-color-www = alpha(#fff, 50%)  // Disabled text, hint text, icons
+$default-color-wwww = alpha(#fff, 12%) // Dividers
+
+$default-color-llll = #e0e0e0 // Status bar
+$default-color-lll = #f5f5f5  // App bar
+$default-color-ll = #fafafa   // Background
+$default-color-l = #fff       // Cards/diologs
+
+$default-color-d = #000       // Status bar
+$default-color-dd = #212121   // App bar
+$default-color-ddd = #303030  // Background
+$default-color-dddd = #424242 // Cards/diologs

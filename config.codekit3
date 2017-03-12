@@ -166,6 +166,19 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/source\/stylus\/modules\/mixins\/typography.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/modules\/mixins\/typography.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/source\/stylus\/modules\/mixins\/visually-hidden.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -196,19 +209,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/source\/stylus\/modules\/variables\/buttons.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/modules\/variables\/buttons.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
 		},
 	"\/source\/stylus\/modules\/variables\/colors.styl": {
 		"aP": 0,
