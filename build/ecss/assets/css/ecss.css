@@ -992,6 +992,8 @@ mark {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  background: linear-gradient(to bottom, #f00, #f00 1px, transparent 1px, transparent), linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 1px, transparent 1px, transparent);
+  background-size: auto 1.5rem, auto 0.25rem;
 }
 .pg-Wrapper::after {
   content: '';
