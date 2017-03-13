@@ -7,7 +7,7 @@
 		"uuidString": "CA5AE827-9BE9-4E16-AB2D-5CEFB6B808BB"
 		}
 	],
-"creatorBuild": "25568",
+"creatorBuild": "25704",
 "files": {
 	"\/.editorconfig": {
 		"ft": 8192,
@@ -47,6 +47,24 @@
 		"oAP": "\/build\/project.cson",
 		"oF": 1
 		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/build\/README.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/source\/ecss\/ecss-config.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -57,6 +75,19 @@
 		"oA": 1,
 		"oAP": "\/build\/ecss\/ecss-config.css",
 		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/ecss\/ecss.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/build\/ecss\/assets\/css\/ecss.css",
+		"oF": 2,
 		"oS": 0,
 		"rrU": 0
 		},
@@ -106,6 +137,19 @@
 		"oA": 0,
 		"oAP": "\/build\/stylus\/assets\/css\/cardinal.css",
 		"oF": 2,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/modules\/mixins\/baseline-grid.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/modules\/mixins\/baseline-grid.css",
+		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
@@ -179,6 +223,32 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/source\/stylus\/modules\/variables\/defaults.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/modules\/variables\/defaults.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/modules\/variables\/grid.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/modules\/variables\/grid.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/source\/stylus\/modules\/variables\/typography.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -201,6 +271,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/partials\/_reset.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/partials\/_root.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/_root.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -231,6 +314,58 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/source\/stylus\/partials\/code.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/code.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/partials\/embedded-content.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/embedded-content.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/partials\/form-elements.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/form-elements.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/partials\/headings.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/headings.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/source\/stylus\/partials\/horizontal-rules.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -253,6 +388,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/partials\/lists.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/partials\/print.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/print.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -982,6 +1130,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -1461,6 +1613,10 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"object-curly-newline": {
 			"active": 0,
@@ -2061,7 +2217,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -2154,7 +2311,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"enableLossy": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -2410,7 +2569,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "\/build"
+	"websiteRelativeRoot": "\/build\/ecss"
 	},
 "settingsFileVersion": "3"
 }

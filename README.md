@@ -43,6 +43,8 @@ We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global setting
 
 All typography aligns to a Material Design `4sp/px` grid. Each of the headings have their own line-height. To achieve a perfect alignment to our base `24sp/px` line-height, you'll need to change the `margin-bottom` on headings, as well as any other elements you might like to align.
 
+> Arial is default. Other fonts may require fine-tuning to properly fit the baseline-grid
+
 - Use `baseline-grid()` and `$spacing.x` to align your components
 - Default `$spacing.base` is `1.5rem` (same as line-height `1.5`)
   - There are aliases setup, i.e `$spacing.whole` to make things easier
