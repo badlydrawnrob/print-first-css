@@ -2,7 +2,7 @@
 
 ## Quick intro
 
-A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, which aims to solid starting point, rather than a framework. Sets up some basics for my [Material Design](https://github.com/badlydrawnrob/cardinal-material) framework, uses [Jeet](http://jeet.gs/) as a grid system, and [ECSS](https://benfrain.com/my-fourth-book-enduring-css/) as a css styleguide.
+A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, to create a solid starting point for your projects (rather than a framework). Sets up some basics for my [Material Design](https://github.com/badlydrawnrob/cardinal-material) framework, uses [Jeet](http://jeet.gs/) as a grid system, and [ECSS](https://benfrain.com/my-fourth-book-enduring-css/) as a css styleguide.
 
 Only the essentials here, folks.
 
@@ -49,7 +49,9 @@ All typography aligns to a Material Design `4sp/px` grid. Each of the headings h
 
 
 
-## Installation
+
+
+# Installation
 
 Install with (npm)[https://www.npmjs.com/] using the `#master` branch.
 
@@ -57,7 +59,7 @@ Install with (npm)[https://www.npmjs.com/] using the `#master` branch.
 npm install git+https://github.com/badlydrawnrob/cardinal-stylus.git#master --save
 ```
 
-### Using Cardinal stylus
+## Using Cardinal stylus
 
 1. Create a `main.styl` file
 2. `@import modules/variables/*`
@@ -68,7 +70,7 @@ npm install git+https://github.com/badlydrawnrob/cardinal-stylus.git#master --sa
 4. `@import` the remaining files, as in `cardinal.styl`
 5. Integrate your project files
 
-### Updating
+## Updating
 
 ```git
 npm update
@@ -76,17 +78,19 @@ npm update
 
 
 
-## Styleguide
+
+
+# Styleguide
 Use the following conventions:
 
-### [ECSS]()
+## [ECSS]()
 > != Under construction!
 
 Ben Frain's [ECSS](http://ecss.io/chapter5.html) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files.
 
 > Be pragmatic, use as much as is appropriate
 
-#### Example
+### Example
 
 ```text
 shopping-cart-template/
@@ -108,7 +112,8 @@ shopping-cart-template/
 .mc-ShoppingCart_RemoveBtn {}
 ```
 
-### CSS declaration order
+
+## CSS declaration order
 > != Under construction!
 
 Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo,
@@ -156,7 +161,7 @@ but mixins come first.
 
 
 
-## Issues
+# Current Issues
 
 - Careful with Hashes, they fail silently if they've been used but not declared.
   - `$this.hash.isnt.setup` but is referenced, with no errors given
