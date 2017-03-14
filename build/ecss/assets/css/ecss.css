@@ -617,7 +617,7 @@ a:focus {
 blockquote {
   color: rgba(0,0,0,0.54);
   font-family: 'Arial', sans-serif;
-  font-style: italic;
+  font-style: normal;
   margin-left: 1.5rem;
   padding-left: 1.5rem;
   border-left: 0.75rem solid rgba(0,0,0,0.12);
@@ -724,7 +724,7 @@ figure > img {
 figcaption {
   margin-top: 1.5rem;
   font-size: 0.75rem;
-  font-style: italic;
+  font-style: normal;
 }
 img {
   font-style: italic;
@@ -953,7 +953,7 @@ acronym {
   text-transform: uppercase;
 }
 del {
-  font-style: italic;
+  font-style: normal;
   text-decoration: line-through;
   color: rgba(0,0,0,0.38);
 }
@@ -962,6 +962,7 @@ details {
 }
 dl dt {
   font-weight: 700;
+  font-style: normal;
   color: rgba(0,0,0,0.87);
 }
 dl dd {
