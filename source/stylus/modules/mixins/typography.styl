@@ -1,9 +1,9 @@
 // Typographic styles ==========================================================
 // - We'll be using these a lot, so it's best to use mixin rather than hashes
-// - != 'Arial' has a different x-height to 'Noto Sans', so the mixin is
-//   font agnostic. `$font.family.base` is global, so if you reset the
-//   `font-family`, you'll have to alter your margins (and possibly set your
-//   p, ul etc to `body-1()`)
+// - Font agnostic. `$font.family.base` is global
+//   != Not all fonts are equal! Baselines and font-sizes vary:
+//      http://bit.ly/2mnBSri, different font headers and sizes may require
+//      customisation (custom `margin-bottom`, `line-height`, `font-size`)
 
 typography-settings(
   $font-family = $font.family.base,

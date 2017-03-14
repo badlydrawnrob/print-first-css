@@ -2,11 +2,11 @@
 // Material design `4sp/px` baseline, with our `16sp/px` default line-height
 // - Link: http://bit.ly/2lYjdkt
 // - Background gradient: http://bit.ly/2mXP9ux and http://bit.ly/2miADKA
-// - Baseline/line-height theory: http://bit.ly/2mq7VJj
-//   - We're fudging our `$align` as it's difficult to achieve with gradients
-//   - If you need something more specific, roll your own :)
+// - Theory: http://bit.ly/2mnBSri
+// - This method isn't pixel perfect. You can fudge this with
+//   `padding-top: unit((24 - 1 / 16)), 'rem')`
 
-baseline-grid($align = false)
+baseline-grid()
   background: linear-gradient(
     to bottom,
     red,
@@ -22,6 +22,3 @@ baseline-grid($align = false)
     transparent
   )
   background-size: auto unit((24 / 16), 'rem'), auto (unit((16 / 16), 'rem') / 4)
-
-  if $align == true
-    padding-top: unit(((24 - 1) / 16), 'rem')
