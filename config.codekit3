@@ -33,14 +33,6 @@
 		"oAP": "\/build\/node_modules",
 		"oF": 0
 		},
-	"\/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/build\/package.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
 	"\/project.cson": {
 		"ft": 8192,
 		"oA": 1,
@@ -91,12 +83,6 @@
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/source\/ecss\/index.kit": {
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/ecss\/index.html",
-		"oF": 0
-		},
 	"\/source\/ecss\/tests\/buttons.kit": {
 		"ft": 2048,
 		"oA": 1,
@@ -113,12 +99,6 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/ecss\/tests\/lists.html",
-		"oF": 0
-		},
-	"\/source\/ecss\/tests\/typography.kit": {
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/ecss\/tests\/typography.html",
 		"oF": 0
 		},
 	"\/source\/less": {
@@ -301,19 +281,6 @@
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/source\/stylus\/partials\/blockquotes.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/blockquotes.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
 	"\/source\/stylus\/partials\/code.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -323,19 +290,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/partials\/code.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/partials\/embedded-content.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/embedded-content.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -432,19 +386,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/partials\/tables.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/partials\/text-elements.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/text-elements.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
