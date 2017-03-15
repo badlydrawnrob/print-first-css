@@ -33,37 +33,11 @@
 		"oAP": "\/build\/node_modules",
 		"oF": 0
 		},
-	"\/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/build\/package.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
 	"\/project.cson": {
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/build\/project.cson",
 		"oF": 1
-		},
-	"\/README.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 1,
-		"oAP": "\/build\/README.html",
-		"oF": 1,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
 		},
 	"\/source\/ecss\/ecss-config.styl": {
 		"aP": 0,
@@ -137,32 +111,6 @@
 		"oA": 0,
 		"oAP": "\/build\/stylus\/assets\/css\/cardinal.css",
 		"oF": 2,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/modules\/mixins\/baseline-grid.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/modules\/mixins\/baseline-grid.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/modules\/mixins\/buttons.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/modules\/mixins\/buttons.css",
-		"oF": 0,
 		"oS": 0,
 		"rrU": 0
 		},
