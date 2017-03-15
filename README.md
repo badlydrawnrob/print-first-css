@@ -2,7 +2,7 @@
 
 ## Quick intro
 
-A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, to create a solid starting point for your projects (rather than a framework). Sets up some basics for my [Material Design](https://github.com/badlydrawnrob/cardinal-material) framework, uses [Jeet](http://jeet.gs/) as a grid system, and [ECSS](https://benfrain.com/my-fourth-book-enduring-css/) as a css styleguide.
+A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, to create a solid starting point for your projects (rather than a framework). Sets up some basics for my [Material Design](https://github.com/badlydrawnrob/cardinal-material) framework, uses [Jeet](http://jeet.gs/) as a grid system, and [ECSS](http://ecss.io/chapter5.html) as a css styleguide.
 
 Only the essentials here, folks.
 
@@ -86,10 +86,9 @@ npm update
 # Styleguide
 Use the following conventions:
 
-## [ECSS]()
-> != Under construction!
+## ECSS
 
-Ben Frain's [ECSS](http://ecss.io/chapter5.html) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files.
+Ben Frain's [ECSS](http://ecss.io/) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files.
 
 > Be pragmatic, use as much as is appropriate
 
