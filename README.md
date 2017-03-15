@@ -46,6 +46,7 @@ All typography aligns to a Material Design `4sp/px` grid. Each of the headings h
 > Arial is default. Other fonts may require fine-tuning to properly fit the baseline-grid
 
 - Use `baseline-grid()` and `$spacing.x` to align your components
+  - ⚠ Sets the container to `position: relative` so be aware of unintended consequences!
 - Default `$spacing.base` is `1.5rem` (same as line-height `1.5`)
   - There are aliases setup, i.e `$spacing.whole` to make things easier
 
@@ -163,7 +164,7 @@ but mixins come first.
 
 
 
-# Current Issues
+# ⚠ Current Issues
 
 - Careful with Hashes, they fail silently if they've been used but not declared.
   - `$this.hash.isnt.setup` but is referenced, with no errors given
