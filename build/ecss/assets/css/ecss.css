@@ -1040,6 +1040,16 @@ mark {
 .type-Group:nth-child(2n + 1) {
   clear: both;
 }
+.type-Group-small {
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.714285714285714;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 0;
+}
 .type-Group-box {
   background: rgba(204,204,204,0.5);
 }

@@ -14,12 +14,12 @@ The following changes have been made:
 
 1. Simplified variables (opinionated), `@import`ed with [globbing](http://stylus-lang.com/docs/import.html#file-globbing):
   - `modules/variables/*` sets up default variables and hashes,
-  - `modules/mixins/*` holds components mixins,
+  - `modules/mixins/*` holds `baseline-grid()` mixin,
   - `partials/*` for our default framework files,
   - `vendor/*` for 3rd party utilities
 2. `rem` is the default, no `px` fallback.
 3. Simplified components:
-  - Removes utilities, but adds mixins and variables
+  - Removes utilities, but adds variables
 5. Typography defaults from [Material Design](https://material.io/guidelines/style/typography.html)
   - A `baseline-grid()` mixin for our vertical rhythm
   - One global `$font.family.base` only (with a `$mono` font for code)
