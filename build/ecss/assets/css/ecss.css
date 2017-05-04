@@ -777,7 +777,7 @@ legend {
   font-weight: 700;
   width: 100%;
   padding: 0;
-  color: ;
+  color: #000;
   border: 0;
 }
 textarea {
@@ -843,7 +843,6 @@ h6 {
   line-height: 1.5;
   text-transform: none;
   letter-spacing: normal;
-  margin-bottom: 0;
 }
 hr {
   display: block;
@@ -1041,16 +1040,6 @@ mark {
 .type-Group:nth-child(2n + 1) {
   clear: both;
 }
-.type-Group-small {
-  font-family: 'Arial', sans-serif;
-  font-weight: normal;
-  font-size: 0.875rem;
-  color: rgba(0,0,0,0.87);
-  line-height: 1.714285714285714;
-  text-transform: none;
-  letter-spacing: normal;
-  margin-bottom: 0;
-}
 .type-Group-box {
   background: rgba(204,204,204,0.5);
 }
@@ -1074,7 +1063,6 @@ input[type="submit"].btn {
   line-height: 1.714285714285714;
   text-transform: uppercase;
   letter-spacing: normal;
-  margin-bottom: 0;
   display: inline-block;
   margin: 0.25rem;
   padding: 0.5rem;
@@ -1124,7 +1112,6 @@ input[type="submit"].btn-flat {
   line-height: 1.714285714285714;
   text-transform: uppercase;
   letter-spacing: normal;
-  margin-bottom: 0;
   display: inline-block;
   margin: 0.25rem;
   padding: 0.5rem;

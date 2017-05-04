@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="cardinalstylus">Cardinal Stylus</h1>
+
+<h2 id="quickintro">Quick intro</h2>
+
+<p>A slimmed down version of the <a href="http://cardinalcss.com/">Cardinal</a> framework, to create a solid starting point for your projects (rather than a framework). Sets up some basics for my <a href="https://github.com/badlydrawnrob/cardinal-material">Material Design</a> framework, uses <a href="http://jeet.gs/">Jeet</a> as a grid system, and <a href="http://ecss.io/chapter5.html">ECSS</a> as a css styleguide.</p>
+
+<p>Only the essentials here, folks.</p>
+
+<h2 id="stylus">Stylus</h2>
+
+<p>The following changes have been made:</p>
+
+<ol>
+<li>Simplified variables (opinionated), <code>@import</code>ed with <a href="http://stylus-lang.com/docs/import.html#file-globbing">globbing</a>:</li>
+<li><code>modules/variables/*</code> sets up default variables and hashes,</li>
+<li><code>modules/mixins/*</code> holds components mixins,</li>
+<li><code>partials/*</code> for our default framework files,</li>
+<li><code>vendor/*</code> for 3rd party utilities</li>
+<li><code>rem</code> is the default, no <code>px</code> fallback.</li>
+<li>Simplified components:</li>
+<li>Removes utilities, but adds mixins and variables</li>
+<li>Typography defaults from <a href="https://material.io/guidelines/style/typography.html">Material Design</a></li>
+<li>A <code>baseline-grid()</code> mixin for our vertical rhythm</li>
+<li>One global <code>$font.family.base</code> only (with a <code>$mono</code> font for code)</li>
+<li><a href="http://jeet.gs/">Jeet</a> for grids.</li>
+<li>We&#8217;re using custom <code>$spacing.x</code> variables for margins/padding.</li>
+<li><a href="https://necolas.github.io/normalize.css/">Normalize</a> as an <code>npm</code> dependency</li>
+<li>Everything else as-is</li>
+</ol>
+
+<h3 id="hashes">Hashes</h3>
+
+<p>We&#8217;re using <a href="http://stylus-lang.com/docs/hashes.html">hashes</a> for global settings:</p>
+
+<ul>
+<li>Access values: <code>$font.family.base</code></li>
+<li>Change values: <code>$font.family.base = 'Arial'</code></li>
+<li>Add values: <code>$color['theme'] = {primary: 'blue', secondary: 'yellow'}</code></li>
+<li>You may need to escape <code>\</code> or use <code>unquote()</code> for some values</li>
+<li>With hashes, <a href="https://github.com/stylus/stylus/issues/2136">source order matters</a>, so we set some sensible <code>$default-</code> values to make them easier to override.</li>
+<li>Override the hashes, <strong>not</strong> the <code>$default-</code>s!</li>
+</ul>
+
+<h3 id="typography">Typography</h3>
+
+<p>All typography aligns to a Material Design <code>4sp/px</code> grid. Each of the headings have their own line-height. To achieve a perfect alignment to our base <code>24sp/px</code> line-height, you&#8217;ll need to change the <code>margin-bottom</code> on headings, as well as any other elements you might like to align.</p>
+
+<blockquote>
+<p>Arial is default. Other fonts may require fine-tuning to properly fit the baseline-grid</p>
+</blockquote>
+
+<ul>
+<li>Use <code>baseline-grid()</code> and <code>$spacing.x</code> to align your components</li>
+<li>⚠ Sets the container to <code>position: relative</code> so be aware of unintended consequences!</li>
+<li>Default <code>$spacing.base</code> is <code>1.5rem</code> (same as line-height <code>1.5</code>)</li>
+<li>There are aliases setup, i.e <code>$spacing.whole</code> to make things easier</li>
+</ul>
+
+<h1 id="installation">Installation</h1>
+
+<p>Install with (npm)[https://www.npmjs.com/] using the <code>#master</code> branch.</p>
+
+<pre><code class="git">npm install git+https://github.com/badlydrawnrob/cardinal-stylus.git#master --save
+</code></pre>
+
+<h2 id="usingcardinalstylus">Using Cardinal stylus</h2>
+
+<ol>
+<li>Create a <code>main.styl</code> file</li>
+<li><code>@import modules/variables/*</code></li>
+<li>You can now reset the variables:</li>
+<li>Mirror the <code>variables/*</code> folder with any <code>$hash</code> overrides you like</li>
+<li><a href="https://github.com/stylus/stylus/issues/2136"><code>@import</code> order matters</a></li>
+<li>Add any new hashes you might need</li>
+<li><code>@import</code> the remaining files, as in <code>cardinal.styl</code></li>
+<li>Integrate your project files</li>
+</ol>
+
+<h2 id="updating">Updating</h2>
+
+<pre><code class="git">npm update
+</code></pre>
+
+<h1 id="styleguide">Styleguide</h1>
+
+<p>Use the following conventions:</p>
+
+<h2 id="ecss">ECSS</h2>
+
+<p>Ben Frain&#8217;s <a href="http://ecss.io/">ECSS</a> naming conventions. All components are self-contained, grouped with their <code>html</code>/<code>js</code>/<code>...</code> files.</p>
+
+<blockquote>
+<p>Be pragmatic, use as much as is appropriate</p>
+</blockquote>
+
+<h3 id="example">Example</h3>
+
+<pre><code class="text">shopping-cart-template/
+- shopping-cart.html
+- shopping-cart.css
+- shopping-cart.js
+</code></pre>
+
+<pre><code class="stylus">// .[namespace][-ModuleOrComponent][_ChildNode][-variant]
+.namespace-ModuleOrComponent_ChildNode-variant {}
+
+// A standalone component
+.sc-Title {}
+.sc-RemoveBtn {}
+
+// A component with multiple views
+.mc-ShoppingCart_Title {}
+.mc-ShoppingCart_RemoveBtn {}
+</code></pre>
+
+<h2 id="cssdeclarationorder">CSS declaration order</h2>
+
+<blockquote>
+<p>!= Under construction!</p>
+</blockquote>
+
+<p>Use <a href="http://codeguide.co/#css-declaration-order">css declaration order</a> by @mdo,
+but mixins come first.</p>
+
+<ol>
+<li>Mixins</li>
+<li>Positioning</li>
+<li>Box model</li>
+<li>Typographic</li>
+<li>Visual</li>
+</ol>
+
+<pre><code class="stylus">.declaration-order
+  // Mixins
+  baseline-grid()
+
+  // Positioning
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 100
+
+  // Box-model
+  display: block
+  float: right
+  width: 100px
+  height: 100px
+
+  // Typography
+  font: normal 13px &quot;Helvetica Neue&quot;, sans-serif
+  line-height: 1.5
+  color: #333
+  text-align: center
+
+  // Visual
+  background-color: #f5f5f5
+  border: 1px solid #e5e5e5
+  border-radius: 3px
+
+  // Misc
+  opacity: 1
+</code></pre>
+
+<h1 id="⚠currentissues">⚠ Current Issues</h1>
+
+<ul>
+<li>Careful with Hashes, they fail silently if they&#8217;ve been used but not declared.</li>
+<li><code>$this.hash.isnt.setup</code> but is referenced, with no errors given</li>
+</ul>
+
+</body>
+</html>

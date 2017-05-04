@@ -1,21 +1,63 @@
 // Headings ====================================================================
 // - We shouldn't use !import, but we're globbing files.
 // - If you're using ECSS this should be fine.
+// - See `variables/default.styl` for typography notes
 
 h1
-  display-3($margin-bottom: ($spacing.two + $spacing.quarter))
+  font-family: $font.family.base
+  font-weight: normal
+  font-size: $font.size.ppppp
+  color: $root.text.color
+  line-height: $line.height.ppppp
+  text-transform: none
+  letter-spacing: normal
+  margin-bottom: $spacing.two + $spacing.quarter
 
 h2
-  display-2($margin-bottom: $spacing.base)
+  font-family: $font.family.base
+  font-weight: normal
+  font-size: $font.size.pppp
+  color: $root.text.color
+  line-height: $line.height.pppp
+  text-transform: none
+  letter-spacing: normal
+  margin-bottom: $spacing.base
 
 h3
-  display-1($margin-bottom: $spacing.two)
+  font-family: $font.family.base
+  font-weight: normal
+  font-size: $font.size.ppp
+  color: $root.text.color
+  line-height: $line.height.ppp
+  text-transform: none
+  letter-spacing: normal
+  margin-bottom: $spacing.two
 
 h4
-  headline($margin-bottom: $spacing.one)
+  font-family: $font.family.base
+  font-weight: normal
+  font-size: $font.size.pp
+  color: $root.text.color
+  line-height: $line.height.pp
+  text-transform: none
+  letter-spacing: normal
+  margin-bottom: $spacing.one
 
 h5
-  title($margin-bottom: ($spacing.one + $spacing.micro))
+  font-family: $font.family.base
+  font-weight: 700
+  font-size: $font.size.p
+  color: $root.text.color
+  line-height: $line.height.base
+  text-transform: none
+  letter-spacing: normal
+  margin-bottom: $spacing.one + $spacing.micro
 
 h6
-  subheading-2()
+  font-family: $font.family.base
+  font-weight: normal
+  font-size: $font.size.base
+  color: $root.text.color
+  line-height: $line.height.base
+  text-transform: none
+  letter-spacing: normal

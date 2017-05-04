@@ -768,7 +768,7 @@ legend {
   font-weight: 700;
   width: 100%;
   padding: 0;
-  color: ;
+  color: #000;
   border: 0;
 }
 textarea {
@@ -834,7 +834,6 @@ h6 {
   line-height: 1.5;
   text-transform: none;
   letter-spacing: normal;
-  margin-bottom: 0;
 }
 hr {
   display: block;
