@@ -12,21 +12,22 @@ Only the essentials here, folks.
 
 The following changes have been made:
 
-1. Simplified variables (opinionated), `@import`ed with [globbing](http://stylus-lang.com/docs/import.html#file-globbing):
+1. **Simplified variables** (opinionated), `@import`ed with [globbing](http://stylus-lang.com/docs/import.html#file-globbing):
   - `modules/variables/*` sets up default variables and hashes,
   - `modules/mixins/*` holds `baseline-grid()` mixin,
   - `partials/*` for our default framework files,
   - `vendor/*` for 3rd party utilities
 2. `rem` is the default, no `px` fallback.
-3. Simplified components:
+3. **Simplified components**:
   - Removes utilities, but adds variables
-5. Typography defaults from [Material Design](https://material.io/guidelines/style/typography.html)
-  - A `baseline-grid()` mixin for our vertical rhythm
+5. **Typography defaults** from [Material Design](https://material.io/guidelines/style/typography.html):
   - One global `$font.family.base` only (with a `$mono` font for code)
-6. [Jeet](http://jeet.gs/) for grids.
+6. **Mixins**:
+  - **Only one!** A `baseline-grid()` mixin for our vertical rhythm (based on MD)
+7. **Use [Jeet](http://jeet.gs/) for grids**, or roll your own:
   - We're using custom `$spacing.x` variables for margins/padding.
-7. [Normalize](https://necolas.github.io/normalize.css/) as an `npm` dependency
-8. Everything else as-is
+8. **[Normalize](https://necolas.github.io/normalize.css/)** as an `npm` dependency
+9. **Everything else as-is**
 
 ### Hashes
 

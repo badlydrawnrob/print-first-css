@@ -631,6 +631,53 @@ blockquote cite:before {
 blockquote cite a {
   color: rgba(0,0,0,0.38);
 }
+button,
+input[type="button"],
+input[type="submit"] {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  min-width: 4rem;
+  color: rgba(0,0,0,0.87);
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: normal;
+  line-height: 1.714285714285714;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #fff;
+  border: 0 none;
+  border-radius: 0.25rem;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #f5f5f5;
+}
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  background-color: #e0e0e0;
+}
+button:active:focus,
+input[type="button"]:active:focus,
+input[type="submit"]:active:focus {
+  outline: 0 none;
+}
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled {
+  color: rgba(0,0,0,0.38);
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+  text-shadow: none;
+}
 code,
 kbd,
 pre,
