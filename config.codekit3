@@ -7,7 +7,7 @@
 		"uuidString": "CA5AE827-9BE9-4E16-AB2D-5CEFB6B808BB"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25813",
 "files": {
 	"\/.editorconfig": {
 		"ft": 8192,
@@ -103,6 +103,19 @@
 		"oAP": "\/build\/ecss\/tests\/buttons.html",
 		"oF": 0
 		},
+	"\/source\/ecss\/tests\/buttons.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/ecss\/tests\/buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/source\/ecss\/tests\/code.kit": {
 		"ft": 2048,
 		"oA": 1,
@@ -120,6 +133,19 @@
 		"oA": 1,
 		"oAP": "\/build\/ecss\/tests\/typography.html",
 		"oF": 0
+		},
+	"\/source\/ecss\/tests\/typography.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/ecss\/tests\/typography.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
 		},
 	"\/source\/less": {
 		"ft": 65536,
@@ -149,45 +175,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/modules\/mixins\/baseline-grid.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/modules\/mixins\/buttons.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/modules\/mixins\/buttons.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/modules\/mixins\/typography.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/modules\/mixins\/typography.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/modules\/mixins\/visually-hidden.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/modules\/mixins\/visually-hidden.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -314,6 +301,19 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/source\/stylus\/partials\/buttons.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/source\/stylus\/partials\/code.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -404,24 +404,6 @@
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
-		},
-	"\/source\/stylus\/partials\/README.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/README.html",
-		"oF": 1,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
 		},
 	"\/source\/stylus\/partials\/tables.styl": {
 		"aP": 0,
@@ -1418,6 +1400,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -2242,14 +2228,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -2312,7 +2290,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {
@@ -2399,7 +2377,7 @@
 	"languageDefaultsUserDefined": [
 		],
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/source\/less, package.cson",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/source\/less, package.cson, README.md",
 	"sourceFolderName": "source",
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
