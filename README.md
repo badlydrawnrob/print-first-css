@@ -1,5 +1,7 @@
 # Cardinal Stylus
 
+
+
 ## Quick intro
 
 A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, to create a solid starting point for your projects (rather than a framework). Sets up some basics for my [Material Design](https://github.com/badlydrawnrob/cardinal-material) framework, uses [Jeet](http://jeet.gs/) as a grid system, and [ECSS](http://ecss.io/chapter5.html) as a css styleguide.
@@ -17,13 +19,14 @@ The following changes have been made:
   - `modules/mixins/*` holds `baseline-grid()` mixin,
   - `partials/*` for our default framework files,
   - `vendor/*` for 3rd party utilities
-2. `rem` is the default, no `px` fallback.
+2. **`rem` is the default**
+  - no `px` fallback.
 3. **Simplified components**:
   - Removes utilities, but adds variables
 5. **Typography defaults** from [Material Design](https://material.io/guidelines/style/typography.html):
   - One global `$font.family.base` only (with a `$mono` font for code)
-6. **Mixins**:
-  - **Only one!** A `baseline-grid()` mixin for our vertical rhythm (based on MD)
+6. **Mixins** (_Only one!_):
+  - A `baseline-grid()` mixin for our vertical rhythm (based on MD)
 7. **Use [Jeet](http://jeet.gs/) for grids**, or roll your own:
   - We're using custom `$spacing.x` variables for margins/padding.
 8. **[Normalize](https://necolas.github.io/normalize.css/)** as an `npm` dependency
@@ -55,6 +58,7 @@ All typography aligns to a Material Design `4sp/px` grid. Each of the headings h
 
 
 
+
 # Installation
 
 Install with (npm)[https://www.npmjs.com/] using the `#master` branch.
@@ -62,6 +66,8 @@ Install with (npm)[https://www.npmjs.com/] using the `#master` branch.
 ```git
 npm install git+https://github.com/badlydrawnrob/cardinal-stylus.git#master --save
 ```
+
+
 
 ## Using Cardinal stylus
 
@@ -74,6 +80,8 @@ npm install git+https://github.com/badlydrawnrob/cardinal-stylus.git#master --sa
 4. `@import` the remaining files, as in `cardinal.styl`
 5. Integrate your project files
 
+
+
 ## Updating
 
 ```git
@@ -84,14 +92,18 @@ npm update
 
 
 
+
 # Styleguide
 Use the following conventions:
+
+
 
 ## ECSS
 
 Ben Frain's [ECSS](http://ecss.io/) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files.
 
 > Be pragmatic, use as much as is appropriate
+
 
 ### Example
 
@@ -114,6 +126,7 @@ shopping-cart-template/
 .mc-ShoppingCart_Title {}
 .mc-ShoppingCart_RemoveBtn {}
 ```
+
 
 
 ## CSS declaration order
@@ -161,6 +174,9 @@ but mixins come first.
   // Misc
   opacity: 1
 ```
+
+
+
 
 
 
