@@ -6,22 +6,17 @@
 
 
 // Fonts =======================================================================
-// #1: Set in `typography.styl`
+// #1: `$arial` variable in `typography.styl`
 //
 // Material Design Typographic Scale: 12, 14, 16, 20, and 34
-// - I strongly advise sticking to `16sp/px` (1rem) as default html font-size.
-//   Anything else makes life difficult.
-//   - Add `$default-font-size-m` where necessary for Body 1, Body 2
+// - Docs: http://bit.ly/2j67oaR and http://bit.ly/2k7ygvG
+// - Gist: http://bit.ly/2qEwHph
+// - For an easy life, use `16sp/px` (1rem) default html font-size.
+//   - Use `$default-font-size-m` where necessary for Body 1, Body 2
 //   - English and English-like scripts (Latin, Greek, and Cyrillic)
-//   - Material typography: http://bit.ly/2j67oaR and http://bit.ly/2k7ygvG
-//     - Subheading and Body are 'device' size, not 'desktop' size,
-//       personally I find this more legible.
-//   - Material Gist: http://bit.ly/2qEwHph
-//     - Reflects Material Design docs.
-//
-// - != 'Arial' is default. different font headers and sizes may require
-//      customisation (custom `margin-bottom`, `line-height`, `font-size`)
-//      http://bit.ly/2mnBSri
+//   - Using `device` size, not `desktop` size
+// - Different fonts may require customisation:
+//   - Examples: http://bit.ly/2mnBSri
 
 
 $default-font-family = $arial // #1
@@ -32,38 +27,46 @@ $default-font-size-pppp   = unit((45 / 16), 'rem')  // h2, Display 2
 $default-font-size-ppp    = unit((34 / 16), 'rem')  // h3, Display 1
 $default-font-size-pp     = unit((24 / 16), 'rem')  // h4, Headline
 $default-font-size-p      = unit((20 / 16), 'rem')  // h5, Title
-$default-font-size        = unit((16 / 16), 'rem')  // h6, Subheading
-$default-font-size-m      = unit((14 / 16), 'rem')  // Body 1, Body 2, Button
+$default-font-size        = unit((16 / 16), 'rem')  // h6, Subheading, html
+$default-font-size-m      = unit((14 / 16), 'rem')  // Body 1, Body 2, Button, Tabs
 $default-font-size-mm     = unit((12 / 16), 'rem')  // Caption
 
-$default-line-height-pppppp = (24 / 16) // Display 4
-$default-line-height-ppppp  = (24 / 16) // h1, Display 3
-$default-line-height-pppp   = (48 / 45) // h2, Display 2
-$default-line-height-ppp    = (40 / 34) // h3, Display 1
-$default-line-height-pp     = (32 / 24) // h4, Headline
-$default-line-height-p      = (28 / 16) // h6, Subheading 2
-$default-line-height        = (24 / 16) // Subheading 1, Caption, Title
-$default-line-height-m      = (24 / 14) // Body 2, Button
-$default-line-height-mm     = (20 / 14) // Body 1
+// Material line-height: http://bit.ly/2miN5Kb =================================
+// #1: Doesn't match with it's corresponding `$default-font-size`
+//
+// Line wrapping only applies to Body, Subhead, Headline, and smaller Display styles.
+// All other styles should exist as single lines, using `$default-line-height`
+// - It's ok for text blocks to have different line-height that "breaks" vertical
+//   rythmn, so long as you make sure that following "regular" text aligns to the grid
+//   http://bit.ly/2rDzbaD
+
+$default-line-height-pppp   = (48 / 45) // h2, Display 2      (1.06)
+$default-line-height-ppp    = (40 / 34) // h3, Display 1      (1.17)
+$default-line-height-pp     = (32 / 24) // h4, Headline       (1.3)
+$default-line-height-p      = (28 / 16) // h6, Subheading 2   (1.75)  #1
+$default-line-height        = (24 / 16) // html, Subheading 1 (1.5)
+$default-line-height-m      = (24 / 14) // Body 2             (1.71)
+$default-line-height-mm     = (20 / 14) // Body 1             (1.42)  #1
 
 
 // Spacing =====================================================================
 // - to preserve vertical rhythm, nudge elements by divisors of 4
-//   - We also have a `-mmmmm` (2dp) which can be added to the others
+// - Mix and match:
+//   - i.e: ($spacing.quarter + $spacing.half) = 12px / (12 / 16)
 
-$default-spacing-ppppppp = unit((128 / 16), 'rem') // 8rem
-$default-spacing-pppppp  = unit((112 / 16), 'rem') // 7rem
-$default-spacing-ppppp   = unit((96 / 16), 'rem')  // 6rem
-$default-spacing-pppp    = unit((80 / 16), 'rem')  // 5rem
-$default-spacing-ppp     = unit((64 / 16), 'rem')  // 4rem
-$default-spacing-pp      = unit((48 / 16), 'rem')  // 3rem
-$default-spacing-p       = unit((32 / 16), 'rem')  // 2rem
-$default-spacing         = unit((24 / 16), 'rem')  // 1.5rem
-$default-spacing-m       = unit((16 / 16), 'rem')  // 1rem
-$default-spacing-mm      = unit((8 / 16), 'rem')   // 0.5rem
-$default-spacing-mmm     = unit((4 / 16), 'rem')   // 0.25rem
-$default-spacing-mmmm    = unit((2 / 16), 'rem')   // 0.125rem
-$default-spacing-mmmmm   = unit((1 / 16), 'rem')   // 0.0625rem
+$default-spacing-ppppppp = unit((128 / 16), 'rem') // 8rem, $spacing.eight
+$default-spacing-pppppp  = unit((112 / 16), 'rem') // 7rem, $spacing.seven
+$default-spacing-ppppp   = unit((96 / 16), 'rem')  // 6rem, $spacing.six
+$default-spacing-pppp    = unit((80 / 16), 'rem')  // 5rem, $spacing.five
+$default-spacing-ppp     = unit((64 / 16), 'rem')  // 4rem, $spacing.four
+$default-spacing-pp      = unit((48 / 16), 'rem')  // 3rem, $spacing.three
+$default-spacing-p       = unit((32 / 16), 'rem')  // 2rem, $spacing.two
+$default-spacing         = unit((24 / 16), 'rem')  // 1.5rem $spacing.base
+$default-spacing-m       = unit((16 / 16), 'rem')  // 1rem, $spacing.one
+$default-spacing-mm      = unit((8 / 16), 'rem')   // 0.5rem, $spacing.half
+$default-spacing-mmm     = unit((4 / 16), 'rem')   // 0.25rem, $spacing.quarter
+$default-spacing-mmmm    = unit((2 / 16), 'rem')   // 0.125rem, $spacing.micro
+$default-spacing-mmmmm   = unit((1 / 16), 'rem')   // 0.0625rem, $spacing.px
 
 // Borders =====================================================================
 

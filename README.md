@@ -4,7 +4,7 @@
 
 ## Quick intro
 
-A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, to create a solid starting point for your projects (rather than a framework). Sets up some basics for my [Material Design](https://github.com/badlydrawnrob/cardinal-material) framework, uses [Jeet](http://jeet.gs/) as a grid system, and [ECSS](http://ecss.io/chapter5.html) as a css styleguide.
+A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, to create a solid starting point for your projects (rather than a framework). Sets up some basics for my [Material Design](https://github.com/badlydrawnrob/cardinal-material) framework, uses [Jeet](http://jeet.gs/) as a grid system, and [ECSS](https://github.com/badlydrawnrob/ecss) as a css styleguide.
 
 Only the essentials here, folks.
 
@@ -100,33 +100,7 @@ Use the following conventions:
 
 ## ECSS
 
-Ben Frain's [ECSS](http://ecss.io/) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files.
-
-> Be pragmatic, use as much as is appropriate
-
-
-### Example
-
-```text
-shopping-cart-template/
-- shopping-cart.html
-- shopping-cart.css
-- shopping-cart.js
-```
-
-```stylus
-// .[namespace][-ModuleOrComponent][_ChildNode][-variant]
-.namespace-ModuleOrComponent_ChildNode-variant {}
-
-// A standalone component
-.sc-Title {}
-.sc-RemoveBtn {}
-
-// A component with multiple views
-.mc-ShoppingCart_Title {}
-.mc-ShoppingCart_RemoveBtn {}
-```
-
+Ben Frain's [ECSS](https://github.com/badlydrawnrob/ecss) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files.
 
 
 ## CSS declaration order

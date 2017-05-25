@@ -5,7 +5,7 @@ button,
 input[type="button"],
 input[type="submit"]
   display: inline-block
-  margin: $spacing.quarter
+  margin: ($spacing.quarter + $spacing.micro) $spacing.half
   padding: $spacing.half
   min-width: $spacing.four
   color: $root.text.color
@@ -16,7 +16,7 @@ input[type="submit"]
   text-transform: uppercase
   text-decoration: none
   letter-spacing: normal
-  line-height: $line.height.m
+  line-height: $line.height.base
   vertical-align: middle
   white-space: nowrap
   cursor: pointer
