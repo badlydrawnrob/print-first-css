@@ -1,5 +1,9 @@
-// Default is .md-Button-flat: http://bit.ly/2qEwHph
+// Notes =======================================================================
+// #1: `$line.height.base` forces a (roughly) 20px height for text
+//     - 20px + (2 x 8px) + (2 x 6px) = 48px
 // - Buttons vs Links: http://bit.ly/29XxSZ3
+// - More button types: http://bit.ly/2qEwHph
+//
 
 button,
 input[type="button"],
@@ -16,7 +20,7 @@ input[type="submit"]
   text-transform: uppercase
   text-decoration: none
   letter-spacing: normal
-  line-height: $line.height.base
+  line-height: $line.height.mm  // #1
   vertical-align: middle
   white-space: nowrap
   cursor: pointer
