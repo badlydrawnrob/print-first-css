@@ -51,7 +51,9 @@ $default-line-height-mm     = (20 / 14) // Body 1, Button     (1.42)  #1
 
 
 // Spacing =====================================================================
-// - to preserve vertical rhythm, nudge elements by divisors of 4
+// See metrics and keylines for mobile/desktop padding: http://bit.ly/2rGWP6r
+//
+// - To preserve vertical rhythm, nudge elements by divisors of 4
 // - Mix and match:
 //   - i.e: ($spacing.quarter + $spacing.half) = 12px / (12 / 16)
 
@@ -74,25 +76,29 @@ $default-spacing-mmmmm   = unit((1 / 16), 'rem')   // 0.0625rem, $spacing.px
 $default-border-radius = $default-spacing-mmm
 
 // Colours =====================================================================
-// Dark text: http://bit.ly/2kTT99J,
-// Dark theme: http://bit.ly/2mfGAHv
+// - Colors go from `x` (lightest) to `xxxx` (darkest)
+// - Standard color themes:
+//   - Dark text: http://bit.ly/2kTT99J,
+//   - Dark theme: http://bit.ly/2mfGAHv
+// - Add your own primary/secondary colors:
+//   - $color['theme'] = { ... }
 
 $default-color-bbbb = alpha(#000, 87%) // Primary text
 $default-color-bbb = alpha(#000, 54%)  // Secondary text, active icons
 $default-color-bb = alpha(#000, 38%)   // Disabled text, hint text, icons
 $default-color-b = alpha(#000, 12%)    // Dividers
 
-$default-color-w = alpha(#fff, 100%)   // Primary text, active icons
-$default-color-ww = alpha(#fff, 70%)   // Secondary text
-$default-color-www = alpha(#fff, 50%)  // Disabled text, hint text, icons
-$default-color-wwww = alpha(#fff, 12%) // Dividers
+$default-color-wwww = alpha(#fff, 100%) // Primary text, active icons
+$default-color-www = alpha(#fff, 70%)   // Secondary text
+$default-color-ww = alpha(#fff, 50%)    // Disabled text, hint text, icons
+$default-color-w = alpha(#fff, 12%)     // Dividers
 
 $default-color-llll = #e0e0e0 // Status bar
 $default-color-lll = #f5f5f5  // App bar
 $default-color-ll = #fafafa   // Background
 $default-color-l = #fff       // Cards/diologs
 
-$default-color-d = #000       // Status bar
-$default-color-dd = #212121   // App bar
-$default-color-ddd = #303030  // Background
-$default-color-dddd = #424242 // Cards/diologs
+$default-color-dddd = #000    // Status bar
+$default-color-ddd = #212121  // App bar
+$default-color-dd = #303030   // Background
+$default-color-d = #424242    // Cards/diologs
