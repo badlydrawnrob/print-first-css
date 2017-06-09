@@ -7,13 +7,13 @@
 //   - We're using `rem`, so it isn't pixel perfect. Properly `$align`ed,
 //     type lies over baseline.
 
-baseline-grid($align = 0)
+baseline-grid($depth = -1, $align = 0)
   position: relative
 
   &::before
     content: ''
     position: absolute
-    z-index: -1
+    z-index: $depth
 
     // #1
     if $align
