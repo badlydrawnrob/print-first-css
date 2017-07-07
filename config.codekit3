@@ -7,7 +7,7 @@
 		"uuidString": "CA5AE827-9BE9-4E16-AB2D-5CEFB6B808BB"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/.editorconfig": {
 		"ft": 8192,
@@ -32,6 +32,14 @@
 		"oA": 2,
 		"oAP": "\/build\/node_modules",
 		"oF": 0
+		},
+	"\/package-lock.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/build\/package-lock.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/package.json": {
 		"ft": 524288,
@@ -145,6 +153,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/modules\/variables\/typography.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/partials\/_normalize.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/_normalize.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -2276,6 +2297,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/source\/less, package.cson, README.md",
 	"sourceFolderName": "source",

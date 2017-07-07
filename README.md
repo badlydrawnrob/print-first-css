@@ -30,6 +30,7 @@ The following changes have been made:
 7. **Use [Jeet](http://jeet.gs/) for grids**, or roll your own:
   - We're using custom `$spacing.x` variables for margins/padding.
 8. **[Normalize](https://necolas.github.io/normalize.css/)** as an `npm` dependency
+    - See [Current issues](#current-issues)
 9. **Everything else as-is**
 
 ### Hashes
@@ -156,5 +157,6 @@ but mixins come first.
 
 # ⚠ Current Issues
 
+- Normalize doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now
 - Careful with Hashes, they fail silently if they've been used but not declared.
   - `$this.hash.isnt.setup` but is referenced, with no errors given
