@@ -327,15 +327,6 @@ th {
   word-wrap: break-word;
   hyphens: auto;
 }
-a {
-  text-decoration: underline;
-  color: #00f;
-}
-a:hover,
-a:active,
-a:focus {
-  text-decoration: none;
-}
 blockquote {
   color: rgba(0,0,0,0.54);
   font-family: 'Arial', sans-serif;
