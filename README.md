@@ -35,7 +35,7 @@ The following changes have been made:
 
 ### Hashes
 
-We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global settings:
+We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global settings. Most of the `$variables` can, and probably should, be left as-is. It makes it easier to import the framework if you just override the HTML. However, you can edit or add to the hashes like so:
 
 - Access values: `$font.family.base`
 - Change values: `$font.family.base = 'Arial'`
