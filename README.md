@@ -157,6 +157,7 @@ but mixins come first.
 
 # ⚠ Current Issues
 
-- Normalize doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now
+- Normalize doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now.
+  - Pull in via `npm` and overwrite `/partials/_normalize.styl`
 - Careful with Hashes, they fail silently if they've been used but not declared.
   - `$this.hash.isnt.setup` but is referenced, with no errors given
