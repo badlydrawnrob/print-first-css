@@ -7,7 +7,7 @@
 		"uuidString": "CA5AE827-9BE9-4E16-AB2D-5CEFB6B808BB"
 		}
 	],
-"creatorBuild": "26261",
+"creatorBuild": "26268",
 "files": {
 	"\/.editorconfig": {
 		"cB": 0,
@@ -37,9 +37,9 @@
 		},
 	"\/package-lock.json": {
 		"ft": 524288,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/package-lock.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
@@ -156,19 +156,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/modules\/variables\/typography.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/partials\/_normalize.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/_normalize.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -359,6 +346,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,

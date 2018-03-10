@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/badlydrawnrob/cardinal-stylus#readme",
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^8.0.0"
   }
 }
