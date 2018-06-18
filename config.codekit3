@@ -69,19 +69,6 @@
 		"oAP": "\/build\/less",
 		"oF": 0
 		},
-	"\/source\/stylus\/cardinal.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/build\/stylus\/assets\/css\/cardinal.css",
-		"oF": 2,
-		"oS": 0,
-		"rrU": 0
-		},
 	"\/source\/stylus\/modules\/mixins\/baseline-grid.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -328,6 +315,19 @@
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
+		},
+	"\/source\/stylus\/print-first.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/css\/print-first.css",
+		"oF": 2,
+		"oS": 0,
+		"rrU": 0
 		}
 	},
 "hooks": [
@@ -336,7 +336,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 502831850,
-	"displayValue": "cardinal-stylus",
+	"displayValue": "print-first",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-ive",
 	"iconImageWasSetByUser": 0
