@@ -17,14 +17,14 @@ Only the essentials here, folks.
 Uses [Stylus](http://stylus-lang.com) to compile css:
 
 1. **Simple variables**:
-  - `modules/variables/*` sets up default variables for typography, color and spacing
-  - `modules/mixins/*` sets up a `baseline-grid()`
-  - `partials/*` for our component files
+    - `modules/variables/*` sets up default variables for typography, color and spacing
+    - `modules/mixins/*` sets up a `baseline-grid()`
+    - `partials/*` for our component files
 2. **Typography**
-  - `rem` defaults
-  - [Material Design](https://material.io/design/typography/) typographic scale and rythm
+    - `rem` defaults
+    - [Material Design](https://material.io/design/typography/) typographic scale and rythm
 3. **[Normalize](https://necolas.github.io/normalize.css/)** as an `npm` dependency
-  - See [Current issues](#current-issues)
+    - See [Current issues](#current-issues)
 
 ### Hashes
 
@@ -33,9 +33,9 @@ Uses [hashes](http://stylus-lang.com/docs/hashes.html) for global settings. Most
 - Access values: `$font.family.base`
 - Change values: `$font.family.base = 'Arial'`
 - Add values: `$color['theme'] = {primary: 'blue', secondary: 'yellow'}`
-  + You may need to escape `\` or use `unquote()` for some values
+    + You may need to escape `\` or use `unquote()` for some values
 - [Source order matters](https://github.com/stylus/stylus/issues/2136), so I set some sensible `$default-` values to make them easier to override.
-  + Override the hashes, **not** the `$default-`s!
+    + Override the hashes, **not** the `$default-`s!
 
 ### Typography
 
@@ -44,11 +44,11 @@ All typography aligns to a Material Design `4sp/px` grid. Each of the headings h
 > Arial is default. Other fonts may require fine-tuning to properly fit the baseline-grid
 
 - Default `font-size` is `16sp/px` — it's easier to calculate!
-  - See `modules/variables/defaults.styl` for other font size combos
+    - See `modules/variables/defaults.styl` for other font size combos
 - Use `baseline-grid()` and `$spacing.x` to align your components
-  - ⚠ Sets the container to `position: relative` so be aware of unintended consequences!
+    - ⚠ Sets the container to `position: relative` so be aware of unintended consequences!
 - Default `$spacing.base` is `1.5rem` (same as line-height `1.5`)
-  - There are aliases setup, i.e `$spacing.whole` to make things easier
+    - There are aliases setup, i.e `$spacing.whole` to make things easier
 
 
 
@@ -65,20 +65,17 @@ npm install badlydrawnrob/cardinal-stylus --save
 ### Using Cardinal stylus
 
 1. Create a `source/stylus/config.styl` file
-  + `@import` the `print-first.styl` file from the npm folder
+    + `@import` the `print-first.styl` file from the npm folder
 2. Mirror the `modules/..` folder layout
-  + `@import 'modules/variables/*'`
-  + `@import 'partials/*'`
+    + `@import 'modules/variables/*'`
+    + `@import 'partials/*'`
 3. Reset any variables if required
-  + See [hashes](#hashes)
+    + See [hashes](#hashes)
 4. Create an `ecss/components/..` folder for your component files
 5. Create a `source/stylus/main.styl` file
-  + `@import` your `source/stylus/config.styl` file
-  + `@import` your `ecss/component/*` stylus files
+    + `@import` your `source/stylus/config.styl` file
+    + `@import` your `ecss/component/*` stylus files
 6. Compile your css in your `build` folder
-
-
-4. Integrate your project files
 
 ### Updating
 
