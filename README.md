@@ -25,6 +25,9 @@ Uses [Stylus](http://stylus-lang.com) to compile css:
     - [Material Design](https://material.io/design/typography/) typographic scale and rythm
 3. **[Normalize](https://necolas.github.io/normalize.css/)** as an `npm` dependency
     - See [Current issues](#current-issues)
+4. **No fancy stuff**
+    - Plain text only!
+    - Roll your own buttons and components :)
 
 ### Hashes
 
@@ -39,16 +42,16 @@ Uses [hashes](http://stylus-lang.com/docs/hashes.html) for global settings. Most
 
 ### Typography
 
-All typography aligns to a Material Design `4sp/px` grid. Each of the headings have their own line-height. To achieve a perfect alignment to our base `24sp/px` line-height, you'll need to change the `margin-bottom` on headings, as well as any other elements you might like to align.
+All typography aligns to a Material Design `4sp/px` grid. [Vertical rhythm](http://webtypography.net/2.2.2) is notoriously difficult to get right, so I wouldn't worry too much.
 
-> Arial is default. Other fonts may require fine-tuning to properly fit the baseline-grid
-
-- Default `font-size` is `16sp/px` — it's easier to calculate!
-    - See `modules/variables/defaults.styl` for other font size combos
-- Use `baseline-grid()` and `$spacing.x` to align your components
-    - ⚠ Sets the container to `position: relative` so be aware of unintended consequences!
-- Default `$spacing.base` is `1.5rem` (same as line-height `1.5`)
-    - There are aliases setup, i.e `$spacing.whole` to make things easier
+1. **Headings** have their own `$line.height.x`
+    + You'll may need to adjust the `margin-bottom` with a new `font-family`
+    + [Cap height](https://bit.ly/2tseu0u) may also be an issue
+2. **Components** simply make sure the total `height`, `margin`, and `padding` align to the `4sp/px` grid for any given component.
+3. **Default** `font-size` is `16sp/px`
+    + It's easier to calculate
+    + See `modules/variables/defaults.styl` for all `font-size` and `line-height` variations
+4. **Baseline** the `baseline-grid()` and `$spacing` variables can be used to get the right vertical rhythm
 
 
 
