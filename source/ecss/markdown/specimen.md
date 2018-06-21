@@ -1,7 +1,19 @@
-# Specimen
+---
+Title:    Print First CSS: Specimen  
+Author:   Rob McDonald  
+Comment:  An overview of Markdown syntax supported
+          along with look and feel
+CSS:      ../../assets/css/print-first.css
+---
 
-An overview of Markdown styles that can be used within this repo
 
+# [%title]
+
+## Contents
+
+1. [CommonMark](#CommonMark)
+2. [Preview](#preview)
+3. [HTML elements supported](#htmlelementssupported)
 
 ## CommonMark
 
@@ -23,7 +35,6 @@ Alt-H1
 Alt-H2
 ------
 ```
-
 
 ### Emphasis
 
@@ -91,11 +102,6 @@ print('indent 4 spaces')
 ````
 
 
-
-
-
-## Github Flavoured Markdown
-
 ### Tables
 
 You can optionally add pipes `|` either side of table
@@ -109,19 +115,6 @@ size | material     | color
 ```
 
 
-### Task lists
-
-```text
-- [x] This is a complete item
-- [ ] This is an incomplete item
-```
-
-
-
-
-
-## Other
-
 ### Horizontal rules
 
 Use sparingly
@@ -129,13 +122,6 @@ Use sparingly
 ```text
 ---
 ***
-```
-
-
-### Maths
-
-```text
-...
 ```
 
 
@@ -154,46 +140,30 @@ Lorem ipsum dolor _sit amet_, consectetur **adipiscing elit**. Proin tempus accu
 
 Etiam a justo placerat, bibendum diam vitae, semper odio. [Pellentesque cursus](#) auctor augue, vel consectetur urna sagittis vel. Duis condimentum, tortor a placerat efficitur, nisi est eleifend nunc, ac lobortis quam est vel quam.
 
-1. Pellentesque fermentum
-2. Cras ut elit et dolor porttitor fermentum
-3. non blandit mi ipsum at libero
-
+{{partials/lists-ol.md}}
 
 ### H3
 
 Integer facilisis eros et risus consequat lobortis. Cras vel dignissim enim, ut laoreet dui.
 
-
-- Quam eget hendrerit
-- Tincidunt neque
-    + Volutpat sagittis massa
-- Vitae pharetra neque
-    + Aenean iaculis
+{{partials/lists-ul.md}}
 
 #### H4
 
 Nulla sit amet enim blandit, `imperdiet lorem` ac, lobortis orci. Aenean mollis dui tortor, eget consectetur mauris congue nec. [Aenean iaculis ut quam eget](#) non blandit mi ipsum at libero hendrerit. Vestibulum in lacus sed turpis sodales congue in et risus. Sed vitae pharetra neque. Sed nisi ligula, tempus ac massa at, volutpat sagittis massa. Praesent placerat congue velit, at tincidunt neque accumsan sit amet.
 
-> Vestibulum ante ipsum primis in <mark>faucibus orci luctus et ultrices posuere</mark> cubilia Curae ... Ut vestibulum libero eu mi sodales tincidunt. Aenean id eleifend lacus. Proin vehicula sapien convallis, <i>dictum justo id, eleifend nibh</i> [phasellus mattis enim eu nisi maximus] <cite>(Dignissim, 2018, pg. 36, mauris rutrum)</cite>
+{{partials/blockquote.md}}
 
 ##### H5
 
 Sed nisi ligula, tempus ac massa at, `volutpat sagittis` massa. Praesent placerat congue velit, at tincidunt neque accumsan sit amet.
 
-```python
-# code block
-print('3 backticks or')
-print('indent 4 spaces')
-```
+{{partials/code.md}}
+
 
 ###### H6
 
 Aliquam feugiat velit sed nisl tempor lobortis.
-
-- [x] This is a complete item
-- [ ] This is an incomplete item
-
-----
 
 Cras convallis, <abbr title="lectus">lectus</abbr> vel ultricies vestibulum, est sapien faucibus purus, non blandit mi ipsum at libero. Cras bibendum dolor eget justo aliquet, <q>sit amet mollis libero volutpat</q>. Vivamus et <b>elementum lacus</b>, eget feugiat ex. <i>Nulla facilisi</i>.
 
@@ -202,7 +172,7 @@ Cras convallis, <abbr title="lectus">lectus</abbr> vel ultricies vestibulum, est
 
 
 
-## Notes on emphasis
+## HTML elements supported
 
 It can be a little confusing when to use each specific tag, so as a rough guide:
 
@@ -239,15 +209,9 @@ It can be a little confusing when to use each specific tag, so as a rough guide:
 5. `span`: Visually change for decoration purposes with css
 
 
-### Highlighting technical
+### Highlighting technical elements
 
 1. `abbr`: [Abbreviation or acronym](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr)
 2. `kbd`: [ Denotes textual user input from a keyboard](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd)
-
-
-
-
-
-## Footnotes
-
-- Sections of this text have been collated from [CommonMark](http://commonmark.org/help/), [Github](https://guides.github.com/features/mastering-markdown/#examples) and [Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+3. **Potentially useful:**
+    - [`details`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)

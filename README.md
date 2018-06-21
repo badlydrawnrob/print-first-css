@@ -52,6 +52,7 @@ All typography aligns to a Material Design `4sp/px` grid. [Vertical rhythm](http
     + It's easier to calculate
     + See `modules/variables/defaults.styl` for all `font-size` and `line-height` variations
 4. **Baseline** the `baseline-grid()` and `$spacing` variables can be used to get the right vertical rhythm
+    + **Total height / 4** combined height of a component or text elements (including `height` + `margin` + `padding` etc) should be divisible by 4
 
 
 

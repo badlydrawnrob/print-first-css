@@ -69,7 +69,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/source\/ecss\/markdown\/partials\/blockquotes.md": {
+	"\/source\/ecss\/markdown\/partials.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/build\/ecss\/markdown\/partials.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/ecss\/markdown\/partials\/blockquote.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -78,7 +96,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 1,
-		"oAP": "\/build\/ecss\/markdown\/partials\/blockquotes.html",
+		"oAP": "\/build\/ecss\/markdown\/partials\/blockquote.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -177,6 +195,24 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/source\/ecss\/markdown\/partials\/tables.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/build\/ecss\/markdown\/partials\/tables.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/source\/ecss\/markdown\/specimen.md": {
 		"cB": 0,
 		"cS": 0,
@@ -260,6 +296,19 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/source\/stylus\/modules\/variables\/visual.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/modules\/variables\/visual.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/source\/stylus\/partials\/_normalize.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -299,7 +348,7 @@
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/source\/stylus\/partials\/blockquotes.styl": {
+	"\/source\/stylus\/partials\/blockquote.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -307,20 +356,7 @@
 		"iC": 1,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/blockquotes.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/partials\/buttons.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/buttons.css",
+		"oAP": "\/build\/stylus\/partials\/blockquote.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -334,19 +370,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/partials\/code.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/source\/stylus\/partials\/embedded-content.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/stylus\/partials\/embedded-content.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -390,6 +413,19 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/source\/stylus\/partials\/images.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/images.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/source\/stylus\/partials\/lists.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -399,6 +435,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/stylus\/partials\/lists.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/partials\/media.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/stylus\/partials\/media.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
