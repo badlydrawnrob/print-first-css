@@ -92,21 +92,3 @@ var
   margin:  0
   padding: 0
   border:  0
-
-// Remove default border for <iframe> elements.
-// - @link http://cbrac.co/1CVyNTj
-
-iframe
-  border: 0
-
-// Suppress the focus outline on links that cannot be accessed via keyboard.
-// This prevents an unwanted focus outline from appearing around elements that
-// might still respond to pointer events.
-//
-// It is okay to use `!important` here because we always want this rule to take
-// precedence.
-//
-// @link http://cbrac.co/1Evazku
-
-[tabindex="-1"]:focus
-  outline: none !important

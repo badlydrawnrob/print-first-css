@@ -17,41 +17,21 @@ $screen = {
 }
 
 // Spacing, margins and padding ================================================
-// - Base is `1.5rem`, NOT `1rem`.
-// - I've added some aliases below for ease of use.
+// - Base is `1.5rem` (24/16)
 
 $spacing = {
-  base: $default-spacing,
+  base: unit($default-spacing ,'rem'),
 
-  ppppppp: $default-spacing-ppppppp,
-  pppppp: $default-spacing-pppppp,
-  ppppp: $default-spacing-ppppp
-  pppp: $default-spacing-pppp,
-  ppp: $default-spacing-ppp,
-  pp: $default-spacing-pp,
-  p: $default-spacing-p
-  m: $default-spacing-m,
-  mm: $default-spacing-mm,
-  mmm: $default-spacing-mmm,
-  mmmm: $default-spacing-mmmm,
-  mmmmm: $default-spacing-mmmmm,
-
-  eight: $default-spacing-ppppppp,
-  seven: $default-spacing-pppppp,
-  six: $default-spacing-ppppp,
-  five: $default-spacing-pppp,
-  four: $default-spacing-ppp,
-  three: $default-spacing-pp,
-  two: $default-spacing-p,
-  one: $default-spacing-m,
-  half: $default-spacing-mm,
-  quarter: $default-spacing-mmm,
-  micro: $default-spacing-mmmm,
-  px: $default-spacing-mmmmm
-}
-
-// Borders =====================================================================
-
-$border = {
-  radius: $default-border-radius
+  eight: unit($default-spacing-ppppppp, 'rem'),
+  seven: unit($default-spacing-pppppp, 'rem'),
+  six: unit($default-spacing-ppppp, 'rem'),
+  five: unit($default-spacing-pppp, 'rem'),
+  four: unit($default-spacing-ppp, 'rem'),
+  three: unit($default-spacing-pp, 'rem'),
+  two: unit($default-spacing-p, 'rem'),
+  one: unit($default-spacing-m, 'rem'),
+  half: unit($default-spacing-mm, 'rem'),
+  quarter: unit($default-spacing-mmm, 'rem'),
+  micro: unit($default-spacing-mmmm, 'rem'),
+  px: unit($default-spacing-mmmmm, 'rem'),
 }

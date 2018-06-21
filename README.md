@@ -1,89 +1,89 @@
-# Cardinal Stylus
+# Print First CSS
 
 
 
 ## Quick intro
 
-A slimmed down version of the [Cardinal](http://cardinalcss.com/) framework, to create a solid starting point for your projects (rather than a framework). Sets up some basics for my [Material Design](https://github.com/badlydrawnrob/cardinal-material) framework, uses [Jeet](http://jeet.gs/) as a grid system, and [ECSS](https://github.com/badlydrawnrob/ecss) as a css styleguide.
+A simple, print-based starting point for typographic css projects. No fluff, no grid system, [ecss](https://github.com/badlydrawnrob/ecss) and [markdown](http://commonmark.org) compatible.
 
 Only the essentials here, folks.
 
 
 
+
+
 ## Stylus
 
-The following changes have been made:
+Uses [Stylus](http://stylus-lang.com) to compile css:
 
-1. **Simplified variables** (opinionated), `@import`ed with [globbing](http://stylus-lang.com/docs/import.html#file-globbing):
-  - `modules/variables/*` sets up default variables and hashes,
-  - `modules/mixins/*` holds `baseline-grid()` mixin,
-  - `partials/*` for our default framework files,
-  - `vendor/*` for 3rd party utilities
-2. **`rem` is the default**
-  - no `px` fallback.
-3. **Simplified components**:
-  - Removes utilities, but adds variables
-5. **Typography defaults** from [Material Design](https://material.io/guidelines/style/typography.html):
-  - One global `$font.family.base` only (with a `$mono` font for code)
-6. **Mixins** (_Only one!_):
-  - A `baseline-grid()` mixin for our vertical rhythm (based on MD)
-7. **Use [Jeet](http://jeet.gs/) for grids**, or roll your own:
-  - We're using custom `$spacing.x` variables for margins/padding.
-8. **[Normalize](https://necolas.github.io/normalize.css/)** as an `npm` dependency
+1. **Simple variables**:
+    - `modules/variables/*` sets up default variables for typography, color and spacing
+    - `modules/mixins/*` sets up a `baseline-grid()`
+    - `partials/*` for our component files
+2. **Typography**
+    - `rem` defaults
+    - [Material Design](https://material.io/design/typography/) typographic scale and rythm
+3. **[Normalize](https://necolas.github.io/normalize.css/)** as an `npm` dependency
     - See [Current issues](#current-issues)
-9. **Everything else as-is**
+4. **No fancy stuff**
+    - Plain text only!
+    - Roll your own buttons and components :)
 
 ### Hashes
 
-We're using [hashes](http://stylus-lang.com/docs/hashes.html) for global settings. Most of the `$variables` can, and probably should, be left as-is. It makes it easier to import the framework if you just override the HTML. However, you can edit or add to the hashes like so:
+Uses [hashes](http://stylus-lang.com/docs/hashes.html) for global settings. Most of the `$variables` can (and probably should) be left as-is. It's easier to `@import` the framework and override the HTML. If you prefer, edit or add hashes like so:
 
 - Access values: `$font.family.base`
 - Change values: `$font.family.base = 'Arial'`
 - Add values: `$color['theme'] = {primary: 'blue', secondary: 'yellow'}`
-- You may need to escape `\` or use `unquote()` for some values
-- With hashes, [source order matters](https://github.com/stylus/stylus/issues/2136), so we set some sensible `$default-` values to make them easier to override.
-  - Override the hashes, **not** the `$default-`s!
+    + You may need to escape `\` or use `unquote()` for some values
+- [Source order matters](https://github.com/stylus/stylus/issues/2136), so I set some sensible `$default-` values to make them easier to override.
+    + Override the hashes, **not** the `$default-`s!
 
 ### Typography
 
-All typography aligns to a Material Design `4sp/px` grid. Each of the headings have their own line-height. To achieve a perfect alignment to our base `24sp/px` line-height, you'll need to change the `margin-bottom` on headings, as well as any other elements you might like to align.
+All typography aligns to a Material Design `4sp/px` grid. [Vertical rhythm](http://webtypography.net/2.2.2) is notoriously difficult to get right, so I wouldn't worry too much.
 
-> Arial is default. Other fonts may require fine-tuning to properly fit the baseline-grid
+1. **Headings** have their own `$line.height.x`
+    + You'll may need to adjust the `margin-bottom` with a new `font-family`
+    + [Cap height](https://bit.ly/2tseu0u) may also be an issue
+2. **Components** simply make sure the total `height`, `margin`, and `padding` align to the `4sp/px` grid for any given component.
+3. **Default** `font-size` is `16sp/px`
+    + It's easier to calculate
+    + See `modules/variables/defaults.styl` for all `font-size` and `line-height` variations
+4. **Baseline** the `baseline-grid()` and `$spacing` variables can be used to get the right vertical rhythm
+    + **Total height / 4** combined height of a component or text elements (including `height` + `margin` + `padding` etc) should be divisible by 4
 
-- Use `baseline-grid()` and `$spacing.x` to align your components
-  - ⚠ Sets the container to `position: relative` so be aware of unintended consequences!
-- Default `$spacing.base` is `1.5rem` (same as line-height `1.5`)
-  - There are aliases setup, i.e `$spacing.whole` to make things easier
 
 
 
 
+## Installation
 
-
-# Installation
-
-Install with (npm)[https://www.npmjs.com/] using the `#master` branch.
+Install with (npm)[https://www.npmjs.com/]:
 
 ```git
-npm install git+https://github.com/badlydrawnrob/cardinal-stylus.git#master --save
+npm install badlydrawnrob/print-first-css --save
 ```
 
+### Compiling Stylus
 
+Compile with [Codekit](https://codekitapp.com), or choose your own.
 
-## Using Cardinal stylus
+1. Create a `source/stylus/config.styl` file
+    + `@import` the `print-first.styl` file from the npm folder
+2. Mirror the `modules/..` folder layout
+    + `@import 'modules/variables/*'`
+    + `@import 'partials/*'`
+3. Reset any variables if required
+    + See [hashes](#hashes)
+4. Create an `ecss/components/..` folder for your component files
+5. Create a `source/stylus/main.styl` file
+    + `@import` your `source/stylus/config.styl` file
+    + `@import` your `ecss/component/*` stylus files
+6. Compile your css in your `build` folder
 
-1. Create a `main.styl` file
-2. `@import modules/variables/*`
-3. You can now reset the variables:
-  - Mirror the `variables/*` folder with any `$hash` overrides you like
-  - [`@import` order matters](https://github.com/stylus/stylus/issues/2136)
-  - Add any new hashes you might need
-4. `@import` the remaining files, as in `cardinal.styl`
-5. Integrate your project files
-
-
-
-## Updating
+### Updating
 
 ```git
 npm update
@@ -94,21 +94,19 @@ npm update
 
 
 
-# Styleguide
-Use the following conventions:
+## Styleguide
+It's best to stick to the following conventions:
 
 
 
-## ECSS
+### ECSS
 
 Ben Frain's [ECSS](https://github.com/badlydrawnrob/ecss) naming conventions. All components are self-contained, grouped with their `html`/`js`/`...` files.
 
 
-## CSS declaration order
-> != Under construction!
+### CSS declaration order
 
-Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo,
-but mixins come first.
+Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo — `mixins()` come first.
 
 1. Mixins
 2. Positioning
@@ -132,19 +130,19 @@ but mixins come first.
   // Box-model
   display: block
   float: right
-  width: 100px
-  height: 100px
+  width: $spacing.base
+  height: $spacing.base
 
   // Typography
   font: normal 13px "Helvetica Neue", sans-serif
   line-height: 1.5
-  color: #333
+  color: $color.bbbb
   text-align: center
 
   // Visual
-  background-color: #f5f5f5
-  border: 1px solid #e5e5e5
-  border-radius: 3px
+  background-color: $color.llll
+  border: 1px solid $color.ll
+  border-radius: $border.radius
 
   // Misc
   opacity: 1
@@ -155,9 +153,22 @@ but mixins come first.
 
 
 
-# ⚠ Current Issues
+## Credits
 
-- Normalize doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now.
-  - Pull in via `npm` and overwrite `/partials/_normalize.styl`
-- Careful with Hashes, they fail silently if they've been used but not declared.
+1. **[Cardinal CSS](http://cardinalcss.com/):** Heavily leans on the original Cardinal framework, but has departed enough from it's original ethos to "rebrand" for my own purposes.
+2. **Markdown:** Notes on `.md` collated from:
+    - [CommonMark](http://commonmark.org/help/)
+    - [Github](https://guides.github.com/features/mastering-markdown/#examples)
+    - [Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+
+
+
+
+## ⚠ Current Issues
+
+1. **Normalize** doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now.
+    + Pull in via `npm` and overwrite `/partials/_normalize.styl`
+2. **Hashes** fail silently if they've been used but not declared.
   - `$this.hash.isnt.setup` but is referenced, with no errors given
+3. **Image sizes** should stick to the `4sp/px` grid wherever possible

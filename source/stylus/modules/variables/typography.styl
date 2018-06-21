@@ -1,37 +1,55 @@
 // Default font styles =========================================================
 // See `defaults.styl` for vertical rhythm and type defaults
+// System font stack: https://bit.ly/2tsAPuz and https://bit.ly/2iji0TU
+//  - Coding on a Mac, so 'San Francisco' font used
 
-$arial = 'Arial', sans-serif
-$monaco = 'Consolas', 'Monaco', 'Andale Mono', monospace
+$system = system-ui, sans-serif
+$system-mono = monospace
 
 $font = {
   family: {
-    base: $arial,
-    mono: $monaco
+    base: $system,
+    mono: $system-mono
   },
   size: {
-    base: $default-font-size,
+    base: unit($default-font-size, 'rem'),
 
-    pppppp: $default-font-size-pppppp,
-    ppppp: $default-font-size-ppppp
-    pppp: $default-font-size-pppp,
-    ppp: $default-font-size-ppp,
-    pp: $default-font-size-pp,
-    p: $default-font-size-p,
-    m: $default-font-size-m,
-    mm: $default-font-size-mm
+    pppppp: unit($default-font-size-pppppp, 'rem'),
+    ppppp: unit($default-font-size-ppppp 'rem'),
+    pppp: unit($default-font-size-pppp, 'rem'),
+    ppp: unit($default-font-size-ppp, 'rem'),
+    pp: unit($default-font-size-pp, 'rem'),
+    p: unit($default-font-size-p, 'rem'),
+    m: unit($default-font-size-m, 'rem'),
+    mm: unit($default-font-size-mm, 'rem'),
+  },
+  tracking: {
+    base: unit($default-tracking, 'rem'),
+
+    pppppp: unit($default-tracking-pppppp, 'rem'),
+    ppppp: unit($default-tracking-ppppp 'rem'),
+    pppp: unit($default-tracking-pppp, 'rem'),
+    ppp: unit($default-tracking-ppp, 'rem'),
+    pp: unit($default-tracking-pp, 'rem'),
+    p: unit($default-tracking-p, 'rem'),
+    m: unit($default-tracking-m, 'rem'),
+    mm: unit($default-tracking-mm, 'rem'),
   }
 }
 
 $line = {
   height: {
-    base: $default-line-height
+    base: $default-spacing
 
-    pppp: $default-line-height-pppp,
-    ppp: $default-line-height-ppp,
-    pp: $default-line-height-pp,
-    p: $default-line-height-p,
-    m: $default-line-height-m,
-    mm: $default-line-height-mm,
+    eight: $default-spacing-ppppppp,
+    seven: $default-spacing-pppppp,
+    six: $default-spacing-ppppp,
+    five: $default-spacing-pppp,
+    four: $default-spacing-ppp,
+    three: $default-spacing-pp,
+    two: $default-spacing-p,
+    one: $default-spacing-m,
+    half: $default-spacing-mm,
+    quarter: $default-spacing-mmm,
   }
 }

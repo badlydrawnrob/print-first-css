@@ -1,8 +1,8 @@
 {
-  "name": "cardinal-stylus",
-  "version": "1.2.1",
-  "description": "Stylus implementation of Cardinal framework",
-  "main": "index.js",
+  "name": "print-first-css",
+  "version": "2.0.0",
+  "description": "A simple, print-based starting point for typographic css projects",
+  "main": "print-first.styl",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

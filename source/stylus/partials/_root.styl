@@ -1,39 +1,17 @@
-// The <html> element ==========================================================
-// #1: Force a vertical scrollbar.
-//    - @link http://cbrac.co/163MspB
-// #2: Set the default `font-size` and `line-height` for the project based on
-//    variables set previously. The `font-size` is represented in `rem`s, and
-//    the `line-height` is represented as a unitless value.
-//    - @link http://bit.ly/2mFIDYr
-// #3: Ensure the <html> element's `height` is at least the viewport height.
-//
-// NOTES:
-// - Use `text-rendering` with caution.
-//   - @link http://cbrac.co/SJt8p1
-// - Avoid the webkit anti-aliasing trap.
-//   - @link http://cbrac.co/TAdhbH
-// - IE for Windows Phone 8 ignores `-ms-text-size-adjust` if the viewport
-//   <meta> tag is used.
-//   - @link http://cbrac.co/1cFrAvl
+// Notes =======================================================================
+// #1: Ensure the <html> element's `height` is at least the viewport height.
 
 html
-  height: 100%  // #1
   color: $color.bbbb
   font-family: $font.family.base
-  font-size: $font.size.base  // #2
-  line-height: $line.height.base  // #2
+  font-size: $font.size.base
+  line-height: $line.height.base
   background-color: $color.l
-  overflow-y: scroll  // #3
 
-
-// The <body> element ==========================================================
-// #1: Ensure the <body> element's `min-height` is at least the viewport height.
 
 body
   min-height: 100% // #1
 
-// Vertical rhythm =============================================================
-// - Set a consistent margin for common elements to maintain vertical rhythm.
 
 blockquote,
 dl,
@@ -61,11 +39,6 @@ p,
 table,
 td,
 textarea,
-th {
+th
   word-wrap: break-word
   hyphens: auto
-}
-
-// Accessibility ===============================================================
-// != Do not change :focus styles! It’s an accessibility no-no.
-//    @link http://bit.ly/1T12z1S
