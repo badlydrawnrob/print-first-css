@@ -59,10 +59,12 @@ All typography aligns to a Material Design `4sp/px` grid. Each of the headings h
 Install with (npm)[https://www.npmjs.com/]:
 
 ```git
-npm install badlydrawnrob/cardinal-stylus --save
+npm install badlydrawnrob/print-first-css --save
 ```
 
-### Using Cardinal stylus
+### Compiling Stylus
+
+Compile with [Codekit](https://codekitapp.com), or choose your own.
 
 1. Create a `source/stylus/config.styl` file
     + `@import` the `print-first.styl` file from the npm folder
@@ -149,7 +151,11 @@ Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo 
 
 ## Credits
 
-Heavily leans on the original [Cardinal CSS](http://cardinalcss.com/) framework, but has departed enough from it's original ethos to "rebrand" for my own purposes.
+1. **[Cardinal CSS](http://cardinalcss.com/):** Heavily leans on the original Cardinal framework, but has departed enough from it's original ethos to "rebrand" for my own purposes.
+2. **Markdown:** Notes on `.md` collated from:
+    - [CommonMark](http://commonmark.org/help/)
+    - [Github](https://guides.github.com/features/mastering-markdown/#examples)
+    - [Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
 
@@ -157,7 +163,8 @@ Heavily leans on the original [Cardinal CSS](http://cardinalcss.com/) framework,
 
 ## ⚠ Current Issues
 
-- Normalize doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now.
-  - Pull in via `npm` and overwrite `/partials/_normalize.styl`
-- Careful with Hashes, they fail silently if they've been used but not declared.
+1. **Normalize** doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now.
+    + Pull in via `npm` and overwrite `/partials/_normalize.styl`
+2. **Hashes** fail silently if they've been used but not declared.
   - `$this.hash.isnt.setup` but is referenced, with no errors given
+3. **Image sizes** should stick to the `4sp/px` grid wherever possible

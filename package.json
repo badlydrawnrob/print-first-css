@@ -1,5 +1,5 @@
 {
-  "name": "print-first",
+  "name": "print-first-css",
   "version": "2.0.0",
   "description": "A simple, print-based starting point for typographic css projects",
   "main": "print-first.styl",
