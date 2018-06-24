@@ -3,7 +3,7 @@ Title:    Print First CSS: All partial files
 Author:   Rob McDonald  
 Comment:  Helper file to view all elements
           without any context
-CSS:      ../../assets/css/print-first.css
+CSS:      ../../assets/css/print-first-markdown.css
 ---
 
 {{partials/headings.md}}

@@ -491,7 +491,7 @@
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/source\/stylus\/print-first.styl": {
+	"\/source\/stylus\/print-first-markdown.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -499,6 +499,19 @@
 		"iC": 1,
 		"ma": 1,
 		"oA": 0,
+		"oAP": "\/build\/stylus\/print-first-markdown.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/source\/stylus\/print-first.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
 		"oAP": "\/build\/assets\/css\/print-first.css",
 		"oF": 2,
 		"oS": 0,

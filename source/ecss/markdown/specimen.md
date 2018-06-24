@@ -3,7 +3,7 @@ Title:    Print First CSS: Specimen
 Author:   Rob McDonald  
 Comment:  An overview of Markdown syntax supported
           along with look and feel
-CSS:      ../../assets/css/print-first.css
+CSS:      ../../assets/css/print-first-markdown.css
 ---
 
 
