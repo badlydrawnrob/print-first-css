@@ -1,16 +1,17 @@
+// Notes =======================================================================
 // Print styles extracted from HTML5-Boilerplate
-// - @link http://cbrac.co/1RvNULl
-// - #1: Black prints faster - http://cbrac.co/XvusCs
+// #1: Black prints faster
+// #2: Don’t show links for images, or javascript/internal links
+// #3: Tables - http://css-discuss.incutio.com/wiki/Printing_Tables
 
 @media print
-  *
-    color: #000 !important // #1
+  *,
+  *:before,
+  *:after
     background: transparent !important
+    color: #000 !important  // #1
     box-shadow: none !important
     text-shadow: none !important
-
-  @page
-    margin: 0.5cm
 
   a,
   a:visited
@@ -19,36 +20,36 @@
   a[href]:after
     content: " (" attr(href) ")"
 
-  // Don’t show links for images, or javascript/internal links
+  abbr[title]:after
+    content: " (" attr(title) ")"
+
+  // #2
   a[href^="#"]:after,
   a[href^="javascript:"]:after
     content: ""
 
-  abbr[title]:after
-    content: " (" attr(title) ")"
-
-  blockquote,
   pre
-    border: 1px solid $color.b
+    white-space: pre-wrap !important
+
+  pre,
+  blockquote
+    border: 1px solid #999
     page-break-inside: avoid
 
+  // #3
+  thead
+    display: table-header-group
+
+  tr,
+  img
+    page-break-inside: avoid
+
+  p,
   h2,
-  h3,
-  p
+  h3
     orphans: 3
     widows: 3
 
   h2,
   h3
     page-break-after: avoid
-
-  img,
-  tr
-    page-break-inside: avoid
-
-  img
-    max-width: 100% !important
-
-  // #1: http://cbrac.co/Q6s1o2
-  thead
-    display: table-header-group // #1
