@@ -3,7 +3,7 @@ Title:    Print First CSS: Specimen
 Author:   Rob McDonald  
 Comment:  An overview of Markdown syntax supported
           along with look and feel
-CSS:      ../../assets/css/print-first-markdown.css
+CSS:      ../../stylus/print-first-markdown.css
 ---
 
 
@@ -214,4 +214,6 @@ It can be a little confusing when to use each specific tag, so as a rough guide:
 1. `abbr`: [Abbreviation or acronym](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr)
 2. `kbd`: [ Denotes textual user input from a keyboard](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd)
 3. **Potentially useful:**
-    - [`details`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+    - `samp`: [Output from computer program](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp)
+        - Can be used with `kbd` to denote instructions
+    - `details`: [Expanding item blocks](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)

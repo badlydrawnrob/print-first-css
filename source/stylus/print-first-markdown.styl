@@ -1,8 +1,10 @@
 @import 'print-first'
 
-html
-  baseline-grid($depth: 1)
+@media screen
+  html
+    baseline-grid($depth: 1)
 
-body
-  margin: 0 $spacing.half
-  padding: $spacing.base 0
+  @media screen and (min-width: 200px)
+    body
+      margin: 0 $spacing.half
+      padding: $spacing.base 0

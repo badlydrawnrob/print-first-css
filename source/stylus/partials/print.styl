@@ -1,20 +1,17 @@
 // Notes =======================================================================
-// Print styles extracted from HTML5-Boilerplate
-// #1: Black prints faster
-// #2: Don’t show links for images, or javascript/internal links
-// #3: Tables - http://css-discuss.incutio.com/wiki/Printing_Tables
+// Print specific styles (based on HTML5-Boilerplate)
+// - Backgrounds should be specified within @media screen
+// - NO blanket overrides in `@media print`, just take care:
+//   - For example, specify backgrounds in @media screen only
+//   - The only downside is "print to pdf files won't be as pretty :(
+//
+// #1: Don’t show links for images, or javascript/internal links
+// #2: Tables - http://css-discuss.incutio.com/wiki/Printing_Tables
 
 @media print
-  *,
-  *:before,
-  *:after
-    background: transparent !important
-    color: #000 !important  // #1
-    box-shadow: none !important
-    text-shadow: none !important
-
   a,
   a:visited
+    color: #000
     text-decoration: underline
 
   a[href]:after
@@ -23,20 +20,20 @@
   abbr[title]:after
     content: " (" attr(title) ")"
 
-  // #2
+  // #1
   a[href^="#"]:after,
   a[href^="javascript:"]:after
     content: ""
 
   pre
+    border: 1px solid #000
     white-space: pre-wrap !important
 
   pre,
   blockquote
-    border: 1px solid #999
     page-break-inside: avoid
 
-  // #3
+  // #2
   thead
     display: table-header-group
 

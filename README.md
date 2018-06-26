@@ -17,7 +17,7 @@ Only the essentials here, folks.
 Uses [Stylus](http://stylus-lang.com) to compile css:
 
 1. **Simple variables**:
-    - `modules/variables/*` sets up default variables for typography, color and spacing
+    - `modules/variables/*` sets up default variables for typography and spacing
     - `modules/mixins/*` sets up a `baseline-grid()`
     - `partials/*` for our component files
 2. **Typography**
@@ -27,7 +27,10 @@ Uses [Stylus](http://stylus-lang.com) to compile css:
     - See [Current issues](#current-issues)
 4. **No fancy stuff**
     - Plain text only!
-    - Roll your own buttons and components :)
+    - Minimal background colours (_black prints faster!_)
+    - Roll your own buttons, color themes and components :)
+    - Use [`@media` queries](https://caniuse.com/#feat=css-mediaqueries) for screen-specific styles
+        - See [Current issues](#current-issues)
 
 ### Hashes
 
@@ -35,8 +38,8 @@ Uses [hashes](http://stylus-lang.com/docs/hashes.html) for global settings. Most
 
 - Access values: `$font.family.base`
 - Change values: `$font.family.base = 'Arial'`
-- Add values: `$color['theme'] = {primary: 'blue', secondary: 'yellow'}`
-    + You may need to escape `\` or use `unquote()` for some values
+- Add values: `$color['primary'] = #6200EE`
+    + Some values may require `\escaping` or `unquote()`
 - [Source order matters](https://github.com/stylus/stylus/issues/2136), so I set some sensible `$default-` values to make them easier to override.
     + Override the hashes, **not** the `$default-`s!
 
@@ -134,14 +137,13 @@ Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo 
   height: $spacing.base
 
   // Typography
+  color: #000
   font: normal 13px "Helvetica Neue", sans-serif
   line-height: 1.5
-  color: $color.bbbb
   text-align: center
 
   // Visual
-  background-color: $color.llll
-  border: 1px solid $color.ll
+  border: 1px solid #f1f1f1
   border-radius: $border.radius
 
   // Misc
@@ -169,6 +171,7 @@ Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo 
 
 1. **Normalize** doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now.
     + Pull in via `npm` and overwrite `/partials/_normalize.styl`
+2. **Nested queries**: IE11 does not support nested queries
 2. **Hashes** fail silently if they've been used but not declared.
   - `$this.hash.isnt.setup` but is referenced, with no errors given
 3. **Image sizes** should stick to the `4sp/px` grid wherever possible
