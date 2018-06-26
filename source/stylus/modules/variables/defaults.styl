@@ -1,17 +1,20 @@
 // Notes: Hashes ===============================================================
-// Source order matters. So we set some sensible `$default-` values to make
-// them easier to override ...
-// - Override the hashes, not the `$default-`s!
+// 1. Set up `$default-` variables to avoid Stylus errors
+// 2. Source order matters!
+// 3. Edit the hashes, NOT the `$default-` variables!
 //   - http://bit.ly/2jPk8qE
 
 
 // Typography ==================================================================
-// #!: Material Design Typographic Scale: 12, 14, 16, 20, and 34
-//     - Docs: https://material.io/design/typography/
-//     - Let's set body at `16sp/px`
-//        - Material's default grid is `4sp/px` so it's nicely divisible by 4
-//     - I won't be following their `H1 > H6` settings to the letter ...
-//        - But we'll set up the typographic scale as-is
+// Inspired by Material Design
+// - https://material.io/design/typography/
+//
+// 1. Set body at `16sp/px`
+//    - Material grid is `4sp/px` so it's nicely divisible by 4
+//    - Uses same typographic scale, with some creative license on setup
+// 2. Default font-family
+//
+// #1: Monospace bug https://bit.ly/2Kp7X0S
 
 $default-font-size-pppppp = 96 / 16  // h1
 $default-font-size-ppppp  = 60 / 16  // h2
@@ -23,6 +26,9 @@ $default-font-size        = 16 / 16  // subtitle 1, body 1
 $default-font-size-m      = 14 / 16  // subtitle 2, body 2, button
 $default-font-size-mm     = 12 / 16  // caption
 $default-font-size-mmm    = 10 / 16  // overline
+
+$default-font-family = system-ui, sans-serif
+$default-font-family-mono = monospace, monospace  // #2
 
 // Tracking ====================================================================
 
@@ -65,34 +71,6 @@ $default-spacing-mmm     =  4 / 16   // 0.25rem, $spacing.quarter
 $default-spacing-mmmm    =  2 / 16   // 0.125rem, $spacing.micro
 $default-spacing-mmmmm   =  1 / 16   // 0.0625rem, $spacing.px
 
-// Borders =====================================================================
+// Visual =====================================================================
 
 $default-border-radius = $default-spacing-mmmm
-
-// Colours =====================================================================
-// - Colors go from `x` (lightest) to `xxxx` (darkest)
-// - Standard color themes:
-//   - Dark text: http://bit.ly/2kTT99J,
-//   - Dark theme: http://bit.ly/2mfGAHv
-// - Add your own primary/secondary colors:
-//   - $color['theme'] = { ... }
-
-$default-color-bbbb = alpha(#000, 87%) // Primary text
-$default-color-bbb = alpha(#000, 54%)  // Secondary text, active icons
-$default-color-bb = alpha(#000, 38%)   // Disabled text, hint text, icons
-$default-color-b = alpha(#000, 12%)    // Dividers
-
-$default-color-wwww = alpha(#fff, 100%) // Primary text, active icons
-$default-color-www = alpha(#fff, 70%)   // Secondary text
-$default-color-ww = alpha(#fff, 50%)    // Disabled text, hint text, icons
-$default-color-w = alpha(#fff, 12%)     // Dividers
-
-$default-color-llll = #e0e0e0 // Status bar
-$default-color-lll = #f5f5f5  // App bar
-$default-color-ll = #fafafa   // Background
-$default-color-l = #fff       // Cards/diologs
-
-$default-color-dddd = #000    // Status bar
-$default-color-ddd = #212121  // App bar
-$default-color-dd = #303030   // Background
-$default-color-d = #424242    // Cards/diologs

@@ -1,17 +1,16 @@
 // Notes =======================================================================
 // #1: Ensure the <html> element's `height` is at least the viewport height.
+// #2: Add word wrapping and basic hyphenation to common elements.
 
 html
-  color: $color.bbbb
+  color: #000
   font-family: $font.family.base
   font-size: $font.size.base
   line-height: $line.height.base
-  background-color: $color.l
-
+  background: transparent
 
 body
   min-height: 100% // #1
-
 
 blockquote,
 dl,
@@ -32,13 +31,11 @@ table,
 ul
   margin-bottom: $spacing.base
 
-// Add word wrapping and basic hyphenation to common elements.
-
 caption,
 p,
 table,
 td,
 textarea,
 th
-  word-wrap: break-word
-  hyphens: auto
+  word-wrap: break-word  // #2
+  hyphens: auto  // #2

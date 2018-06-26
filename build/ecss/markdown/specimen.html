@@ -5,7 +5,7 @@
 	<title>Print First CSS: Specimen</title>
 	<meta name="author" content="Rob McDonald"/>
 	<meta name="comment" content="An overview of Markdown syntax supported along with look and feel"/>
-	<link type="text/css" rel="stylesheet" href="../../assets/css/print-first-markdown.css"/>
+	<link type="text/css" rel="stylesheet" href="../../stylus/print-first-markdown.css"/>
 </head>
 <body>
 
@@ -164,6 +164,8 @@ print('3 backticks or')
 print('indent 4 spaces')
 </code></pre>
 
+<p>Here is an example of inline code <code>var = 1</code>, Keyboard controls <kbd>⌘ + V</kbd> and a sample <samp>Does not compute, press: <kbd>Y</kbd> to continue</samp></p>
+
 <h6 id="h6">H6</h6>
 
 <p>Aliquam feugiat velit sed nisl tempor lobortis.</p>
@@ -242,7 +244,12 @@ print('indent 4 spaces')
 <li><strong>Potentially useful:</strong>
 
 <ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"><code>details</code></a></li>
+<li><code>samp</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp">Output from computer program</a>
+
+<ul>
+<li>Can be used with <code>kbd</code> to denote instructions</li>
+</ul></li>
+<li><code>details</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">Expanding item blocks</a></li>
 </ul></li>
 </ol>
 
