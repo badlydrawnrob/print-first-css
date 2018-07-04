@@ -1,7 +1,11 @@
 blockquote
   font-style: normal
-  padding-left: $spacing.base
-  border-left: #000
+  padding: $spacing.base
+  border: $spacing.px solid #000
+
+  @media screen
+    padding: 0 0 0 $spacing.base
+    border-width: 0 0 0 $spacing.px
 
   p
     margin: 0

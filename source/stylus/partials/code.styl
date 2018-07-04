@@ -28,14 +28,17 @@ pre
   position: relative
   overflow: auto
   padding: $spacing.base
-  white-space: pre
+  white-space: pre-wrap
   word-wrap: normal
   word-break: normal
   tab-size: 4
   hyphens: none
+  border: $spacing.px solid #000
 
   @media screen
+    white-space: pre
     background: #f1f1f1
+    border-color: transparent
 
   code
     display: block

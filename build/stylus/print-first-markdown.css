@@ -274,8 +274,14 @@ th {
 }
 blockquote {
   font-style: normal;
-  padding-left: 1.5rem;
-  border-left: #000;
+  padding: 1.5rem;
+  border: 0.0625rem solid #000;
+}
+@media screen {
+  blockquote {
+    padding: 0 0 0 1.5rem;
+    border-width: 0 0 0 0.0625rem;
+  }
 }
 blockquote p {
   margin: 0;
@@ -313,15 +319,18 @@ pre {
   position: relative;
   overflow: auto;
   padding: 1.5rem;
-  white-space: pre;
+  white-space: pre-wrap;
   word-wrap: normal;
   word-break: normal;
   tab-size: 4;
   hyphens: none;
+  border: 0.0625rem solid #000;
 }
 @media screen {
   pre {
+    white-space: pre;
     background: #f1f1f1;
+    border-color: transparent;
   }
 }
 pre code {
@@ -511,10 +520,6 @@ video {
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
-  }
-  pre {
-    border: 1px solid #000;
-    white-space: pre-wrap !important;
   }
   pre,
   blockquote {
