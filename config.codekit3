@@ -498,9 +498,9 @@
 		"ft": 8,
 		"iC": 1,
 		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/assets\/css\/print-first.css",
-		"oF": 2,
+		"oA": 0,
+		"oAP": "\/build\/stylus\/print-first.css",
+		"oF": 3,
 		"oS": 0,
 		"rrU": 0
 		}
@@ -511,7 +511,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 502831850,
-	"displayValue": "print-first",
+	"displayValue": "print-first-css",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-ive",
 	"iconImageWasSetByUser": 0
