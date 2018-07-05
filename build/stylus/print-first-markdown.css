@@ -399,14 +399,6 @@ textarea {
   resize: vertical;
 }
 h1 {
-  margin-bottom: 3.75rem;
-  font-weight: normal;
-  font-size: 3.75rem;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: -0.03125rem;
-}
-h2 {
   margin-bottom: 3rem;
   font-weight: normal;
   font-size: 3rem;
@@ -414,7 +406,7 @@ h2 {
   text-transform: none;
   letter-spacing: 0rem;
 }
-h3 {
+h2 {
   margin-bottom: 1.75rem;
   font-weight: normal;
   font-size: 2.125rem;
@@ -422,7 +414,7 @@ h3 {
   text-transform: none;
   letter-spacing: normal;
 }
-h4 {
+h3 {
   margin-bottom: 1.25rem;
   font-weight: normal;
   font-size: 1.5rem;
@@ -430,13 +422,21 @@ h4 {
   text-transform: none;
   letter-spacing: normal;
 }
-h5 {
+h4 {
   margin-bottom: 1.5rem;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1;
   text-transform: none;
   letter-spacing: 0.009375rem;
+}
+h5 {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: none;
+  letter-spacing: normal;
 }
 h6 {
   margin-bottom: 0;
