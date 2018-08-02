@@ -1,6 +1,6 @@
 {
   "name": "print-first-css",
-  "version": "2.2.2",
+  "version": "2.2.4",
   "description": "A simple, print-based starting point for typographic css projects",
   "main": "print-first.styl",
   "scripts": {

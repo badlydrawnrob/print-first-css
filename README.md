@@ -9,22 +9,54 @@ A simple, print-based starting point for typographic css projects. No fluff, no 
 Only the essentials here, folks.
 
 
+### Why print first?
+
+If you're like me, you often need to rattle off print or PDF presentations. Just write your musings with Markdown, use an app like [Marked](http://marked2app.com) and export away. You can also convert into HTML (or write vanilla HTML) and let print in Safari, Chrome or Firefox.
+
+It could also be useful for authors, if writing ebooks is your thing.
 
 
+### Typography
 
-## Stylus
+All typography aligns to a Material Design `4sp/px` grid. [Vertical rhythm](http://webtypography.net/2.2.2) is notoriously difficult to get right, so I wouldn't worry too much.
+
+1. **Headings** have their own `$line.height.x`
+    + You'll may need to adjust the `margin-bottom` with a new `font-family`
+    + [Cap height](https://bit.ly/2tseu0u) may also be an issue
+2. **Components** simply make sure the total `height`, `margin`, and `padding` align to the `4sp/px` grid for any given component.
+3. **Default** `font-size` is `16sp/px`
+    + It's easier to calculate
+    + See `modules/variables/defaults.styl` for all `font-size` and `line-height` variations
+4. **Baseline** the `baseline-grid()` and `$spacing` variables can be used to get the right vertical rhythm
+    + **Total height / 4** combined height of a component or text elements (including `height` + `margin` + `padding` etc) should be divisible by 4
+5. **Image sizes** should stick to the `4sp/px` grid wherever possible
+
+
+## Roll your own theme
+
+### Print first, @media second
+
+I use [ecss](#ecss) to create my CSS/HTML components, thinking _mobile-first_ and _print-first-css_ ... it's simple:
+
+1. **Add** styles for devices with `@media screen`
+2. **Remove** sections you don't need printed with `@media print` and `display: none`.
+
+### Stylus
 
 Uses [Stylus](http://stylus-lang.com) to compile css:
 
-1. **Simple variables**:
-    - `modules/variables/*` sets up default variables for typography and spacing
-    - `modules/mixins/*` sets up a `baseline-grid()`
-    - `partials/*` for our component files
-2. **Typography**
+1. **[Normalize](https://necolas.github.io/normalize.css/)** as an `npm` dependency
+    - See [Current issues](https://github.com/badlydrawnrob/print-first-css/issues/5)
+2. **Simple variables**:
+    - `source/stylus/modules/variables/*` sets up default variables for typography and spacing
+    - `source/stylus/modules/mixins/*` sets up a `baseline-grid()`
+    - `source/stylus/partials/*` for our component files
+3. **Typography**
     - `rem` defaults
     - [Material Design](https://material.io/design/typography/) typographic scale and rythm
-3. **[Normalize](https://necolas.github.io/normalize.css/)** as an `npm` dependency
-    - See [Current issues](#current-issues)
+4. **Lightweight `@media print` resets**
+    - Vendor defaults for _anchors_
+    - `source/stylus/partials/print.styl`
 4. **No fancy stuff**
     - Plain text only!
     - Minimal background colours (_black prints faster!_)
@@ -43,22 +75,8 @@ Uses [hashes](http://stylus-lang.com/docs/hashes.html) for global settings. Most
 - [Source order matters](https://github.com/stylus/stylus/issues/2136), so I set some sensible `$default-` values to make them easier to override.
     + Override the hashes, **not** the `$default-`s!
 
-### Typography
 
-All typography aligns to a Material Design `4sp/px` grid. [Vertical rhythm](http://webtypography.net/2.2.2) is notoriously difficult to get right, so I wouldn't worry too much.
-
-1. **Headings** have their own `$line.height.x`
-    + You'll may need to adjust the `margin-bottom` with a new `font-family`
-    + [Cap height](https://bit.ly/2tseu0u) may also be an issue
-2. **Components** simply make sure the total `height`, `margin`, and `padding` align to the `4sp/px` grid for any given component.
-3. **Default** `font-size` is `16sp/px`
-    + It's easier to calculate
-    + See `modules/variables/defaults.styl` for all `font-size` and `line-height` variations
-4. **Baseline** the `baseline-grid()` and `$spacing` variables can be used to get the right vertical rhythm
-    + **Total height / 4** combined height of a component or text elements (including `height` + `margin` + `padding` etc) should be divisible by 4
-
-
-
+----
 
 
 ## Installation
@@ -93,13 +111,12 @@ npm update
 ```
 
 
-
-
+----
 
 
 ## Styleguide
-It's best to stick to the following conventions:
 
+I try to follow these conventions, I'd advise you to do the same:
 
 
 ### ECSS
@@ -109,7 +126,7 @@ Ben Frain's [ECSS](https://github.com/badlydrawnrob/ecss) naming conventions. Al
 
 ### CSS declaration order
 
-Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo — `mixins()` come first.
+Based on @mdo [css declaration order](http://codeguide.co/#css-declaration-order) styleguide.
 
 1. Mixins
 2. Positioning
@@ -151,8 +168,7 @@ Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo 
 ```
 
 
-
-
+----
 
 
 ## Credits
@@ -162,15 +178,3 @@ Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo 
     - [CommonMark](http://commonmark.org/help/)
     - [Github](https://guides.github.com/features/mastering-markdown/#examples)
     - [Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
-
-
-
-
-## ⚠ Current Issues
-
-1. **Normalize** doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now.
-    + Pull in via `npm` and overwrite `/partials/_normalize.styl`
-2. **Hashes** fail silently if they've been used but not declared.
-    - `$this.hash.isnt.setup` but is referenced, with no errors given
-3. **Image sizes** should stick to the `4sp/px` grid wherever possible
