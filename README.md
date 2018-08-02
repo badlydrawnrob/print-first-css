@@ -171,7 +171,6 @@ Use [css declaration order](http://codeguide.co/#css-declaration-order) by @mdo 
 
 1. **Normalize** doesn't compile properly because of the `.` in the `npm` folder name. Added to `/partials` for now.
     + Pull in via `npm` and overwrite `/partials/_normalize.styl`
-2. **Nested queries**: IE11 does not support nested queries
 2. **Hashes** fail silently if they've been used but not declared.
-  - `$this.hash.isnt.setup` but is referenced, with no errors given
+    - `$this.hash.isnt.setup` but is referenced, with no errors given
 3. **Image sizes** should stick to the `4sp/px` grid wherever possible
