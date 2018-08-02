@@ -34,7 +34,7 @@ All typography aligns to a Material Design `4sp/px` grid. [Vertical rhythm](http
 
 ## Roll your own theme
 
-### Print first, @media second
+### Print first, `@media` second
 
 I use [ecss](#ecss) to create my CSS/HTML components, thinking _mobile-first_ and _print-first-css_ ... it's simple:
 
