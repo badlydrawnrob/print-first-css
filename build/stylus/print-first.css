@@ -280,7 +280,7 @@ blockquote {
 @media screen {
   blockquote {
     padding: 0 0 0 1.5rem;
-    border-width: 0 0 0 0.0625rem;
+    border-width: 0 0 0 0.125rem;
   }
 }
 blockquote p {
