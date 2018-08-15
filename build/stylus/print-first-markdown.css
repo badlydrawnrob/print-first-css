@@ -455,6 +455,7 @@ hr {
 img {
   font-style: italic;
   vertical-align: middle;
+  max-width: 100%;
 }
 figcaption {
   margin-top: 1.5rem;
