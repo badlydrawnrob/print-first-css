@@ -1,6 +1,6 @@
 {
   "name": "print-first-css",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "A simple, print-based starting point for typographic css projects",
   "main": "print-first.styl",
   "scripts": {
@@ -18,6 +18,6 @@
   "homepage": "https://github.com/badlydrawnrob/cardinal-stylus#readme",
   "dependencies": {},
   "devDependencies": {
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.1"
   }
 }
