@@ -329,6 +329,10 @@ pre {
   hyphens: none;
   border: 0.0625rem solid #000;
 }
+pre + pre {
+  border-top: transparent;
+  margin-top: -1.5rem;
+}
 @media screen {
   pre {
     white-space: pre;

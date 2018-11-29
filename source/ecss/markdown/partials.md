@@ -12,4 +12,5 @@ CSS:      ../../stylus/print-first-markdown.css
 {{partials/image.md}}
 {{partials/blockquote.md}}
 {{partials/code.md}}
+{{partials/pre.md}}
 {{partials/tables.md}}
