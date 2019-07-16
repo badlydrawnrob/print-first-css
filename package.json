@@ -1,14 +1,15 @@
 {
   "name": "print-first-css",
-  "version": "3.0.0-beta.1",
+  "version": "3.0.0-beta.2",
   "description": "A simple starting point for typographic css projects",
-  "main": "print-first.styl",
+  "main": "style/main.less",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "mkdir -p build/",
     "css": "npx lessc source/style/main.less ./build/style/print-first.css",
     "css-markdown": "npx lessc source/style/markdown.less ./build/style/print-first-markdown.css",
-    "build": "npm run setup && npm run css && npm run css-markdown"
+    "prebuild": "mkdir -p build/",
+    "build": "npm run css && npm run css-markdown",
+    "postbuild": "echo Print First CSS: successfully compiled!"
   },
   "repository": {
     "type": "git",

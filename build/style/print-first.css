@@ -622,6 +622,52 @@ textarea {
   height: auto;
   resize: vertical;
 }
+h1 {
+  margin-bottom: var(--spacing-three);
+  font-weight: normal;
+  font-size: var(--font-size-pppp);
+  line-height: var(--line-height-one);
+  text-transform: none;
+}
+h2 {
+  margin-bottom: calc(var(--spacing-two) - var(--spacing-micro));
+  font-weight: normal;
+  font-size: var(--font-size-ppp);
+  line-height: var(--line-height-one);
+  text-transform: none;
+  letter-spacing: normal;
+}
+h3 {
+  margin-bottom: calc(var(--spacing-one) + var(--spacing-micro));
+  font-weight: normal;
+  font-size: var(--font-size-pp);
+  line-height: calc(var(--line-height-one) + var(--line-height-quarter));
+  text-transform: none;
+  letter-spacing: normal;
+}
+h4 {
+  margin-bottom: var(--spacing);
+  font-weight: 700;
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-one);
+  text-transform: none;
+}
+h5 {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-transform: none;
+  letter-spacing: normal;
+}
+h6 {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-transform: none;
+  letter-spacing: normal;
+}
 hr {
   display: block;
   padding: 0;
