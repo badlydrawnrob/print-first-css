@@ -1,17 +1,16 @@
 // `border-box`... ALL THE THINGS!
 // - @link http://cbrac.co/RQrDL5
 
-html
-  box-sizing: border-box
+html {
+  box-sizing: border-box;
+}
 
 // Inheriting the `box-sizing` property is a better practice.
 // - @link http://cbrac.co/1tqPFsy
 
-*
-  &,
-  &:before,
-  &:after
-    box-sizing: inherit
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 // Remove margins, paddings, and borders from HTML elements.
 // - @link http://cbrac.co/1Ev9etR
@@ -88,7 +87,8 @@ time,
 tr,
 u,
 ul,
-var
-  margin:  0
-  padding: 0
-  border:  0
+var {
+  margin:  0;
+  padding: 0;
+  border:  0;
+}

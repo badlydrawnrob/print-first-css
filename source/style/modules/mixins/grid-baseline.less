@@ -1,0 +1,30 @@
+// Baseline grid ===============================================================
+// `4sp/px` baseline for typographic layout (see default --line-height)
+// `8sp/px` baseline for components
+// - Based on Material Design: http://bit.ly/2lYjdkt
+// - Typographic rhythm: http://bit.ly/2mnBSri
+// - Gradient: http://bit.ly/2lE4pMV
+//
+// #1: Set @align to nudge the grid to wherever you need it (from top)
+//     so type lies over the baseline.
+// #2: Alpha color seems to not work: https://stackoverflow.com/a/41265350
+//     - use less `fade(..)` function instead
+
+.grid-baseline(@depth: -1; @align: 0) {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: @depth;
+    top: @align;  // #1
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    // #2
+    background: linear-gradient(0deg, fade(#000, 30%) 1px, transparent 1px, transparent),
+                linear-gradient(0deg, fade(#000, 20%) 1px, transparent 1px, transparent);
+    background-size: auto var(--spacing), auto var(--spacing-quarter);
+  }
+}

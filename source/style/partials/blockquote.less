@@ -1,0 +1,23 @@
+blockquote {
+  font-style: normal;
+  padding: var(--spacing);
+  border: var(--spacing-px) solid var(--font-color);
+
+  @media screen {
+    padding: 0 0 0 var(--spacing);
+    border-width: 0 0 0 var(--spacing-micro);
+  }
+
+  p {
+    margin: 0;
+
+    + p {
+      margin-top: var(--spacing);
+    }
+  }
+
+  cite {
+    font-style: normal;
+    font-size: var(--font-size);
+  }
+}

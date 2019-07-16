@@ -1,0 +1,64 @@
+// Notes =======================================================================
+// #1: Correct `font-family` set oddly in Safari 5 and Chrome.
+// #2: Convert variable to negative: https://stackoverflow.com/a/40585170
+// #3: Possible issues with `white-space: pre` and baseline
+//     - != `pre-line` or `pre-wrap` seem to work
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-family-mono);  // #1
+  font-size: var(--font-size);
+  font-style: normal;
+  line-height: var(--line-height);
+}
+
+code,
+kbd {
+  margin: 0;
+  padding: var(--spacing-quarter);
+  white-space: nowrap;
+
+  @media screen {
+    border-radius: var(--border-radius);
+    background-color: var(--color-ll);
+  }
+}
+
+
+pre {
+  position: relative;
+  overflow: auto;
+  padding: var(--spacing);
+  white-space: pre-wrap;
+  word-wrap: normal;
+  word-break: normal;
+  tab-size: 4;
+  hyphens: none;
+  border: var(--spacing-px) solid var(--font-color);
+
+  & + & {
+    border-top: transparent;
+    margin-top: calc(var(--spacing) * -1);  // #2
+  }
+
+  @media screen {
+    white-space: pre;
+    background: var(--color-ll);
+    border-color: transparent;
+  }
+
+  code {
+    display: block;
+    overflow: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: pre;  // #3
+    color: inherit;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+  }
+}

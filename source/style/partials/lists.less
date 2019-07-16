@@ -1,0 +1,48 @@
+// Set some basic styles for definition lists.
+
+dl {
+  dt {
+    font-weight: 700;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+// Reset the left margin for <ol> and <ul> elements.
+
+ol,
+ul {
+  li {
+    margin-left: var(--spacing);
+  }
+}
+
+// Set nested `list-style` types for ordered lists.
+
+ol {
+  list-style: decimal;
+
+  & & {
+    list-style: upper-alpha;
+  }
+
+  & & & {
+    list-style: lower-roman;
+  }
+
+  & & & & {
+    list-style: lower-alpha;
+  }
+}
+
+// Remove `margin-bottom` on nested lists.
+
+ol,
+ul {
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
+}

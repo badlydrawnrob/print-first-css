@@ -1,23 +1,28 @@
 {
   "name": "print-first-css",
-  "version": "2.2.10",
-  "description": "A simple, print-based starting point for typographic css projects",
+  "version": "3.0.0-beta.1",
+  "description": "A simple starting point for typographic css projects",
   "main": "print-first.styl",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "mkdir -p build/",
+    "css": "npx lessc source/style/main.less ./build/style/print-first.css",
+    "css-markdown": "npx lessc source/style/markdown.less ./build/style/print-first-markdown.css",
+    "build": "npm run setup && npm run css && npm run css-markdown"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://badlydrawnrob@github.com/badlydrawnrob/cardinal-stylus.git"
+    "url": "git+https://badlydrawnrob@github.com/badlydrawnrob/print-first-css.git"
   },
   "author": "Rob McDonald",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/badlydrawnrob/cardinal-stylus/issues"
+    "url": "https://github.com/badlydrawnrob/print-first-css/issues"
   },
-  "homepage": "https://github.com/badlydrawnrob/cardinal-stylus#readme",
+  "homepage": "https://github.com/badlydrawnrob/print-first-css#readme",
   "dependencies": {},
   "devDependencies": {
+    "less": "^3.9.0",
     "normalize.css": "^8.0.1"
   }
 }
