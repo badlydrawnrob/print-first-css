@@ -3,15 +3,30 @@
 
 @import "config";
 
+@media all {
+  .title {
+    margin-bottom: var(--spacing);
+  }
+}
+
 @media screen {
-  html {
-    .grid-baseline(@depth: 1; @align: 1px);
+  main {
+    .grid-baseline(@depth: 1; @align: 0);
   }
 }
 
 @media screen and (min-width: 200px) {
-  body {
-    margin: 0 var(--spacing-half);
+  html {
+    max-width: 800px;
+    margin: 0 auto;
     padding: var(--spacing-three) 0;
+  }
+  
+  body {
+    padding: 0 var(--spacing-one);
+  }
+
+  main {
+    // pass
   }
 }

@@ -111,3 +111,4 @@ Print First is 99% standard CSS. I've added [`.less`](http://lesscss.org) files 
 1. [CommonMark](http://commonmark.org/help/)
 2. [Mastering markdown](https://guides.github.com/features/mastering-markdown/#examples)
 3. [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+4. [Pandoc tricks](https://github.com/jgm/pandoc/wiki/Pandoc-Tricks)

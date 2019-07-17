@@ -797,15 +797,20 @@ i,
 cite {
   font-style: italic;
 }
+@media all {
+  .title {
+    margin-bottom: var(--spacing);
+  }
+}
 @media screen {
-  html {
+  main {
     position: relative;
   }
-  html::before {
+  main::before {
     content: '';
     position: absolute;
     z-index: 1;
-    top: 1px;
+    top: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -814,8 +819,12 @@ cite {
   }
 }
 @media screen and (min-width: 200px) {
-  body {
-    margin: 0 var(--spacing-half);
+  html {
+    max-width: 800px;
+    margin: 0 auto;
     padding: var(--spacing-three) 0;
+  }
+  body {
+    padding: 0 var(--spacing-one);
   }
 }
