@@ -2,6 +2,7 @@
 
 
 
+
 ## Quick intro
 
 A simple starting point for typographic css projects. Only the essentials here, folks:
@@ -20,6 +21,7 @@ Write it down with Markdown, then convert with the app of your choice:
 - [Marked](http://marked2app.com)) if you like an app to do the work,
 - Print with Safari, Chrome or Firefox
 
+
 #### Print first, screen second
 
 Think about print first; add the finesse for screen-based devices later:
@@ -33,17 +35,31 @@ It's not suitable for every job, but for printable media, it's much [better than
 
 
 
-### Typography
+## Typography
 
-Typography heavily influenced by [Material Design](https://material.io/design/typography/the-type-system.html) All typography aligns to a Material Design `4dp/px` grid. [Vertical rhythm](http://webtypography.net/2.2.2) is notoriously difficult to get right, so I wouldn't worry too much.
+Typography heavily influenced by [Material Design](https://material.io/design/typography/the-type-system.html) — all typography aligns to a Material Design `4dp/px` grid. [Vertical rhythm](http://webtypography.net/2.2.2) is notoriously difficult to get right, so I wouldn't worry too much.
+
+Some helpers:
 
 1. [A baseline grid](./source/style/modules/mixins/grid-baseline.less)
 2. [Default iOS and Android fonts](./source/style/modules/variables/typography.less)
 3. [CSS variables](./source/style/modules/variables/_root.less)
+4. Headings have their own `--line-height` depending on font
+5. Default `--font-size` is `16dp/px`
 
 
 
-### Installation
+
+## Layout
+
+> All components and media should be divisible by `8` or `4`;
+
+All components and media align to the `8dp/px` [baseline grid](./source/modules/mixins/grid-baseline.less) (that's double [typography](./#typography) baseline). Don't worry about [being pixel perfect](http://webtypography.net/2.2.2) — it's notoriously difficult to get right.
+
+
+
+
+## Installation
 
 1. You have [Node](https://nodejs.org/en/) installed
 2. Create your repo and `cd your/folder/`
@@ -51,7 +67,7 @@ Typography heavily influenced by [Material Design](https://material.io/design/ty
 4. `npm install badlydrawnrob/print-first-css --save-dev`
 5. `npm run build`
 
-#### Upgrading
+### Upgrading
 
 Check the release notes first, then:
 
@@ -60,24 +76,7 @@ Check the release notes first, then:
 
 
 
-### Typography
-
-1. **Headings** have their own `--line-height` depending on font
-2. **Default size** is `16dp/px`
-
-
-
-
-### Layout
-
-> All components and media should be divisible by `8` or `4`;
-
-All components and media align to the `8dp/px` and `4dp/px` `[baseline grid](./source/modules/mixins/grid-baseline.less)`. You needn't worry about [being pixel perfect](http://webtypography.net/2.2.2) — it's notoriously difficult to get right.
-
-
-
-
-### Less
+## Less
 
 Print First is 99% standard CSS. I've added [`.less`](http://lesscss.org) files into the mix to make things easier on the eye. Creating your CSS is simple as:
 
