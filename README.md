@@ -97,8 +97,10 @@ Print First is 99% standard CSS. I've added [`.less`](http://lesscss.org) files 
 
 ## Styleguide
 
-1. [Intro to Markdown and writing styleguide](./source/markdown/speciman.md)
-2. [Sane stylesheets for css](https://github.com/badlydrawnrob/ecss)
+1. [Intro to Markdown and writing styleguide](./build/markdown/styleguide.md)
+2. [Writing in context](./build/markdown/speciman.md)
+3. [A look at the components](./build/markdown/partials.md)
+4. [Sane stylesheets for css](https://github.com/badlydrawnrob/ecss)
 
 
 

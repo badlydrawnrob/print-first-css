@@ -1,0 +1,1016 @@
+<!DOCTYPE html>  
+<html lang="GB">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>styleguide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+:root {
+  --color-b: #000;
+  --color-l: #fff;
+  --color-ll: #f1f1f1;
+  --spacing-increment: var(--spacing-pp);
+  --spacing-pppppppp: 128 / 16;
+  --spacing-ppppppp: 112 / 16;
+  --spacing-pppppp: 96 / 16;
+  --spacing-ppppp: 80 / 16;
+  --spacing-pppp: 64 / 16;
+  --spacing-ppp: 48 / 16;
+  --spacing-pp: 32 / 16;
+  --spacing-p: 24 / 16;
+  --spacing-base: 16 / 16;
+  --spacing-m: 8 / 16;
+  --spacing-mm: 4 / 16;
+  --spacing-mmm: 2 / 16;
+  --spacing-mmmm: 1 / 16;
+  --spacing-eight: calc(var(--spacing-pppppppp) * 1rem);
+  --spacing-seven: calc(var(--spacing-ppppppp) * 1rem);
+  --spacing-six: calc(var(--spacing-pppppp) * 1rem);
+  --spacing-five: calc(var(--spacing-ppppp) * 1rem);
+  --spacing-four: calc(var(--spacing-pppp) * 1rem);
+  --spacing-three: calc(var(--spacing-ppp) * 1rem);
+  --spacing-two: calc(var(--spacing-pp) * 1rem);
+  --spacing: calc(var(--spacing-p) * 1rem);
+  --spacing-one: calc(var(--spacing-base) * 1rem);
+  --spacing-half: calc(var(--spacing-m) * 1rem);
+  --spacing-quarter: calc(var(--spacing-mm) * 1rem);
+  --spacing-micro: calc(var(--spacing-mmm) * 1rem);
+  --spacing-px: calc(var(--spacing-mmmm) * 1rem);
+  --ios: 'San Francisco';
+  --android: 'Noto', 'Roboto';
+  --ios-mono: 'San Francisco Mono';
+  --android-mono: 'Noto Mono', 'Roboto Mono';
+  --font-color: var(--color-b);
+  --font-family: var(--ios), var(--android), sans-serif;
+  --font-family-mono: var(--ios-mono), var(--android-mono), monospace;
+  --font-size-pppppp: calc((96 / 16) * 1rem);
+  --font-size-ppppp: calc((60 / 16) * 1rem);
+  --font-size-pppp: calc((48 / 16) * 1rem);
+  --font-size-ppp: calc((34 / 16) * 1rem);
+  --font-size-pp: calc((24 / 16) * 1rem);
+  --font-size-p: calc((20 / 16) * 1rem);
+  --font-size: calc((16 / 16) * 1rem);
+  --font-size-m: calc((14 / 16) * 1rem);
+  --font-size-mm: calc((12 / 16) * 1rem);
+  --font-size-mmm: calc((10 / 16) * 1rem);
+  --line-height-eight: calc(var(--spacing-pppppppp));
+  --line-height-seven: calc(var(--spacing-ppppppp));
+  --line-height-six: calc(var(--spacing-pppppp));
+  --line-height-five: calc(var(--spacing-ppppp));
+  --line-height-four: calc(var(--spacing-pppp));
+  --line-height-three: calc(var(--spacing-ppp));
+  --line-height-two: calc(var(--spacing-pp));
+  --line-height: calc(var(--spacing-p));
+  --line-height-one: calc(var(--spacing-base));
+  --line-height-half: calc(var(--spacing-m));
+  --line-height-quarter: calc(var(--spacing-mm));
+  --border-radius: var(--spacing-micro);
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+b,
+blockquote,
+body,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+u,
+ul,
+var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+:root {
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background: transparent;
+}
+body {
+  min-height: 100%;
+}
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+menu,
+ol,
+p,
+pre,
+summary,
+table,
+ul {
+  margin-bottom: var(--spacing);
+}
+caption,
+p,
+table,
+td,
+textarea,
+th {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+blockquote {
+  font-style: normal;
+  padding: var(--spacing);
+  border: var(--spacing-px) solid var(--font-color);
+}
+@media screen {
+  blockquote {
+    padding: 0 0 0 var(--spacing);
+    border-width: 0 0 0 var(--spacing-micro);
+  }
+}
+blockquote p {
+  margin: 0;
+}
+blockquote p + p {
+  margin-top: var(--spacing);
+}
+blockquote cite {
+  font-style: normal;
+  font-size: var(--font-size);
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size);
+  font-style: normal;
+  line-height: var(--line-height);
+}
+code,
+kbd {
+  margin: 0;
+  padding: var(--spacing-quarter);
+  white-space: nowrap;
+}
+@media screen {
+  code,
+  kbd {
+    border-radius: var(--border-radius);
+    background-color: var(--color-ll);
+  }
+}
+pre {
+  position: relative;
+  overflow: auto;
+  padding: var(--spacing);
+  white-space: pre-wrap;
+  word-wrap: normal;
+  word-break: normal;
+  tab-size: 4;
+  hyphens: none;
+  border: var(--spacing-px) solid var(--font-color);
+}
+pre + pre {
+  border-top: transparent;
+  margin-top: calc(var(--spacing) * -1);
+}
+@media screen {
+  pre {
+    white-space: pre;
+    background: var(--color-ll);
+    border-color: transparent;
+  }
+}
+pre code {
+  display: block;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+button,
+input[type="checkbox"],
+input[type="file"],
+input[type="image"],
+input[type="radio"],
+input[type="reset"],
+input[type="submit"],
+label,
+select {
+  cursor: pointer;
+}
+input[type="color"],
+input[type="range"] {
+  vertical-align: middle;
+}
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+  display: inline-block;
+  width: auto;
+}
+input[type="file"] {
+  max-width: 100%;
+  cursor: pointer;
+}
+input[type="search"] {
+  box-sizing: border-box;
+  appearance: none;
+}
+input[type="submit"],
+input[type="button"],
+input[type="image"],
+input[type="reset"],
+select {
+  border-radius: 0;
+}
+legend {
+  font-weight: 700;
+  width: 100%;
+  padding: 0;
+  border: 0;
+}
+textarea {
+  max-width: 100%;
+  height: auto;
+  resize: vertical;
+}
+h1 {
+  margin-bottom: var(--spacing-three);
+  font-weight: normal;
+  font-size: var(--font-size-pppp);
+  line-height: var(--line-height-one);
+  text-transform: none;
+}
+h2 {
+  margin-bottom: calc(var(--spacing-two) - var(--spacing-micro));
+  font-weight: normal;
+  font-size: var(--font-size-ppp);
+  line-height: var(--line-height-one);
+  text-transform: none;
+  letter-spacing: normal;
+}
+h3 {
+  margin-bottom: calc(var(--spacing-one) + var(--spacing-micro));
+  font-weight: normal;
+  font-size: var(--font-size-pp);
+  line-height: calc(var(--line-height-one) + var(--line-height-quarter));
+  text-transform: none;
+  letter-spacing: normal;
+}
+h4 {
+  margin-bottom: var(--spacing);
+  font-weight: 700;
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-one);
+  text-transform: none;
+}
+h5 {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-transform: none;
+  letter-spacing: normal;
+}
+h6 {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-transform: none;
+  letter-spacing: normal;
+}
+hr {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-top: var(--spacing-quarter) solid var(--font-color);
+}
+img {
+  font-style: italic;
+  vertical-align: middle;
+  max-width: 100%;
+}
+figcaption {
+  margin-top: var(--spacing);
+  font-size: var(--font-size-mm);
+  font-style: normal;
+}
+figcaption > img {
+  display: block;
+}
+dl dt {
+  font-weight: 700;
+}
+dl dd {
+  margin: 0;
+}
+ol li,
+ul li {
+  margin-left: var(--spacing);
+}
+ol {
+  list-style: decimal;
+}
+ol ol {
+  list-style: upper-alpha;
+}
+ol ol ol {
+  list-style: lower-roman;
+}
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+ol ol,
+ul ol,
+ol ul,
+ul ul {
+  margin-bottom: 0;
+}
+audio,
+canvas,
+iframe,
+svg,
+video {
+  vertical-align: middle;
+}
+audio,
+canvas,
+video {
+  width: 100%;
+  height: auto;
+}
+@media print {
+  a,
+  a:visited {
+    color: var(--font-color);
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  empty-cells: show;
+}
+tr {
+  vertical-align: baseline;
+}
+th,
+tfoot td {
+  text-align: left;
+}
+th,
+td {
+  overflow: visible;
+}
+abbr,
+acronym,
+dfn[title] {
+  cursor: help;
+}
+abbr a {
+  text-decoration: none;
+}
+del {
+  font-style: normal;
+  text-decoration: line-through;
+}
+details {
+  cursor: pointer;
+}
+em,
+i,
+cite {
+  font-style: italic;
+}
+@media all {
+  .title {
+    margin-bottom: var(--spacing);
+  }
+}
+@media screen {
+  main {
+    position: relative;
+  }
+  main::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent);
+    background-size: auto var(--spacing), auto var(--spacing-quarter);
+  }
+}
+@media screen and (min-width: 200px) {
+  html {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-three) 0;
+  }
+  body {
+    padding: 0 var(--spacing-one);
+  }
+}
+#mkreplaced-toc{list-style-position:inside;padding:0;margin:0 0 0 1rem;list-style-type:none}#mkreplaced-toc li::before{content:''}#mkreplaced-toc li{font-size:1rem;line-height:1.25;font-weight:normal}#mkreplaced-toc li ul{font-size:1.3rem;font-weight:300;padding:.5rem 0;margin:0 0 0 1rem}#mkreplaced-toc li.missing{list-style-type:none !important}#mkreplaced-toc.max-1 ul,#mkreplaced-toc.max1 ul{display:none}#mkreplaced-toc.max-2 ul ul,#mkreplaced-toc.max2 ul ul{display:none}#mkreplaced-toc.max-3 ul ul ul,#mkreplaced-toc.max3 ul ul ul{display:none}#mkreplaced-toc.max-4 ul ul ul ul,#mkreplaced-toc.max4 ul ul ul ul{display:none}#mkreplaced-toc.max-5 ul ul ul ul ul,#mkreplaced-toc.max5 ul ul ul ul ul{display:none}.mk-rtl{direction:rtl;text-align:right}.mkprinting,.mkprinting #wrapper{height:auto;margin-bottom:0;padding-bottom:0}.hideProgress #generated-toc,.hideProgress #firstdiff,.hideProgress #toc-title,.hideProgress #mkdocumentprogress,.hideProgress #mkincludechart,.hideProgress #mkprogressbar1,.hideProgress #mkprogressbar2,.hideProgress b.bookmark,.hideProgress .mkscrollmeter,.hideProgress #alllinks,.hideProgress #criticnav,.hideProgress .popup,.hideProgress #progressindicator,.hideProgress #mkautoscroll,.mkprinting #generated-toc,.mkprinting #firstdiff,.mkprinting #toc-title,.mkprinting #mkdocumentprogress,.mkprinting #mkincludechart,.mkprinting #mkprogressbar1,.mkprinting #mkprogressbar2,.mkprinting b.bookmark,.mkprinting .mkscrollmeter,.mkprinting #alllinks,.mkprinting #criticnav,.mkprinting .popup,.mkprinting #progressindicator,.mkprinting #mkautoscroll{display:none !important}@media print{body{background:white;line-height:1.4}html,body,#wrapper{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-perspective:none !important;-webkit-text-size-adjust:none;border:0;box-sizing:border-box;float:none;margin:0;max-width:100%;padding:10px 0 0;width:auto}.critic #wrapper mark.crit{background-color:#fffd38 !important;text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6{page-break-after:avoid}p,h2,h3{orphans:3;widows:3}section{page-break-before:avoid}pre>code{white-space:pre;word-break:break-word}#generated-toc,#firstdiff,#toc-title,#mkdocumentprogress,#mkincludechart,#mkprogressbar1,#mkprogressbar2,.mkscrollmeter,#alllinks,.popup{display:none !important}.suppressprintlinks a{border-bottom:none !important;color:inherit !important;cursor:default !important;text-decoration:none !important}.hrefafterlinktext #wrapper a:link:after,.hrefafterlinktext #wrapper a:visited:after{content:" (" attr(href) ") ";font-size:90%;opacity:.9}.nocodebreak pre{page-break-inside:avoid}img,table,figure{page-break-inside:avoid}.breakfootnotes .footnotes{page-break-before:always}.breakfootnotes .footnotes hr{display:none}#mktoctitle{display:block}#print-title{border-bottom:solid 1px #666;display:block}#wrapper pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{display:block}.task-list .task-list-item{list-style-type:none !important}.task-list .gh-complete.task-list-item .task-list-item-checkbox:before{background:#838387;content:'\2713'}.task-list .task-list-item-checkbox{-webkit-appearance:none;position:relative}.task-list .task-list-item-checkbox:before{border:solid 1px #aaa;border-radius:2px;color:white;content:' ';display:block;font-weight:bold;height:1em;left:-20px;line-height:1;position:absolute;text-align:center;top:-.75em;width:1em}}
+#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc,#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-position:inside}#wrapper #generated-toc-clone li.missing,#wrapper #mkreplaced-toc li.missing{list-style-type: none!important}#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-type: upper-roman}#wrapper #generated-toc-clone>ul>li>ul,#wrapper #mkreplaced-toc>li>ul {list-style-type: decimal}#wrapper #generated-toc-clone>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul{list-style-type: decimal-leading-zero}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul{list-style-type: lower-greek}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul{list-style-type: disc}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul>li>ul{list-style-type: square}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{}
+</style>
+
+<style id="mkprintstyles">@media print{#wrapper #generated-toc-clone,#generated-toc{display:none!important}
+html,body,#wrapper{font-size:10pt!important}
+}
+</style>
+
+
+  </head>
+<body class="normal firstload">
+  <div id="wrapper">
+<h1 id="title">Print First CSS: Styleguide</h1>
+
+<p>A brief intro to Markdown and how to write • @badlydrawnrob</p>
+
+
+<ul style="display: block;" id="mkreplaced-toc" class="max-6"><li class="notmissing"><a href="#commonmark" class="wiki-link">CommonMark</a><ul><li class="notmissing"><a href="#headers" class="wiki-link">Headers</a></li><li class="notmissing"><a href="#emphasis" class="wiki-link">Emphasis</a></li><li class="notmissing"><a href="#lists" class="wiki-link">Lists</a></li><li class="notmissing"><a href="#links" class="wiki-link">Links</a></li><li class="notmissing"><a href="#images" class="wiki-link">Images</a></li><li class="notmissing"><a href="#blockquotes" class="wiki-link">Blockquotes</a></li><li class="notmissing"><a href="#code" class="wiki-link">Code</a></li><li class="notmissing"><a href="#tables" class="wiki-link">Tables</a></li><li class="notmissing"><a href="#%C2%A0horizontalrules" data-orig-id="%C2%A0horizontalrules" class="wiki-link">&nbsp;Horizontal rules</a></li></ul></li><li class="notmissing"><a href="#htmlelementssupported" class="wiki-link">HTML elements supported</a><ul><li class="notmissing"><a href="#highlightingimportance" class="wiki-link">Highlighting importance</a></li><li class="notmissing"><a href="#highlightingpresentation" class="wiki-link">Highlighting presentation</a></li><li class="notmissing"><a href="#highlightingtechnicalelements" class="wiki-link">Highlighting technical elements</a></li></ul></li></ul>
+
+
+
+<h2 id="commonmark">CommonMark</h2>
+
+<h3 id="headers">Headers</h3>
+<pre><code class="text"># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
+------</code></pre>
+
+<h3 id="emphasis">Emphasis</h3>
+<pre><code class="text">Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.</code></pre>
+
+<h3 id="lists">Lists</h3>
+<pre><code class="text">1. One
+2. Two
+3. Three
+
+- Lists
+- Lists
+- Lists
+    + Can also use
+    * These characters</code></pre>
+
+<h3 id="links">Links</h3>
+<pre><code class="text">[Link](http://a.com)</code></pre>
+
+<h3 id="images">Images</h3>
+<pre><code class="text">![Image](http://url/a.png)</code></pre>
+
+<h3 id="blockquotes">Blockquotes</h3>
+<pre><code class="text">&gt; I don&apos;t think that you have any insight whatsoever into your &lt;mark&gt;capacity for good&lt;/mark&gt; ... [My notes on the original quote or &apos;sic&apos; spelling mistake] until you have some well-developed &lt;i&gt;insight into your capacity&lt;/i&gt; for evil. &lt;cite&gt;(Jordan Peterson, pg.148, my italics)&lt;/cite&gt;</code></pre>
+
+<h3 id="code">Code</h3>
+<pre><code class="text">`Inline code` with backticks</code></pre>
+
+<p><code>Inline code</code> with backticks</p>
+
+<p>Blocks of code are surrounded by lines of 3 backticks:</p>
+<pre><code class="text">```python
+# code block
+print(&apos;3 backticks or&apos;)
+print(&apos;indent 4 spaces&apos;)
+```</code></pre>
+
+<h3 id="tables">Tables</h3>
+
+<p>You can optionally add pipes <code>|</code> either side of table</p>
+<pre><code class="text">size | material     | color
+---- | ------------ | ------------
+9    | leather      | brown
+10   | hemp canvas  | natural
+11   | glass        | transparent</code></pre>
+
+<h3 id="%C2%A0horizontalrules"> Horizontal rules</h3>
+
+<p>Use sparingly</p>
+<pre><code class="text">---
+***</code></pre>
+
+<h2 id="htmlelementssupported">HTML elements supported</h2>
+
+<p>It can be a little confusing when to use each specific tag, so as a rough guide:</p>
+
+<h3 id="highlightingimportance">Highlighting importance</h3>
+
+<ul>
+<li><code>strong</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">Strong importance, seriousness or urgency</a>
+
+<ul>
+<li>Does not change the meaning of the sentence</li>
+</ul></li>
+<li><code>em</code>: Stressed, emphasis on a word or sentence
+
+<ul>
+<li>Changes the meaning of the sentence (Cats <em>are</em> cute)</li>
+<li>A <em>comparison</em> can also be called <em>compare</em></li>
+</ul></li>
+<li><code>q</code>: Inline quotations (<a href="https://academiccoachingandwriting.org/academic-writing/resources/citations">some examples</a>)</li>
+<li><code>blockquote</code>: Long-form quotations (some examples <a href="https://academiccoachingandwriting.org/academic-writing/resources/citations">here</a> and <a href="https://library.leeds.ac.uk/info/1402/referencing/50/leeds_harvard_style/4">here</a>)
+
+<ul>
+<li>Should probably be <a href="https://writingcommons.org/format/apa/675-block-quotations-apa"><em>limited</em> to lines of text <code>&gt; 3</code></a> — and <i>do they have to be indented</i>?</li>
+<li><code>blockquote</code> &gt; <code>mark</code>:</li>
+<li>Highlight interesting parts of original text</li>
+<li><code>blockquote</code> &gt; <code>i</code>:
+
+<ul>
+<li>Character thoughts, replaced/inserted text</li>
+</ul></li>
+</ul></li>
+<li><code>cite</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite">A book, research paper, essay or reference</a>
+
+<ul>
+<li>To reference the source material</li>
+<li>Can be used within a paragraph or a <code>blockquote</code></li>
+</ul></li>
+</ul>
+
+<h3 id="highlightingpresentation">Highlighting presentation</h3>
+
+<ol>
+<li><code>b</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">Bring attention to</a>
+
+<ul>
+<li>Presentational: indicate keywords or highlighted passages</li>
+<li><i>Don&#8217;t use when: indicating stressed importance within a sentence. Use <code>strong</code> instead</i></li>
+</ul></li>
+<li><code>i</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i">Offset from normal text</a>
+
+<ul>
+<li>Technical details, foreign language phrases, a characters thoughts, names [possibly], places [possibly]</li>
+<li><i>Don&#8217;t use when: indication stress that changes the tone of the sentence. Use <code>em</code> instead</i></li>
+</ul></li>
+<li><code>mark</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark">Highlighted for reference or notation</a>
+
+<ul>
+<li>A <code>q</code> or <code>blockquote</code> to comment or reference a passage</li>
+<li>In context app use (i.e. search term)</li>
+</ul></li>
+<li><code>s</code>, <code>del</code>, <code>ins</code>: <a href="http://html5doctor.com/ins-del-s/">Changes in relevance, or an edited passage</a></li>
+<li><code>span</code>: Visually change for decoration purposes with css</li>
+</ol>
+
+<h3 id="highlightingtechnicalelements">Highlighting technical elements</h3>
+
+<ol>
+<li><code>abbr</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr">Abbreviation or acronym</a></li>
+<li><code>kbd</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"> Denotes textual user input from a keyboard</a></li>
+<li><strong>Potentially useful:</strong>
+
+<ul>
+<li><code>samp</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp">Output from computer program</a>
+
+<ul>
+<li>Can be used with <code>kbd</code> to denote instructions</li>
+</ul></li>
+<li><code>details</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">Expanding item blocks</a></li>
+</ul></li>
+</ol>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>
