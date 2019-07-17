@@ -1,6 +1,6 @@
 {
   "name": "print-first-css",
-  "version": "3.0.0-beta.2",
+  "version": "3.0.0-beta.3",
   "description": "A simple starting point for typographic css projects",
   "main": "style/main.less",
   "scripts": {
