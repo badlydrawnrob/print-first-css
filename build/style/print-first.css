@@ -7,7 +7,7 @@
   --color-b: #000;
   --color-l: #fff;
   --color-ll: #f1f1f1;
-  --spacing-increment: var(--spacing-pp);
+  --spacing-increment: calc(var(--spacing-pp) * 1rem);
   --spacing-pppppppp: 128 / 16;
   --spacing-ppppppp: 112 / 16;
   --spacing-pppppp: 96 / 16;
