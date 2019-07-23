@@ -73,6 +73,9 @@ All components and media align to a [`8dp` baseline grid](./source/modules/mixin
 3. [A look at the components](./build/markdown/partials.md)
 4. [Sane stylesheets for css](https://github.com/badlydrawnrob/ecss)
 
+> <span id="alert-enough">⚠️</span> **Do the enough thing ...**
+> Keep `--css-variables` to a minimum, Be [brutal](https://brutalist-web.design/) in your design, KISS, [don't make me think](https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think) — just [do the enough thing](https://fs.blog/jason-fried/)!
+
 
 
 
