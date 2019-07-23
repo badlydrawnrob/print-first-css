@@ -1,15 +1,19 @@
 // Baseline grid ===============================================================
-// `4dp/px` baseline for typographic layout (see also: --line-height)
-// `8dp/px` baseline for components (--spacing-quarter)
-// - Based on Material Design: http://bit.ly/2lYjdkt
+// `4dp` baseline for typographic layout (see also: --line-height)
+// `8dp` baseline for components (--spacing-quarter)
+// - Material Design: http://bit.ly/2lYjdkt
 // - Typographic rhythm: http://bit.ly/2mnBSri
 // - Gradient: http://bit.ly/2lE4pMV
 // - WTF is a `dp` unit? https://stackoverflow.com/q/2025282
 //
-// #1: Set @align to nudge the grid to wherever you need it (from top)
-//     so type lies over the baseline.
-// #2: Alpha color seems to not work: https://stackoverflow.com/a/41265350
-//     - use less `fade(..)` function instead
+// usage:
+//    .grid-baseline(@depth: ...; @align: ...);
+// #1:
+//    Set @align to nudge the grid from top, so type lies
+//    over the baseline.
+// #2:
+//    Alpha color won't work: https://stackoverflow.com/a/41265350
+//    - use `fade(..)` function instead
 
 .grid-baseline(@depth: -1; @align: 0) {
   position: relative;

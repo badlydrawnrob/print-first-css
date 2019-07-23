@@ -13,12 +13,12 @@ A simple starting point for typographic css projects. Only the essentials here, 
 
 ### Why print first?
 
-Print is often a second citizen these days, but it's useful! You might need to rattle off presentations or share ideas quickly. Or an author publishing an ebook.
+Print is often a second citizen these days, but it's useful! You might need to rattle off presentations or share ideas quickly, or perhaps you're an author publishing an ebook.
 
 Write it down with Markdown, then convert with the app of your choice:
 
 - [Pandoc](https://pandoc.org) if you know what a terminal is,
-- [Marked](http://marked2app.com)) if you like an app to do the work,
+- [Marked](http://marked2app.com) if you like an app to do the work,
 - Print with Safari, Chrome or Firefox
 
 
@@ -26,35 +26,57 @@ Write it down with Markdown, then convert with the app of your choice:
 
 Think about print first; add the finesse for screen-based devices later:
 
-- `@media all` for **BOTH** screen and print
-- `@media screen` to **ADD** css for screen only
-- `@media print` to **REMOVE** css (only when necessary)
+1. `@media all` for **BOTH** screen and print (use often)
+2. `@media screen` to **ADD** css for screen only
+3. `@media print` to **REMOVE** screen css for print (use sparingly)
 
-It's not suitable for every job, but for printable media, it's much [better than this](https://flyingdogcreative.com/why-your-web-pages-print-badly-and-how-to-fix-them/)!
+The method isn't suitable for every job, but for printable media, it's much [better than this](https://flyingdogcreative.com/why-your-web-pages-print-badly-and-how-to-fix-them/)!
 
 
 
 
 ## Typography
 
-Typography heavily influenced by [Material Design](https://material.io/design/typography/the-type-system.html) — all typography aligns to a Material Design `4dp/px` grid. [Vertical rhythm](http://webtypography.net/2.2.2) is notoriously difficult to get right, so I wouldn't worry too much.
+Typography heavily influenced by [Material Design](https://material.io/design/typography/the-type-system.html) — all typography aligns to a [`4dp`](https://stackoverflow.com/a/2025541) grid, with default `--font-size` of `16dp`.
 
-Some helpers:
+**Some helpers:**
 
 1. [A baseline grid](./source/style/modules/mixins/grid-baseline.less)
 2. [Default iOS and Android fonts](./source/style/modules/variables/typography.less)
 3. [CSS variables](./source/style/modules/variables/_root.less)
-4. Headings have their own `--line-height` depending on font
-5. Default `--font-size` is `16dp/px`
+
+**<span id="alert-headings">⚠️</span> Watch out for ...**
+
+- Headings may need `--line-height` and `margin-bottom` adjusting [depending on font](https://graphicdesign.stackexchange.com/q/4035)
+- Don't worry too much about [pixel perfection](#alert-perfect)
 
 
 
 
 ## Layout
 
-> All components and media should be divisible by `8` or `4`;
+> Everything should be divisible by `8` or `4`;
 
-All components and media align to the `8dp/px` [baseline grid](./source/modules/mixins/grid-baseline.less) (that's double [typography](./#typography) baseline). Don't worry about [being pixel perfect](http://webtypography.net/2.2.2) — it's notoriously difficult to get right.
+All components and media align to a [`8dp` baseline grid](./source/modules/mixins/grid-baseline.less) (double the [typography](./#typography) baseline).
+
+> <span id="alert-perfect">⚠️</span> **Perfect is the enemy of good** ([Voltaire](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good))
+> [Typographic vertical rythmn](http://webtypography.net/2.2.2) and the layout baseline is notoriously difficult to get right, so don't worry about being pixel perfect. Try to keep each ["chunk" of content](https://internetingishard.com/html-and-css/css-box-model/) consistent, [aligned to the baseline](https://css-tricks.com/almanac/properties/a/align-items/) — eyeball it; does it work?
+
+
+
+
+
+## Styleguide
+
+1. [Intro to Markdown and writing styleguide](./build/markdown/styleguide.md)
+2. [Writing in context](./build/markdown/speciman.md)
+3. [A look at the components](./build/markdown/partials.md)
+4. [Sane stylesheets for css](https://github.com/badlydrawnrob/ecss)
+
+
+
+
+----
 
 
 
@@ -71,14 +93,16 @@ All components and media align to the `8dp/px` [baseline grid](./source/modules/
 
 Check the release notes first, then:
 
-`npm ugrade`
+`npm upgrade`
 
 
 
 
 ## Less
 
-Print First is 99% standard CSS. I've added [`.less`](http://lesscss.org) files into the mix to make things easier on the eye. Creating your CSS is simple as:
+> 99% standard CSS with a hint of less
+
+I've added [`.less`](http://lesscss.org) files into the mix to make things [easier on the eye](https://en.wikipedia.org/wiki/Separation_of_concerns). Creating your CSS is simple as:
 
 1. Create a [config](./source/style/config.less) file
 2. `@import (less) "../../node_modules/print-first-css/build/style/print-first.css";`
@@ -93,19 +117,6 @@ Print First is 99% standard CSS. I've added [`.less`](http://lesscss.org) files 
 ----
 
 
-
-
-## Styleguide
-
-1. [Intro to Markdown and writing styleguide](./build/markdown/styleguide.md)
-2. [Writing in context](./build/markdown/speciman.md)
-3. [A look at the components](./build/markdown/partials.md)
-4. [Sane stylesheets for css](https://github.com/badlydrawnrob/ecss)
-
-
-
-
-----
 
 
 ## Further reading
