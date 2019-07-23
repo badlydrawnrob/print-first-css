@@ -4,7 +4,7 @@
  * == Based on Cardinal CSS by @cbracco: http://bit.ly/2iDzOZi ==
  */
 :root {
-  --color-b: #000;
+  --color-d: #000;
   --color-l: #fff;
   --color-ll: #f1f1f1;
   --spacing-increment: calc(var(--spacing-pp) * 1rem);
@@ -38,7 +38,7 @@
   --android: 'Noto', 'Roboto';
   --ios-mono: 'San Francisco Mono';
   --android-mono: 'Noto Mono', 'Roboto Mono';
-  --font-color: var(--color-b);
+  --font-color: var(--color-d);
   --font-family: var(--ios), var(--android), sans-serif;
   --font-family-mono: var(--ios-mono), var(--android-mono), monospace;
   --font-size-pppppp: calc((96 / 16) * 1rem);
