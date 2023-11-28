@@ -1,8 +1,8 @@
 {
   "name": "print-first-css",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "A simple starting point for typographic css projects",
-  "main": "style/main.less",
+  "main": "source/style/main.less",
   "scripts": {
     "test": "which pandoc",
     "css": "npx lessc source/style/main.less ./build/style/print-first.css",
