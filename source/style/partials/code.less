@@ -3,6 +3,8 @@
 // #2: Convert variable to negative: https://stackoverflow.com/a/40585170
 // #3: Possible issues with `white-space: pre` and baseline
 //     - != `pre-line` or `pre-wrap` seem to work
+// #4: Moved code styles from Anki Theme to print-first-css:
+//     - https://tinyurl.com/wevrsdx7
 
 code,
 kbd,
@@ -12,6 +14,9 @@ samp {
   font-size: var(--font-size);
   font-style: normal;
   line-height: var(--line-height);
+  background: var(--color-code-light-background);
+  // white-space: pre;  -- Anki Theme code only?
+  // white-space: pre-wrap; -- Anki Theme code only?
 }
 
 code,
@@ -26,6 +31,24 @@ kbd {
   }
 }
 
+code b, code strong,
+code i, code em {
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  background: none;
+}
+
+code b,
+code strong {
+  color: var(--color-code-light-highlight);
+}
+
+code i,
+code em {
+  color: var(--color-code-light-lowlight);
+}
 
 pre {
   position: relative;
