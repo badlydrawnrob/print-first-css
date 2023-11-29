@@ -4,9 +4,25 @@
  * == Based on Cardinal CSS by @cbracco: http://bit.ly/2iDzOZi ==
  */
 :root {
-  --color-d: #000;
-  --color-l: #fff;
-  --color-ll: #f1f1f1;
+  --color-bbbb: #000;
+  --color-bbb: #000;
+  --color-bb: #ccc;
+  --color-b: #f9f9f9;
+  --color-l: #ccc;
+  --color-ll: #ddd;
+  --color-lll: #f1f1f1;
+  --color-llll: #fff;
+  --color-code-light-background: #ffffcc;
+  --color-code-light-base: #586e75;
+  --color-code-light-comment: #93a1a1;
+  --color-code-light-error: #93a1a1;
+  --color-code-light-highlight: #dc322f;
+  --color-code-light-keyword: #859900;
+  --color-code-light-lowlight: #268bd2;
+  --color-code-light-number: #2aa198;
+  --color-code-light-operator: #859900;
+  --color-code-light-string: #2aa198;
+  --color-code-light-variable: #268bd2;
   --spacing-increment: calc(var(--spacing-pp) * 1rem);
   --spacing-pppppppp: 128 / 16;
   --spacing-ppppppp: 112 / 16;
@@ -38,7 +54,7 @@
   --android: 'Noto', 'Roboto';
   --ios-mono: 'San Francisco Mono';
   --android-mono: 'Noto Mono', 'Roboto Mono';
-  --font-color: var(--color-d);
+  --font-color: var(--color-bbbb);
   --font-family: var(--ios), var(--android), sans-serif;
   --font-family-mono: var(--ios-mono), var(--android-mono), monospace;
   --font-size-pppppp: calc((96 / 16) * 1rem);
@@ -521,6 +537,7 @@ samp {
   font-size: var(--font-size);
   font-style: normal;
   line-height: var(--line-height);
+  background: var(--color-code-light-background);
 }
 code,
 kbd {
@@ -532,8 +549,26 @@ kbd {
   code,
   kbd {
     border-radius: var(--border-radius);
-    background-color: var(--color-ll);
+    background-color: var(--color-lll);
   }
+}
+code b,
+code strong,
+code i,
+code em {
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  background: none;
+}
+code b,
+code strong {
+  color: var(--color-code-light-highlight);
+}
+code i,
+code em {
+  color: var(--color-code-light-lowlight);
 }
 pre {
   position: relative;
@@ -553,7 +588,7 @@ pre + pre {
 @media screen {
   pre {
     white-space: pre;
-    background: var(--color-ll);
+    background: var(--color-lll);
     border-color: transparent;
   }
 }
@@ -801,6 +836,135 @@ em,
 i,
 cite {
   font-style: italic;
+}
+pre.sourceCode .numberSource {
+  margin-left: 3em;
+  padding-left: 4px;
+  border-left: 1px solid #aaaaaa;
+}
+pre.sourceCode .numberSource code {
+  counter-reset: source-line 0;
+}
+pre.sourceCode .numberSource code > span {
+  position: relative;
+  left: -4em;
+  counter-increment: source-line;
+}
+pre.sourceCode .numberSource code > span > a:first-child::before {
+  content: counter(source-line);
+  position: relative;
+  left: -1em;
+  display: inline-block;
+  width: 4em;
+  padding: 0 4px;
+  color: #aaaaaa;
+  text-align: right;
+  vertical-align: baseline;
+  border: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+code.sourceCode > span > a:first-child::before {
+  text-decoration: underline;
+}
+.sourceCode .al {
+  color: var(--color-code-light-error);
+  font-weight: bold;
+}
+.sourceCode .an {
+  color: var(--color-code-light-comment);
+  font-weight: bold;
+  font-style: italic;
+}
+.sourceCode .at {
+  color: var(--color-code-light-variable);
+}
+.sourceCode .bn {
+  color: var(--color-code-light-number);
+}
+.sourceCode .cf {
+  color: var(--color-code-light-variable);
+  font-weight: bold;
+}
+.sourceCode .ch {
+  color: var(--color-code-light-string);
+}
+.sourceCode .cn {
+  color: var(--color-code-light-keyword);
+}
+.sourceCode .co {
+  color: var(--color-code-light-comment);
+}
+.sourceCode .cv {
+  color: var(--color-code-light-comment);
+  font-weight: bold;
+  font-style: italic;
+}
+.sourceCode .do {
+  color: var(--color-code-light-keyword);
+  font-style: italic;
+}
+.sourceCode .dt {
+  color: var(--color-code-light-keyword);
+}
+.sourceCode .dv {
+  color: var(--color-code-light-number);
+}
+.sourceCode .er {
+  color: var(--color-code-light-error);
+  font-weight: bold;
+}
+.sourceCode .fl {
+  color: var(--color-code-light-number);
+}
+.sourceCode .fu {
+  color: var(--color-code-light-variable);
+}
+.sourceCode .in {
+  color: var(--color-code-light-comment);
+  font-weight: bold;
+  font-style: italic;
+}
+.sourceCode .kw {
+  color: var(--color-code-light-operator);
+  font-weight: bold;
+}
+.sourceCode .op {
+  color: var(--color-code-light-operator);
+}
+.sourceCode .ot {
+  color: var(--color-code-light-variable);
+}
+.sourceCode .pp {
+  color: var(--color-code-light-lowlight);
+}
+.sourceCode .sc {
+  color: var(--color-code-light-string);
+}
+.sourceCode .ss {
+  color: var(--color-code-light-string);
+}
+.sourceCode .st {
+  color: var(--color-code-light-string);
+}
+.sourceCode .va {
+  color: var(--color-code-light-variable);
+}
+.sourceCode .vs {
+  color: var(--color-code-light-string);
+}
+.sourceCode .wa {
+  color: var(--color-code-light-comment);
+  font-weight: bold;
+  font-style: italic;
+}
+@media screen {
+}
+@media print {
 }
 @media all {
 }
