@@ -1,15 +1,17 @@
 // Typography ==============================
-// Set defaults to fall back depending on OS
-// - See also: mixins/grid-baseline
+// system-ui uses defaults depending on OS,
+// then set sensible defaults to fall back on.
+// As default adheres to a baseline grid:
+//     - mixins/grid-baseline
+//
 
---ios: 'San Francisco';
---android: 'Noto', 'Roboto';
---ios-mono: 'San Francisco Mono';
---android-mono: 'Noto Mono', 'Roboto Mono';
+--system-ui: system-ui, sans-serif;  // SF Pro, Roboto
+--system-mono: ui-monospace;         // Safari only, SF Mono
+--fallback-mono: 'Roboto Mono', 'Courier New', 'Courier', monospace;
 
 --font-color: var(--color-bbbb);
---font-family: var(--ios), var(--android), sans-serif;
---font-family-mono: var(--ios-mono), var(--android-mono), monospace;
+--font-family: var(--system-ui);
+--font-family-mono: var(--system-mono), var(--fallback-mono);
 
 --font-size-pppppp: calc((96 / 16) * 1rem);  // h1
 --font-size-ppppp:  calc((60 / 16) * 1rem);  // h2

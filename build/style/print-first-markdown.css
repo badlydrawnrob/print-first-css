@@ -45,13 +45,12 @@
   --spacing-quarter: calc(var(--spacing-mm) * 1rem);
   --spacing-micro: calc(var(--spacing-mmm) * 1rem);
   --spacing-px: calc(var(--spacing-mmmm) * 1rem);
-  --ios: 'San Francisco';
-  --android: 'Noto', 'Roboto';
-  --ios-mono: 'San Francisco Mono';
-  --android-mono: 'Noto Mono', 'Roboto Mono';
+  --system-ui: system-ui, sans-serif;
+  --system-mono: ui-monospace;
+  --fallback-mono: 'Roboto Mono', 'Courier New', 'Courier', monospace;
   --font-color: var(--color-bbbb);
-  --font-family: var(--ios), var(--android), sans-serif;
-  --font-family-mono: var(--ios-mono), var(--android-mono), monospace;
+  --font-family: var(--system-ui);
+  --font-family-mono: var(--system-mono), var(--fallback-mono);
   --font-size-pppppp: calc((96 / 16) * 1rem);
   --font-size-ppppp: calc((60 / 16) * 1rem);
   --font-size-pppp: calc((48 / 16) * 1rem);
