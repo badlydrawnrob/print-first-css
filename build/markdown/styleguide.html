@@ -536,7 +536,7 @@ kbd,
 pre,
 samp {
   font-family: var(--font-family-mono);
-  font-size: var(--font-size);
+  font-size: calc(var(--font-size) - var(--spacing-px));
   font-style: normal;
   line-height: var(--line-height);
   background: var(--color-code-light-background);
@@ -963,10 +963,6 @@ code.sourceCode > span > a:first-child::before {
   color: var(--color-code-light-comment);
   font-weight: bold;
   font-style: italic;
-}
-@media screen {
-}
-@media print {
 }
 @media all {
   .title {
