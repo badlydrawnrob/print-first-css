@@ -7,7 +7,7 @@
     "test": "which pandoc",
     "css": "npx lessc source/style/main.less ./build/style/print-first.css",
     "css-markdown": "npx lessc source/style/markdown.less ./build/style/print-first-markdown.css",
-    "styleguide": "pandoc --template=./source/pandoc/template.html --css=../style/print-first-markdown.css ./source/markdown/partials/*md ./source/markdown/partials/00-metadata.yaml -s -o ./build/markdown/partials.html",
+    "partials": "pandoc --template=./source/pandoc/template.html --css=../style/print-first-markdown.css ./source/markdown/partials/*md ./source/markdown/partials/00-metadata.yaml -s -o ./build/markdown/partials.html",
     "prebuild": "mkdir -p build/ build/style build/markdown",
     "build": "npm run css && npm run css-markdown",
     "postbuild": "echo Print First CSS: successfully compiled!"
