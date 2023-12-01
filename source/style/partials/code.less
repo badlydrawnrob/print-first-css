@@ -1,5 +1,7 @@
 // Notes =======================================================================
-// #1: Correct `font-family` set oddly in Safari 5 and Chrome.
+// #1: Font dependant on device:
+//     a) System font with nice fallback?
+//     b) A hack to make the font smaller: https://tinyurl.com/2p9xpevw
 // #2: Convert variable to negative: https://stackoverflow.com/a/40585170
 // #3: Possible issues with `white-space: pre` and baseline
 //     - != `pre-line` or `pre-wrap` seem to work
@@ -10,8 +12,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: var(--font-family-mono);  // #1
-  font-size: var(--font-size);
+  font-family: var(--font-family-mono);                   // #1a
+  font-size: calc(var(--font-size) - var(--spacing-px));  // #1b
   font-style: normal;
   line-height: var(--line-height);
   background: var(--color-code-light-background);

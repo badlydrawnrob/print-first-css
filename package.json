@@ -22,9 +22,8 @@
     "url": "https://github.com/badlydrawnrob/print-first-css/issues"
   },
   "homepage": "https://github.com/badlydrawnrob/print-first-css#readme",
-  "dependencies": {},
   "devDependencies": {
-    "less": "^3.9.0",
+    "less": "^4.2.0",
     "normalize.css": "^8.0.1"
   }
 }
