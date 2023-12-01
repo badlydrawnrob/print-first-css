@@ -575,10 +575,6 @@ pre {
   hyphens: none;
   border: var(--spacing-px) solid var(--font-color);
 }
-pre + pre {
-  border-top: transparent;
-  margin-top: calc(var(--spacing) * -1);
-}
 @media screen {
   pre {
     white-space: pre;
