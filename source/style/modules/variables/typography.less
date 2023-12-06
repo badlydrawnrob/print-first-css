@@ -1,16 +1,20 @@
 // Typography ==============================
-// system-ui uses defaults depending on OS,
+// There are some annoying "bugs" when trying to specify San Francisco
+// fonts: See issue #27 ... `system-ui` uses defaults depending on OS,
 // then set sensible defaults to fall back on.
-// As default adheres to a baseline grid:
+//
+// The default settings adhere to a baseline grid:
 //     - mixins/grid-baseline
 //     - unitless `line-height`:
 //         https://kolosek.com/css-line-height/
 //     - Original `font-size` based on Material Design:
 //         https://tinyurl.com/twfvhwwv
+//
+// #1: x2 Bug may still be relevant: https://tinyurl.com/3urfvc5h
 
 --system-ui: system-ui, sans-serif;  // SF Pro, Roboto
 --system-mono: ui-monospace;         // Safari only, SF Mono
---fallback-mono: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+--fallback-mono: 'Roboto Mono', monospace, monospace;  // !#1
 
 --font-color: var(--color-bbbb);
 --font-family: var(--system-ui);
