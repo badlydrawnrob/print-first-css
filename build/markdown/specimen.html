@@ -55,7 +55,7 @@
   --spacing-px: calc(var(--spacing-mmmm) * 1rem);
   --system-ui: system-ui, sans-serif;
   --system-mono: ui-monospace;
-  --fallback-mono: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+  --fallback-mono: 'Roboto Mono', monospace, monospace;
   --font-color: var(--color-bbbb);
   --font-family: var(--system-ui);
   --font-family-mono: var(--system-mono), var(--fallback-mono);
@@ -554,24 +554,6 @@ kbd {
     background-color: var(--color-lll);
   }
 }
-code b,
-code strong,
-code i,
-code em {
-  font-size: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  text-decoration: none;
-  background: none;
-}
-code b,
-code strong {
-  color: var(--color-code-light-highlight);
-}
-code i,
-code em {
-  color: var(--color-code-light-lowlight);
-}
 pre {
   position: relative;
   overflow: auto;
@@ -582,10 +564,6 @@ pre {
   tab-size: 4;
   hyphens: none;
   border: var(--spacing-px) solid var(--font-color);
-}
-pre + pre {
-  border-top: transparent;
-  margin-top: calc(var(--spacing) * -1);
 }
 @media screen {
   pre {
@@ -1044,7 +1022,7 @@ html,body,#wrapper{font-size:10pt!important}
 
 <p>Nulla sit amet enim blandit, <code>imperdiet lorem</code> ac, lobortis orci. Aenean mollis dui tortor, eget consectetur mauris congue nec. <a href="#">Aenean iaculis ut quam eget</a> non blandit mi ipsum at libero hendrerit. Vestibulum in lacus sed turpis sodales congue in et risus. Sed vitae pharetra neque. Sed nisi ligula, tempus ac massa at, volutpat sagittis massa. Praesent placerat congue velit, at tincidunt neque accumsan sit amet.</p>
 <blockquote>
-<p>Vestibulum ante ipsum primis in <mark>faucibus orci luctus et ultrices posuere</mark> cubilia Curae &#8230; Ut vestibulum libero eu mi sodales tincidunt. Aenean id eleifend lacus. Proin vehicula sapien convallis, <i>dictum justo id, eleifend nibh</i> [phasellus mattis enim eu nisi maximus] <cite>(Dignissim, 2018, pg. 36, mauris rutrum)</cite></p>
+<p>Vestibulum ante ipsum primis in <mark>faucibus orci luctus et ultrices posuere</mark> cubilia Curae &#8230; Ut vestibulum libero eu mi sodales tincidunt. <a href="http://example.com">Aenean id eleifend lacus</a>. Proin vehicula sapien convallis, <i>dictum justo id, eleifend nibh</i> [phasellus mattis enim eu nisi maximus] <cite>(Dignissim, 2018, pg. 36, mauris rutrum)</cite></p>
 </blockquote>
 <h5 id="h5">H5</h5>
 
