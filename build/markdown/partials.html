@@ -140,9 +140,61 @@ data-cites="badlydrawnrob">@badlydrawnrob</span></p>
     controls <kbd>⌘ + V</kbd> and a sample <samp>Does not compute,
     press: <kbd>Y</kbd> to continue</samp></p>
     <div class="sourceCode" id="cb1"><pre
-    class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># code block</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;3 backticks or&#39;</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;indent 4 spaces&#39;</span>)</span></code></pre></div>
+    class="sourceCode numberSource python numberLines"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># This function adds two numbers</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">def</span> add(x, y):</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="cf">return</span> x <span class="op">+</span> y</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co"># This function subtracts two numbers</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="kw">def</span> subtract(x, y):</span>
+<span id="cb1-7"><a href="#cb1-7"></a>    <span class="cf">return</span> x <span class="op">-</span> y</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># This function multiplies two numbers</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="kw">def</span> multiply(x, y):</span>
+<span id="cb1-11"><a href="#cb1-11"></a>    <span class="cf">return</span> x <span class="op">*</span> y</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="co"># This function divides two numbers</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="kw">def</span> divide(x, y):</span>
+<span id="cb1-15"><a href="#cb1-15"></a>    <span class="cf">return</span> x <span class="op">/</span> y</span>
+<span id="cb1-16"><a href="#cb1-16"></a></span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="bu">print</span>(<span class="st">&quot;Select operation.&quot;</span>)</span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="bu">print</span>(<span class="st">&quot;1.Add&quot;</span>)</span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="bu">print</span>(<span class="st">&quot;2.Subtract&quot;</span>)</span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="bu">print</span>(<span class="st">&quot;3.Multiply&quot;</span>)</span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="bu">print</span>(<span class="st">&quot;4.Divide&quot;</span>)</span>
+<span id="cb1-23"><a href="#cb1-23"></a></span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb1-25"><a href="#cb1-25"></a>    <span class="co"># take input from the user</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a>    choice <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;Enter choice(1/2/3/4): &quot;</span>)</span>
+<span id="cb1-27"><a href="#cb1-27"></a></span>
+<span id="cb1-28"><a href="#cb1-28"></a>    <span class="co"># check if choice is one of the four options</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a>    <span class="cf">if</span> choice <span class="kw">in</span> (<span class="st">&#39;1&#39;</span>, <span class="st">&#39;2&#39;</span>, <span class="st">&#39;3&#39;</span>, <span class="st">&#39;4&#39;</span>):</span>
+<span id="cb1-30"><a href="#cb1-30"></a>        <span class="cf">try</span>:</span>
+<span id="cb1-31"><a href="#cb1-31"></a>            num1 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">&quot;Enter first number: &quot;</span>))</span>
+<span id="cb1-32"><a href="#cb1-32"></a>            num2 <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">&quot;Enter second number: &quot;</span>))</span>
+<span id="cb1-33"><a href="#cb1-33"></a>        <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
+<span id="cb1-34"><a href="#cb1-34"></a>            <span class="bu">print</span>(<span class="st">&quot;Invalid input. Please enter a number.&quot;</span>)</span>
+<span id="cb1-35"><a href="#cb1-35"></a>            <span class="cf">continue</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a></span>
+<span id="cb1-37"><a href="#cb1-37"></a>        <span class="cf">if</span> choice <span class="op">==</span> <span class="st">&#39;1&#39;</span>:</span>
+<span id="cb1-38"><a href="#cb1-38"></a>            <span class="bu">print</span>(num1, <span class="st">&quot;+&quot;</span>, num2, <span class="st">&quot;=&quot;</span>, add(num1, num2))</span>
+<span id="cb1-39"><a href="#cb1-39"></a></span>
+<span id="cb1-40"><a href="#cb1-40"></a>        <span class="cf">elif</span> choice <span class="op">==</span> <span class="st">&#39;2&#39;</span>:</span>
+<span id="cb1-41"><a href="#cb1-41"></a>            <span class="bu">print</span>(num1, <span class="st">&quot;-&quot;</span>, num2, <span class="st">&quot;=&quot;</span>, subtract(num1, num2))</span>
+<span id="cb1-42"><a href="#cb1-42"></a></span>
+<span id="cb1-43"><a href="#cb1-43"></a>        <span class="cf">elif</span> choice <span class="op">==</span> <span class="st">&#39;3&#39;</span>:</span>
+<span id="cb1-44"><a href="#cb1-44"></a>            <span class="bu">print</span>(num1, <span class="st">&quot;*&quot;</span>, num2, <span class="st">&quot;=&quot;</span>, multiply(num1, num2))</span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a>        <span class="cf">elif</span> choice <span class="op">==</span> <span class="st">&#39;4&#39;</span>:</span>
+<span id="cb1-47"><a href="#cb1-47"></a>            <span class="bu">print</span>(num1, <span class="st">&quot;/&quot;</span>, num2, <span class="st">&quot;=&quot;</span>, divide(num1, num2))</span>
+<span id="cb1-48"><a href="#cb1-48"></a></span>
+<span id="cb1-49"><a href="#cb1-49"></a>        <span class="co"># check if user wants another calculation</span></span>
+<span id="cb1-50"><a href="#cb1-50"></a>        <span class="co"># break the while loop if answer is no</span></span>
+<span id="cb1-51"><a href="#cb1-51"></a>        next_calculation <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;Let&#39;s do next calculation? (yes/no): &quot;</span>)</span>
+<span id="cb1-52"><a href="#cb1-52"></a>        <span class="cf">if</span> next_calculation <span class="op">==</span> <span class="st">&quot;no&quot;</span>:</span>
+<span id="cb1-53"><a href="#cb1-53"></a>          <span class="cf">break</span></span>
+<span id="cb1-54"><a href="#cb1-54"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-55"><a href="#cb1-55"></a>        <span class="bu">print</span>(<span class="st">&quot;Invalid Input&quot;</span>)</span></code></pre></div>
     <table>
     <thead>
     <tr class="header">
