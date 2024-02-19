@@ -1,6 +1,6 @@
 :root {
   --color-bbbb: #000;
-  --color-bbb: #000;
+  --color-bbb: #333;
   --color-bb: #ccc;
   --color-b: #f9f9f9;
   --color-l: #ccc;
@@ -585,7 +585,7 @@ pre {
   word-break: normal;
   tab-size: 4;
   hyphens: none;
-  border: var(--spacing-px) solid var(--font-color);
+  border: var(--spacing-px) solid var(--color-bbb);
 }
 @media screen {
   pre {
