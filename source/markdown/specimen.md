@@ -50,7 +50,7 @@ Nulla sit amet enim blandit, `imperdiet lorem` ac, lobortis orci. Aenean mollis 
 
 Sed nisi ligula, tempus ac massa at, `volutpat sagittis` massa. Praesent placerat congue velit, at tincidunt neque accumsan sit amet.
 
-<<[partials/07-pre.md]
+<<[partials/07-pre-py.md]
 <<[partials/06-code.md]
 
 
@@ -63,5 +63,5 @@ Aliquam feugiat velit sed nisl tempor lobortis.
 Cras convallis, <abbr title="abbreviation with link"><a href="#">lectus</a></abbr> vel ultricies vestibulum, est sapien <abbr title="abbreviation with no link">faucibus</abbr> purus, non blandit mi ipsum at libero. Cras bibendum dolor eget justo aliquet, <q>sit amet mollis libero volutpat</q>. Vivamus et <b>elementum lacus</b>, eget feugiat ex. <i>Nulla facilisi</i>.
 
 
-<<[partials/07-pre.md]
-<<[partials/07-pre.md]
+<<[partials/08-pre-html.md]
+<<[partials/08-pre-html.md]

@@ -1,10 +1,14 @@
 // Colors =================
-// Colour schemes for this particular theme.
-// - colour vars might be overkill.
+// Pallettes for this particular theme. There are none!!!
+// We're setting up styles for `Skylighting` inheritance,
+// but using the very basic `monochrome` theme for Print.
+//
+// #!: Should these `--color` styles be here? Dump them?
+//     Strip back to the essentials wherever possible.
 //
 // #1: Used mostly for font colours
 // #2: Occasionally used for backgrounds
-// #3: Solarized light color palette
+// #3: Monochrome light color palette
 //     - #! Numbers are quite hard to rearrange fast
 //     - Especially if you need to rearrange them.
 //     - @ http://tinyurl.com/visual-studio-code-colorize
@@ -27,13 +31,13 @@
 --color-llll: #fff;
 
 // #3
---color-code-light-palette-01: #93a1a1;
---color-code-light-palette-02: #586e75;
---color-code-light-palette-03: #ffffcc;
---color-code-light-palette-04: #859900;
---color-code-light-palette-05: #2aa198;
---color-code-light-palette-06: #dc322f;
---color-code-light-palette-07: #268bd2;
+--color-code-light-palette-01: var(--color-bbbb);
+--color-code-light-palette-02: var(--color-bbbb);
+--color-code-light-palette-03: var(--color-bbbb);
+--color-code-light-palette-04: var(--color-bbbb);
+--color-code-light-palette-05: var(--color-bbbb);
+--color-code-light-palette-06: var(--color-bbbb);
+--color-code-light-palette-07: var(--color-bbbb);
 
 // #4
 --color-code-light-background: var(--color-code-light-palette-03);
@@ -53,10 +57,10 @@
 --color-code-light-data-type: var(--color-code-light-palette-04);        // DataType
 --color-code-light-dec-val: var(--color-code-light-palette-05);          // DecVal
 --color-code-light-error: var(--color-code-light-palette-01)             // #! Error
---color-code-light-extension: yellow;                                    // #! Extension
+--color-code-light-extension: var(--color-code-light-palette-01);        // #! Extension
 --color-code-light-float: var(--color-code-light-palette-05);            // Float
 --color-code-light-function: var(--color-code-light-palette-07);         // Function
---color-code-light-import: yellow;                                       // #! Import
+--color-code-light-import: var(--color-code-light-palette-01);           // #! Import
 --color-code-light-information: var(--color-code-light-palette-01);      // Information
 --color-code-light-keyword: var(--color-code-light-palette-04);          // Keyword
 --color-code-light-operator: var(--color-code-light-palette-04);         // Operator
