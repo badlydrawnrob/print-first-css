@@ -1,25 +1,36 @@
 // Notes =======================================================================
-// #1: Font dependant on device:
-//     a) System font with nice fallback?
-//     b) A hack to make the font smaller: https://tinyurl.com/2p9xpevw
-//        it actually gets rendered as `15px`. `16px` (`1rem`) feels to big.
-// #2: Convert variable to negative: https://stackoverflow.com/a/40585170
-// #3: Possible issues with `white-space: pre` and baseline
-//     - != `pre-line` or `pre-wrap` seem to work
-// #4: Moved code styles from Anki Theme to print-first-css:
-//     - https://tinyurl.com/wevrsdx7
+// Custom fonts and coding themes are not the responsibility of Print First CSS!
+// Build your own theme and base it on the defaults provided here. See "Anki
+// Programming Themes" as an example (for screens):
+//
+//     @ https://shorturl.at/af8N1
+//
+// When the code is too long (inline or code blocks) ...
+// -----------------------------------------------------
+// Sometimes, you'll need to fix `white-space` with `pre` or `pre-wrap`
+// @ https://shorturl.at/uftqz depending on it's overflow.
+//
+// Notes
+// -----
+// #1: The font depends on the device (see `variables/typography.less`)
+// #2: If you want, you can hack inline code to make the font smaller:
+//     - The `x-height` problem: https://tinyurl.com/2p9xpevw
+//     - Ideally, make sure each `font-size` has a similar `x-height`
+// #3: You either break the line, or have it wrap:
+//     @ https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
 
 code,
 kbd,
 pre,
 samp {
-  font-family: var(--font-family-mono);                   // #1a
-  font-size: calc(var(--font-size) - var(--spacing-px));  // #1b
+  font-family: var(--font-family-mono);  // #1
+  font-size: var(--font-size);           // #2
   font-style: normal;
   line-height: var(--line-height);
-  background: var(--color-code-light-background);
-  // white-space: pre;  #! -- Anki Theme code only?
-  // white-space: pre-wrap; #! -- Anki Theme code only?
+
+  @media screen {
+    background: var(--color-code-light-background);
+  }
 }
 
 code,

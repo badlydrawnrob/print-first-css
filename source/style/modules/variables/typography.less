@@ -1,16 +1,19 @@
 // Typography ==============================
-// There are some annoying "bugs" when trying to specify San Francisco
-// fonts: See issue #27 ... `system-ui` uses defaults depending on OS,
-// then set sensible defaults to fall back on.
+// Some annoying "bugs" when trying to specify San Francisco fonts:
+// - @ See issue #27
+// - `system-ui` and `ui-monospace` (defaults depend on OS)
+// - Be sure to add sensible font styles as fallbacks.
 //
-// The default settings adhere to a baseline grid:
-//     - mixins/grid-baseline
-//     - unitless `line-height`:
-//         https://kolosek.com/css-line-height/
-//     - Original `font-size` based on Material Design:
-//         https://tinyurl.com/twfvhwwv
+// We have a default baseline grid, which everything is based on:
+// - `mixins/grid-baseline`
 //
-// #1: x2 Bug may still be relevant: https://tinyurl.com/3urfvc5h
+// There's a unitless `line-height`: @ https://kolosek.com/css-line-height/
+//
+// Material Design was the inspiration for current `font-size`:
+// - @ https://tinyurl.com/twfvhwwv
+//
+// #1: This is a long-standing bug in some browsers:
+//     - @ https://tinyurl.com/3urfvc5h
 
 --system-ui: system-ui, sans-serif;  // SF Pro, Roboto
 --system-mono: ui-monospace;         // Safari only, SF Mono
