@@ -19,7 +19,7 @@
   --color-code-light-palette-05: var(--color-bbbb);
   --color-code-light-palette-06: var(--color-bbbb);
   --color-code-light-palette-07: var(--color-bbbb);
-  --color-code-light-background: var(--color-code-light-palette-03);
+  --color-code-light-background: var(--color-lll);
   --color-code-light-alert: var(--color-code-light-palette-01);
   --color-code-light-annotation: var(--color-code-light-palette-01);
   --color-code-light-attribute: var(--color-code-light-palette-07);
@@ -581,7 +581,7 @@ kbd {
   code,
   kbd {
     border-radius: var(--border-radius);
-    background-color: var(--color-lll);
+    background-color: var(--color-code-light-background);
   }
 }
 pre {
@@ -598,7 +598,7 @@ pre {
 @media screen {
   pre {
     white-space: pre;
-    background: var(--color-lll);
+    background: var(--color-code-light-background);
     border-color: transparent;
   }
 }
