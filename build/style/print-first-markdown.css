@@ -837,105 +837,105 @@ cite {
   font-style: italic;
 }
 .sourceCode .al {
-  color: var(--color-code-dark-alert);
+  color: var(--color-code-light-alert);
   font-weight: 700;
 }
 .sourceCode .an {
-  color: var(--color-code-dark-annotation);
+  color: var(--color-code-light-annotation);
   font-style: italic;
 }
 .sourceCode .at {
-  color: var(--color-code-dark-attribute);
+  color: var(--color-code-light-attribute);
 }
 .sourceCode .bn {
-  color: var(--color-code-dark-base-n);
+  color: var(--color-code-light-base-n);
 }
 .sourceCode .bu {
-  color: var(--color-code-dark-built-in);
+  color: var(--color-code-light-built-in);
 }
 .sourceCode .ch {
-  color: var(--color-code-dark-char);
+  color: var(--color-code-light-char);
 }
 .sourceCode .co {
-  color: var(--color-code-dark-comment);
+  color: var(--color-code-light-comment);
   font-style: italic;
 }
 .sourceCode .cv {
-  color: var(--color-code-dark-comment-var);
+  color: var(--color-code-light-comment-var);
   font-style: italic;
 }
 .sourceCode .cn {
-  color: var(--color-code-dark-constant);
+  color: var(--color-code-light-constant);
 }
 .sourceCode .cf {
-  color: var(--color-code-dark-control-flow);
+  color: var(--color-code-light-control-flow);
   font-weight: 700;
 }
 .sourceCode .dt {
-  color: var(--color-code-dark-data-type);
+  color: var(--color-code-light-data-type);
   text-decoration: underline;
 }
 .sourceCode .dv {
-  color: var(--color-code-dark-dec-val);
+  color: var(--color-code-light-dec-val);
 }
 .sourceCode .do {
-  color: var(--color-code-dark-documentation);
+  color: var(--color-code-light-documentation);
   font-style: italic;
 }
 .sourceCode .er {
-  color: var(--color-code-dark-error);
+  color: var(--color-code-light-error);
   font-weight: 700;
 }
 .sourceCode .ex {
-  color: var(--color-code-dark-extension);
+  color: var(--color-code-light-extension);
 }
 .sourceCode .fl {
-  color: var(--color-code-dark-float);
+  color: var(--color-code-light-float);
 }
 .sourceCode .fu {
-  color: var(--color-code-dark-function);
+  color: var(--color-code-light-function);
 }
 .sourceCode .im {
-  color: var(--color-code-dark-import);
+  color: var(--color-code-light-import);
 }
 .sourceCode .in {
-  color: var(--color-code-dark-information);
+  color: var(--color-code-light-information);
   font-style: italic;
 }
 .sourceCode .kw {
-  color: var(--color-code-dark-keyword);
+  color: var(--color-code-light-keyword);
   font-weight: 700;
 }
 .sourceCode .op {
-  color: var(--color-code-dark-operator);
+  color: var(--color-code-light-operator);
 }
 .sourceCode .ot {
-  color: var(--color-code-dark-other);
+  color: var(--color-code-light-other);
 }
 .sourceCode .pp {
-  color: var(--color-code-dark-lowlight);
+  color: var(--color-code-light-lowlight);
   font-weight: 700;
 }
 .sourceCode .re {
-  color: var(--color-code-dark-region-marker);
+  color: var(--color-code-light-region-marker);
 }
 .sourceCode .sc {
-  color: var(--color-code-dark-special-char);
+  color: var(--color-code-light-special-char);
 }
 .sourceCode .ss {
-  color: var(--color-code-dark-special-string);
+  color: var(--color-code-light-special-string);
 }
 .sourceCode .st {
-  color: var(--color-code-dark-string);
+  color: var(--color-code-light-string);
 }
 .sourceCode .va {
-  color: var(--color-code-dark-variable);
+  color: var(--color-code-light-variable);
 }
 .sourceCode .vs {
-  color: var(--color-code-dark-verbatim-string);
+  color: var(--color-code-light-verbatim-string);
 }
 .sourceCode .wa {
-  color: var(--color-code-dark-warning);
+  color: var(--color-code-light-warning);
   font-style: italic;
 }
 @media all {
