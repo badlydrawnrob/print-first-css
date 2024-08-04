@@ -14,7 +14,6 @@
   --color-llll: #fff;
   --color-code-light-background: var(--color-lll);
   --color-code-light-alert: #000;
-  --color-code-light-alert-background-color: #000;
   --color-code-light-annotation: #000;
   --color-code-light-attribute: #000;
   --color-code-light-base-n: #000;
@@ -38,7 +37,6 @@
   --color-code-light-other: #000;
   --color-code-light-preprocessor: #000;
   --color-code-light-region-marker: #000;
-  --color-code-light-region-marker-background: #000;
   --color-code-light-special-char: #000;
   --color-code-light-special-string: #000;
   --color-code-light-string: #000;
