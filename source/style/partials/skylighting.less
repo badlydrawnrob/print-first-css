@@ -13,118 +13,126 @@
 //     - Was simply setting some `overflow` and `white-space` rules
 
 
-div.sourceCode {
-  // pass
-}
+// div.sourceCode {
+//   // pass
+// }
 
-pre.sourceCode {
-  // pass
+// pre.sourceCode {
+//   // pass
 
-  .numberSource {
-    margin-left: 3em;
-    padding-left: 4px;
-    border-left: 1px solid var(--color-bbb);
+//   .numberSource {
+//     margin-left: 3em;
+//     padding-left: 4px;
+//     border-left: 1px solid var(--color-bbb);
 
-    code {
-      counter-reset: source-line 0;
+//     code {
+//       counter-reset: source-line 0;
 
-      > span {
-        position: relative;
-        left: -4em;
-        counter-increment: source-line;
+//       > span {
+//         position: relative;
+//         left: -4em;
+//         counter-increment: source-line;
 
-        > a:first-child::before {
-          content: counter(source-line);
-          position: relative;
-          left: -1em;
-          display: inline-block;
-          width: 4em;
-          padding: 0 4px;
-          color: var(--color-bbb);
-          text-align: right;
-          vertical-align: baseline;
-          border: none;
+//         > a:first-child::before {
+//           content: counter(source-line);
+//           position: relative;
+//           left: -1em;
+//           display: inline-block;
+//           width: 4em;
+//           padding: 0 4px;
+//           color: var(--color-bbb);
+//           text-align: right;
+//           vertical-align: baseline;
+//           border: none;
 
-          -webkit-touch-callout: none; -webkit-user-select: none;
-          -khtml-user-select: none; -moz-user-select: none;
-          -ms-user-select: none; user-select: none;
-        }
-      }
-    }
-  }
-}
+//           -webkit-touch-callout: none; -webkit-user-select: none;
+//           -khtml-user-select: none; -moz-user-select: none;
+//           -ms-user-select: none; user-select: none;
+//         }
+//       }
+//     }
+//   }
+// }
 
-code.sourceCode {
-  // pass
+// code.sourceCode {
+//   // pass
 
-  & > span {
-    &:empty {
-      // #! was a set height
-    }
+//   & > span {
+//     &:empty {
+//       // #! was a set height
+//     }
 
-    & > a:first-child::before {
-      text-decoration: underline;  // #! Dunno what this does
-    }
-  }
-}
+//     & > a:first-child::before {
+//       text-decoration: underline;  // #! Dunno what this does
+//     }
+//   }
+// }
+
 
 .sourceCode {
+  // Normal (unused)
+  // code span {
+  //   color: var(--color-code-dark-normal);
+  // }
+
   // Alert
-  .al { font-weight: 700; }
+  .al { color: var(--color-code-dark-alert); font-weight: 700; }
   // Annotation
-  .an { font-style: italic; }
+  .an { color: var(--color-code-dark-annotation); font-style: italic; }
   // Attribute
-  .at { }
+  .at { color: var(--color-code-dark-attribute); }
   // BaseN
-  .bn { }
+  .bn { color: var(--color-code-dark-base-n); }
   // BuiltIn
-  .bu { }
-  // ControlFlow
-  .cf { font-weight: 700; }
+  .bu { color: var(--color-code-dark-built-in); }
   // Char
-  .ch { }
-  // Constant
-  .cn { }
+  .ch { color: var(--color-code-dark-char); }
   // Comment
-  .co { font-style: italic; }
+  .co { color: var(--color-code-dark-comment); font-style: italic; }
   // CommentVar
-  .cv { font-style: italic; }
-  // Documentation
-  .do { font-style: italic; }
+  .cv { color: var(--color-code-dark-comment-var); font-style: italic; }
+  // Constant
+  .cn { color: var(--color-code-dark-constant); }
+  // ControlFlow
+  .cf { color: var(--color-code-dark-control-flow); font-weight: 700; }
   // DataType
-  .dt { text-decoration: underline; }
+  .dt { color: var(--color-code-dark-data-type); text-decoration: underline; }
   // DecVal
-  .dv { }
+  .dv { color: var(--color-code-dark-dec-val); }
+  // Documentation
+  .do { color: var(--color-code-dark-documentation); font-style: italic; }
   // Error
-  .er { font-weight: 700; }
+  .er { color: var(--color-code-dark-error); font-weight: 700; }
   // Extension
-  .ex { }
+  .ex { color: var(--color-code-dark-extension); }
   // Float
-  .fl { }
+  .fl { color: var(--color-code-dark-float); }
   // Function
-  .fu { }
+  .fu { color: var(--color-code-dark-function); }
   // Import
-  .im { }
+  .im { color: var(--color-code-dark-import); }
   // Information
-  .in { font-style: italic; }
+  .in { color: var(--color-code-dark-information); font-style: italic; }
   // Keyword
-  .kw { font-weight: 700; }  // #!
+  .kw { color: var(--color-code-dark-keyword); font-weight: 700; }  // #!
   // Operator
-  .op { }
+  .op { color: var(--color-code-dark-operator); }
   // Other
-  .ot { }
+  .ot { color: var(--color-code-dark-other); }
   // Preprocessor
-  .pp { font-weight: 700; }
+  .pp { color: var(--color-code-dark-lowlight); font-weight: 700; }
+  // Region Marker
+  .re { color: var(--color-code-dark-region-marker); }
   // SpecialChar
-  .sc { }
+  .sc { color: var(--color-code-dark-special-char); }
   // SpecialString
-  .ss { }
+  .ss { color: var(--color-code-dark-special-string); }
   // String
-  .st { }
+  .st { color: var(--color-code-dark-string); }
   // Variable
-  .va { }
+  .va { color: var(--color-code-dark-variable); }
   // VerbatimString
-  .vs { }
+  .vs { color: var(--color-code-dark-verbatim-string); }
   // Warning
-  .wa { font-style: italic; }
+  .wa { color: var(--color-code-dark-warning); font-style: italic; }
 }
