@@ -3,21 +3,26 @@
 // We're setting up styles for `Skylighting` inheritance,
 // but using the very basic `monochrome` theme for Print.
 //
+// Notes on naming conventions:
+// ----------------------------
+// I think it's fair to say that having a light and dark pallette is going
+// to be accross the board (interchangeable) but some themes may need more
+// shades, some less. Might it be wise to have custom `--color` pallettes
+// for each child theme?
+//
+// Visual Studio Code plugin for colors
+// ------------------------------------
+// Quickly viewing colors: @ http://tinyurl.com/visual-studio-code-colorize
+//
+// - If, for instance, I decide I need a mid-tone gray, I'd have to rename or
+//   reorder all the `--color-b` styles anyway. In Anki we need more (or at
+//   least different) shades.
+//
 // #!: Should these `--color` styles be here? Dump them?
 //     Strip back to the essentials wherever possible.
 //
 // #1: Used mostly for font colours
 // #2: Occasionally used for backgrounds
-// #3:
-// #4: Monochrome light color palette
-//     - It's handy to use a Visual Studio Code plugin for
-//       quickly viewing colors:
-//           @ http://tinyurl.com/visual-studio-code-colorize
-// #4: Sets up base code sections
-//     - #! Remove later? Backwards compatibility (for now)
-// #5: Skylighting classes
-//     - Using Pandoc Skylighting `../partials/skylighting.less`
-//     - #! Needs double checking/editing
 
 // #1
 --color-bbbb: #000;
@@ -30,38 +35,3 @@
 --color-ll: #ddd;
 --color-lll: #f1f1f1;
 --color-llll: #fff;
-
-// #3
---color-code-light-background: var(--color-lll);
-
-// #4
---color-code-light-alert: #000;                    // #! Alert
---color-code-light-annotation: #000;               // Annotation
---color-code-light-attribute: #000;                // Attribute
---color-code-light-base-n: #000;                   // BaseN
---color-code-light-built-in: #000;                 // BuiltIn
---color-code-light-char: #000;                     // Char
---color-code-light-comment: #000;                  // Comment
---color-code-light-comment-var: #000;              // CommentVar
---color-code-light-constant: #000;                 // Constant
---color-code-light-control-flow: #000;              // ControlFlow
---color-code-light-data-type: #000;                // DataType
---color-code-light-dec-val: #000;                  // DecVal
---color-code-light-documentation: #000;            // Documentation
---coloor-code-light-error: #000;                   // Error
---color-code-light-extension: #000;                // Extension
---color-code-light-float: #000;                     // Float
---color-code-light-function: #000;                 // Function
---color-code-light-import: #000;                   // Import
---color-code-light-information: #000;              // Information
---color-code-light-keyword: #000;                  // Keyword
---color-code-light-operator: #000;                 // Operator
---color-code-light-other: #000;                    // #! Other
---color-code-light-preprocessor: #000;             // #! Preprocessor
---color-code-light-region-marker: #000;            // #! Region Marker
---color-code-light-special-char: #000;             // SpecialChar
---color-code-light-special-string: #000;           // SpecialString
---color-code-light-string: #000;                   // String
---color-code-light-variable: #000;                 // Variable
---color-code-light-verbatim-string: #000;          // VerbatimString
---color-code-light-warning: #000;                  // #! Warning
