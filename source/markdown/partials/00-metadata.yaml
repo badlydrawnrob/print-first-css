@@ -2,7 +2,7 @@
 title: >-
     Print First CSS: All partial files
 subtitle: >-
-    Helper file to view all elements without any context
+    <a onclick="toggleGrid()" href="#">Toggle</a> Baseline Grid. Helper file to view all elements without any context.
 author: >-
     @badlydrawnrob
 ---

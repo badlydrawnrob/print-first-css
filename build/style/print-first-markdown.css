@@ -944,10 +944,10 @@ cite {
   }
 }
 @media screen {
-  main {
+  .grid-baseline {
     position: relative;
   }
-  main::before {
+  .grid-baseline::before {
     content: '';
     position: absolute;
     z-index: 1;

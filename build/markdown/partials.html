@@ -17,11 +17,11 @@
   <link rel="stylesheet" href="../style/print-first-markdown.css" />
 
 </head>
-<body>
+<body id="demo">
   <header id="title-block-header">
     <h1 class="title">Print First CSS: All partial files</h1>
-      <p class="subtitle">Helper file to view all elements without any
-context</p>
+      <p class="subtitle"><a onclick="toggleGrid()" href="#">Toggle</a>
+Baseline Grid. Helper file to view all elements without any context.</p>
         <p class="author"><span class="citation"
 data-cites="badlydrawnrob">@badlydrawnrob</span></p>
       </header>
@@ -156,6 +156,42 @@ data-cites="badlydrawnrob">@badlydrawnrob</span></p>
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Testing page<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div>
+    <details>
+    <summary>
+    Click me to reveal the <code>&lt;details&gt;</code> ↓
+    </summary>
+    <ul>
+    <li>
+    This is the python to generate an <code>Int</code> sum:
+    </li>
+    </ul>
+    <div class="sourceCode" id="cb3"><pre
+    class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This program adds two numbers</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>num1 <span class="op">=</span> <span class="fl">1.5</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>num2 <span class="op">=</span> <span class="fl">6.3</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Add two numbers</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">sum</span> <span class="op">=</span> num1 <span class="op">+</span> num2</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the sum</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;The sum of </span><span class="sc">{0}</span><span class="st"> and </span><span class="sc">{1}</span><span class="st"> is </span><span class="sc">{2}</span><span class="st">&#39;</span>.<span class="bu">format</span>(num1, num2, <span class="bu">sum</span>))</span></code></pre></div>
+    <ul>
+    <li>
+    And here’s how you present it as a <code>.mustache</code> file:
+    </li>
+    </ul>
+    <div class="sourceCode" id="cb4"><pre
+    class="sourceCode json"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;sum&quot;</span> <span class="fu">:</span> <span class="fl">7.8</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+    <div class="sourceCode" id="cb5"><pre
+    class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>The final amount is {{sum}}<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div>
+    </details>
     <table>
     <thead>
     <tr>
@@ -184,5 +220,13 @@ data-cites="badlydrawnrob">@badlydrawnrob</span></p>
     </table>
   </main>
 
+
+  <script>
+    /* For now you'll have to refresh page to clear `.grid-baseline` */
+    function toggleGrid() {
+      var element = document.getElementById("demo");
+      element.classList.toggle("grid-baseline");
+    }
+  </script>
 </body>
 </html>
