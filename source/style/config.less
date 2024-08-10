@@ -3,20 +3,22 @@
 // - @link: https://bit.ly/2TpdSaL
 //
 // #1: Set the variables
-// #3: Add any mixins
+// #2: We should only have ONE mixin
 // #3: Add the partials
+// #4: Our current highlighting theme
 
 // #1
-@import "modules/variables/_root";
+@import "modules/variables/_root";  // ALL COLOUR VARS
 
 // #2
-@import "modules/mixins/grid-baseline";
+@import "modules/mixins/grid-baseline";  // OUR ONLY MIXIN (stick to stock css!)
 
 // #3
-@import "partials/_normalize";
-@import "partials/_reset";
-@import "partials/_root";
-@import "partials/blockquote";
+@import "partials/_normalize"; // resets
+@import "partials/_reset";     // more resets
+@import "partials/_root";      // basic font styles and grid (and hyphens?!)
+
+@import "partials/blockquote"; // EVERYTHING BELOW HERE IS IT'S OWN UNIQUE CHUNK
 @import "partials/code";
 @import "partials/form-elements";
 @import "partials/headings";
@@ -26,6 +28,9 @@
 @import "partials/media";
 @import "partials/print";
 @import "partials/tables";
-@import "partials/text-elements";
-@import "partials/monochrome";
+@import "partials/text-elements";  // hyphens (`_root`) could probs go here
+
+// #4
+@import "partials/monochrome";  // Highlighting themes could potentially live together
+                                // i.e: colours and classes.
 
