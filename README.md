@@ -53,12 +53,13 @@ Typography heavily influenced by [Material Design](https://material.io/design/ty
 2. [Device agnostic `system-ui` fonts](./source/style/modules/variables/typography.less) (for iOS and Android),
 3. Some helpful [CSS variables](./source/style/modules/variables/_root.less).
 
-### ⚠️ You may need ... <span id="alert-headings">⚠️</span> Watch out for ...**
+### ⚠️ You may need ...
 
 > Depending on the `font-family` you may need to make some adjustments.
 
-- Headings may need `--line-height` and `margin-bottom` changes,
-- You may have to abandon the `.grid-baseline` as it's [difficult](#alert-perfect) to achieve! adjusting [depending on font](https://graphicdesign.stackexchange.com/q/4035)
+Headings may need `--line-height` and `margin-bottom` changes, or you may have to abandon the `.grid-baseline` depending on the complexity of your design. It's [difficult](#alert-perfect) to achieve pixel perfection with web-based projects!
+
+Online and PDFs aren't quite as easy to stick to a grid as InDesign projects.
 
 
 
