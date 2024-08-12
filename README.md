@@ -18,7 +18,7 @@ Only the essentials here, folks:
 - Preview styles in the [`specimen`](./build/markdown/specimen.html) file.
 
 
-### Why print first?
+## Why print first?
 
 Print is often a second citizen these days, but it's useful! You might need to rattle off presentations, write a proposal, [build a CV](https://github.com/badlydrawnrob/print-first-cv), or share ideas quickly. Or, perhaps you're an author publishing an ebook?
 
@@ -29,7 +29,7 @@ Write it down with Markdown, then convert with the app of your choice:
 - For websites, you can print or [create a PDF](https://support.apple.com/en-gb/guide/mac-help/mchlp1531/mac) with your browser.
 
 
-#### Print first, screen second
+### Print first, screen second
 
 Think about print first; add the finesse for screen-based devices later:
 
@@ -91,12 +91,9 @@ All components and media align to an [`8dp` baseline grid](./source/modules/mixi
 
 
 
-----
 
 
-
-
-## Installation
+# Installation
 
 1. You have [Node](https://nodejs.org/en/) installed
 2. Create your repo and `cd your/folder/`
@@ -111,9 +108,7 @@ Check the release notes first, then:
 `npm upgrade`
 
 
-
-
-## Less
+### Minimally using LESS
 
 > Almost completely pure CSS.
 > CSS is NOT a programming language. Don't use it that way!
@@ -131,12 +126,9 @@ The [`less`](http://lesscss.org) files are simply a nice way to split out [diffe
 
 
 
-----
 
 
-
-
-## Further reading
+# Further reading
 
 1. [CommonMark](http://commonmark.org/help/)
 2. [Mastering markdown](https://guides.github.com/features/mastering-markdown/#examples)
