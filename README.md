@@ -5,21 +5,28 @@
 
 ## Quick intro
 
-A simple starting point for typographic css projects. Only the essentials here, folks:
+> You might ask yourself, "who on earth prints these days"? I do!
+> Quite often actually. As an offline reference to websites, a CV for potential employers; someday, perhaps an eBook.
+
+This framework is meant for simple layouts like eBooks, PDFs. It can be used for rudimentary websites and blogs, and is a solid typographic base for child themes. It's core purpose is to make reading pleasurable in print-like format.
+
+Only the essentials here, folks:
 
 - No fluff, no grid system
-- Great for presentations, ebooks, or pdfs
+- Basic styling for presentations, ebooks, or pdfs
+- Can be used as a base for websites (and custom print styles)
+- Preview styles in the [`specimen`](./build/markdown/specimen.html) file.
 
 
 ### Why print first?
 
-Print is often a second citizen these days, but it's useful! You might need to rattle off presentations or share ideas quickly, or perhaps you're an author publishing an ebook.
+Print is often a second citizen these days, but it's useful! You might need to rattle off presentations, write a proposal, [build a CV](https://github.com/badlydrawnrob/print-first-cv), or share ideas quickly. Or, perhaps you're an author publishing an ebook?
 
 Write it down with Markdown, then convert with the app of your choice:
 
 - [Pandoc](https://pandoc.org) if you know what a terminal is,
-- [Marked](http://marked2app.com) if you like an app to do the work,
-- Print with Safari, Chrome or Firefox
+- [Marked](http://marked2app.com) if you prefer GUIs,
+- For websites, you can print or [create a PDF](https://support.apple.com/en-gb/guide/mac-help/mchlp1531/mac) with your browser.
 
 
 #### Print first, screen second
@@ -29,8 +36,9 @@ Think about print first; add the finesse for screen-based devices later:
 1. `@media all` for **BOTH** screen and print (use often)
 2. `@media screen` to **ADD** css for screen only
 3. `@media print` to **REMOVE** screen css for print (use sparingly)
+4. `@media (orientation: portrait)` (or `landscape`) may come in handy too.
 
-The method isn't suitable for every job, but for printable media, it's much [better than this](https://flyingdogcreative.com/why-your-web-pages-print-badly-and-how-to-fix-them/)!
+The method isn't suitable for every job, but for printable media, it's much better for a [long blog post](https://wpmudev.com/blog/stop-printing-ugly-wordpress-pages-heres-how-to-fix-it/), or [complex user interfaces](https://www.smashingmagazine.com/2011/11/how-to-set-up-a-print-style-sheet/)!
 
 
 
@@ -39,16 +47,18 @@ The method isn't suitable for every job, but for printable media, it's much [bet
 
 Typography heavily influenced by [Material Design](https://material.io/design/typography/the-type-system.html) — all typography aligns to a [`4dp`](https://stackoverflow.com/a/2025541) grid, with default `--font-size` of `16dp`.
 
-**Some helpers:**
+### Some helpers:
 
-1. [A baseline grid](./source/style/modules/mixins/grid-baseline.less)
-2. [Default iOS and Android fonts](./source/style/modules/variables/typography.less)
-3. [CSS variables](./source/style/modules/variables/_root.less)
+1. [A baseline grid](./source/style/modules/mixins/grid-baseline.less) mixin,
+2. [Device agnostic `system-ui` fonts](./source/style/modules/variables/typography.less) (for iOS and Android),
+3. Some helpful [CSS variables](./source/style/modules/variables/_root.less).
 
-**<span id="alert-headings">⚠️</span> Watch out for ...**
+### ⚠️ You may need ... <span id="alert-headings">⚠️</span> Watch out for ...**
 
-- Headings may need `--line-height` and `margin-bottom` adjusting [depending on font](https://graphicdesign.stackexchange.com/q/4035)
-- Don't worry too much about [pixel perfection](#alert-perfect)
+> Depending on the `font-family` you may need to make some adjustments.
+
+- Headings may need `--line-height` and `margin-bottom` changes,
+- You may have to abandon the `.grid-baseline` as it's [difficult](#alert-perfect) to achieve! adjusting [depending on font](https://graphicdesign.stackexchange.com/q/4035)
 
 
 
@@ -57,10 +67,11 @@ Typography heavily influenced by [Material Design](https://material.io/design/ty
 
 > Everything should be divisible by `8` or `4`;
 
-All components and media align to a [`8dp` baseline grid](./source/modules/mixins/grid-baseline.less) (double the [typography](./#typography) baseline).
+All components and media align to an [`8dp` baseline grid](./source/modules/mixins/grid-baseline.less) (double the [typography](./#typography) baseline).
 
 > <span id="alert-perfect">⚠️</span> **Perfect is the enemy of good** ([Voltaire](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good))
-> [Typographic vertical rythmn](http://webtypography.net/2.2.2) and the layout baseline is notoriously difficult to get right, so don't worry about being pixel perfect. Try to keep each ["chunk" of content](https://internetingishard.com/html-and-css/css-box-model/) consistent, [aligned to the baseline](https://css-tricks.com/almanac/properties/a/align-items/) — eyeball it; does it work?
+> [Typographic vertical rythmn](http://webtypography.net/2.2.2) and the layout baseline is notoriously difficult to get right, so don't worry about being pixel perfect. Try to keep each ["chunk" of content](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) consistent, [aligned to the baseline](https://css-tricks.com/almanac/properties/a/align-items/).
+> Eyeball it; does it look right?
 
 
 
@@ -69,12 +80,12 @@ All components and media align to a [`8dp` baseline grid](./source/modules/mixin
 ## Styleguide
 
 1. [Intro to Markdown and writing styleguide](./build/markdown/styleguide.md)
-2. [Writing in context](./build/markdown/speciman.md)
-3. [A look at the components](./build/markdown/partials.md)
+2. [Writing in context](./build/markdown/specimen.md)
+3. [A look at base-level components](./build/markdown/partials.md)
 4. [Sane stylesheets for css](https://github.com/badlydrawnrob/ecss)
 
 > <span id="alert-enough">⚠️</span> **Do the enough thing ...**
-> Keep `--css-variables` to a minimum, Be [brutal](https://brutalist-web.design/) in your design, KISS, [don't make me think](https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think) — just [do the enough thing](https://fs.blog/jason-fried/)!
+> Keep `--css-variables` to a minimum, Be [brutal](https://brutalist-web.design/) in your design, "Keep it simple, stupid" and [don't make me think](https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think) — just [do the enough thing](https://fs.blog/jason-fried/)!
 
 
 
@@ -103,9 +114,11 @@ Check the release notes first, then:
 
 ## Less
 
-> 99% standard CSS with a hint of less
+> Almost completely pure CSS.
+> CSS is NOT a programming language. Don't use it that way!
+> One `.grid-baseline()` mixin used only.
 
-I've added [`.less`](http://lesscss.org) files into the mix to make things [easier on the eye](https://en.wikipedia.org/wiki/Separation_of_concerns). Creating your CSS is simple as:
+The [`less`](http://lesscss.org) files are simply a nice way to split out [different parts](https://en.wikipedia.org/wiki/Separation_of_concerns) of the CSS. I don't advocate using mixins and functions with your CSS. You can compile your CSS like below:
 
 1. Create a [config](./source/style/config.less) file
 2. `@import (less) "../../node_modules/print-first-css/build/style/print-first.css";`
