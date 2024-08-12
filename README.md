@@ -67,7 +67,7 @@ Online and PDFs aren't quite as easy to stick to a grid as InDesign projects.
 ## Layout
 
 > <span id="alert-perfect">⚠️</span> **Perfect is the enemy of good** ([Voltaire](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good))
-> Everything _should be_ divisible by `8` or `4`;
+> — try to keep grid-level items divisible by `8` or `4`;
 
 All components and media align to an [`8dp` baseline grid](./source/modules/mixins/grid-baseline.less) (double the [typography](./#typography) baseline).
 
