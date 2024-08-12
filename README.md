@@ -8,7 +8,7 @@
 > You might ask yourself, "who on earth prints these days?" — I do!
 > Quite often actually. As an offline reference to websites, a CV for potential employers; someday, perhaps an eBook.
 
-This framework is meant for simple layouts like eBooks, PDFs. It can be used for rudimentary websites and blogs, and is a solid typographic base for child themes. It's core purpose is to make reading pleasurable in print-like format.
+**This framework is meant for** simple layouts like **PDFs and eBooks**. It can be used for rudimentary websites and blogs, and as a solid typographic base for child themes. It's core purpose is to make reading pleasurable in print-like format.
 
 Only the essentials here, folks:
 
