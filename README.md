@@ -81,13 +81,12 @@ All components and media align to an [`8dp` baseline grid](./source/modules/mixi
 
 ## Styleguide
 
+> Just do the enough thing![^1]
+
 1. [Intro to Markdown and writing styleguide](./build/markdown/styleguide.md)
 2. [Writing in context](./build/markdown/specimen.md)
 3. [A look at base-level components](./build/markdown/partials.md)
 4. [Sane stylesheets for css](https://github.com/badlydrawnrob/ecss)
-
-> <span id="alert-enough">⚠️</span> **Do the enough thing ...**
-> Keep `--css-variables` to a minimum, Be [brutal](https://brutalist-web.design/) in your design, "Keep it simple, stupid" and [don't make me think](https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think) — just [do the enough thing](https://fs.blog/jason-fried/)!
 
 
 
@@ -143,3 +142,7 @@ The [`less`](http://lesscss.org) files are simply a nice way to split out [diffe
 2. [Mastering markdown](https://guides.github.com/features/mastering-markdown/#examples)
 3. [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 4. [Pandoc tricks](https://github.com/jgm/pandoc/wiki/Pandoc-Tricks)
+
+
+
+[^1]: **Do the enough thing!** Keep `--css-variables` to a minimum, Be [brutal](https://brutalist-web.design/) in your design, "Keep it simple, stupid" and [don't make me think](https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think) — just [do the enough thing](https://fs.blog/jason-fried/)!
