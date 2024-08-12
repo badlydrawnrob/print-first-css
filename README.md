@@ -66,13 +66,14 @@ Online and PDFs aren't quite as easy to stick to a grid as InDesign projects.
 
 ## Layout
 
-> Everything should be divisible by `8` or `4`;
+> <span id="alert-perfect">⚠️</span> **Perfect is the enemy of good** ([Voltaire](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good))
+> Everything _should be_ divisible by `8` or `4`;
 
 All components and media align to an [`8dp` baseline grid](./source/modules/mixins/grid-baseline.less) (double the [typography](./#typography) baseline).
 
-> <span id="alert-perfect">⚠️</span> **Perfect is the enemy of good** ([Voltaire](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good))
-> [Typographic vertical rythmn](http://webtypography.net/2.2.2) and the layout baseline is notoriously difficult to get right, so don't worry about being pixel perfect. Try to keep each ["chunk" of content](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) consistent, [aligned to the baseline](https://css-tricks.com/almanac/properties/a/align-items/).
-> Eyeball it; does it look right?
+[Typographic vertical rythmn](http://webtypography.net/2.2.2) and the baseline/grid layouts are notoriously difficult to get right for digital projects, so don't worry about being pixel perfect. Try to keep [`box-model`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) children aligned to the baseline grid where possible. For instance, `flexbox` has the option to [`align-items: baseline`](https://css-tricks.com/almanac/properties/a/align-items/) with it's siblings.
+
+**Eyeball it;** does it look right?
 
 
 
