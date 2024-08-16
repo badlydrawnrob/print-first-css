@@ -1,7 +1,9 @@
 // -----------------------------------------------------------------------------
 // Our `#print-first-demo` page for our specimen files
 // -----------------------------------------------------------------------------
-// These are for demo purposes only.
+// These are for demo purposes only. #! DON'T USE GENERIC STYLES like `html` or
+// `main` because these are going to get inherited by child themes. Get more
+// specific with `.classes` and `#ids`.
 
 @media all {
   .title {
@@ -10,14 +12,10 @@
 }
 
 @media screen and (min-width: 200px) {
-  html {
+  body#print-first-demo {
     max-width: 800px;
     margin: 0 auto;
     padding: var(--spacing-three) 0;
-  }
-
-  #print-first-demo {
-    padding: 0 var(--spacing-one);
 
     &.gl-BaselineGrid {
       --baseline-grid-depth: 1;
@@ -25,8 +23,8 @@
     }
   }
 
-  main {
-    // pass
+  main#card-wrapper {
+    padding: 0 var(--spacing-one);
   }
 }
 

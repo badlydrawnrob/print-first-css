@@ -970,16 +970,16 @@ cite {
   }
 }
 @media screen and (min-width: 200px) {
-  html {
+  body#print-first-demo {
     max-width: 800px;
     margin: 0 auto;
     padding: var(--spacing-three) 0;
   }
-  #print-first-demo {
-    padding: 0 var(--spacing-one);
-  }
-  #print-first-demo.gl-BaselineGrid {
+  body#print-first-demo.gl-BaselineGrid {
     --baseline-grid-depth: 1;
     --baseline-grid-align-top: -1px;
+  }
+  main#card-wrapper {
+    padding: 0 var(--spacing-one);
   }
 }
