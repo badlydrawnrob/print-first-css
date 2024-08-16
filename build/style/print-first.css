@@ -964,10 +964,6 @@ cite {
   background: linear-gradient(0deg, var(--baseline-grid-gradient-colour-8dp) 1px, transparent 1px, transparent), linear-gradient(0deg, var(--baseline-grid-gradient-colour-4dp) 1px, transparent 1px, transparent);
   background-size: auto var(--spacing), auto var(--spacing-quarter);
 }
-:root {
-  --baseline-grid-depth: 1;
-  --baseline-grid-align-top: 50px;
-}
 @media all {
   .title {
     margin-bottom: var(--spacing);
@@ -979,7 +975,11 @@ cite {
     margin: 0 auto;
     padding: var(--spacing-three) 0;
   }
-  #demo {
+  #print-first-demo {
     padding: 0 var(--spacing-one);
+  }
+  #print-first-demo.gl-BaselineGrid {
+    --baseline-grid-depth: 1;
+    --baseline-grid-align-top: -1px;
   }
 }
