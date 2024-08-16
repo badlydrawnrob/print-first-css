@@ -1,0 +1,66 @@
+// -----------------------------------------------------------------------------
+// Baseline Grid (perfect is the enemy of good)
+// =============================================================================
+// Vertical rythym in digital is quite hard to get right, so don't feel the need
+// to stick religiously to this `.baseline-grid`, but it can come in handy to
+// align items. `display: flex` and `align-items: baseline` can come in handy.
+//
+// Notes on the grid-system
+// ------------------------
+// - Material Design: http://bit.ly/2lYjdkt
+// - Typographic rhythm: http://bit.ly/2mnBSri
+// - WTF is a `dp` unit? https://stackoverflow.com/q/2025282
+//
+// Notes on the css
+// ----------------
+// 1. Add the `.gl-BaselineGrid` class to any element you'd like to add a
+//    grid baseline to. You can use it on different elements and have them line
+//    up with each other. You may need to add `margin`s or `padding` to get
+//    this done.
+//
+//    Important: `--baseline` variables must be reset within the
+//    `.gl-BaselineGrid` class, if you want to reset them!
+//
+// 2. `--depth: -1` displays _under_ your content
+//    `--depth: 1`  displays _over_ your content
+//
+// 3. `top: 0` displays it in it's default position, but it can be handy to
+//    change this number so you can position the baseline grid as you wish. It
+//    can be helpful to "nudge" it down a little to align to the base of text.
+//
+// 4. This is the fancy gradient that makes our grid lines possible. We also use
+//    our `--grid` spacing variables to make sure it's either `4dp` or `8dp`. You
+//    can find out how to do the gradient below
+//
+//    @ http://bit.ly/2lE4pMV
+//
+//
+// Our `partials.html` specimen file
+// --------------------------------
+// I've added a `toggle()` function to the `source/pandoc/template.html` so you
+// can easily test out the `.baseline-grid` class!
+
+// 1
+.gl-BaselineGrid {
+  --baseline-grid-depth: -1;    // 2
+  --baseline-grid-align-top: 0; // 3
+  --baseline-grid-gradient-colour-8dp: rgb(0, 139, 137);
+  --baseline-grid-gradient-colour-4dp: rgb(133, 231, 231);
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: var(--baseline-grid-depth);
+    top: var(--baseline-grid-align-top);
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    // 4
+    background: linear-gradient(0deg, var(--baseline-grid-gradient-colour-8dp) 1px, transparent 1px, transparent),
+                linear-gradient(0deg, var(--baseline-grid-gradient-colour-4dp) 1px, transparent 1px, transparent);
+    background-size: auto var(--spacing), auto var(--spacing-quarter);
+  }
+}

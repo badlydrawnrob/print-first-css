@@ -1,3 +1,21 @@
+// -----------------------------------------------------------------------------
+// Text elements
+// =============================================================================
+// !#: Currently the browser is handling `:visited` link colour and we're not
+//     really handling `tab`s (accessiblity stuff, toggling between things)
+
+// Add word wrapping and basic hyphenation to common elements
+
+caption,
+p,
+table,
+td,
+textarea,
+th {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
 // Add a help cursor to elements that need one.
 
 abbr,

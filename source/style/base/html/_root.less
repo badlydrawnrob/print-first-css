@@ -1,0 +1,175 @@
+// -----------------------------------------------------------------------------
+// # The `:root` of our document (variables and default styles)
+// =============================================================================
+// Everything that setsup the defaults for our styles, including `--color` vars,
+// and the original `_reset.less` gets dumped in here.
+//
+// 1. Import all our `--variables` (see the link below)
+//
+//    @ https://stackoverflow.com/a/29727884
+//
+//    #! Currently we have A LOT of `--grid` and `--line-height` vars that
+//       may well be overkill. Same goes for `--font` sizes etc. Ideally I'd
+//       want to be quite brutalist about the way I do things, but there are
+//       instances where a smaller `--line-height` can be useful. See the book
+//       _Grid Raster Systems_ for aligning smaller text _between_ the main
+//       `.baseline-grid`. There are times when having everything neatly fitting
+//       a `4dp` or `8dp` grid isn't realistic. I don't even believe that digital
+//       is the best medium for vertical rythmn and complex layouts ... the css
+//       to develop and maintain is a f* ballache.
+//
+//    #! See the new Material Design's "tokens". Colours is also something that
+//       could be improved, as `-llll` has to be rearranged if a lighter tone is
+//       required in the middle.
+//
+//    #! In general, however, LESS IS MORE, and you should be removing, rather
+//       than adding styles wherever possible.
+//
+// 2. Sets up defaults for `font-` styles.
+
+
+:root {
+  // 1
+  @import '../variables/color';
+  @import '../variables/grid';
+  @import '../variables/monochrome';
+  @import '../variables/typography';
+  @import '../variables/utilities';
+
+  // 2
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background: transparent;
+}
+
+
+// -----------------------------------------------------------------------------
+// Reset all the things
+// -----------------------------------------------------------------------------
+// 1. `border-box`... ALL THE THINGS!
+//    - @link http://cbrac.co/RQrDL5
+//
+// 2. Inheriting the `box-sizing` property is a better practice.
+//    - @link http://cbrac.co/1tqPFsy
+//
+// 3. Remove margins, paddings, and borders from HTML elements.
+//    - @link http://cbrac.co/1Ev9etR
+
+html {
+  box-sizing: border-box;  // 1
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;     // 2
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+b,
+blockquote,
+body,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+u,
+ul,
+var {
+  margin:  0;  // 3
+  padding: 0;  // 3
+  border:  0;  // 3
+}
+
+
+// -----------------------------------------------------------------------------
+// Add in our basic `grid` level styles
+// -----------------------------------------------------------------------------
+// 1. Ensure the <html> element's height is at least the viewport height.
+// 2. Give a standardised `margin-bottom` to core elements.
+
+body {
+  min-height: 100%;  // 1
+}
+
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+menu,
+ol,
+p,
+pre,
+summary,
+table,
+ul {
+  margin-bottom: var(--spacing);
+}

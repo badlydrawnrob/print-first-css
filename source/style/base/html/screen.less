@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// Screen styles
+// =============================================================================
+// Examples of how to target styles to make sure there's always the Print First
+// mentality, and you'll always have a nicely printed document (or ePub) ...
+// See `print.less` for more info on `@media`
+//
+// Revising `@media` queries
+// -------------------------
+// You should only really be using `@media all`, `@media print` or nothing at all
+// (just using simple css selectors). `@media print` is a first-class citizen so
+// you should be using `screen` styles _very_ sparingly. It's supposed to be a
+// print-first stylesheet you dope!
+//
+// `@media all` for both screen and print,
+// `@media screen` to ADD styles for screen only,
+// `@media (orientation: portrait` or `landscape` could be useful ...
+// `@media screen and (orientation: portrait)` for multiple targetting.
+//
+// See also `print.less` for print-specific styles.
+
+@media all {
+  // Add both print styles and screen styles here
+}
+
+@media screen {
+  // Screen styles only
+}

@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// Print-specific styles
+// =============================================================================
+// Some of these styles based on `HTML5-Boilerplate`.
+//
+//    #! Needs revisiting with more `@media print` styles, such as footer,
+//       header, so on. Look up some ePub and PDF examples.
+//
+// Revising `@media` queries
+// -------------------------
+// Aim to treat `@media print` as a first-class citizen and use `screen` styles
+// sparingly. It's supposed to be a print-first stylesheet you dope!
+//
+// `@media all` for both screen and print,
+// `@media print` for print-specific, or to REMOVE `screen` styles,
+// `@media (orientation: portrait` or `landscape` could be useful ...
+// `@media print and (orientation: portrait)` for multiple targetting.
+//
+// Notes
+// -----
+// 1. Don’t show links for images, or javascript/internal links
+// 2. Tables - http://css-discuss.incutio.com/wiki/Printing_Tables
+
+@media print {
+  a,
+  a:visited {
+    color: var(--font-color);
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  // 1
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    page-break-inside: avoid;
+  }
+
+  // 2
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

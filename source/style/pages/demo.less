@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// Our `#demo` page for our specimen files
+// -----------------------------------------------------------------------------
+// These are for demo purposes only.
+
+@media all {
+  .title {
+    margin-bottom: var(--spacing);
+  }
+}
+
+@media screen and (min-width: 200px) {
+  html {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-three) 0;
+  }
+
+  #demo {
+    padding: 0 var(--spacing-one);
+
+    &.gl-BaselineGrid {
+      --baseline-grid-depth: 1;
+      --baseline-grid-align-top: 50px;
+    }
+  }
+
+  main {
+    // pass
+  }
+}
+
+// #! Add in some dark theme colours?
+//
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     background: black;
+//     color: white !important;
+//   }
+// }

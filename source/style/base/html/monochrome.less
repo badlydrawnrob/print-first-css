@@ -1,10 +1,14 @@
-// Monochrome theme ============================================================
+// -----------------------------------------------------------------------------
+// Monochrome (Pandoc's Skylighting)
+// =============================================================================
 // The only problem with this current setup is that #! styles are inherited by
 // child themes, so have to be overriden! Always aim to remove as much code as
 // possible.
 //
-// Pandoc (Skylighting)
-// --------------------
+//     #! Currently the line `.numbers` is broken. Needs fixing.
+//
+// Compiling ```code blocks``` with Pandoc
+// ---------------------------------------
 // See `package.json` for build scripts with `npx`. For documentation:
 // - @link: https://pandoc.org/chunkedhtml-demo/13-syntax-highlighting.html
 // - @link: https://stackoverflow.com/a/30884409
@@ -16,7 +20,6 @@
 //
 // - Removed some dead `@media screen` and `@media print` code ...
 // - Was simply setting some `overflow` and `white-space` rules.
-// - #! Currently the line `.numbers` is broken. Needs fixing.
 
 
 // div.sourceCode {
@@ -120,13 +123,13 @@
   // Information
   .in { color: var(--color-code-light-information); font-style: italic; }
   // Keyword
-  .kw { color: var(--color-code-light-keyword); font-weight: 700; }  // #!
+  .kw { color: var(--color-code-light-keyword); font-weight: 700; }
   // Operator
   .op { color: var(--color-code-light-operator); }
   // Other
   .ot { color: var(--color-code-light-other); }
   // Preprocessor
-  .pp { color: var(--color-code-light-lowlight); font-weight: 700; }
+  .pp { color: var(--color-code-light-preprocessor); font-weight: 700; }
   // Region Marker
   .re { color: var(--color-code-light-region-marker); }
   // SpecialChar

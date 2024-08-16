@@ -124,7 +124,11 @@ The [`less`](http://lesscss.org) files are simply a nice way to split out [diffe
 6. `npm run build`
 
 
+# License and inspiration
 
+> Print First CSS is licensed under the [MIT Open Source License](./license.md)
+
+There's been a bunch of inspirations over the years, but mostly thanks to [@cbracco](https://github.com/cbracco) (Cardinal CSS) and [Material Design](https://m2.material.io/design/typography/the-type-system.html).
 
 
 
