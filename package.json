@@ -5,7 +5,7 @@
   "main": "source/style/main.less",
   "scripts": {
     "test": "which pandoc",
-    "css": "npx lessc source/style/main.less ./build/style/print-first.css",
+    "css": "npx lessc --clean-css=\"--s1 --advanced\" source/style/main.less ./build/style/print-first.css",
     "partials": "pandoc --template=./source/pandoc/template.html --css=../style/print-first.css ./source/markdown/partials/*md ./source/markdown/partials/00-metadata.yaml -s -o ./build/markdown/partials.html",
     "prebuild": "mkdir -p build/ build/style build/markdown",
     "build": "npm run css && npm run partials",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/badlydrawnrob/print-first-css#readme",
   "devDependencies": {
     "less": "^4.2.0",
+    "less-plugin-clean-css": "^1.6.0",
     "normalize.css": "^8.0.1"
   }
 }

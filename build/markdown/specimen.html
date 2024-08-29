@@ -6,108 +6,21 @@
   <title>specimen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style id="mkstylesheet">
-:root {
-  --color-bbbb: #000;
-  --color-bbb: #333;
-  --color-bb: #ccc;
-  --color-b: #f9f9f9;
-  --color-l: #ccc;
-  --color-ll: #ddd;
-  --color-lll: #f1f1f1;
-  --color-llll: #fff;
-  --color-code-light-palette-01: var(--color-bbbb);
-  --color-code-light-palette-02: var(--color-bbbb);
-  --color-code-light-palette-03: var(--color-bbbb);
-  --color-code-light-palette-04: var(--color-bbbb);
-  --color-code-light-palette-05: var(--color-bbbb);
-  --color-code-light-palette-06: var(--color-bbbb);
-  --color-code-light-palette-07: var(--color-bbbb);
-  --color-code-light-background: var(--color-lll);
-  --color-code-light-alert: var(--color-code-light-palette-01);
-  --color-code-light-annotation: var(--color-code-light-palette-01);
-  --color-code-light-attribute: var(--color-code-light-palette-07);
-  --color-code-light-base-n: var(--color-code-light-palette-05);
-  --color-code-light-built-in: var(--color-code-light-palette-04);
-  --color-code-light-control-flow: var(--color-code-light-palette-04);
-  --color-code-light-char: var(--color-code-light-palette-05);
-  --color-code-light-constant: var(--color-code-light-palette-04);
-  --color-code-light-comment: var(--color-code-light-palette-01);
-  --color-code-light-comment-var: var(--color-code-light-palette-01);
-  --color-code-light-documentation: var(--color-code-light-palette-04);
-  --color-code-light-data-type: var(--color-code-light-palette-04);
-  --color-code-light-dec-val: var(--color-code-light-palette-05);
-  --color-code-light-error: var(--color-code-light-palette-01);
-  --color-code-light-extension: var(--color-code-light-palette-01);
-  --color-code-light-float: var(--color-code-light-palette-05);
-  --color-code-light-function: var(--color-code-light-palette-07);
-  --color-code-light-import: var(--color-code-light-palette-01);
-  --color-code-light-information: var(--color-code-light-palette-01);
-  --color-code-light-keyword: var(--color-code-light-palette-04);
-  --color-code-light-operator: var(--color-code-light-palette-04);
-  --color-code-light-other: var(--color-code-light-palette-07);
-  --color-code-light-preprocessor: var(--color-code-light-palette-07);
-  --color-code-light-special-char: var(--color-code-light-palette-05);
-  --color-code-light-special-string: var(--color-code-light-palette-05);
-  --color-code-light-string: var(--color-code-light-palette-05);
-  --color-code-light-variable: var(--color-code-light-palette-07);
-  --color-code-light-verbatim-string: var(--color-code-light-palette-05);
-  --color-code-light-warning: var(--color-code-light-palette-01);
-  --spacing-increment: calc(var(--spacing-pp) * 1rem);
-  --spacing-pppppppp: 128 / 16;
-  --spacing-ppppppp: 112 / 16;
-  --spacing-pppppp: 96 / 16;
-  --spacing-ppppp: 80 / 16;
-  --spacing-pppp: 64 / 16;
-  --spacing-ppp: 48 / 16;
-  --spacing-pp: 32 / 16;
-  --spacing-p: 24 / 16;
-  --spacing-base: 16 / 16;
-  --spacing-m: 8 / 16;
-  --spacing-mm: 4 / 16;
-  --spacing-mmm: 2 / 16;
-  --spacing-mmmm: 1 / 16;
-  --spacing-eight: calc(var(--spacing-pppppppp) * 1rem);
-  --spacing-seven: calc(var(--spacing-ppppppp) * 1rem);
-  --spacing-six: calc(var(--spacing-pppppp) * 1rem);
-  --spacing-five: calc(var(--spacing-ppppp) * 1rem);
-  --spacing-four: calc(var(--spacing-pppp) * 1rem);
-  --spacing-three: calc(var(--spacing-ppp) * 1rem);
-  --spacing-two: calc(var(--spacing-pp) * 1rem);
-  --spacing: calc(var(--spacing-p) * 1rem);
-  --spacing-one: calc(var(--spacing-base) * 1rem);
-  --spacing-half: calc(var(--spacing-m) * 1rem);
-  --spacing-quarter: calc(var(--spacing-mm) * 1rem);
-  --spacing-micro: calc(var(--spacing-mmm) * 1rem);
-  --spacing-px: calc(var(--spacing-mmmm) * 1rem);
-  --system-ui: system-ui, sans-serif;
-  --system-mono: ui-monospace;
-  --fallback-mono: 'Roboto Mono', monospace, monospace;
-  --font-color: var(--color-bbbb);
-  --font-family: var(--system-ui);
-  --font-family-mono: var(--system-mono), var(--fallback-mono);
-  --font-size-pppppp: calc((96 / 16) * 1rem);
-  --font-size-ppppp: calc((60 / 16) * 1rem);
-  --font-size-pppp: calc((48 / 16) * 1rem);
-  --font-size-ppp: calc((34 / 16) * 1rem);
-  --font-size-pp: calc((24 / 16) * 1rem);
-  --font-size-p: calc((20 / 16) * 1rem);
-  --font-size: calc((16 / 16) * 1rem);
-  --font-size-m: calc((14 / 16) * 1rem);
-  --font-size-mm: calc((12 / 16) * 1rem);
-  --font-size-mmm: calc((10 / 16) * 1rem);
-  --line-height-eight: calc(var(--spacing-pppppppp));
-  --line-height-seven: calc(var(--spacing-ppppppp));
-  --line-height-six: calc(var(--spacing-pppppp));
-  --line-height-five: calc(var(--spacing-ppppp));
-  --line-height-four: calc(var(--spacing-pppp));
-  --line-height-three: calc(var(--spacing-ppp));
-  --line-height-two: calc(var(--spacing-pp));
-  --line-height: calc(var(--spacing-p));
-  --line-height-one: calc(var(--spacing-base));
-  --line-height-half: calc(var(--spacing-m));
-  --line-height-quarter: calc(var(--spacing-mm));
-  --border-radius: var(--spacing-micro);
-}
+/*! --------------------------------------------------
+// Print First CSS | MIT License
+// @ https://github.com/badlydrawnrob/print-first-css
+// ===================================================
+// A very light framework, which has printable styles
+// at it's heart. This means we want it nicely printed,
+// saved as a PDF, or viewed in an eReader. It's also
+// nice as a solid base for your own projects, which
+// don't have to be "print first".
+//
+// I often save things as PDFs and occasionally print
+// them, so it's always nice to make an effort for that
+// kind of job a person hires your website for.
+//
+//                                                   */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -413,6 +326,107 @@ template {
 [hidden] {
   display: none;
 }
+:root {
+  --color-bbbb: #000;
+  --color-bbb: #333;
+  --color-bb: #ccc;
+  --color-b: #f9f9f9;
+  --color-l: #ccc;
+  --color-ll: #ddd;
+  --color-lll: #f1f1f1;
+  --color-llll: #fff;
+  --spacing-increment: calc(var(--spacing-pp) * 1rem);
+  --spacing-pppppppp: 128 / 16;
+  --spacing-ppppppp: 112 / 16;
+  --spacing-pppppp: 96 / 16;
+  --spacing-ppppp: 80 / 16;
+  --spacing-pppp: 64 / 16;
+  --spacing-ppp: 48 / 16;
+  --spacing-pp: 32 / 16;
+  --spacing-p: 24 / 16;
+  --spacing-base: 16 / 16;
+  --spacing-m: 8 / 16;
+  --spacing-mm: 4 / 16;
+  --spacing-mmm: 2 / 16;
+  --spacing-mmmm: 1 / 16;
+  --spacing-eight: calc(var(--spacing-pppppppp) * 1rem);
+  --spacing-seven: calc(var(--spacing-ppppppp) * 1rem);
+  --spacing-six: calc(var(--spacing-pppppp) * 1rem);
+  --spacing-five: calc(var(--spacing-ppppp) * 1rem);
+  --spacing-four: calc(var(--spacing-pppp) * 1rem);
+  --spacing-three: calc(var(--spacing-ppp) * 1rem);
+  --spacing-two: calc(var(--spacing-pp) * 1rem);
+  --spacing: calc(var(--spacing-p) * 1rem);
+  --spacing-one: calc(var(--spacing-base) * 1rem);
+  --spacing-half: calc(var(--spacing-m) * 1rem);
+  --spacing-quarter: calc(var(--spacing-mm) * 1rem);
+  --spacing-micro: calc(var(--spacing-mmm) * 1rem);
+  --spacing-px: calc(var(--spacing-mmmm) * 1rem);
+  --color-code-light-background: var(--color-lll);
+  --color-code-light-alert: #000;
+  --color-code-light-annotation: #000;
+  --color-code-light-attribute: #000;
+  --color-code-light-base-n: #000;
+  --color-code-light-built-in: #000;
+  --color-code-light-char: #000;
+  --color-code-light-comment: #000;
+  --color-code-light-comment-var: #000;
+  --color-code-light-constant: #000;
+  --color-code-light-control-flow: #000;
+  --color-code-light-data-type: #000;
+  --color-code-light-dec-val: #000;
+  --color-code-light-documentation: #000;
+  --coloor-code-light-error: #000;
+  --color-code-light-extension: #000;
+  --color-code-light-float: #000;
+  --color-code-light-function: #000;
+  --color-code-light-import: #000;
+  --color-code-light-information: #000;
+  --color-code-light-keyword: #000;
+  --color-code-light-operator: #000;
+  --color-code-light-other: #000;
+  --color-code-light-preprocessor: #000;
+  --color-code-light-region-marker: #000;
+  --color-code-light-special-char: #000;
+  --color-code-light-special-string: #000;
+  --color-code-light-string: #000;
+  --color-code-light-variable: #000;
+  --color-code-light-verbatim-string: #000;
+  --color-code-light-warning: #000;
+  --system-ui: system-ui, sans-serif;
+  --system-mono: ui-monospace;
+  --fallback-mono: 'Roboto Mono', monospace, monospace;
+  --font-color: var(--color-bbbb);
+  --font-family: var(--system-ui);
+  --font-family-mono: var(--system-mono), var(--fallback-mono);
+  --font-size-pppppp: calc((96 / 16) * 1rem);
+  --font-size-ppppp: calc((60 / 16) * 1rem);
+  --font-size-pppp: calc((48 / 16) * 1rem);
+  --font-size-ppp: calc((34 / 16) * 1rem);
+  --font-size-pp: calc((24 / 16) * 1rem);
+  --font-size-p: calc((20 / 16) * 1rem);
+  --font-size: calc((16 / 16) * 1rem);
+  --font-size-m: calc((14 / 16) * 1rem);
+  --font-size-mm: calc((12 / 16) * 1rem);
+  --font-size-mmm: calc((10 / 16) * 1rem);
+  --line-height-eight: calc(var(--spacing-pppppppp));
+  --line-height-seven: calc(var(--spacing-ppppppp));
+  --line-height-six: calc(var(--spacing-pppppp));
+  --line-height-five: calc(var(--spacing-ppppp));
+  --line-height-four: calc(var(--spacing-pppp));
+  --line-height-three: calc(var(--spacing-ppp));
+  --line-height-two: calc(var(--spacing-pp));
+  --line-height: calc(var(--spacing-p));
+  --line-height-one: calc(var(--spacing-base));
+  --line-height-half: calc(var(--spacing-m));
+  --line-height-quarter: calc(var(--spacing-mm));
+  --border-radius: var(--spacing-micro);
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background: transparent;
+}
 html {
   box-sizing: border-box;
 }
@@ -498,13 +512,6 @@ var {
   padding: 0;
   border: 0;
 }
-:root {
-  color: var(--font-color);
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  background: transparent;
-}
 body {
   min-height: 100%;
 }
@@ -526,15 +533,6 @@ summary,
 table,
 ul {
   margin-bottom: var(--spacing);
-}
-caption,
-p,
-table,
-td,
-textarea,
-th {
-  word-wrap: break-word;
-  hyphens: auto;
 }
 blockquote {
   font-style: normal;
@@ -575,14 +573,16 @@ samp {
   }
 }
 code,
-kbd {
+kbd,
+samp {
   margin: 0;
   padding: var(--spacing-quarter);
   white-space: nowrap;
 }
 @media screen {
   code,
-  kbd {
+  kbd,
+  samp {
     border-radius: var(--border-radius);
     background-color: var(--color-code-light-background);
   }
@@ -830,6 +830,15 @@ th,
 td {
   overflow: visible;
 }
+caption,
+p,
+table,
+td,
+textarea,
+th {
+  word-wrap: break-word;
+  hyphens: auto;
+}
 abbr,
 acronym,
 dfn[title] {
@@ -850,74 +859,124 @@ i,
 cite {
   font-style: italic;
 }
-pre.sourceCode .numberSource {
-  margin-left: 3em;
-  padding-left: 4px;
-  border-left: 1px solid var(--color-bbb);
-}
-pre.sourceCode .numberSource code {
-  counter-reset: source-line 0;
-}
-pre.sourceCode .numberSource code > span {
+.gl-BaselineGrid {
+  --baseline-grid-depth: -1;
+  --baseline-grid-align-top: 0;
+  --baseline-grid-gradient-colour-8dp: #008b89;
+  --baseline-grid-gradient-colour-4dp: #85e7e7;
   position: relative;
-  left: -4em;
-  counter-increment: source-line;
 }
-pre.sourceCode .numberSource code > span > a:first-child::before {
-  content: counter(source-line);
-  position: relative;
-  left: -1em;
-  display: inline-block;
-  width: 4em;
-  padding: 0 4px;
-  color: var(--color-bbb);
-  text-align: right;
-  vertical-align: baseline;
-  border: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-code.sourceCode > span > a:first-child::before {
-  text-decoration: underline;
+.gl-BaselineGrid::before {
+  content: '';
+  position: absolute;
+  z-index: var(--baseline-grid-depth);
+  top: var(--baseline-grid-align-top);
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, var(--baseline-grid-gradient-colour-8dp) 1px, transparent 1px, transparent), linear-gradient(0deg, var(--baseline-grid-gradient-colour-4dp) 1px, transparent 1px, transparent);
+  background-size: auto var(--spacing), auto var(--spacing-quarter);
 }
 .sourceCode .al {
+  color: var(--color-code-light-alert);
   font-weight: 700;
 }
 .sourceCode .an {
+  color: var(--color-code-light-annotation);
   font-style: italic;
 }
-.sourceCode .cf {
-  font-weight: 700;
+.sourceCode .at {
+  color: var(--color-code-light-attribute);
+}
+.sourceCode .bn {
+  color: var(--color-code-light-base-n);
+}
+.sourceCode .bu {
+  color: var(--color-code-light-built-in);
+}
+.sourceCode .ch {
+  color: var(--color-code-light-char);
 }
 .sourceCode .co {
+  color: var(--color-code-light-comment);
   font-style: italic;
 }
 .sourceCode .cv {
+  color: var(--color-code-light-comment-var);
   font-style: italic;
 }
-.sourceCode .do {
-  font-style: italic;
+.sourceCode .cn {
+  color: var(--color-code-light-constant);
 }
-.sourceCode .dt {
-  text-decoration: underline;
-}
-.sourceCode .er {
+.sourceCode .cf {
+  color: var(--color-code-light-control-flow);
   font-weight: 700;
 }
+.sourceCode .dt {
+  color: var(--color-code-light-data-type);
+  text-decoration: underline;
+}
+.sourceCode .dv {
+  color: var(--color-code-light-dec-val);
+}
+.sourceCode .do {
+  color: var(--color-code-light-documentation);
+  font-style: italic;
+}
+.sourceCode .er {
+  color: var(--color-code-light-error);
+  font-weight: 700;
+}
+.sourceCode .ex {
+  color: var(--color-code-light-extension);
+}
+.sourceCode .fl {
+  color: var(--color-code-light-float);
+}
+.sourceCode .fu {
+  color: var(--color-code-light-function);
+}
+.sourceCode .im {
+  color: var(--color-code-light-import);
+}
 .sourceCode .in {
+  color: var(--color-code-light-information);
   font-style: italic;
 }
 .sourceCode .kw {
+  color: var(--color-code-light-keyword);
   font-weight: 700;
+}
+.sourceCode .op {
+  color: var(--color-code-light-operator);
+}
+.sourceCode .ot {
+  color: var(--color-code-light-other);
 }
 .sourceCode .pp {
+  color: var(--color-code-light-preprocessor);
   font-weight: 700;
 }
+.sourceCode .re {
+  color: var(--color-code-light-region-marker);
+}
+.sourceCode .sc {
+  color: var(--color-code-light-special-char);
+}
+.sourceCode .ss {
+  color: var(--color-code-light-special-string);
+}
+.sourceCode .st {
+  color: var(--color-code-light-string);
+}
+.sourceCode .va {
+  color: var(--color-code-light-variable);
+}
+.sourceCode .vs {
+  color: var(--color-code-light-verbatim-string);
+}
 .sourceCode .wa {
+  color: var(--color-code-light-warning);
   font-style: italic;
 }
 @media all {
@@ -925,29 +984,17 @@ code.sourceCode > span > a:first-child::before {
     margin-bottom: var(--spacing);
   }
 }
-@media screen {
-  main {
-    position: relative;
-  }
-  main::before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent);
-    background-size: auto var(--spacing), auto var(--spacing-quarter);
-  }
-}
 @media screen and (min-width: 200px) {
-  html {
+  body#print-first-demo {
     max-width: 800px;
     margin: 0 auto;
     padding: var(--spacing-three) 0;
   }
-  body {
+  body#print-first-demo.gl-BaselineGrid {
+    --baseline-grid-depth: 1;
+    --baseline-grid-align-top: -1px;
+  }
+  main#card-wrapper {
     padding: 0 var(--spacing-one);
   }
 }
@@ -955,7 +1002,7 @@ code.sourceCode > span > a:first-child::before {
 #wrapper #generated-toc-clone,#wrapper #mkreplaced-toc,#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-position:inside}#wrapper #generated-toc-clone li.missing,#wrapper #mkreplaced-toc li.missing{list-style-type: none!important}#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-type: upper-roman}#wrapper #generated-toc-clone>ul>li>ul,#wrapper #mkreplaced-toc>li>ul {list-style-type: decimal}#wrapper #generated-toc-clone>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul{list-style-type: decimal-leading-zero}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul{list-style-type: lower-greek}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul{list-style-type: disc}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul>li>ul{list-style-type: square}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{}
 </style>
 
-<style id="mkprintstyles">@media print{#wrapper #generated-toc-clone,#generated-toc{display:none!important}
+<style id="mkprintstyles">@media print{#wrapper #generated-toc-clone,#generated-toc{display:none!important}h1:nth-of-type(n+2){page-break-before:always}
 html,body,#wrapper{font-size:10pt!important}
 }
 </style>
@@ -1062,6 +1109,7 @@ while True:
     else:
         print(&quot;Invalid Input&quot;)</code></pre>
 <p>Here is an example of inline code <code>var = 1</code>, Keyboard controls <kbd>⌘ + V</kbd> and a sample <samp>Does not compute, press: <kbd>Y</kbd> to continue</samp></p>
+<!-- #! `<samp>` isn't widely used. Get rid of it? -->
 <h6 id="h6">H6</h6>
 
 <p>Aliquam feugiat velit sed nisl tempor lobortis.</p>

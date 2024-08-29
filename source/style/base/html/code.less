@@ -20,13 +20,15 @@
 //     - Ideally, make sure each `font-size` has a similar `x-height`
 // 3. You either break the line, or have it wrap:
 //     @ https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+//
+// #! `<samp>` isn't widely used. Get rid of?
 
 code,
 kbd,
 pre,
 samp {
-  font-family: var(--font-family-mono);  // 3
-  font-size: var(--font-size);           // 3
+  font-family: var(--font-family-mono);  // 1
+  font-size: var(--font-size);           // 2
   font-style: normal;
   line-height: var(--line-height);
 
@@ -36,7 +38,8 @@ samp {
 }
 
 code,
-kbd {
+kbd,
+samp {
   margin: 0;
   padding: var(--spacing-quarter);
   white-space: nowrap;

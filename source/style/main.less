@@ -1,33 +1,44 @@
-/* -----------------------------------------------------------------------------
-// Print First CSS
-// MIT License | https://github.com/badlydrawnrob/print-first-css
-// =============================================================================
-// A very light framework, which has printable styles at it's heart. This means
-// we want it nicely printed, saved as a PDF, or viewed in an eReader. It's also
-// nice as a solid base for your own projects, which don't have to be "print first".
+/*! --------------------------------------------------
+// Print First CSS | MIT License
+// @ https://github.com/badlydrawnrob/print-first-css
+// ===================================================
+// A very light framework, which has printable styles
+// at it's heart. This means we want it nicely printed,
+// saved as a PDF, or viewed in an eReader. It's also
+// nice as a solid base for your own projects, which
+// don't have to be "print first".
 //
-// I often save things as PDFs and occasionally print them, so it's always nice
-// to make an effort for that kind of job a person hires your website for.    */
+// I often save things as PDFs and occasionally print
+// them, so it's always nice to make an effort for that
+// kind of job a person hires your website for.
+//
+//                                                   */
+//
 //
 // Our MAIN configuration file
 // -------------------------
-// Sets up the `print-first-css` framework, `--variables` you can use and extend
-// in your project, and a basic `monochrome` theme that you can use with Pandoc.
+// Sets up the `print-first-css` framework, `--variables`
+// you can use and extend in your project, and a basic
+// `monochrome` theme that you can use with Pandoc.
 //
 //    @link: https://bit.ly/2TpdSaL  #!
 //
-// 1. Our main reset, `normalize.css` first (3rd party styles) ...
-//    ... Then our other (minor) resets! (our own styles)
+// 1. Our main reset, `normalize.css` first (3rd party
+//    styles) ... Then our other (minor) resets!
+//    (our own styles)
 //
-//    #! `normalize.css` is very old. There's also some duplicate code —
-//       I'm doing the `monospace` trick in `typography.less`, for instance.
+//    #! `normalize.css` is very old. There's also some
+//    duplicate code — I'm doing the `monospace` trick in
+//    `typography.less`, for instance.
 //
-// 2. All of our base (raw) html styles. You should aim to create a specimen
-//    file with as much as possible styled upfront here.
+// 2. All of our base (raw) html styles. You should aim
+//    to create a specimen file with as much as possible
+//    styled upfront here.
 //
-// 3. Now we begin our `GPS` and `ECSS` hybrid. GPS for most of the things,
-//    and some `ECSS` naming conventions where appropriate. Some of these
-//    files (such as `page/*.less`) _could_ live with their page templates.
+// 3. Now we begin our `GPS` and `ECSS` hybrid. GPS for
+//    most of the things, and some `ECSS` naming conventions
+//    where appropriate. Some of these files (such as
+//    `page/*.less`) _could_ live with their page templates.
 
 // 1
 @import (less) "../../node_modules/normalize.css/normalize.css";
