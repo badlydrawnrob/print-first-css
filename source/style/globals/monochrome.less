@@ -7,19 +7,17 @@
 //
 //     #! Currently the line `.numbers` is broken. Needs fixing.
 //
-// Compiling ```code blocks``` with Pandoc
-// ---------------------------------------
+// Compiling `code block`s with Pandoc
+// -----------------------------------
 // See `package.json` for build scripts with `npx`. For documentation:
-// - @link: https://pandoc.org/chunkedhtml-demo/13-syntax-highlighting.html
-// - @link: https://stackoverflow.com/a/30884409
+// - @ https://pandoc.org/chunkedhtml-demo/13-syntax-highlighting.html
+// - @ https://stackoverflow.com/a/30884409
 //
 // Problems to solve?
 // ------------------
-// Inheriting base `--font-color` might be better to be explicit? A lot of
-// `.sourceCode` class repetition. Why?
-//
-// - Removed some dead `@media screen` and `@media print` code ...
-// - Was simply setting some `overflow` and `white-space` rules.
+// 1. Better to be explicit when inheriting base `--font-color`?
+// 2. Remove unused styles (comments)? (removed some already
+// 3. I've NEVER seen the `.cv` comment variables as of yet!
 
 
 // div.sourceCode {
@@ -97,9 +95,15 @@
   // Char
   .ch { color: var(--color-code-light-char); }
   // Comment
-  .co { color: var(--color-code-light-comment); font-style: italic; }
+  .co {
+    color: var(--color-code-light-comment);
+    font-style: italic;
+  }
   // CommentVar
-  .cv { color: var(--color-code-light-comment-var); font-style: italic; }
+  .cv {
+    color: var(--color-code-light-comment-var);
+    font-style: italic
+  }
   // Constant
   .cn { color: var(--color-code-light-constant); }
   // ControlFlow

@@ -4,8 +4,11 @@
 // 1. Styles for `monochrome`
 //   (a) Base styles
 //   (b)`span` class styles
+// 2. `#757575` fails accessibility tests on a `#F1F1F1` background.
+//    - This is what we tried first for comments
 
 // 1a
+// #! I think some of these can be REMOVED (see Anki)
 --color-code-light-background: var(--color-lll);
 // --color-code-light-text-color: #cfcfc2;
 // --color-code-light-line-number-color: #7a7c7d;
@@ -19,8 +22,8 @@
 --color-code-light-base-n: #000;                   // BaseN
 --color-code-light-built-in: #000;                 // BuiltIn
 --color-code-light-char: #000;                     // Char
---color-code-light-comment: #000;                  // Comment
---color-code-light-comment-var: #000;              // CommentVar
+--color-code-light-comment: #6E6E6E;               // Comment
+--color-code-light-comment-var: #6E6E6E;           // CommentVar
 --color-code-light-constant: #000;                 // Constant
 --color-code-light-control-flow: #000;              // ControlFlow
 --color-code-light-data-type: #000;                // DataType
