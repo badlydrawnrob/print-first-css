@@ -1,4 +1,5 @@
-### Python Code Block
+<details open>
+<summary>Python Code Block</summary>
 
 ```python {.numberLines}
 # This function adds two numbers
@@ -57,3 +58,5 @@ while True:
     else:
         print("Invalid Input")
 ```
+
+</details>

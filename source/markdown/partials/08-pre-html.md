@@ -1,4 +1,5 @@
-### HTML Code Block
+<details open>
+<summary>Html Code Block</summary>
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -24,3 +25,4 @@
 </html>
 ```
 
+</details>
