@@ -1,10 +1,11 @@
 // -----------------------------------------------------------------------------
 // Text elements
 // =============================================================================
-// !#: Currently the browser is handling `:visited` link colour and we're not
-//     really handling `tab`s (accessiblity stuff, toggling between things)
+// We're letting the browser handle `:visited` link colour and we're not
+// really handling `tab`s (accessiblity stuff, toggling between things)
 
 // Add word wrapping and basic hyphenation to common elements
+// @ https://stackoverflow.com/a/17259958 (`overflow-wrap` -vs- `word-break`)
 
 caption,
 p,
@@ -12,7 +13,7 @@ table,
 td,
 textarea,
 th {
-  word-wrap: break-word;
+  overflow-wrap: break-word;
   hyphens: auto;
 }
 
