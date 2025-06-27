@@ -1,1 +1,1 @@
-![A placeholder image](http://via.placeholder.com/350x150)
+![A placeholder image](../../source/media/figure.jpeg)
