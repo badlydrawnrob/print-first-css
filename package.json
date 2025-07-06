@@ -6,7 +6,7 @@
   "scripts": {
     "test": "which pandoc",
     "css": "npx lessc --clean-css=\"--s1 --advanced\" source/style/main.less ./build/style/print-first.css",
-    "partials": "pandoc --template=./source/pandoc/template.html --css=../style/print-first.css ./source/markdown/partials/*md ./source/markdown/partials/00-metadata.yaml -s -o ./build/markdown/partials.html",
+    "partials": "pandoc --template=./source/pandoc/template.html --css=../style/print-first.css ./source/markdown/partials/*.md ./source/markdown/partials/00-metadata.yaml -s -o ./build/markdown/partials.html",
     "prebuild": "mkdir -p build/ build/style build/markdown",
     "build": "npm run css && npm run partials",
     "postbuild": "echo Print First CSS: successfully compiled!"
