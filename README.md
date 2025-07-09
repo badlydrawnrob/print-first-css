@@ -2,20 +2,21 @@
 
 
 
-
 ## Quick intro
 
-> You might ask yourself, "who on earth prints these days?" — I do!
-> Quite often actually. As an offline reference to websites, a CV for potential employers; someday, perhaps an eBook.
+> Who on earth prints these days? I do!
+> Quite often actually: notes to edit, website reference, a CV, perhaps an eBook ...
 
-**This framework is meant for** simple layouts like **PDFs and eBooks**. It can be used for rudimentary websites and blogs, and as a solid typographic base for child themes. It's core purpose is to make reading pleasurable in print-like format.
+**A solid base for simple layouts such as PDFs, books, websites;** acts as a starter theme with solid typography. Makes for pleasurable reading when you need to print out on paper.
 
 Only the essentials here, folks:
 
 - No fluff, no grid system
 - Basic styling for presentations, ebooks, or pdfs
-- Can be used as a base for websites (and custom print styles)
-- Preview styles in the [`specimen`](./build/markdown/specimen.html) file.
+- Use it as a base for your next website (roll your own typography etc)
+- Preview styles in the [`specimen`](./build/markdown/specimen.html) file
+- Uses plain CSS ([`-css-variables`](./source/style/modules/variables/_root.less)) and the `lessc` compiler to [chunk](https://en.wikipedia.org/wiki/Separation_of_concerns) files[^1]
+
 
 
 ## Why print first?
@@ -26,7 +27,7 @@ Write it down with Markdown, then convert with the app of your choice:
 
 - [Pandoc](https://pandoc.org) if you know what a terminal is,
 - [Marked](http://marked2app.com) if you prefer GUIs,
-- For websites, you can print or [create a PDF](https://support.apple.com/en-gb/guide/mac-help/mchlp1531/mac) with your browser.
+- `file -> print` a website or save as a PDF with your browser.
 
 
 ### Print first, screen second
@@ -41,41 +42,26 @@ Think about print first; add the finesse for screen-based devices later:
 The method isn't suitable for every job, but for printable media, it's much better for a [long blog post](https://wpmudev.com/blog/stop-printing-ugly-wordpress-pages-heres-how-to-fix-it/), or [complex user interfaces](https://www.smashingmagazine.com/2011/11/how-to-set-up-a-print-style-sheet/)!
 
 
-
-
 ## Typography
+
+> [Uses your device `system-ui` fonts](./source/style/modules/variables/typography.less) (Android and iOS)
 
 Typography heavily influenced by [Material Design](https://material.io/design/typography/the-type-system.html) — all typography aligns to a [`4dp`](https://stackoverflow.com/a/2025541) grid, with default `--font-size` of `16dp`.
 
-### Some helpers:
+### The `x-height` problem
 
-1. [A baseline grid](./source/style/modules/mixins/grid-baseline.less) mixin,
-2. [Device agnostic `system-ui` fonts](./source/style/modules/variables/typography.less) (for iOS and Android),
-3. Some helpful [CSS variables](./source/style/modules/variables/_root.less).
-
-### ⚠️ You may need ...
-
-> Depending on the `font-family` you may need to make some adjustments.
-
-Headings may need `--line-height` and `margin-bottom` changes, or you may have to abandon the `.grid-baseline` depending on the complexity of your design. It's [difficult](#alert-perfect) to achieve pixel perfection with web-based projects!
-
-Online and PDFs aren't quite as easy to stick to a grid as InDesign projects.
-
-
+Inline `code` and `pre` blocks use `font-size: inherit`. It seems most devices have the `monospace` font with a larger `x-height` than the regular font. It's best if you find a monospace font that's similar in height to your default, but here's a [small fix](https://tinyurl.com/2p9xpevw) for if it isn't.
 
 
 ## Layout
 
-> <span id="alert-perfect">⚠️</span> **Perfect is the enemy of good** ([Voltaire](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good))
-> — try to keep grid-level items divisible by `8` or `4`;
+> - `.gl-BaselineGrid` class for vertical rythmn.
+> - Aim to keep grid-level items divisible by `8` or `4`
+> - You may need to adjust your font's `--line-height` and `margin-bottom`
 
-All components and media align to an [`8dp` baseline grid](./source/modules/mixins/grid-baseline.less) (double the [typography](./#typography) baseline).
+Everything aligns to an [`8dp` baseline grid](./source/modules/mixins/grid-baseline.less) (double the [typography](./#typography) baseline). A [vertical rythmn](http://webtypography.net/2.2.2) is nice in theory, difficult in practice for web-based styles. Try to keep the [`box-model`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) aligned and consider [`align-items: baseline`](https://css-tricks.com/almanac/properties/a/align-items/) if using `flexbox`.
 
-[Typographic vertical rythmn](http://webtypography.net/2.2.2) and the baseline/grid layouts are notoriously difficult to get right for digital projects, so don't worry about being pixel perfect. Try to keep [`box-model`](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) children aligned to the baseline grid where possible. For instance, `flexbox` has the option to [`align-items: baseline`](https://css-tricks.com/almanac/properties/a/align-items/) with it's siblings.
-
-**Eyeball it;** does it look right?
-
-
+Remember, "Perfect is the enemy of good" ([Voltaire](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good)) so sometimes it's best to just **eyeball it;** does it feel right?
 
 
 
@@ -86,42 +72,20 @@ All components and media align to an [`8dp` baseline grid](./source/modules/mixi
 1. [Intro to Markdown and writing styleguide](./build/markdown/styleguide.md)
 2. [Writing in context](./build/markdown/specimen.md)
 3. [A look at base-level components](./build/markdown/partials.md)
-4. [Sane stylesheets for css](https://github.com/badlydrawnrob/ecss)
-
-
-
+<!--4. [Sane stylesheets for css](https://github.com/badlydrawnrob/ecss)-->
 
 
 
 # Installation
 
-1. You have [Node](https://nodejs.org/en/) installed
-2. Create your repo and `cd your/folder/`
-3. `npm init` 
+1. You'll have [Node](https://nodejs.org/en/) installed
+2. Create your repo and `cd ./project`
+3. `npm init`
 4. `npm install badlydrawnrob/print-first-css --save-dev`
 5. `npm run build`
 
-### Upgrading
+To upgrade, check the release notes first, then `npm upgrade`.
 
-Check the release notes first, then:
-
-`npm upgrade`
-
-
-### Minimally using LESS
-
-> Almost completely pure CSS.
-> CSS is NOT a programming language. Don't use it that way!
-> One `.grid-baseline()` mixin used only.
-
-The [`less`](http://lesscss.org) files are simply a nice way to split out [different parts](https://en.wikipedia.org/wiki/Separation_of_concerns) of the CSS. I don't advocate using mixins and functions with your CSS. You can compile your CSS like below:
-
-1. Create a [config](./source/style/config.less) file
-2. `@import (less) "../../node_modules/print-first-css/build/style/print-first.css";`
-3. Change any `:root { --css-variables ... }` you need
-4. Create a [main](./source/style/main.less) file
-5. Get creative with css!
-6. `npm run build`
 
 
 # License and inspiration
@@ -141,4 +105,4 @@ There's been a bunch of inspirations over the years, but mostly thanks to [@cbra
 
 
 
-[^1]: **Do the enough thing!** Keep `--css-variables` to a minimum, Be [brutal](https://brutalist-web.design/) in your design, "Keep it simple, stupid" and [don't make me think](https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think) — just [do the enough thing](https://fs.blog/jason-fried/)!
+[^1]: You can `@import (less)` files into your own project and override the `--css-variables` in `:root`. Recompile with NPM (`npm run build`) and you're ready to [do the enough thing](https://fs.blog/knowledge-project-podcast/jason-fried/). Follow the [don't make me think](https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think) principles for styles and UI and try to be [consistent](https://google.github.io/styleguide/htmlcssguide.html) with your code.

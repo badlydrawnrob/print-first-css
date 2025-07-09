@@ -15,20 +15,19 @@
 // Notes
 // -----
 // 1. The font depends on the device (see `variables/typography.less`)
-// 2. If you want, you can hack inline code to make the font smaller:
-//     - The `x-height` problem: https://tinyurl.com/2p9xpevw
-//     - Ideally, make sure each `font-size` has a similar `x-height`
+// 2. If you want, you can hack inline code to make the font smaller (a similar
+//    height to `--font-family`. Here we simply inherit it's parent's size.
+//     - It's best to choose a monospace font that has a similar `x-height`
+//     - @ https://tinyurl.com/2p9xpevw (small fix if `x-height` is different)
 // 3. You either break the line, or have it wrap:
 //     @ https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
-//
-// #! `<samp>` isn't widely used. Get rid of?
 
 code,
 kbd,
 pre,
 samp {
   font-family: var(--font-family-mono);  // 1
-  font-size: var(--font-size);           // 2
+  font-size: inherit;  // 2
   font-style: normal;
   line-height: var(--line-height);
 
@@ -51,32 +50,33 @@ samp {
 }
 
 pre {
-  position: relative;
+  border: var(--spacing-px) solid var(--color-bbb);
+  font-size: inherit;  // 2
+  hyphens: none;
+  overflow-wrap: normal;
   overflow: auto;
   padding: var(--spacing);
-  white-space: pre-wrap;
-  overflow-wrap: normal;
-  word-break: normal;
+  position: relative;
   tab-size: 4;
-  hyphens: none;
-  border: var(--spacing-px) solid var(--color-bbb);
+  white-space: pre-wrap;
+  word-break: normal;
 
   @media screen {
-    white-space: pre;
     background: var(--color-code-light-background);
     border-color: transparent;
+    white-space: pre;
   }
 
   code {
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    color: inherit;
     display: block;
-    overflow: auto;
     height: 100%;
     margin: 0;
+    overflow: auto;
     padding: 0;
     white-space: pre;  // 3
-    color: inherit;
-    border: none;
-    border-radius: 0;
-    background: transparent;
   }
 }
