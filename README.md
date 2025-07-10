@@ -6,6 +6,7 @@
 
 > Who on earth prints these days? I do!
 > Quite often actually: notes to edit, website reference, a CV, perhaps an eBook ...
+> Remember: CSS sucks to write so less is more.
 
 **A solid base for simple layouts such as PDFs, books, websites;** acts as a starter theme with solid typography. Makes for pleasurable reading when you need to print out on paper.
 
