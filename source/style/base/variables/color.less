@@ -1,37 +1,27 @@
 // -----------------------------------------------------------------------------
 // Color variables
 // =============================================================================
-// Pallettes for this particular theme. They're lean and mean!!!
-// For Pandoc's Skylighting themes, see `monochrome.less`.
+// > It can be wise for each theme to have its own color variables.
+// > This sets some defaults for print based (textual) themes. Lean and mean!
 //
-// Notes on naming conventions:
-// ----------------------------
-// I think it's fair to say that having a light and dark pallette is going
-// to be accross the board (interchangeable) but some themes may need more
-// shades, some less. Might it be wise to have custom `--color` pallettes
-// for each child theme?
+// - For Pandoc's Skylighting themes, see `monochrome.less`.
+// - A helpful VS Code plugin: @ http://tinyurl.com/visual-studio-code-colorize
+// - Background colors are not used in this theme (set independently to text?)
 //
-// Visual Studio Code plugin for colors
-// ------------------------------------
-// Quickly viewing colors: @ http://tinyurl.com/visual-studio-code-colorize
+// Naming conventions
+// ------------------
+// > Strip back to the essentials wherever possible (YAGNI)
+// > These colors are meant for TEXTUAL content (not backgrounds etc)
 //
-// - If, for instance, I decide I need a mid-tone gray, I'd have to rename or
-//   reorder all the `--color-b` styles anyway. In Anki we need more (or at
-//   least different) shades.
-//
-// #!: Should these `--color` styles be here? Dump them?
-//     Strip back to the essentials wherever possible.
-//
-// Notes
-// -----
-// 1. Used mostly for font colours
-// 2. Occasionally used for backgrounds
+// Most child themes are likely to need a light and dark pallette. Ssome themes
+// will need more shades, some perhaps less. If, for instance, I decide I need
+// a mid-tone gray, I'd have to rename or reorder all the `--color-b` styles anyway
 
 // 1
---color-bbbb: #000;
---color-bbb: #333;
---color-bb: #ccc;
---color-b: #f9f9f9;
+--color-dddd: #000;
+--color-ddd: #333;
+--color-dd: #ccc;
+--color-d: #f9f9f9;
 
 // 2
 --color-l: #ccc;

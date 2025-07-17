@@ -1,27 +1,29 @@
 // -----------------------------------------------------------------------------
 // Typography
 // =============================================================================
-// Some annoying "bugs" when trying to specify San Francisco fonts:
-// - @ See issue #27
-// - `system-ui` and `ui-monospace` (defaults depend on OS)
-// - Be sure to add sensible font styles as fallbacks.
+// > Custom fonts are NOT the responsibility of `print-first-css` but ...
+// > When using @font-face it should not be nested inside a selector or class!
 //
-// We have a default baseline grid, which everything is based on:
-// - `mixins/grid-baseline`
+// We have a default `.gl-BaselineGrid` which everything is based on.
 //
-// There's a unitless `line-height`: @ https://kolosek.com/css-line-height/
+// - A unitless `line-height` — @ https://kolosek.com/css-line-height/
+// - Some defaults from Material Design — @ https://tinyurl.com/twfvhwwv
 //
-// Material Design was the inspiration for current `font-size`:
-// - @ https://tinyurl.com/twfvhwwv
-//
-// 1. This is a long-standing bug in some browsers:
+// Bugs
+// ----
+// 1. System UI is supported, but `ui-monospace` has poor support:
+//     - Add sensible font styles as fallbacks.
+//     - @ https://caniuse.com/?search=ui-monospace
+// 2. San Francisco `x-height` problem and other gotchas:
+//     - @ https://github.com/badlydrawnrob/print-first-css/issues/27
+// 3. Long-standing monospace sizing bug in some browsers:
 //     - @ https://tinyurl.com/3urfvc5h
 
 --system-ui: system-ui, sans-serif;  // SF Pro, Roboto
 --system-mono: ui-monospace;         // Safari only, SF Mono
 --fallback-mono: 'Roboto Mono', monospace, monospace;  // #! (1)
 
---font-color: var(--color-bbbb);
+--font-color: var(--color-dddd);
 --font-family: var(--system-ui);
 --font-family-mono: var(--system-mono), var(--fallback-mono);
 

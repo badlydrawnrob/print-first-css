@@ -1,6 +1,7 @@
 # Print First CSS
 
-
+- Remember that Print First CSS is a bare-bones approach ...
+- It is not a framework! A child theme takes on that responsibility.
 
 ## Quick intro
 
@@ -12,23 +13,25 @@
 
 Only the essentials here, folks:
 
-- No fluff, no grid system
-- Basic styling for presentations, ebooks, or pdfs
-- Use it as a base for your next website (roll your own typography etc)
-- Preview styles in the [`specimen`](./build/markdown/specimen.html) file
-- Uses plain CSS ([`-css-variables`](./source/style/modules/variables/_root.less)) and the `lessc` compiler to [chunk](https://en.wikipedia.org/wiki/Separation_of_concerns) files[^1]
+- No fluff, no grid system (just helpful `--spacing` variables)
+- Basic styling for presentations, ebooks, or pdfs (with `--color` for text)
+- Can be extended and used as a child theme for any `@media print`/`screen` content
+- Has a [`specimen`](./build/markdown/specimen.html) file to preview styles
+- Uses [css variables](./source/style/modules/variables/_root.less)) and the [`lessc`](https://lesscss.org) compiler to [chunk](https://en.wikipedia.org/wiki/Separation_of_concerns) files[^1]
 
 
 
 ## Why print first?
 
-Print is often a second citizen these days, but it's useful! You might need to rattle off presentations, write a proposal, [build a CV](https://github.com/badlydrawnrob/print-first-cv), or share ideas quickly. Or, perhaps you're an author publishing an ebook?
+> Everything is motion these days, but lets go back to our roots!
 
-Write it down with Markdown, then convert with the app of your choice:
+Print is often a second citizen these days, but it's useful! You might need to rattle off presentations, write a proposal, [build a CV](https://github.com/badlydrawnrob/print-first-cv), or share ideas quickly. Perhaps you're a budding author publishing an ebook!
+
+Write it with Markdown, convert with the app of your choice:
 
 - [Pandoc](https://pandoc.org) if you know what a terminal is,
 - [Marked](http://marked2app.com) if you prefer GUIs,
-- `file -> print` a website or save as a PDF with your browser.
+- Save as a PDF with your browser (using `print-first-css`) with `file -> print`.
 
 
 ### Print first, screen second
