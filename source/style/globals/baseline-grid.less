@@ -1,32 +1,33 @@
 // -----------------------------------------------------------------------------
 // Baseline Grid (perfect is the enemy of good)
 // =============================================================================
-// Vertical rythym in digital is quite hard to get right, so don't feel the need
-// to stick religiously to this `.baseline-grid`, but it can come in handy to
-// align items. `display: flex` and `align-items: baseline` can come in handy.
+// Vertical rythym in digital is hard to get right, so don't feel the need
+// to stick religiously to a `.baseline-grid`. It's helpful if units used are
+// divisible by the baseline grid units however. `display: flex` and
+// `align-items: baseline` may come in handy.
 //
 // Notes on the grid-system
 // ------------------------
-// - Material Design: http://bit.ly/2lYjdkt
-// - Typographic rhythm: http://bit.ly/2mnBSri
-// - WTF is a `dp` unit? https://stackoverflow.com/q/2025282
+// - Material Design: @ http://bit.ly/2lYjdkt
+// - Typographic rhythm: @ http://bit.ly/2mnBSri
+// - WTF is a `dp` unit? @ https://stackoverflow.com/q/2025282
 //
 // Notes on the css
 // ----------------
-// 1. Add the `.gl-BaselineGrid` class to any element you'd like to add a
+// 1. Add the `.gl-baseline-grid` class to any element you'd like to add a
 //    grid baseline to. You can use it on different elements and have them line
 //    up with each other. You may need to add `margin`s or `padding` to get
 //    this done.
 //
 //    Important: `--baseline` variables must be reset within the
-//    `.gl-BaselineGrid` class, if you want to reset them!
+//    `.gl-baseline-grid` class, if you want to reset them!
 //
 // 2. `--depth: -1` displays _under_ your content
 //    `--depth: 1`  displays _over_ your content
 //
-// 3. `top: 0` displays it in it's default position, but it can be handy to
-//    change this number so you can position the baseline grid as you wish. It
-//    can be helpful to "nudge" it down a little to align to the base of text.
+// 3. `top: 0` displays in it's default position, but it can be handy to
+//    change this number and position the baseline grid as you wish. Nudge it
+//    down a little to align to the base of text.
 //
 // 4. This is the fancy gradient that makes our grid lines possible. We also use
 //    our `--grid` spacing variables to make sure it's either `4dp` or `8dp`. You
@@ -35,13 +36,13 @@
 //    @ http://bit.ly/2lE4pMV
 //
 //
-// Our `partials.html` specimen file
+// Toggle the grid in specimen file
 // --------------------------------
-// I've added a `toggle()` function to the `source/pandoc/template.html` so you
-// can easily test out the `.baseline-grid` class!
+// Go to `partials.html` and see the `toggle()` function in the `source/pandoc/template.html`
+// to easily test out the `.baseline-grid` class!
 
 // 1
-.gl-BaselineGrid {
+.gl-baseline-grid {
   --baseline-grid-depth: -1;    // 2
   --baseline-grid-align-top: 0; // 3
   --baseline-grid-gradient-colour-8dp: rgb(0, 139, 137);
