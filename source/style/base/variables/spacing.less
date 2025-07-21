@@ -3,31 +3,48 @@
 // =============================================================================
 // > See `.gl-baseline-grid` for alignment options
 //
-// 1. You can call a `--var` before declared: https://tinyurl.com/5zf48jsd
-// 2. Default `line-height` and spacing is `1.5rem`,
-// 3. Everything divisible by `16dp` base unit.
+// Spacing is calculated in `rem` units (whereas `line-height` is unitless).
+// They can be used for `margin` and `padding`, and perhaps sizing elements,
+// although that should be few and far between. See eBooks and PDFs for some
+// good ideas of how to best style content.
+//
+// All spacing values should be divisible by `2dp`, `4dp` or `8dp` (`16dp` base unit)
 //
 // Notes
 // -----
-// We convert our base calculations to `rem` and use them for our `margin`s and
-// `padding`. `line-height` requires a unitless number.
+// 1. `--variables` can be called before they're declared:
+//     - @ https://tinyurl.com/5zf48jsd
+// 2. The default spacing unit is `1.5rem` (`line-height` is unitless)
+//
+// ⚠️ Moving on from Material Design
+// ---------------------------------
+// > Material was a large design system for web apps.
+// > Our requirements are quite different!
+//
+// We can have a sensible spacing system (with suggestions for grids) and work
+// towards a print-based layout. There shouldn't be much more than a handful of
+// `--spacing` variables needed. We can suggest a `2dp` or `4dp` baseline, with
+// a `16dp` base unit.
+//
+// - Child themes can pick up the slack and extend them.
+// - Spacing increment should perhaps be left up to the child theme.
 
---spacing-increment: calc(var(--spacing-pp) * 1rem);
+--spacing-increment: calc(var(--spacing-two) * 1rem);
 
---spacing-pppppppp:  128 / 16;  // 8rem
---spacing-ppppppp:   112 / 16;  // 7rem
---spacing-pppppp:     96 / 16;  // 6rem
---spacing-ppppp:      80 / 16;  // 5rem
---spacing-pppp:       64 / 16;  // 4rem
---spacing-ppp:        48 / 16;  // 3rem
---spacing-pp:         32 / 16;  // 2rem
---spacing-p:          24 / 16;  // 1.5rem
---spacing-base:       16 / 16;  // 1rem
---spacing-m:          12 / 16;  // 0.75rem
---spacing-mm:          8 / 16;  // 0.5rem
---spacing-mmm:         4 / 16;  // 0.25rem
---spacing-mmmm:        2 / 16;  // 0.125rem
---spacing-mmmmm:       1 / 16;  // 0.0625rem
+--spacing-pppppppp:  128 / 16;  // 8
+--spacing-ppppppp:   112 / 16;  // 7
+--spacing-pppppp:     96 / 16;  // 6
+--spacing-ppppp:      80 / 16;  // 5
+--spacing-pppp:       64 / 16;  // 4
+--spacing-ppp:        48 / 16;  // 3
+--spacing-pp:         32 / 16;  // 2
+--spacing-p:          24 / 16;  // 1.5
+--spacing-base:       16 / 16;  // 1
+--spacing-m:          12 / 16;  // 0.75
+--spacing-mm:          8 / 16;  // 0.5
+--spacing-mmm:         4 / 16;  // 0.25
+--spacing-mmmm:        2 / 16;  // 0.125
+--spacing-mmmmm:       1 / 16;  // 0.0625
 
 --spacing-eight:          calc(var(--spacing-pppppppp) * 1rem);
 --spacing-seven:          calc(var(--spacing-ppppppp) * 1rem);

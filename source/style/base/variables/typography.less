@@ -4,10 +4,25 @@
 // > Custom fonts are NOT the responsibility of `print-first-css` but ...
 // > When using @font-face it should not be nested inside a selector or class!
 //
-// We have a default `.gl-baseline-grid` which everything is based on.
+// We have a default `.gl-baseline-grid` which everything is based on. The book
+// _Grid Raster Systems_ suggests aligning smaller text _between_ the main
+// baseline grid.
 //
-// - A unitless `line-height` — @ https://kolosek.com/css-line-height/
-// - Some defaults from Material Design — @ https://tinyurl.com/twfvhwwv
+// Default spacing is `1.5` (unitless), `1rlh` and `1lh` units are available.
+//
+//     @ https://kolosek.com/css-line-height/
+//
+//
+// ⚠️ Moving on from Material Design
+// ---------------------------------
+// > Material was a large design system for web apps.
+// > Our requirements are quite different!
+//
+// See issue #90 (print-first-css) and #22 (portfolio) amongst others. If this
+// repository is for print, there's no need for a large design system. We should
+// set solid defaults, with a guideline for extending.
+//
+// - #! @ https://tinyurl.com/twfvhwwv (original usage of font sizes)
 //
 // Bugs
 // ----
@@ -27,26 +42,26 @@
 --font-family: var(--system-ui);
 --font-family-mono: var(--system-mono), var(--fallback-mono);
 
---font-size-pppppp: calc((96 / 16) * 1rem);  // h1
---font-size-ppppp:  calc((60 / 16) * 1rem);  // h2
---font-size-pppp:   calc((48 / 16) * 1rem);  // h3
---font-size-ppp:    calc((34 / 16) * 1rem);  // h4
---font-size-pp:     calc((24 / 16) * 1rem);  // h5
---font-size-p:      calc((20 / 16) * 1rem);  // h6
---font-size:        calc((16 / 16) * 1rem);  // subtitle 1, body 1
---font-size-m:      calc((14 / 16) * 1rem);  // subtitle 2, body 2, button
---font-size-mm:     calc((12 / 16) * 1rem);  // caption
---font-size-mmm:    calc((10 / 16) * 1rem);  // overline
+--font-size-pppppp: calc((96 / 16) * 1rem);  // 6rem
+--font-size-ppppp:  calc((60 / 16) * 1rem);  // 3.75rem
+--font-size-pppp:   calc((48 / 16) * 1rem);  // 3rem
+--font-size-ppp:    calc((34 / 16) * 1rem);  // 2.125rem
+--font-size-pp:     calc((24 / 16) * 1rem);  // 1.5rem
+--font-size-p:      calc((20 / 16) * 1rem);  // 1.25rem
+--font-size:        calc((16 / 16) * 1rem);  // 1rem
+--font-size-m:      calc((14 / 16) * 1rem);  // 0.875rem
+--font-size-mm:     calc((12 / 16) * 1rem);  // 0.75rem
+--font-size-mmm:    calc((10 / 16) * 1rem);  // 0.625rem
 
---line-height-eight:   calc(var(--spacing-pppppppp));  // 8rem,    --spacing-eight
---line-height-seven:   calc(var(--spacing-ppppppp));   // 7rem,    --spacing-seven
---line-height-six:     calc(var(--spacing-pppppp));    // 6rem,    --spacing-six
---line-height-five:     calc(var(--spacing-ppppp));     // 5rem,    --spacing-five
---line-height-four:    calc(var(--spacing-pppp));      // 4rem,    --spacing-four
---line-height-three:   calc(var(--spacing-ppp));       // 3rem,    --spacing-three
---line-height-two:     calc(var(--spacing-pp));        // 2rem,    --spacing-two
---line-height:         calc(var(--spacing-p));         // 1.5rem,  --spacing-one
---line-height-one:     calc(var(--spacing-base));      // 1rem     --spacing
---line-height-half:    calc(var(--spacing-mm));         // 0.5rem,  --spacing-half
---line-height-quarter: calc(var(--spacing-mmm));        // 0.25rem, --spacing-quarter
+--line-height-eight:   calc(var(--spacing-pppppppp));  // 8    --spacing-eight
+--line-height-seven:   calc(var(--spacing-ppppppp));   // 7    --spacing-seven
+--line-height-six:     calc(var(--spacing-pppppp));    // 6    --spacing-six
+--line-height-five:     calc(var(--spacing-ppppp));     // 5    --spacing-five
+--line-height-four:    calc(var(--spacing-pppp));      // 4    --spacing-four
+--line-height-three:   calc(var(--spacing-ppp));       // 3    --spacing-three
+--line-height-two:     calc(var(--spacing-pp));        // 2    --spacing-two
+--line-height:         calc(var(--spacing-p));         // 1.5  --spacing-one
+--line-height-one:     calc(var(--spacing-base));      // 1    --spacing
+--line-height-half:    calc(var(--spacing-mm));        // 0.5  --spacing-half
+--line-height-quarter: calc(var(--spacing-mmm));       // 0.25 --spacing-quarter
 

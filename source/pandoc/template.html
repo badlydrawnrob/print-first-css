@@ -36,7 +36,7 @@ $for(header-includes)$
   $header-includes$
 $endfor$
 </head>
-<body id="print-first-demo">
+<body id="demo">
 $for(include-before)$
   $include-before$
 $endfor$
@@ -72,8 +72,8 @@ $endfor$
   <script>
     /* For now you'll have to refresh page to clear `.grid-baseline` */
     function toggleGrid() {
-      var element = document.getElementById("print-first-demo");
-      element.classList.toggle("gl-BaselineGrid");
+      var element = document.getElementById("demo");
+      element.classList.toggle("gl-baseline-grid");
     }
   </script>
 </body>

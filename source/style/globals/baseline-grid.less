@@ -14,26 +14,31 @@
 //
 // Notes on the css
 // ----------------
+// > Fine tune your `--baseline` variables within a `.gl-baseline-grid` class
+//
 // 1. Add the `.gl-baseline-grid` class to any element you'd like to add a
-//    grid baseline to. You can use it on different elements and have them line
-//    up with each other. You may need to add `margin`s or `padding` to get
-//    this done.
+//    vertical rythmn to. It can be used on different elements to line up with
+//    each other. You may need to add `margin`s or `padding` to get
+//    this done, or consult your font's `x-height`.
 //
-//    Important: `--baseline` variables must be reset within the
-//    `.gl-baseline-grid` class, if you want to reset them!
-//
-// 2. `--depth: -1` displays _under_ your content
-//    `--depth: 1`  displays _over_ your content
-//
-// 3. `top: 0` displays in it's default position, but it can be handy to
+// 2. `top: 0` displays in it's default position, but it can be handy to
 //    change this number and position the baseline grid as you wish. Nudge it
 //    down a little to align to the base of text.
+//
+// 3. `--depth: -1` displays over or under content
 //
 // 4. This is the fancy gradient that makes our grid lines possible. We also use
 //    our `--grid` spacing variables to make sure it's either `4dp` or `8dp`. You
 //    can find out how to do the gradient below
 //
+//    @ https://css-tricks.com/css-tricks-that-use-only-one-gradient/ ⭐
+//        - Also has a classic grid paper effect
+//    @ https://css-tricks.com/building-css-grid-overlay/ (a great alternative)
+//        - Looks like a proper grid overlay
 //    @ http://bit.ly/2lE4pMV
+//        - The original gradient source
+//
+// 5. `background-position` can also be used (but think it needs 2 values)
 //
 //
 // Toggle the grid in specimen file
@@ -41,27 +46,64 @@
 // Go to `partials.html` and see the `toggle()` function in the `source/pandoc/template.html`
 // to easily test out the `.baseline-grid` class!
 
-// 1
+// (1)
 .gl-baseline-grid {
-  --baseline-grid-depth: -1;    // 2
-  --baseline-grid-align-top: 0; // 3
-  --baseline-grid-gradient-colour-8dp: rgb(0, 139, 137);
-  --baseline-grid-gradient-colour-4dp: rgb(133, 231, 231);
+  --baseline-grid-align-top: 0; // (2)
+  --baseline-grid-depth: -1;    // (3)
+  --baseline-grid-background: lightyellow;
+  --baseline-grid-color-line-one: #000;   // rgb(0, 139, 137)
+  --baseline-grid-color-line-two: #666; // rgb(133, 231, 231)
+  --baseline-grid-color-square: #FFD932;
+  --baseline-grid-size: var(--spacing); // --spacing
+  --baseline-grid-line-one: var(--baseline-grid-size);
+  --baseline-grid-line-two: var(--spacing-quarter);
+  --baseline-grid-opacity: 0.5;
+  --baseline-grid-square-size: var(--baseline-grid-size);
 
   position: relative;
+  background: var(--baseline-grid-background);
 
+  // (4)
   &::before {
-    content: '';
-    position: absolute;
-    z-index: var(--baseline-grid-depth);
-    top: var(--baseline-grid-align-top);
-    display: block;
-    width: 100%;
-    height: 100%;
 
-    // 4
-    background: linear-gradient(0deg, var(--baseline-grid-gradient-colour-8dp) 1px, transparent 1px, transparent),
-                linear-gradient(0deg, var(--baseline-grid-gradient-colour-4dp) 1px, transparent 1px, transparent);
-    background-size: auto var(--spacing), auto var(--spacing-quarter);
+    background:
+      repeating-conic-gradient(
+        var(--baseline-grid-color-square) 0 25%,
+        transparent 0 50%
+      ) 0 / var(--baseline-grid-square-size) var(--baseline-grid-square-size);
+
+    content: '';
+    display: block;
+    height: 100%;
+    mix-blend-mode: multiply;
+    position: absolute;  // (5)
+    top: var(--baseline-grid-align-top); // (5)
+    width: 100%;
+    z-index: calc(var(--baseline-grid-depth) + 1);
+  }
+
+  // (4)
+  &::after {
+    background:
+      linear-gradient(
+        0deg, var(--baseline-grid-color-line-one) var(--spacing-px),
+        transparent var(--spacing-px), transparent
+      ),
+      linear-gradient(0deg,
+        var(--baseline-grid-color-line-two) var(--spacing-px),
+        transparent var(--spacing-px), transparent);
+    background-size:
+      auto var(--baseline-grid-line-one),
+      auto var(--baseline-grid-line-two);
+
+    content: '';
+    display: block;
+    height: 100%;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: var(--baseline-grid-align-top);
+    width: 100%;
+    z-index: calc(var(--baseline-grid-depth) + 1);
+
   }
 }
