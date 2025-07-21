@@ -28,6 +28,11 @@
 //
 // - Child themes can pick up the slack and extend them.
 // - Spacing increment should perhaps be left up to the child theme.
+//
+// Bugs
+// ----
+// 1. `display: inline` can break the `4dp` baseline grid.
+//    - @ https://github.com/badlydrawnrob/print-first-css/issues/96
 
 --spacing-increment: calc(var(--spacing-two) * 1rem);
 

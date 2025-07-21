@@ -1,14 +1,17 @@
 // -----------------------------------------------------------------------------
 // Images
 // =============================================================================
-// 1. Visually offset `alt` text
-// 2. Remove gap: http://cbrac.co/Q6smqV
-// 3. Make all images responsive
+// 1. `display: inline` breaks the `.gl-baseline-grid` (the half-px problem)
+//     - @ https://stackoverflow.com/a/79709519/838046
+// 2. Visually offset `alt` text
+// 3. Remove gap: http://cbrac.co/Q6smqV
+// 4. Make all images responsive
 
 img {
-  font-style: italic;      // (1)
-  vertical-align: middle;  // (2)
-  max-width: 100%;         // (3)
+  display: block;          // (1)
+  font-style: italic;      // (2)
+  vertical-align: middle;  // (3)
+  max-width: 100%;         // (4)
 }
 
 figure {
