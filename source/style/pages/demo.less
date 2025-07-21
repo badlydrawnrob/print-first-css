@@ -1,9 +1,24 @@
 // -----------------------------------------------------------------------------
 // Our `#print-first-demo` page for our specimen files
 // -----------------------------------------------------------------------------
-// These are for demo purposes only. #! DON'T USE GENERIC STYLES like `html` or
-// `main` because these are going to get inherited by child themes. Get more
-// specific with `.classes` and `#ids`.
+// For demo purposes only. Make sure these are targeting `#demo` classes only,
+// not generic styles (like `html`) as it's currently inherited by child themes
+// in the `print-first.css` file. You'll have to toggle the `.roboto` and
+// `.gl-baseline-grid` classes to view.
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-VariableFont_wdth,wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("./RobotoMono-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
 
 @media all {
   .title {
@@ -11,28 +26,27 @@
   }
 }
 
-@media screen and (min-width: 200px) {
-  #demo {
+#demo {
+
+  @media screen and (min-width: 200px) {
     max-width: 800px;
     margin: 0 auto;
     padding: var(--spacing-three) 0;
 
-    // &.gl-baseline-grid {
-    //   --baseline-grid-depth: 1;
-    //   --baseline-grid-align-top: -1px;
-    // }
+    #card-wrapper {
+      padding: 0 var(--spacing-one);
+    }
   }
 
-  #card-wrapper {
-    padding: 0 var(--spacing-one);
+  &.roboto {
+    font-family: "Roboto", sans-serif;
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: "Roboto Mono", monospace;
+    }
   }
+
 }
-
-// #! Add in some dark theme colours?
-//
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     background: black;
-//     color: white !important;
-//   }
-// }

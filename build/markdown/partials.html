@@ -8,10 +8,6 @@
   <meta name="author" content="@badlydrawnrob" />
   <title>Print First CSS: All partial files</title>
   <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
 
   <link rel="stylesheet" href="../style/print-first.css" />
@@ -21,7 +17,8 @@
   <header id="title-block-header">
     <h1 class="title">Print First CSS: All partial files</h1>
       <p class="subtitle"><a onclick="toggleGrid()" href="#">Toggle</a>
-Baseline Grid. Helper file to view all elements without any context.</p>
+Baseline Grid. <a onclick="toggleRoboto()" href="#">Toggle</a> Roboto
+font. Helper file to view all elements without any context.</p>
         <p class="author"><span class="citation"
 data-cites="badlydrawnrob">@badlydrawnrob</span></p>
       </header>
@@ -435,6 +432,11 @@ echo &quot;$n files in total, with $s lines in total&quot;</code></pre>
     function toggleGrid() {
       var element = document.getElementById("demo");
       element.classList.toggle("gl-baseline-grid");
+    }
+    /* For now you'll have to refresh page to clear `.roboto` */
+    function toggleRoboto() {
+      var element = document.getElementById("demo");
+      element.classList.toggle("roboto");
     }
   </script>
 </body>

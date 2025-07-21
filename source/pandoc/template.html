@@ -16,10 +16,6 @@ $if(keywords)$
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
   <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
 $if(quotes)$
       q { quotes: "“" "”" "‘" "’"; }
 $endif$
@@ -74,6 +70,11 @@ $endfor$
     function toggleGrid() {
       var element = document.getElementById("demo");
       element.classList.toggle("gl-baseline-grid");
+    }
+    /* For now you'll have to refresh page to clear `.roboto` */
+    function toggleRoboto() {
+      var element = document.getElementById("demo");
+      element.classList.toggle("roboto");
     }
   </script>
 </body>
