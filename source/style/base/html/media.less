@@ -2,6 +2,8 @@
 // Media
 // =============================================================================
 // 1. Remove gap: http://cbrac.co/Q6smqV
+// 2. `display: inline` breaks the `.gl-baseline-grid` (the half-px problem)
+//     - @ https://stackoverflow.com/a/79709519/838046
 
 audio,
 canvas,
@@ -14,6 +16,7 @@ video {
 audio,
 canvas,
 video {
-  width: 100%;
+  display: block; // (2)
   height: auto;
+  width: 100%;
 }
