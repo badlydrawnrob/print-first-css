@@ -1,24 +1,24 @@
 # Print First CSS
 
-- Remember that Print First CSS is a bare-bones approach ...
-- It is not a framework! A child theme takes on that responsibility.
+- A bare-bones print layout with custom font
+- ePub, PDF, and typographic layouts
+- Handy for CVs, technical docs, and writing.
+- Great for editing notes by hand.
+- Not a framework (but can be extended for tiny apps)[^1]
+
 
 ## Quick intro
 
-> Who on earth prints these days? I do!
-> Quite often actually: notes to edit, website reference, a CV, perhaps an eBook ...
-> Remember: CSS sucks to write so less is more.
+> Does anyone print anymore? I do!
 
-**A solid base for simple layouts such as PDFs, books, websites;** acts as a starter theme with solid typography. Makes for pleasurable reading when you need to print out on paper.
+Solid typography, stacked elements, and pleasurable reading (on low-fi and high-def screens).
 
 Only the essentials here, folks:
 
-- No fluff, no grid system (just helpful `--spacing` variables)
-- Basic styling for presentations, ebooks, or pdfs (with `--color` for text)
-- Can be extended and used as a child theme for any `@media print`/`screen` content
-- Has a [`specimen`](./build/markdown/specimen.html) file to preview styles
-- Uses [css variables](./source/style/modules/variables/_root.less)) and the [`lessc`](https://lesscss.org) compiler to [chunk](https://en.wikipedia.org/wiki/Separation_of_concerns) files[^1]
-
+- Basic styling for reading
+- No grid system, no fluff, no nonsense
+- Extend for colourful eBooks (like Libra)
+- [Specimen](./build/markdown/specimen.html) files included (preview styles)
 
 
 ## Why print first?
@@ -48,9 +48,9 @@ The method isn't suitable for every job, but for printable media, it's much bett
 
 ## Typography
 
-> [Uses your device `system-ui` fonts](./source/style/modules/variables/typography.less) (Android and iOS)
+> Nice default font with [fallback `system-ui`](./source/style/modules/variables/typography.less) (Android and iOS)
 
-Typography heavily influenced by [Material Design](https://material.io/design/typography/the-type-system.html) — all typography aligns to a [`4dp`](https://stackoverflow.com/a/2025541) grid, with default `--font-size` of `16dp`.
+All typography aligns to a [`4dp`](https://stackoverflow.com/a/2025541) grid, with default `--font-size` of `16dp` (... change?)
 
 ### The `x-height` problem
 
